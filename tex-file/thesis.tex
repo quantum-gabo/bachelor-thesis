@@ -1,0 +1,182 @@
+\documentclass[11pt, titlepage, twoside, openright, usernames, dvipsnames]{thesis}
+\title{First-Principles and Machine Learning Investigations into the Atomic and
+       Mechanical Properties of Cement Hydrates}
+\author{Juan Gabriel Balarezo-Balarezo}
+\supervisor{\textbf{Advisor:} Prof. Dr. Henry Pinto Esparza.}
+
+\degree{Physicist}
+\discipline{Physics}
+\university{Yachay Tech University}
+\thesistype{research thesis}
+
+\DeclareMathOperator{\Imag}{Im}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Tr}{Tr}
+\newcommand{\eF}{\varepsilon_{\textrm{F}}}
+\newcommand{\eVBM}{\varepsilon_{\textrm{VBM}}}
+\newcommand{\eCBM}{\varepsilon_{\textrm{CBM}}}
+\newcommand{\Hmat}{\mathcal{H}}
+\newcommand{\Smat}{\mathcal{S}}
+\newcommand{\Vmat}{\mathcal{V}}
+\newcommand{\Jmat}{\mathcal{J}}
+\newcommand{\Tmat}{\mathcal{T}}
+\newcommand{\BigO}{\mathcal{O}}
+\newcommand{\Lop}{\mathscr{L}}
+\newcommand{\Scalpha}{S_{\!C\alpha}}
+\newcommand{\Sc}{S_{\!C}}
+\newcommand{\Salpha}{S_{\!\alpha}}
+\newcommand{\rv}{\textbf{r}}
+\newcommand{\Rv}{\textbf{R}}
+\newcommand{\kv}{\textbf{k}}
+\newcommand{\Kv}{\textbf{K}}
+\newcommand{\av}{\textbf{a}}
+\newcommand{\bv}{\textbf{b}}
+\newcommand{\Bv}{\textbf{B}}
+\newcommand{\ev}{\textbf{e}}
+\newcommand{\evh}{\hat{\textbf{e}}}
+\newcommand{\Ev}{\textbf{E}}
+\newcommand{\dv}{\textbf{d}}
+\newcommand{\qv}{\textbf{q}}
+\newcommand{\Fv}{\textbf{F}}
+\newcommand{\Gv}{\textbf{G}}
+\newcommand{\hv}{\textbf{h}}
+\newcommand{\Tv}{\textbf{T}}
+\newcommand{\Cv}{\textbf{C}}
+\newcommand{\xv}{\textbf{x}}
+\newcommand{\dr}{d^3\rv}
+\newcommand{\new}[1]{\textcolor{red}{#1}}
+\newcommand{\note}[1]{\textbf{[\textcolor{red}{#1}]}}
+\definecolor{RED}{RGB}{1,0,0} %% Error Message avoidance
+\newcommand{\Gf}{\mathcal{G}}
+
+\newcommand{\old}[1]{}
+\newcommand{\commentout}[1]{}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}
+
+\usepackage{anysize} % to set up document margins
+\marginsize{2cm}{2cm}{2cm}{2cm}
+\usepackage{epigraph}
+\usepackage[toc,page]{appendix}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{float}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0mm}
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{subfigure}
+\usepackage[euler]{textgreek}
+\usepackage{tablefootnote}
+\usepackage{pdfpages}
+
+\graphicspath{{../figures/}}
+\usepackage[symbol]{footmisc}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\setlength\epigraphwidth{8cm}
+\setlength\epigraphrule{0pt}
+\input{abbreviations}
+\begin{document}
+%############################# Title Page #################################
+\begin{titlepage}
+  \thispagestyle{fancy} % Set custom header for this page only 
+  \fancyhf{} % Clear header and footer
+
+  % Set the school and university logos
+  \fancyhead[L]{\includegraphics[scale=0.17]{SchoolLogoPNG.png}} % school logo
+  \fancyhead[R]{\includegraphics[scale=0.55]{Logo-YT.png}} % university logo
+  
+  % Title page content 
+  \vspace*{2cm} % space between the logos and the title
+  \begin{center}
+    % University name
+    \textsc{\huge Yachay Tech University}\\
+    \vspace*{1cm} % space between the university name and the title
+    % school name
+    \textsc{\LARGE School of Physical Sciences and Nanotechnology}\\[1.5cm]
+    % Project type 
+    \textsc{\LARGE Final Grade Project}\\[1cm]
+    % Project title
+    {\huge \bfseries First-Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates}\\[2cm]
+    % Author and supervisor
+    {\large 
+    \emph{Author:}\\ 
+    Juan Gabriel Balarezo-Balarezo\\[1cm]
+
+    \emph{Advisor:} \\
+    Henry Pinto, PhD.\\[1cm]
+    }
+    % Degree requirement 
+    Requirement for obtaining the degree of Physicist.
+    \vspace{1cm}
+
+    % Footer with location and date
+    Urcuquí - \today
+  \end{center}
+\end{titlepage}
+%\includepdf[pages=-]{Caratula.pdf}
+%\edeclarationpage
+
+\let\cleardoublepage\clearpage
+%\includepdf[pages=-]{AUTORÍA-signed.pdf}
+%\includepdf[pages=1]{AUTORIZACIÓN DE PUBLICACIÓN-signed.pdf}
+
+%############################# Dedication #################################
+%\begin{dedication}
+\chapter*{}
+  \begin{center}
+\fontsize{12}{15}\selectfont \textit{Insert here a dedication to someone or something.}
+\vfill
+  \end{center}
+
+
+%############################# Acknowledgements #################################
+\begin{acknowledgements}
+Here you can write your acknowledgments 
+\end{acknowledgements}
+
+%############################# Abstract #################################
+\begin{Resumen}
+El concreto es la segunda sustancia más utilizada en el mundo después del agua, con más de 20 mil millones de toneladas producidas cada año. Sin embargo, comprender las propiedades atómicas y mecánicas del principal componente del concreto, los hidratos de cemento de silicato de calcio (C-S-H), la fase aglutinante compleja del concreto, sigue siendo un desafío.
+
+En este proyecto, nuestro objetivo es investigar las propiedades atómicas y mecánicas de los hidratos de cemento utilizando teoría de funcionales de densidad (DFT) y herramientas de aprendizaje automático (ML). Comenzaremos utilizando DFT para estudiar la estructura electrónica, los enlaces y las respuestas mecánicas de C-S-H a nivel atómico. Posteriormente, utilizaremos dinámica molecular \emph{ab initio} (AIMD) junto con ML para crear un campo de fuerza en tiempo real de C-S-H, lo que nos permitirá simular con precisión y capturar las complejas interacciones atómicas de los hidratos de cemento, reduciendo al mismo tiempo el tiempo de cálculo. Al integrar DFT, AIMD y ML, buscamos proporcionar una comprensión más profunda de las propiedades fundamentales de C-S-H y desarrollar un modelo predictivo que pueda orientar el diseño de materiales de concreto más sostenibles y duraderos. \cite{Oey} 
+ \\
+ \\
+ \emph{\textbf{Palabras clave:}}
+\end{Resumen}
+
+\begin{abstract} 
+Concrete is the second-most-used substance in the world after water, with more than 20 billion tons produced, every year. Yet, understanding the atomic and mechanical properties of the main component of concrete, calcium-silicate-hydrate (C-S-H) cement hydrates--the complex binder phase of concrete---still poses a challenge.
+  
+In this project, we aim to investigate the atomic and mechanical properties of cement hydrates leveraging density-functional theory (DFT) and machine learning (ML) tools. We will first start by using DFT to study the electronic structure, bonding, and mechanical responses of C-S-H  at the atomic level. Afterwards, we will use \emph{ab initio} molecular dynamics (AIMD) with ML to create a force field on the fly of C-S-H, which will allow us to accurately simulate and capture the complex atomic interactions of cement hydrates while reducing the computation time. By integrating both DFT, AIMD and ML, we seek to provide deeper insights into the fundamental properties of C-S-H and to develop a predictive model that could inform the design of more sustainable and durable concrete materials. \cite{Oey}
+ \\
+  \\
+ \emph{\textbf{Keywords:}}
+\end{abstract}
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Papers}
+
+
+\mainbody
+%############################# Introduction #################################
+\chapter{Introduction}\label{Introduction}\glsresetall 
+Concrete is the second-most-used material in the world
+
+
+
+
+\bibliography{./thesis}
+\bibliographystyle{thesis}
+\printglossary[type=\acronymtype, title={Abbreviations}]
+
+\end{document}
