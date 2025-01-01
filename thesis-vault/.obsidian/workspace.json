@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "1916765cb1d20b3e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c0eb015725798ad",
+        "type": "tabs",
+        "dimension": 57.98542080848244,
+        "children": [
+          {
+            "id": "a2db325f0dd13a9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "thesis/First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates"
+            }
+          }
+        ]
+      },
+      {
+        "id": "9c011e697d724901",
+        "type": "tabs",
+        "dimension": 42.01457919151756,
+        "children": [
+          {
+            "id": "ea34c266650195cc",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f1ecd7135abba711",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb0039185536047b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ba87b4fed873c5a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2e4b148833fadc27",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "993233db9649a343",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "507875315e187aaa",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf13aa3a4a990e51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "145c5b2623156268",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates"
+            }
+          },
+          {
+            "id": "27c00c156ccbefb4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates"
+            }
+          },
+          {
+            "id": "4ffccf525afe0f19",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f0d6ccf93ff03390",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "copilot:Open Copilot Chat": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
+    }
+  },
+  "active": "a2db325f0dd13a9b",
+  "lastOpenFiles": [
+    "thesis/Introduction.md",
+    "meetings/Meetings.md",
+    "progress/Progress.md",
+    "thesis/First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
+    "Week 1.md",
+    "progress/Week 1.md",
+    "[.md",
+    "templates/template.md",
+    "Untitled",
+    "templates",
+    "progress",
+    "thesis",
+    "meetings",
+    "create a link.md",
+    "Welcome.md",
+    "thesis/Abstract.md",
+    "Untitled.canvas"
+  ]
+}
