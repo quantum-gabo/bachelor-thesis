@@ -7,5 +7,3 @@ In this project, we aim to investigate the atomic and mechanical properties of c
 </div>
 
 $\textbf{\emph{Keywords}}$:  
-
-

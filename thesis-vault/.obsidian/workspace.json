@@ -6,7 +6,6 @@
       {
         "id": "0c0eb015725798ad",
         "type": "tabs",
-        "dimension": 57.98542080848244,
         "children": [
           {
             "id": "a2db325f0dd13a9b",
@@ -14,23 +13,37 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thesis/First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
+                "file": "thesis/Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates"
+              "title": "Introduction"
+            }
+          },
+          {
+            "id": "53f011a3702a11c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "resolutions/Hey 2025, we will do this!!.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Hey 2025, we will do this!!"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
-        "id": "9c011e697d724901",
+        "id": "5316d45ed7791a85",
         "type": "tabs",
-        "dimension": 42.01457919151756,
         "children": [
           {
-            "id": "ea34c266650195cc",
+            "id": "d4351c369c0a65f9",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -157,10 +170,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md"
+                "file": "thesis/Bachelor Thesis.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates"
+              "title": "Outline of Bachelor Thesis"
             }
           }
         ],
@@ -187,24 +200,25 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "a2db325f0dd13a9b",
+  "active": "53f011a3702a11c7",
   "lastOpenFiles": [
     "thesis/Introduction.md",
-    "meetings/Meetings.md",
+    "resolutions/Hey 2025, we will do this!!.md",
+    "resolutions",
+    "thesis/Abstract.md",
+    "thesis/Bachelor Thesis.md",
     "progress/Progress.md",
-    "thesis/First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
+    "meetings/Meetings.md",
     "Week 1.md",
     "progress/Week 1.md",
     "[.md",
     "templates/template.md",
-    "Untitled",
     "templates",
     "progress",
     "thesis",
     "meetings",
     "create a link.md",
     "Welcome.md",
-    "thesis/Abstract.md",
     "Untitled.canvas"
   ]
 }
