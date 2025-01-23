@@ -4,8 +4,12 @@ I will update it every week, and comment on details discussed in the [[Meetings]
 ## **Date:** 2025-01-02
 We need to work in the introduction: 
 
+Nothing done! 
 ## **Date:** 2025-01-03
 Working on the introduction: 
 
-- [ ] Portland cement 
+Cement is the synthetic material currently produced in volumes larger than other any material in the world 
+## **Date:** 2025-01-15
+Cement is the synthetic material currently produced in volumes larger than other any material in the world, with more than 20 billion tons produced every year.  
 
+## **Date:** 2025-01-16
