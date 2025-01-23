@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thesis/Introduction.md",
+                "file": "meetings/Meetings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "Meetings"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "meetings/Meetings.md",
+                "file": "progress/Progress.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Meetings"
+              "title": "Progress"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "Colour codes for highlighting"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "5316d45ed7791a85",
@@ -214,16 +213,16 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "53f011a3702a11c7",
+  "active": "a2db325f0dd13a9b",
   "lastOpenFiles": [
+    "progress/Colour codes for highlighting.md",
+    "progress/Progress.md",
     "thesis/Abstract.md",
     "thesis/Bachelor Thesis.md",
     "thesis/Introduction.md",
-    "progress/Progress.md",
-    "progress/Colour codes for highlighting.md",
+    "meetings/Meetings.md",
     "resolutions/Hey 2025, we will do this!!.md",
     "resolutions",
-    "meetings/Meetings.md",
     "Week 1.md",
     "progress/Week 1.md",
     "[.md",
