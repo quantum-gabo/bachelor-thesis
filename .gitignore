@@ -6,3 +6,10 @@ project_proposal
 cluster-files
 ebooks
 dftb
+presentation/.github
+presentation/.gitignore
+presentation/.npmignore
+presentation/LICENSE
+presentation/README.md
+presentation/demo.html
+presentation/examples/
