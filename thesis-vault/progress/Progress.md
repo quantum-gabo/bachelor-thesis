@@ -22,3 +22,14 @@ Cement is the synthetic material currently produced in volumes larger than other
 
 ## **Date:** 2025-01-23
 - Completed the PDOS analysis, confirmed the band gap and plotted the DOS of the structure. 
+
+## **Date:** 2025-01-27
+- Created the presentation using reveal.js. Some animations are pending since I am still learning how to use this tool.
+
+>[!Questions]
+>- [ ] What is the exact order of the calculations?
+>- [ ] Why did we computed the k-points using vasp?
+## **Date:** 2025-01-28
+- Tried to use `py4vasp` for DOS analysis, but failed since I need a `vasp` executable file. 
+- Doing some research to understand the structure of a `DOSCAR` file. 
+
