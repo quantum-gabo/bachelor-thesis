@@ -13,3 +13,7 @@ presentation/LICENSE
 presentation/README.md
 presentation/demo.html
 presentation/examples/
+p4vasp
+notebooks/.ipynb_checkpoints/
+notebooks/dos-analysis.ipynb
+py-env
