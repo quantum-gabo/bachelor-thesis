@@ -14,23 +14,13 @@
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css"> 
 	</head>
-    <style>
-        .fragment.blur {
-            filter: blur(5px);
-        }
-    
-        .fragment.blur.visible {
-            filter: none;
-        }
-    
-        .blurred-paragraph {
-            filter: blur(5px);
-        }
-    </style>
+
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section data-transition="concave" class="cover-slide">
+                        <!--Create a yellow bar at the top of the slide, keep all the other content the same, no text-->
+
                         <img src="assets/Logo-YT.png" alt="Right Logo" class="logo right-logo">
                         <img src="assets/SchoolLogoPNG.png" alt="Left Logo" class="logo left-logo">
                         <!--
@@ -50,7 +40,7 @@
                         <!--<img src="assets/footer.png" alt="Footer Image" class="footer">-->
                 </section>
 
-                <section data-auto-animate>
+                <section data-transition="concave" data-auto-animate>
                     <div>
                         <h2 style="height: 150px; width: auto; background: #ddd764; padding: 0 20px; display: flex; justify-content: center; align-items: center;">
                             Table of Contents
@@ -58,7 +48,7 @@
                     </div>
                 </section>
                 
-                <section data-auto-animate>
+                <section data-transition="concave" data-auto-animate>
                     <div>
                         <h2>
                             Table of Contents
@@ -69,34 +59,34 @@
 
                         <ul style="font-size: 50px;">
                             <li><a href="#Introduction">Introduction</a></li>
-                            <li><a href="#/2">Background</a></li>
-                            <li><a href="#/3">Methodology</a></li>
+                            <li><a href="#Background">Background</a></li>
+                            <li><a href="#Methodology">Methodology</a></li>
                             <li><a href="#/4">Results</a></li>
                             <li><a href="#/5">Conclusions</a></li>
                         </ul>
                     </div>
                 </section>
 
-                <section id="Introduction">
+                <section data-transition="concave" id="Introduction">
                     <h2 style="height: 150px; width: auto; background: #ddd764; padding: 0 20px; display: flex; justify-content: center; align-items: center;">
                         Introduction
                     </h2>
                 </section>
 
-                <section>
+                <section data-transition="concave" id="Background">
                     <h2 style="height: 150px; width: auto; background: #ddd764; padding: 0 20px; display: flex; justify-content: center; align-items: center;">
                         Background
                     </h2>
                 </section>
 
-				<section>
-                <section data-auto-animate>
+				<section data-transition="concave">
+                <section data-transition="concave" data-auto-animate id="Methodology">
                 <h2 style="height: 150px; width: auto; background: #ddd764; padding: 0 20px; display: flex; justify-content: center; align-items: center;">
                     Methodology
                 </h2>
                 </section>
                 
-                <section data-auto-animate style="position: relative;">
+                <section data-transition="concave" data-auto-animate style="position: relative;">
                     <h2 style="
                         position: absolute;
                          top: -530px; 
@@ -172,7 +162,7 @@
                     margin: 0; z-index: 1;
                     font-size: 40px;">
                         ... and we perform the convergency test so that <br>
-                    that the total energy change of the k-point density is $< 1$meV
+                    that the total energy change of the k-point density is $1$meV
                     </p>
                 </section>
 
@@ -355,5 +345,9 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
 			});
 		</script>
-	</body>
+        </section>
+        </div>
+        </div>
+    </body>
 </html>
+

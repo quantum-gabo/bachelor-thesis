@@ -14,7 +14,7 @@
 
 .left-logo {
     position: absolute;
-    top: 0%;
+    top: 5%;
     left: 20px;
     margin-left: 0px;
     height: 100px;
@@ -23,7 +23,7 @@
 
 .right-logo {
     position: absolute;
-    top: 0%;
+    top: 5%;
     right: 20px;
     margin-right: 0px;
     height: 110px;

@@ -13,9 +13,9 @@ This file will work as a record of the topics discussed during the meetings. Kee
 >- Use `qsub` to submit a job.
 
 ## **Date:** 2025-01-28
-- [ ] Perform a benchmark for the structure relaxation using `1, 2, 3, 5,..., 15` nodes. 
+- [/] Perform a benchmark for the structure relaxation using `1, 2, 3, 5,..., 15` nodes. 
 - [ ] Use the `PDOS analysis` notebook to carry out a proper analysis of the results. 
-- [ ] Plot `#nodes` vs. `time` to get a better picture of the cluster's performance, and choose an optimal number of nodes accordingly. 
+- [/] Plot `#nodes` vs. `time` to get a better picture of the cluster's performance, and choose an optimal number of nodes accordingly. 
 
 >[!Note]
 >Some changes made in the `xbench.sh` file:
@@ -24,6 +24,4 @@ This file will work as a record of the topics discussed during the meetings. Kee
 >- `PREC=COMMENTED`
 >- Additionally, Prof. Henry edited a line to get around the memory problem. 
 
-
-
-
+## **Date:** 2025-01-31

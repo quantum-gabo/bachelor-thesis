@@ -33,3 +33,14 @@ Cement is the synthetic material currently produced in volumes larger than other
 - Tried to use `py4vasp` for DOS analysis, but failed since I need a `vasp` executable file. 
 - Doing some research to understand the structure of a `DOSCAR` file. 
 
+## **Date:** 2025-01-30
+We plotted the results of the benchmark. Results show that after `10 nodes` `total cpu time` stops decreasing. Therefore, the optimal number of nodes could be set to `10`.
+
+>[!Note]
+>Further analysis is necessary, since data for `13` and `15 nodes` is missing. 
+>
+## **Date:** 2025-01-31
+- Tried to compute the performance of the relaxation using `13` and `15` nodes, this time using the `batch` profile, which failed anyway. 
+- Proceeded to analyse the previous results. This time we computed the `speedup` and plotted against the number of nodes. 
+- Preliminary results show that after `9-10` nodes, the speedup scales badly. We might conclude that there is not advantage in using more than `10` nodes for the upcoming calculations. 
+
