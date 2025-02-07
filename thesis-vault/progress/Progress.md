@@ -43,4 +43,5 @@ We plotted the results of the benchmark. Results show that after `10 nodes` `tot
 - Tried to compute the performance of the relaxation using `13` and `15` nodes, this time using the `batch` profile, which failed anyway. 
 - Proceeded to analyse the previous results. This time we computed the `speedup` and plotted against the number of nodes. 
 - Preliminary results show that after `9-10` nodes, the speedup scales badly. We might conclude that there is not advantage in using more than `10` nodes for the upcoming calculations. 
+## **Date:** 2025-02-05
 
