@@ -36,6 +36,18 @@
             }
           },
           {
+            "id": "ee6501685737fd68",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
+          },
+          {
             "id": "08711e81c01661e2",
             "type": "leaf",
             "state": {
@@ -49,7 +61,8 @@
               "title": "Meetings"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "5316d45ed7791a85",
@@ -214,15 +227,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "a2db325f0dd13a9b",
+  "active": "53f011a3702a11c7",
   "lastOpenFiles": [
+    "progress/Colour codes for highlighting.md",
+    "progress/Progress.md",
+    "meetings/Meetings.md",
     "thesis/Bachelor Thesis.md",
     "thesis/Introduction.md",
     "thesis/Abstract.md",
-    "progress/Progress.md",
-    "meetings/Meetings.md",
     "resolutions/Hey 2025, we will do this!!.md",
-    "progress/Colour codes for highlighting.md",
     "resolutions",
     "Week 1.md",
     "progress/Week 1.md",
