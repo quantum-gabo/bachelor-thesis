@@ -174,8 +174,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.5,
-    "collapsed": true
+    "width": 294.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,11 +194,11 @@
   },
   "active": "a2db325f0dd13a9b",
   "lastOpenFiles": [
+    "progress/Progress.md",
     "meetings/Meetings.md",
     "thesis/Bachelor Thesis.md",
     "thesis/Abstract.md",
     "resolutions/Hey 2025, we will do this!!.md",
-    "progress/Progress.md",
     "progress/Colour codes for highlighting.md",
     "thesis/Introduction.md",
     "Advanced Programming.md",
