@@ -53,15 +53,15 @@ We skipped the meeting, however the calculations are completed successfully.
 > - `grep 'LV' REPORT`
 > - `grep 'T' OSZICAR`
 
-## **Date:** 2025-02-13
+## **Date:** 2025-02-20
 
 >[!TODO] 
->- [ ] Download the `ML_LOGFILE` from the cluster
->- [ ] We need to perform an analysis of the errors. 
->- [ ] Plot `n_iter` vs. `bee_max_force`
->- [ ]  Plot `n_iter` vs. ``
->- [ ] MD solely on ML using 50k steps, then use 50~ of those structures and compute the electronic structure. 
->- [ ] 
+>- [x] Download the `ML_LOGFILE` from the cluster
+>- [x] We need to perform an analysis of the errors. 
+>- [x] Plot `n_iter` vs. `bee_max_force`
+>- [ ]  Plot `n_iter` vs. `mse`
+>- [x] MD solely on ML using 50k steps, then use 50~ of those structures and compute the electronic structure. 
+>- [x] Write the script to extract the 50k structures. 
 
 
 ls -lh ML_FF
@@ -83,4 +83,31 @@ LH5
 LWAVE
 LCHR
 
+## **Date:** 2025-02-27
+
+>[!NOTE] Updates
+>- The script is ready. We only had to do some modifications so it works properly in the cluster. 
+>- 
+
+>[!TODO]
+>- [ ] Compute the energies for each structure using MLFF
+>- [ ] 1  
+>- [ ] dfd
+>- [ ] df
+
+
+## **Date:** 2025-03-06
+
+>[!NOTE] Updates
+>- All the structures were computed successfully.
+>- We have to perform the same calculation for each one of the structures, this time, using the MLFF.
+>- We registered ourselves for the presentation. We have to prepare the presentation and correct the abstract. 
+>- We are running a test job for the upcoming calculations.
+>- 
+
+>[!TODO]
+>- [ ] Compute the energies for each structure using MLFF.
+>- [ ] Check the `jgb/ml/test` directory. There will be the test files. 
+>- [ ] Check INCAR file 
+>- [ ] df
 

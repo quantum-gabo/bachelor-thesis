@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.8)  10 FEB 2025 22:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.2.20)  6 MAR 2025 13:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1282,16 +1282,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--164
 
 ]
 Chapter 1.
-<../figures/levels.png, id=91, 14157.693pt x 4755.366pt>
+<../figures/levels.png, id=93, 14157.693pt x 4755.366pt>
 File: ../figures/levels.png Graphic file (type png)
 <use ../figures/levels.png>
-Package pdftex.def Info: ../figures/levels.png  used on input line 184.
+Package pdftex.def Info: ../figures/levels.png  used on input line 185.
 (pdftex.def)             Requested size: 483.69687pt x 162.46396pt.
 (./thesis.bbl
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3 \begin{mcitethebibliography}{1}
+l.3 \begin{mcitethebibliography}{3}
                                     [1
 
 
@@ -1299,14 +1299,14 @@ l.3 \begin{mcitethebibliography}{1}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.3 \begin{mcitethebibliography}{1}
+l.3 \begin{mcitethebibliography}{3}
                                     <../figures/levels.png>])
 No file thesis.acr.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.196 \end{document}
+l.197 \end{document}
                      [2
 
 ] (./thesis.aux)
@@ -1318,18 +1318,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 42716334A561C1A0E7C08F1FA57D0633;676.
  ) 
 Here is how much of TeX's memory you used:
- 40485 strings out of 475477
- 770902 string characters out of 5784404
+ 40494 strings out of 475477
+ 771056 string characters out of 5784403
  1932187 words of memory out of 5000000
- 61818 multiletter control sequences out of 15000+600000
+ 61825 multiletter control sequences out of 15000+600000
  638551 words of font info for 89 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
  109i,16n,113p,2418b,724s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on thesis.pdf (10 pages, 1637721 bytes).
+Output written on thesis.pdf (10 pages, 1651757 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

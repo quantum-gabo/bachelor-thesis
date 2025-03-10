@@ -1,6 +1,6 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}  {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{1}
+\begin{mcitethebibliography}{3}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -23,5 +23,17 @@ Oey,~T.; Jones,~S.; Bullard,~J.~W.; Sant,~G. Machine Learning Can Predict Settin
 \mciteBstWouldAddEndPunctfalse
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Pellenq \textit{et~al.}(2009)Pellenq, Kushima, Shahsavari, Van~Vliet, Buehler, Yip, and Ulm]{Pellenq2009}
+Pellenq,~R. J.-M.; Kushima,~A.; Shahsavari,~R.; Van~Vliet,~K.~J.; Buehler,~M.~J.; Yip,~S.; Ulm,~F.-J. A Realistic Molecular Model of Cement Hydrates. \href{http://dx.doi.org/10.1073/pnas.0902180106}{\emph{Proceedings of the National Academy of Sciences}} \textbf{2009}, \emph{106}, 16102--16107\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Qomi \textit{et~al.}(2020)Qomi, Bauchy, and Pellenq]{Qomi2020}
+Qomi,~M. J.~A.; Bauchy,~M.; Pellenq,~R. J.-M. In \emph{Handbook of {{Materials Modeling}}: {{Applications}}: {{Current}} and {{Emerging Materials}}}; Andreoni,~W., Yip,~S., Eds.; Springer International Publishing: Cham, 2020; pp 1761--1792\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \end{mcitethebibliography}
