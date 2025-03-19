@@ -41,7 +41,7 @@
 \usepackage{colortbl,cuted,bm}
 %\definecolor{StyleColor}{RGB}{0,0,0} %% Black - for submission
 %\definecolor{abstractcolor}{RGB}{255,255,255}  %% White - for submission
-\usepackage[bookmarks=true,colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black]{hyperref} 
+\usepackage[bookmarks=true,colorlinks=true,urlcolor=black,linkcolor=black,citecolor=blue]{hyperref} 
 
 % Russian Language Support 
 \usepackage[mathletters]{ucs}
