@@ -1,0 +1,63 @@
+{
+  "callouts": {
+    "custom": [
+      "definition",
+      "exercise",
+      "idea"
+    ],
+    "settings": {
+      "important": [
+        {
+          "changes": {
+            "icon": "lucide-alert-octagon",
+            "color": "150, 127, 215"
+          }
+        }
+      ],
+      "hint": [
+        {
+          "changes": {
+            "icon": "lucide-book-marked",
+            "color": "237, 186, 2"
+          }
+        }
+      ],
+      "attention": [
+        {
+          "changes": {
+            "icon": "lucide-file-pen-line"
+          }
+        }
+      ],
+      "definition": [
+        {
+          "changes": {
+            "icon": "lucide-file-pen-line",
+            "color": "52, 145, 33"
+          }
+        }
+      ],
+      "exercise": [
+        {
+          "changes": {
+            "icon": "math-function",
+            "color": "251, 139, 111"
+          }
+        }
+      ],
+      "idea": [
+        {
+          "changes": {
+            "icon": "lucide-lightbulb",
+            "color": "255, 162, 56"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}
