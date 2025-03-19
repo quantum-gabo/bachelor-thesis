@@ -1,5 +1,5 @@
 %! TEX roots = thesis.tex
-\documentclass[11pt, titlepage, twoside, openright, usernames, dvipsnames]{thesis}
+\documentclass[12pt, titlepage, twoside, openright, usernames, dvipsnames]{thesis}
 \title{First-Principles and Machine Learning Investigations into the Atomic and
        Mechanical Properties of Cement Hydrates}
 \author{Juan Gabriel Balarezo-Balarezo}
@@ -74,6 +74,7 @@
 \usepackage{tablefootnote}
 \usepackage{pdfpages}
 
+
 \graphicspath{{../figures/}}
 \usepackage[symbol]{footmisc}
 
@@ -109,14 +110,14 @@
     {\huge \bfseries First-Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates}\\[2cm]
     % Author and supervisor
     {\large 
-    \emph{Author:}\\ 
-    Juan Gabriel Balarezo-Balarezo\\[1cm]
+    \textbf{Author:}\\ 
+    Balarezo Gabriel\\[1cm]
 
-    \emph{Advisor:} \\
-    Henry Pinto, PhD.\\[1cm]
+    \textbf{Advisor:} \\
+    Ph.D - Pinto Henry\\[1cm]
     }
     % Degree requirement 
-    Requirement for obtaining the degree of Physicist.
+       \large Requirement for obtaining the degree of Physicist.
     \vspace{1cm}
 
     % Footer with location and date
@@ -146,18 +147,18 @@ Here you can write your acknowledgments
 
 %############################# Abstract #################################
 \begin{Resumen}
-El concreto es la segunda sustancia más utilizada en el mundo después del agua, con más de 20 mil millones de toneladas producidas cada año. Sin embargo, comprender las propiedades atómicas y mecánicas del principal componente del concreto, los hidratos de cemento de silicato de calcio (C-S-H), la fase aglutinante compleja del concreto, sigue siendo un desafío.
+El concreto es la segunda sustancia más utilizada en el mundo después del agua, con más de 35 mil millones de toneladas producidas cada año. Sin embargo, comprender las propiedades atómicas y mecánicas del principal componente del concreto, los hidratos de cemento de silicato de calcio (C-S-H), la fase aglutinante compleja del concreto, sigue siendo un desafío.
 
-En este proyecto, nuestro objetivo es investigar las propiedades atómicas y mecánicas de los hidratos de cemento utilizando teoría de funcionales de densidad (DFT) y herramientas de aprendizaje automático (ML). Comenzaremos utilizando DFT para estudiar la estructura electrónica, los enlaces y las respuestas mecánicas de C-S-H a nivel atómico. Posteriormente, utilizaremos dinámica molecular \emph{ab initio} (AIMD) junto con ML para crear un campo de fuerza en tiempo real de C-S-H, lo que nos permitirá simular con precisión y capturar las complejas interacciones atómicas de los hidratos de cemento, reduciendo al mismo tiempo el tiempo de cálculo. Al integrar DFT, AIMD y ML, buscamos proporcionar una comprensión más profunda de las propiedades fundamentales de C-S-H y desarrollar un modelo predictivo que pueda orientar el diseño de materiales de concreto más sostenibles y duraderos. \cite{Oey} 
+En este proyecto, nuestro objetivo es investigar las propiedades atómicas y mecánicas de los hidratos de cemento utilizando teoría de funcionales de densidad (DFT) y herramientas de aprendizaje automático (ML). Comenzaremos utilizando DFT para estudiar la estructura electrónica, los enlaces y las respuestas mecánicas de C-S-H a nivel atómico. Posteriormente, utilizaremos dinámica molecular \emph{ab initio} (AIMD) junto con ML para crear un campo de fuerza en tiempo real de C-S-H, lo que nos permitirá simular con precisión y capturar las complejas interacciones atómicas de los hidratos de cemento, reduciendo al mismo tiempo el tiempo de cálculo. Al integrar DFT, AIMD y ML, buscamos proporcionar una comprensión más profunda de las propiedades fundamentales de C-S-H y desarrollar un modelo predictivo que pueda orientar el diseño de materiales de concreto más sostenibles y duraderos. 
  \\
  \\
  \emph{\textbf{Palabras clave:}}
 \end{Resumen}
 
 \begin{abstract} 
-Concrete is the second-most-used substance in the world after water, with more than 20 billion tons produced, every year. Yet, understanding the atomic and mechanical properties of the main component of concrete, calcium-silicate-hydrate (C-S-H) cement hydrates--the complex binder phase of concrete---still poses a challenge.
+Concrete is the second-most-used substance in the world after water, with more than 35 billion tons produced, every year. Yet, understanding the atomic and mechanical properties of the main component of concrete, calcium-silicate-hydrate (C-S-H) cement hydrates--the complex binder phase of concrete---still poses a challenge.
   
-In this project, we aim to investigate the atomic and mechanical properties of cement hydrates leveraging density-functional theory (DFT) and machine learning (ML) tools. We will first start by using DFT to study the electronic structure, bonding, and mechanical responses of C-S-H  at the atomic level. Afterwards, we will use \emph{ab initio} molecular dynamics (AIMD) with ML to create a force field on the fly of C-S-H, which will allow us to accurately simulate and capture the complex atomic interactions of cement hydrates while reducing the computation time. By integrating both DFT, AIMD and ML, we seek to provide deeper insights into the fundamental properties of C-S-H and to develop a predictive model that could inform the design of more sustainable and durable concrete materials. \cite{Oey}
+In this project, we aim to investigate the atomic and mechanical properties of cement hydrates leveraging density-functional theory (DFT) and machine learning (ML) tools. We will first start by using DFT to study the electronic structure, bonding, and mechanical responses of C-S-H  at the atomic level. Afterwards, we will use \emph{ab initio} molecular dynamics (AIMD) with ML to create a force field on the fly of C-S-H, which will allow us to accurately simulate and capture the complex atomic interactions of cement hydrates while reducing the computation time. By integrating both DFT, AIMD and ML, we seek to provide deeper insights into the fundamental properties of C-S-H and to develop a predictive model that could inform the design of more sustainable and durable concrete materials.
  \\
   \\
  \emph{\textbf{Keywords:}}
@@ -174,10 +175,13 @@ In this project, we aim to investigate the atomic and mechanical properties of c
 \mainbody
 %############################# Introduction #################################
 \chapter{Introduction}\label{Introduction}\glsresetall 
-  Concrete is the synthetic material currently produced in volumes larger than any other material on Earth, with more than 20 billion tons produced every year  [cite]. The main component\cite{Pellenq2009} 
-  \cite{Qomi2020}
 
-  \section{Background}\label{Background}
+  \section{Background}\label{Background} 
+  Concrete is the synthetic material currently produced in volumes larger than any other material on Earth. With an annual consumption of approximately 35 billion tonnes, it is only second to water in terms of global usage\cite{Monteiro2017, VanDamme2018}. As the backbone of modern infrastructure, it provides the foundations for buildings, bridges, roads, dams, and other structures essential for societal development. Its widespread adoption arises from a unique combination of strength, versatility, and cost-effectiveness\cite{Mehta2014}, rendering it indispensable to the construction industry.
+
+
+  Nevertheless, despite the ubiquity of concrete, the properties of its key constituent, cement, remain incompletely understood. Cement is a chemically complex material, composed of a heterogeneous mixture of minerals that undergo a series of hydration reactions upon contact with water. The principal product of cement hydration---and the primary binding phase of concrete--- calcium silicate hydrate (C-S-H) is the responsible for the mechanical strength, chemical and transport properties and durability of hardened cement paste and, consequently, of concrete itself\cite{Papatzani2015, Qomi2020, Bahraq2022}.
+
 
 %insert a figure 
   \begin{figure}[H]
@@ -186,6 +190,31 @@ In this project, we aim to investigate the atomic and mechanical properties of c
     \caption{Caption}
     \label{fig:C-S-H}
   \end{figure}
+
+
+  \section{Problem Statement}\label{Problem Statement}
+
+
+  \section{Objectives}\label{Objectives}
+  
+  \subsection{General Objective}\label{General Objective}
+
+  \subsection{Specific Objectives}\label{Specific Objectives}
+
+
+
+\chapter{Theoretical Background}\label{Theoretical Background}
+
+\section{Many-Body Schrödinger Equation}\label{Many Body Schrödinger Equation}
+
+\section{The Born-Oppenheimer Approximation}\label{The Born-Oppenheimer Approximation}
+
+\section{Density Functional Theory}\label{Density Functional Theory}
+
+
+
+
+
 
 
 
