@@ -117,3 +117,18 @@ LCHR
 >- [x] Check INCAR file 
 >- [x] df
 
+
+***
+## **Date:** 2025-03-20
+
+>[!TODO]
+>- [x] Compute RCUT1 errors for a larger range, so we can find a minimum. 
+>- [ ] Simulated annealing is the next step after finding good hyperparameters
+>- [ ] EOS using simulated annealing!!
+>- [ ] 800 K - Room T 
+>- [ ] Run MD for the new hyperparameters!
+>- [ ] Compute the corresponding errors 
+
+
+
+
