@@ -1,4 +1,4 @@
-figures
+
 tex-file/AUTORÍA-signed.pdf
 tex-file/Caratula.pdf
 tex-file/AUTORIZACIÓN-DE-PUBLICACIÓN-signed.pdf
@@ -19,3 +19,12 @@ md_chs.mp4
 notebooks/.ipynb_checkpoints
 presentation_new
 presentation-1/
+figures/levels.pdf
+figures/md_chs.mp4
+figures/thesis_figures.svg
+figures/encut-vasp.svg
+figures/encut-window.svg
+figures/betaC2S.png
+figures/C3S.png
+figures/CH.png
+figures/H20.png

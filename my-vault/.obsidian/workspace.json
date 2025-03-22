@@ -4,56 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "dc498e7c41f08c80",
+        "id": "786f6a8fb3292d8c",
         "type": "tabs",
         "children": [
           {
-            "id": "5fbb03956b4f4d0e",
+            "id": "6c09e364c8788963",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Advanced Programming/Lectures/AP - Lecture 5 - Containers.md",
+                "file": "Bachelor Thesis/Meetings/Meetings.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "AP - Lecture 5 - Containers"
-            }
-          },
-          {
-            "id": "287264adda0cd2be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily Life/2025-03-19.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-03-19"
-            }
-          },
-          {
-            "id": "bd0feab9bc3b53bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025 Resolutions mate!!!.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2025 Resolutions mate!!!"
+              "title": "Meetings"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,6 +156,7 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
@@ -194,18 +164,26 @@
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "vscode-editor:Create Code File": false,
       "terminal:Open terminal": false,
-      "callout-manager:Insert Callout": false,
-      "workspaces:Manage workspace layouts": false
+      "callout-manager:Insert Callout": false
     }
   },
-  "active": "bd0feab9bc3b53bc",
+  "active": "6c09e364c8788963",
   "lastOpenFiles": [
+    "Daily Life/2025-03-20.md",
     "Daily Life/2025-03-19.md",
-    "2025 Resolutions mate!!!.md",
     "Daily Life/2025-03-17.md",
+    "Bachelor Thesis/Meetings/Meetings.md",
+    "Bachelor Thesis/Meetings/Progress.md",
+    "Bachelor Thesis/Bachelor Thesis.md",
+    "Advanced Programming/Lectures/AP - Lecture 11 - Functions and Lambdas.md",
+    "Advanced Programming/Lectures/captures.png.png",
     "Advanced Programming/Lectures/AP - Lecture 10 - Template Functions.md",
-    "Advanced Programming/Lectures/AP - Lecture 9 - Template Clases.md",
+    "Daily Life/2025 Resolutions mate!!!.md",
     "Advanced Programming/Lectures/AP - Lecture 5 - Containers.md",
+    "Daily Life/2025-03-14.md",
+    "Advanced Programming/Projects/Midterm Project.md",
+    "Advanced Programming/Projects/Final Project.md",
+    "Advanced Programming/Lectures/AP - Lecture 9 - Template Clases.md",
     "Advanced Programming/Lectures/stl-set.png.png",
     "Advanced Programming/Lectures/map-implementation.png.png",
     "Bachelor Thesis/Outline/First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
@@ -215,10 +193,6 @@
     "Advanced Programming/Lectures/AP - Lecture 8 - Classes.md",
     "Advanced Programming/Lectures/STL.png.png",
     "Advanced Programming/Lectures/stl-containers.png.png",
-    "Daily Life/2025-03-14.md",
-    "Bachelor Thesis/Bachelor Thesis.md",
-    "Bachelor Thesis/Meetings/Meetings.md",
-    "Bachelor Thesis/Meetings/Progress.md",
     "Bachelor Thesis/Useful tools",
     "Bachelor Thesis/Outline",
     "Bachelor Thesis/Meetings",
@@ -230,19 +204,14 @@
     "Advanced Programming/Lectures/Pasted image 20250227080701.png",
     "Advanced Programming/Lectures/AP - Lecture 2 - Types and Structures.md",
     "Advanced Programming/Lectures/AP - Lecture 3 - Initialisation and References.md",
-    "Advanced Programming/Projects/Midterm Project.md",
-    "Advanced Programming/Projects/Final Project.md",
     "Artificial Intelligence/AI - Introduction.md",
     "Artificial Intelligence/Lectures/AI - Lecture 2 - Informed Search.md",
     "Artificial Intelligence/Lectures/AI - Lecture 1 - Uninformed Search.md",
     "Advanced Programming/Lectures/AP - Lecture 1 - Introduction.md",
     "Artificial Intelligence/Lectures",
-    "Some useful tools.md",
     "Advanced Programming/Lectures",
-    "2025-02-12.md",
     "Untitled.canvas",
     "Artificial Intelligence",
-    "Lectures/CNN and QCNN.md",
     "Advanced Programming/Projects",
     "sections"
   ]
