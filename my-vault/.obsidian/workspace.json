@@ -4,11 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "786f6a8fb3292d8c",
+        "id": "685368f028d31a0d",
         "type": "tabs",
         "children": [
           {
-            "id": "6c09e364c8788963",
+            "id": "5d0ed89f4d7ad30c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "My Life/Daily Goals/2025-04-15.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-04-15"
+            }
+          },
+          {
+            "id": "6c7c3348af247ace",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,8 +36,23 @@
               "icon": "lucide-file",
               "title": "Meetings"
             }
+          },
+          {
+            "id": "5205173adf7eda5a",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://dictionary.cambridge.org/us/dictionary/english/bring-up",
+                "title": "BRING SOMEONE UP definition | Cambridge English Dictionary",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "BRING SOMEONE UP definition | Cambridge English Dictionary"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,12 +125,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
+                "file": "AP - Lecture 12 - Operator Overloading.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates"
+              "title": "Outgoing links from AP - Lecture 12 - Operator Overloading"
             }
           },
           {
@@ -140,6 +170,16 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "01f18b1ef6e3fe2b",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
         "currentTab": 3
@@ -164,55 +204,58 @@
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "vscode-editor:Create Code File": false,
       "terminal:Open terminal": false,
-      "callout-manager:Insert Callout": false
+      "callout-manager:Insert Callout": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "6c09e364c8788963",
+  "active": "6c7c3348af247ace",
   "lastOpenFiles": [
-    "Daily Life/2025-03-20.md",
-    "Daily Life/2025-03-19.md",
-    "Daily Life/2025-03-17.md",
-    "Bachelor Thesis/Meetings/Meetings.md",
-    "Bachelor Thesis/Meetings/Progress.md",
-    "Bachelor Thesis/Bachelor Thesis.md",
-    "Advanced Programming/Lectures/AP - Lecture 11 - Functions and Lambdas.md",
-    "Advanced Programming/Lectures/captures.png.png",
-    "Advanced Programming/Lectures/AP - Lecture 10 - Template Functions.md",
-    "Daily Life/2025 Resolutions mate!!!.md",
+    "My Life/Languages/Favourite Words.md",
+    "My Life/Daily Goals/2025-04-15.md",
+    "Advanced Programming/Lectures/AP - Lecture 6 - Iterators & Pointers.md",
     "Advanced Programming/Lectures/AP - Lecture 5 - Containers.md",
-    "Daily Life/2025-03-14.md",
-    "Advanced Programming/Projects/Midterm Project.md",
-    "Advanced Programming/Projects/Final Project.md",
-    "Advanced Programming/Lectures/AP - Lecture 9 - Template Clases.md",
-    "Advanced Programming/Lectures/stl-set.png.png",
-    "Advanced Programming/Lectures/map-implementation.png.png",
-    "Bachelor Thesis/Outline/First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
-    "Advanced Programming/Lectures/stl-map.png.png",
+    "Advanced Programming/Figures/containers-summary.png.png",
+    "Bachelor Thesis/Meetings/Meetings.md",
+    "Bachelor Thesis/Bachelor Thesis.md",
+    "Advanced Programming/Lectures/AP - Lecture 14 - std optional and Type Safety.md",
+    "Advanced Programming/Lectures/AP - Lecture 13 - Move Semantics.md",
+    "Advanced Programming/Lectures/AP - Lecture 12 - Special Member Functions.md",
+    "Advanced Programming/Lectures/AP - Lecture 11 - Operator Overloading.md",
+    "Advanced Programming/Lectures/AP - Lecture 10 - Functions and Lambdas.md",
+    "Advanced Programming/Lectures/AP - Lecture 9 - Template Functions.md",
+    "Advanced Programming/Lectures/AP - Lecture 8 - Template Clases.md",
+    "Advanced Programming/Lectures/AP - Lecture 7 - Classes.md",
+    "My Life/My Life.md",
+    "Advanced Programming/Advanced Programming.md",
+    "Artificial Intelligence/Artificial Intelligence.md",
+    "Quantum Computing Club/Quantum Computing Club.md",
+    "My Life/Thoughts",
+    "Advanced Programming/Lectures/AP - Lecture 1 - Introduction.md",
+    "My Life/Daily Goals/2025-03-14.md",
+    "My Life/Languages",
+    "My Life/Languages/Lieblingswörter.md",
+    "My Life/Languages/Mots préférés.md",
+    "My Life/Daily Goals",
+    "Quantum Computing Club",
+    "Daily Life/Motivation Letter.md",
+    "Advanced Programming/Figures/smf.png.png",
+    "Advanced Programming/Lectures/AP - Lecture 2 - Types and Structures.md",
+    "Advanced Programming/Lectures/AP - Lecture 3 - Initialisation and References.md",
     "Advanced Programming/Lectures/AP - Lecture 4 - Streams.md",
-    "Advanced Programming/Lectures/AP - Lecture 6 - Iterators.md",
-    "Advanced Programming/Lectures/AP - Lecture 8 - Classes.md",
+    "Advanced Programming/Figures/pointers.png.png",
+    "Advanced Programming/Figures/iterators.png.png",
+    "Advanced Programming/Figures/std-containers.png.png",
+    "Advanced Programming/Figures",
+    "Advanced Programming/Figures/captures.png.png",
+    "Advanced Programming/Figures/stl-set.png.png",
+    "Advanced Programming/Figures/map-implementation.png.png",
+    "Advanced Programming/Figures/stl-map.png.png",
     "Advanced Programming/Lectures/STL.png.png",
-    "Advanced Programming/Lectures/stl-containers.png.png",
     "Bachelor Thesis/Useful tools",
     "Bachelor Thesis/Outline",
     "Bachelor Thesis/Meetings",
     "Bachelor Thesis",
-    "Daily Life",
-    "Advanced Programming/AP - Introduction.md",
-    "Advanced Programming/Lectures/class-vs-struct.png.png",
-    "Advanced Programming/Lectures/std_stl_vector.png.png",
-    "Advanced Programming/Lectures/Pasted image 20250227080701.png",
-    "Advanced Programming/Lectures/AP - Lecture 2 - Types and Structures.md",
-    "Advanced Programming/Lectures/AP - Lecture 3 - Initialisation and References.md",
-    "Artificial Intelligence/AI - Introduction.md",
-    "Artificial Intelligence/Lectures/AI - Lecture 2 - Informed Search.md",
-    "Artificial Intelligence/Lectures/AI - Lecture 1 - Uninformed Search.md",
-    "Advanced Programming/Lectures/AP - Lecture 1 - Introduction.md",
-    "Artificial Intelligence/Lectures",
-    "Advanced Programming/Lectures",
-    "Untitled.canvas",
-    "Artificial Intelligence",
-    "Advanced Programming/Projects",
-    "sections"
+    "My Life",
+    "Untitled.canvas"
   ]
 }

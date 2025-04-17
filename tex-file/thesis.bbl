@@ -1,6 +1,6 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}  {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{6}
+\begin{mcitethebibliography}{8}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -42,6 +42,12 @@ Papatzani,~S.; Paine,~K.; {Calabria-Holley},~J. A Comprehensive Review of the Mo
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Ioannidou \textit{et~al.}(2016)Ioannidou, Krakowiak, Bauchy, Hoover, Masoero, Yip, Ulm, Levitz, Pellenq, and Del~Gado]{Ioannidou2016}
+Ioannidou,~K.; Krakowiak,~K.~J.; Bauchy,~M.; Hoover,~C.~G.; Masoero,~E.; Yip,~S.; Ulm,~F.-J.; Levitz,~P.; Pellenq,~R. J.-M.; Del~Gado,~E. Mesoscale Texture of Cement Hydrates. \href{http://dx.doi.org/10.1073/pnas.1520487113}{\emph{Proceedings of the National Academy of Sciences}} \textbf{2016}, \emph{113}, 2029--2034\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Qomi \textit{et~al.}(2020)Qomi, Bauchy, and Pellenq]{Qomi2020}
 Qomi,~M. J.~A.; Bauchy,~M.; Pellenq,~R. J.-M. In \emph{Handbook of {{Materials Modeling}}: {{Applications}}: {{Current}} and {{Emerging Materials}}}; Andreoni,~W., Yip,~S., Eds.; Springer International Publishing: Cham, 2020; pp 1761--1792\relax
 \mciteBstWouldAddEndPuncttrue
@@ -50,6 +56,12 @@ Qomi,~M. J.~A.; Bauchy,~M.; Pellenq,~R. J.-M. In \emph{Handbook of {{Materials M
 \EndOfBibitem
 \bibitem[Bahraq \textit{et~al.}(2022)Bahraq, {Al-Osta}, {Baghabra Al-Amoudi}, Obot, Maslehuddin, Ahmed, and Saleh]{Bahraq2022}
 Bahraq,~A.~A.; {Al-Osta},~M.~A.; {Baghabra Al-Amoudi},~O.~S.; Obot,~I.~B.; Maslehuddin,~M.; Ahmed,~H.-u.-R.; Saleh,~T.~A. Molecular {{Simulation}} of {{Cement-Based Materials}} and {{Their Properties}}. \href{http://dx.doi.org/10.1016/j.eng.2021.06.023}{\emph{Engineering}} \textbf{2022}, \emph{15}, 165--178\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Barbhuiya and Das(2023)Barbhuiya, and Das]{Barbhuiya2023}
+Barbhuiya,~S.; Das,~B.~B. Molecular Dynamics Simulation in Concrete Research: {{A}} Systematic Review of Techniques, Models and Future Directions. \href{http://dx.doi.org/10.1016/j.jobe.2023.107267}{\emph{Journal of Building Engineering}} \textbf{2023}, \emph{76}, 107267\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

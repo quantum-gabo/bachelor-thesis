@@ -9,7 +9,11 @@ Hello!! I have designated this section of my Obsidian vault to keep track of all
 - **Purple:** Connections to my thesis 
 - **Red:** Critical statements 
 
-## Vocabulary 
-Hindering
-Elusive 
-Uttermost 55
+%% Begin Waypoint %%
+- **[[Meetings]]**
+	- [[Progress]]
+- **Outline**
+	- [[First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates]]
+- **Useful tools**
+
+%% End Waypoint %%

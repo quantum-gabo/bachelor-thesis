@@ -14,5 +14,7 @@
   "obsidian-list-callouts",
   "callout-manager",
   "execute-code",
-  "quick-explorer"
+  "quick-explorer",
+  "omnisearch",
+  "waypoint"
 ]
