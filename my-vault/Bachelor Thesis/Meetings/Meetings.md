@@ -129,6 +129,54 @@ LCHR
 >- [ ] Run MD for the new hyperparameters!
 >- [ ] Compute the corresponding errors 
 
+***
+## **Date:** 2025-03-27
+
+>[!Updates]
+>- ...
+
+>[!TODO]
+>- [x] Two cases, using the local minima! 
+>- [x] Change 4% volume and plot the results
+>- [x] EOS using simulated annealing!!
+>- [ ] 800 K - Room T 
+>- [x] Run MD for the new hyperparameters!
+>- [ ] Compute the corresponding errors 
+>- [ ] Elastic tensor, a possiblility! Physical Properties of Crystals.
+>- [x] Compute 2% of the total volume, then define a range [totvol - 2%, totvol + 2%] and generate 15 points.
+>- [ ] Check OUTCAR.rxo, 20 steps
+
+/users/project1/scratch2/jagla/jgb/ml/refitted_ml/model-1
+
+/users/project1/scratch2/jagla/jgb/ml/refitted_ml/model-2/ML_ABN
+
+***
+## **Date:** 2025-04-03
+
+>[!TODO] 
+>- [ ] Compute the EOS for the two models and the Bulk modulus. 
+>- [ ] If the Energy-Volume plot does not goes smoothly, reduce the range and half the volume step.
+>- [ ] If the calculations continue to be inconsistent, take the lowest energy structures (5-8) from the prediction state, and look for differences (Vesta).
+>- [ ] Relax the structure(s) with lowest energy, using IBRION=2, ISIF=3
+
+>[!Question] What is the effect of temperature on the Bulk modulus?
+
+***
+## **Date:** 2025-04-10
+
+> [!done] Updates
+> -  We have computed the `EOS` for both models. **Model 1** with `RCUT1=36` & `RCUT2=4` has a negative derivative of the bulk modulus. This result could be related to overfitting  in the `RCUT1` parameter. On the other hand, **Model 2** with `RCUT1=17` & `RCUT2=4` gives us a consistent value for the Bulk modulus and its derivative. 
+> - The Bulk modulus result is: `51.0563 GPa`
+> - Preliminary comparisons with some experimental measurements gives us a consistent agreement with our result. However, some parameters are not consistent, therefore, we cannot relate our results 100% with experimental setups.
+
+>[!ToDo]
+>- [ ] Compute another EOS using force field, the last structure from MD and perform simulated annealing. Take the one that has the lowest energy. Copy the CONTCAR file, then lower the temperature slowly till we reach 0 K.  
+>- [ ] Take the last structure, since we want to begin the simulated annealing from the last temperature. 
+>- [ ] 
+
+>[!NOTE]
+>- If the lattice parameters do not agree, it is not such a big problem, since it depends on the coordinates system the authors are reporting their results. 
 
 
 
+rm cem1* CH* vasp* DOSCAR IBZKPT EIGENVAL HILLSPOT ICONST INCAR.sa ML_LOGFILE OSZICAR OUTCAR parll-param PCDAT REPORT WAVECAR XDATCAR 
