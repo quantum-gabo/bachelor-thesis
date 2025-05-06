@@ -1,0 +1,247 @@
+{
+  "main": {
+    "id": "1916765cb1d20b3e",
+    "type": "split",
+    "children": [
+      {
+        "id": "883fc259bac4dd5d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4c2494a3241d99f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "My Life/Daily Goals/2025-05-04.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-05-04"
+            }
+          },
+          {
+            "id": "c575d6e5774a782c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Advanced Programming/Projects/Final Project.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Final Project"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f1ecd7135abba711",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb0039185536047b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ba87b4fed873c5a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2e4b148833fadc27",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "993233db9649a343",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 251.50260543823242
+  },
+  "right": {
+    "id": "507875315e187aaa",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf13aa3a4a990e51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "27c00c156ccbefb4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "AP - Lecture 12 - Operator Overloading.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from AP - Lecture 12 - Operator Overloading"
+            }
+          },
+          {
+            "id": "4ffccf525afe0f19",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f0d6ccf93ff03390",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Lectures/Lecture 2 - Types and Structures.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Lecture 2 - Types and Structures"
+            }
+          },
+          {
+            "id": "70d7008c423458d5",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "01f18b1ef6e3fe2b",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 258.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "vscode-editor:Create Code File": false,
+      "terminal:Open terminal": false,
+      "callout-manager:Insert Callout": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "c575d6e5774a782c",
+  "lastOpenFiles": [
+    "Advanced Programming/Projects/Midterm Project.md",
+    "Bachelor Thesis/Bachelor Thesis.md",
+    "My Life/Daily Goals/2025-05-04.md",
+    "My Life/Daily Goals/2025-04-29.md",
+    "My Life/Daily Goals/2025-04-30.md",
+    "My Life/Daily Goals/2025-05-01.md",
+    "My Life/Daily Goals/2025-05-02.md",
+    "My Life/Daily Goals/2025-05-03.md",
+    "Bachelor Thesis/Outline/Presentations.md",
+    "Bachelor Thesis/Outline/First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
+    "Bachelor Thesis/Meetings/Meetings.md",
+    "Advanced Programming/Projects/Final Project.md",
+    "Advanced Programming/Lectures/AP - Lecture 8 - Template Clases.md",
+    "Advanced Programming/Lectures/AP - Lecture 7 - Classes.md",
+    "My Life/Motivation Letter.md",
+    "My Life/Languages/Favourite Words.md",
+    "Advanced Programming/Lectures/AP - Lecture 16 - Compiling and Links C & C++ Programs.md",
+    "My Life/My Life.md",
+    "Advanced Programming/Figures/classes.png.png",
+    "My Life/Daily Goals/2025-04-28.md",
+    "My Life/Daily Goals/2025-04-27.md",
+    "Advanced Programming/Lectures/AP - Lecture 6 - Iterators & Pointers.md",
+    "Advanced Programming/Lectures/AP - Lecture 15 - Smart Pointers and Building.md",
+    "My Life/Daily Goals/2025-04-21.md",
+    "My Life/Daily Goals/2025-04-22.md",
+    "My Life/Daily Goals/2025-04-23.md",
+    "My Life/Daily Goals/2025-04-24.md",
+    "Advanced Programming/Figures/lec15.png",
+    "Advanced Programming/Figures/containers-summary.png.png",
+    "My Life/Thoughts",
+    "My Life/Languages",
+    "My Life/Daily Goals",
+    "Quantum Computing Club",
+    "Advanced Programming/Figures/smf.png.png",
+    "Advanced Programming/Figures/pointers.png.png",
+    "Advanced Programming/Figures/iterators.png.png",
+    "Advanced Programming/Figures/std-containers.png.png",
+    "Advanced Programming/Figures",
+    "Advanced Programming/Figures/captures.png.png",
+    "Advanced Programming/Figures/stl-set.png.png",
+    "Advanced Programming/Figures/map-implementation.png.png",
+    "Bachelor Thesis/Useful tools",
+    "Bachelor Thesis/Outline",
+    "Bachelor Thesis/Meetings",
+    "Bachelor Thesis",
+    "My Life",
+    "Untitled.canvas"
+  ]
+}

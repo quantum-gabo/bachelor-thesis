@@ -1,0 +1,47 @@
+{
+  "history": {
+    "2025-02-16": {
+      "words": 0,
+      "characters": 1,
+      "sentences": 0,
+      "pages": 0,
+      "files": 5,
+      "footnotes": 0,
+      "citations": 0,
+      "totalWords": 818,
+      "totalCharacters": 5548,
+      "totalSentences": 35,
+      "totalFootnotes": 171,
+      "totalCitations": 171,
+      "totalPages": 2.8000000000000003
+    }
+  },
+  "modifiedFiles": {
+    "Lectures/Lecture 2 - Types and Structures.md": {
+      "words": {
+        "initial": 559,
+        "current": 559
+      },
+      "characters": {
+        "initial": 3784,
+        "current": 3785
+      },
+      "sentences": {
+        "initial": 19,
+        "current": 19
+      },
+      "footnotes": {
+        "initial": 0,
+        "current": 0
+      },
+      "citations": {
+        "initial": 0,
+        "current": 0
+      },
+      "pages": {
+        "initial": 1.9,
+        "current": 1.9
+      }
+    }
+  }
+}

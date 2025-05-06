@@ -1,0 +1,10 @@
+{
+  "Appearance-dark@@accent-color-override-dark": true,
+  "Appearance-light@@card-layout-open-light": true,
+  "Appearance-light@@theme-light-style-select": "theme-light-background-adapt",
+  "Appearance-light@@accent-color-override-light": false,
+  "Appearance-light@@background-underlying-select-light": "background-underlying-Color-light",
+  "Components@@CTA-BTN-enable": true,
+  "Components@@outline-enhanced": true,
+  "Components@@immersive-canvas": true
+}
