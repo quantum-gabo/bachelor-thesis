@@ -163,8 +163,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -196,9 +196,10 @@
   },
   "active": "c575d6e5774a782c",
   "lastOpenFiles": [
+    "My Life/Daily Goals/2025-05-04.md",
+    "Advanced Programming/Projects/Final Project.md",
     "Advanced Programming/Projects/Midterm Project.md",
     "Bachelor Thesis/Bachelor Thesis.md",
-    "My Life/Daily Goals/2025-05-04.md",
     "My Life/Daily Goals/2025-04-29.md",
     "My Life/Daily Goals/2025-04-30.md",
     "My Life/Daily Goals/2025-05-01.md",
@@ -207,7 +208,6 @@
     "Bachelor Thesis/Outline/Presentations.md",
     "Bachelor Thesis/Outline/First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.md",
     "Bachelor Thesis/Meetings/Meetings.md",
-    "Advanced Programming/Projects/Final Project.md",
     "Advanced Programming/Lectures/AP - Lecture 8 - Template Clases.md",
     "Advanced Programming/Lectures/AP - Lecture 7 - Classes.md",
     "My Life/Motivation Letter.md",
