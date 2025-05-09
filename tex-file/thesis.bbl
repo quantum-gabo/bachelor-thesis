@@ -1,6 +1,6 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}  {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{8}
+\begin{mcitethebibliography}{13}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -62,6 +62,36 @@ Bahraq,~A.~A.; {Al-Osta},~M.~A.; {Baghabra Al-Amoudi},~O.~S.; Obot,~I.~B.; Masle
 \EndOfBibitem
 \bibitem[Barbhuiya and Das(2023)Barbhuiya, and Das]{Barbhuiya2023}
 Barbhuiya,~S.; Das,~B.~B. Molecular Dynamics Simulation in Concrete Research: {{A}} Systematic Review of Techniques, Models and Future Directions. \href{http://dx.doi.org/10.1016/j.jobe.2023.107267}{\emph{Journal of Building Engineering}} \textbf{2023}, \emph{76}, 107267\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Pellenq \textit{et~al.}(2009)Pellenq, Kushima, Shahsavari, Van~Vliet, Buehler, Yip, and Ulm]{Pellenq2009}
+Pellenq,~R. J.-M.; Kushima,~A.; Shahsavari,~R.; Van~Vliet,~K.~J.; Buehler,~M.~J.; Yip,~S.; Ulm,~F.-J. A Realistic Molecular Model of Cement Hydrates. \href{http://dx.doi.org/10.1073/pnas.0902180106}{\emph{Proceedings of the National Academy of Sciences}} \textbf{2009}, \emph{106}, 16102--16107\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Oh \textit{et~al.}(2012)Oh, Clark, Wenk, and Monteiro]{Oh2012}
+Oh,~J.~E.; Clark,~S.~M.; Wenk,~H.-R.; Monteiro,~P. J.~M. Experimental Determination of Bulk Modulus of 14 ~ {{{\AA}}} Tobermorite Using High Pressure Synchrotron {{X-ray}} Diffraction. \href{http://dx.doi.org/10.1016/j.cemconres.2011.11.004}{\emph{Cement and Concrete Research}} \textbf{2012}, \emph{42}, 397--403\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Li \textit{et~al.}(2022)Li, Yoon, Zhang, Rajabipour, Srubar~III, Dabo, and Radli{\'n}ska]{Li2022}
+Li,~Z.; Yoon,~J.; Zhang,~R.; Rajabipour,~F.; Srubar~III,~W.~V.; Dabo,~I.; Radli{\'n}ska,~A. Machine Learning in Concrete Science: Applications, Challenges, and Best Practices. \href{http://dx.doi.org/10.1038/s41524-022-00810-x}{\emph{npj Computational Materials}} \textbf{2022}, \emph{8}, 127\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Biernacki \textit{et~al.}(2017)Biernacki, Bullard, Sant, Brown, Glasser, Jones, Ley, Livingston, Nicoleau, Olek, Sanchez, Shahsavari, Stutzman, Sobolev, and Prater]{Biernacki2017}
+Biernacki,~J.~J.; Bullard,~J.~W.; Sant,~G.; Brown,~K.; Glasser,~F.~P.; Jones,~S.; Ley,~T.; Livingston,~R.; Nicoleau,~L.; Olek,~J.; Sanchez,~F.; Shahsavari,~R.; Stutzman,~P.~E.; Sobolev,~K.; Prater,~T. Cements in the 21st Century: {{Challenges}}, Perspectives, and Opportunities. \href{http://dx.doi.org/10.1111/jace.14948}{\emph{Journal of the American Ceramic Society}} \textbf{2017}, \emph{100}, 2746--2773\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Katsura and Tange(2019)Katsura, and Tange]{Katsura2019}
+Katsura,~T.; Tange,~Y. A {{Simple Derivation}} of the {{Birch}}--{{Murnaghan Equations}} of {{State}} ({{EOSs}}) and {{Comparison}} with {{EOSs Derived}} from {{Other Definitions}} of {{Finite Strain}}. \href{http://dx.doi.org/10.3390/min9120745}{\emph{Minerals}} \textbf{2019}, \emph{9}, 745\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
