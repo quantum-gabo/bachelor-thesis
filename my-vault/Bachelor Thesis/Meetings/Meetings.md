@@ -223,3 +223,9 @@ Refitted models, 3 eos,
 >- For our 300 K model, we did used `IVDW = 11`, since it makes sense to match the nature of the calculations from the beginning. So keep that in mind for future calculations. 
 
 
+
+
+st2
+
+use contcar rx2
+
