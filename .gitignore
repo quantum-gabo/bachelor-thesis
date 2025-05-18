@@ -8,6 +8,7 @@ py-env
 md_chs.mp4
 notebooks/.ipynb_checkpoints
 figures
+old-tex-file
 **/*.svg
 tex-file/Figures/*.pdf
 
