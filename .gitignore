@@ -1,36 +1,19 @@
-
-tex-file/AUTORÍA-signed.pdf
-tex-file/Caratula.pdf
-tex-file/AUTORIZACIÓN-DE-PUBLICACIÓN-signed.pdf
+# Add files and directories to ignore here 
 project_proposal
 cluster-files
 ebooks
 dftb
-presentation/.github
-presentation/.gitignore
-presentation/.npmignore
-presentation/LICENSE
-presentation/README.md
-presentation/demo.html
-presentation/examples/
 p4vasp
 py-env
 md_chs.mp4
 notebooks/.ipynb_checkpoints
-presentation_new
-presentation-1/
-figures/levels.pdf
-figures/md_chs.mp4
-figures/thesis_figures.svg
-figures/encut-vasp.svg
-figures/encut-window.svg
-figures/betaC2S.png
-figures/C3S.png
-figures/CH.png
-figures/H20.png
+figures
+**/*.svg
+tex-file/Figures/*.pdf
 
+# Ignore some files from my Obsidian vault 
 my-vault/Advanced Programming
 my-vault/My Life
 my-vault/Artificial Intelligence
 my-vault/Quantum Computing Club
-*svg
+

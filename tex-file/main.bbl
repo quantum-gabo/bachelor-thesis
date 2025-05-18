@@ -1,0 +1,423 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global/global}
+  \entry{Monteiro2017}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=MPJM}{%
+         family={Monteiro},
+         familyi={M\bibinitperiod},
+         given={Paulo J.\bibnamedelima M.},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MSA}{%
+         family={Miller},
+         familyi={M\bibinitperiod},
+         given={Sabbie\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Horvath},
+         familyi={H\bibinitperiod},
+         given={Arpad},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \keyw{Climate-change mitigation,Composites,Materials science}
+    \strng{namehash}{MPJMMSAHA1}
+    \strng{fullhash}{MPJMMSAHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Paulo J. M. Monteiro, Sabbie A. Miller and Arpad Horvath provide an overview of the challenges and accomplishments in reducing the environmental burden of concrete production.%
+    }
+    \verb{doi}
+    \verb 10.1038/nmat4930
+    \endverb
+    \field{issn}{1476-4660}
+    \field{number}{7}
+    \field{pages}{698\bibrangedash 699}
+    \field{title}{Towards Sustainable Concrete}
+    \field{volume}{16}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/qbit/Zotero/storage/8DP92EIR/Monteiro et al. - 2017 - Towards s
+    \verb ustainable concrete.pdf
+    \endverb
+    \field{journaltitle}{Nature Materials}
+    \field{month}{07}
+    \field{year}{2017}
+    \field{urlday}{16}
+    \field{urlmonth}{03}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{VanDamme2018}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=VDH}{%
+         family={Van\bibnamedelima Damme},
+         familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={Henri},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VDH1}
+    \strng{fullhash}{VDH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    Concrete is flying off, but it is simultaneously facing tremendous challenges in terms of environmental impact, financial needs, societal acceptance and image. Based on an historical approach of the science of concrete and reinforced concrete in particular, this paper calls for the exploration of radical changes in three key aspects of concrete use: reinforcement, binder content, and implementation methods. More precisely, it is suggested that, in parallel to the introduction of robotic fabrication methods, digital technologies may be key for the introduction several innovations like (i) rebar-free reinforcement using non-convex granular media; (ii) compression-optimized concrete structures, using topology optimization, architectural geometry, and 3D-printing or origami-patterned formworks; (iii) truly digital concrete through the coupling of massive data collection and deep learning.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.cemconres.2018.05.002
+    \endverb
+    \field{issn}{0008-8846}
+    \field{pages}{5\bibrangedash 24}
+    \field{series}{{{SI}} : {{Digital}} Concrete 2018}
+    \field{shorttitle}{Concrete Material Science}
+    \field{title}{Concrete Material Science: {{Past}}, Present, and Future Innovations}
+    \field{volume}{112}
+    \verb{file}
+    \verb /home/qbit/Zotero/storage/H4DV4PPH/Van Damme - 2018 - Concrete materi
+    \verb al science Past, present, and future innovations.pdf;/home/qbit/Zoter
+    \verb o/storage/4299PER6/S0008884618300802.html
+    \endverb
+    \field{journaltitle}{Cement and Concrete Research}
+    \field{month}{10}
+    \field{year}{2018}
+    \field{urlday}{16}
+    \field{urlmonth}{03}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Mehta2014}{incollection}{}{}
+    \name{author}{2}{}{%
+      {{hash=MPK}{%
+         family={Mehta},
+         familyi={M\bibinitperiod},
+         given={P.\bibnamedelima Kumar},
+         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=MPJM}{%
+         family={Monteiro},
+         familyi={M\bibinitperiod},
+         given={Paulo J.\bibnamedelima M.},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill Education}%
+    }
+    \strng{namehash}{MPKMPJM1}
+    \strng{fullhash}{MPKMPJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Concrete: {{Microstructure}}, {{Properties}}, and {{Materials}}}
+    \field{edition}{4th Edition}
+    \field{isbn}{978-0-07-179787-0}
+    \field{title}{Introduction}
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{2014}
+  \endentry
+
+  \entry{Papatzani2015}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=PS}{%
+         family={Papatzani},
+         familyi={P\bibinitperiod},
+         given={Styliani},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Paine},
+         familyi={P\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={{Calabria-Holley}},
+         familyi={C\bibinitperiod},
+         given={Juliana},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{C-S-H,Cement,Models,Nanostructure}
+    \strng{namehash}{PSPKCJ1}
+    \strng{fullhash}{PSPKCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The need to master factors affecting the performance of concrete has sparked research on its basic constituent, cement, whose properties are determined by one of the most critical cement hydration products, the calcium silicate hydrate. The present paper discusses the evolution of models describing the nanostructure of the calcium silicate hydrate (C--S--H) over the past century (descriptive models), with a focus on the models presented in the last fifteen years, 2000--2014 (descriptive and predictive models), marked with the breakthrough of nanotechnology. The purposes and outcomes of the suggested models are discussed, along with their limitations. The article concludes that notwithstanding the enormous potentials nanotechnology and advanced molecular modelling have offered in the field, modern models are, in essence, still expanding on the colloidal or layered models suggested in the 60s, rather than providing a ground breaking new approach. However, it is generally recognised that nanotechnology and molecular modelling have, facilitated the shift from descriptive to predictive models, saving time and resources by extrapolating results of very lengthy experiments, e.g. sorption isotherms, or by mathematically manipulating the C--S--H components to derive different structures and assemblages, that would have been difficult or impossible in practice. In that sense, the new experimental methods available, paired with analytical models are able to provide further justification of the pioneering studies and advance cement nanoscience, paving the way to the production of innovative, nanomodified cements, with minimum Portland cement content.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.conbuildmat.2014.10.029
+    \endverb
+    \field{issn}{0950-0618}
+    \field{pages}{219\bibrangedash 234}
+    \field{title}{A Comprehensive Review of the Models on the Nanostructure of Calcium Silicate Hydrates}
+    \field{volume}{74}
+    \verb{file}
+    \verb /home/qbit/Zotero/storage/IMQ8785A/Papatzani et al. - 2015 - A compre
+    \verb hensive review of the models on the nanostructure of calcium silicate
+    \verb  hydrates.pdf
+    \endverb
+    \field{journaltitle}{Construction and Building Materials}
+    \field{month}{01}
+    \field{year}{2015}
+    \field{urlday}{16}
+    \field{urlmonth}{03}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Ioannidou2016}{article}{}{}
+    \name{author}{10}{}{%
+      {{hash=IK}{%
+         family={Ioannidou},
+         familyi={I\bibinitperiod},
+         given={Katerina},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KKJ}{%
+         family={Krakowiak},
+         familyi={K\bibinitperiod},
+         given={Konrad\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bauchy},
+         familyi={B\bibinitperiod},
+         given={Mathieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HCG}{%
+         family={Hoover},
+         familyi={H\bibinitperiod},
+         given={Christian\bibnamedelima G.},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Masoero},
+         familyi={M\bibinitperiod},
+         given={Enrico},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yip},
+         familyi={Y\bibinitperiod},
+         given={Sidney},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=UFJ}{%
+         family={Ulm},
+         familyi={U\bibinitperiod},
+         given={Franz-Josef},
+         giveni={F\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Levitz},
+         familyi={L\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PRJM}{%
+         family={Pellenq},
+         familyi={P\bibinitperiod},
+         given={Roland J.-M.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=DGE}{%
+         family={Del\bibnamedelima Gado},
+         familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={Emanuela},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Proceedings of the National Academy of Sciences}%
+    }
+    \strng{namehash}{IK+1}
+    \strng{fullhash}{IKKKJBMHCGMEYSUFJLPPRJMDGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Strength and other mechanical properties of cement and concrete rely upon the formation of calcium--silicate--hydrates (C--S--H) during cement hydration. Controlling structure and properties of the C--S--H phase is a challenge, due to the complexity of this hydration product and of the mechanisms that drive its precipitation from the ionic solution upon dissolution of cement grains in water. Departing from traditional models mostly focused on length scales above the micrometer, recent research addressed the molecular structure of C--S--H. However, small-angle neutron scattering, electron-microscopy imaging, and nanoindentation experiments suggest that its mesoscale organization, extending over hundreds of nanometers, may be more important. Here we unveil the C--S--H mesoscale texture, a crucial step to connect the fundamental scales to the macroscale of engineering properties. We use simulations that combine information of the nanoscale building units of C--S--H and their effective interactions, obtained from atomistic simulations and experiments, into a statistical physics framework for aggregating nanoparticles. We compute small-angle scattering intensities, pore size distributions, specific surface area, local densities, indentation modulus, and hardness of the material, providing quantitative understanding of different experimental investigations. Our results provide insight into how the heterogeneities developed during the early stages of hydration persist in the structure of C--S--H and impact the mechanical performance of the hardened cement paste. Unraveling such links in cement hydrates can be groundbreaking and controlling them can be the key to smarter mix designs of cementitious materials.%
+    }
+    \verb{doi}
+    \verb 10.1073/pnas.1520487113
+    \endverb
+    \field{number}{8}
+    \field{pages}{2029\bibrangedash 2034}
+    \field{title}{Mesoscale Texture of Cement Hydrates}
+    \field{volume}{113}
+    \verb{file}
+    \verb /home/qbit/Zotero/storage/PAQ6KTEA/Ioannidou et al. - 2016 - Mesoscal
+    \verb e texture of cement hydrates.pdf
+    \endverb
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{month}{02}
+    \field{year}{2016}
+    \field{urlday}{16}
+    \field{urlmonth}{01}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Qomi2020}{incollection}{}{}
+    \name{author}{3}{}{%
+      {{hash=QMJA}{%
+         family={Qomi},
+         familyi={Q\bibinitperiod},
+         given={Mohammad Javad\bibnamedelima Abdolhosseini},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bauchy},
+         familyi={B\bibinitperiod},
+         given={Mathieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PRJM}{%
+         family={Pellenq},
+         familyi={P\bibinitperiod},
+         given={Roland J.-M.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=AW}{%
+         family={Andreoni},
+         familyi={A\bibinitperiod},
+         given={Wanda},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yip},
+         familyi={Y\bibinitperiod},
+         given={Sidney},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{QMJABMPRJM1}
+    \strng{fullhash}{QMJABMPRJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The more than 20 billion tons of concrete, produced every year, is responsible for 5--7\% of global anthropogenic carbon dioxide emissions. Yet, there is no other viable material that can substitute concrete to meet the need for civil infrastructure in the developed and developing countries. This leaves reducing concrete's carbon footprint as the only path forward to meet environmental targets. The strength and durability properties of concrete rely on the calcium-silicate-hydrate (CSH) phase that forms during cement hydration. Controlling the structure and properties of CSH phase is challenging, due to the intrinsic multiscale complexity of this hydration product that spans several orders of magnitude in length scale (from nanometers to microns). The existing lack in scientifically consistent insights into structure and properties of CSH has been the major obstacle to the development of greener formulations of modern concrete. In this chapter, we review how bridging general concepts from condense matter physics to cement and concrete research has revolutionized our contemporary understanding of the CSH phase and its making-up at the nanoscale, redefining this ubiquitous material described simultaneously as a spanning space continuous matrix and as a cohesive granular material that degrades and creeps over time.%
+    }
+    \field{booktitle}{Handbook of {{Materials Modeling}}: {{Applications}}: {{Current}} and {{Emerging Materials}}}
+    \verb{doi}
+    \verb 10.1007/978-3-319-44680-6_128
+    \endverb
+    \field{isbn}{978-3-319-44680-6}
+    \field{pages}{1761\bibrangedash 1792}
+    \field{title}{Nanoscale {{Composition-Texture-Property Relation}} in {{Calcium-Silicate-Hydrates}}}
+    \field{langid}{english}
+    \list{location}{1}{%
+      {Cham}%
+    }
+    \verb{file}
+    \verb /home/qbit/Zotero/storage/4UMPKPTB/Qomi et al. - 2020 - Nanoscale Com
+    \verb position-Texture-Property Relation in.pdf
+    \endverb
+    \field{year}{2020}
+    \field{urlday}{24}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Bahraq2022}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=BAA}{%
+         family={Bahraq},
+         familyi={B\bibinitperiod},
+         given={Ashraf\bibnamedelima A.},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=AMA}{%
+         family={{Al-Osta}},
+         familyi={A\bibinitperiod},
+         given={Mohammed\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BOS}{%
+         family={{Baghabra Al-Amoudi}},
+         familyi={B\bibinitperiod},
+         given={Omar\bibnamedelima S.},
+         giveni={O\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=OIB}{%
+         family={Obot},
+         familyi={O\bibinitperiod},
+         given={I.\bibnamedelima B.},
+         giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Maslehuddin},
+         familyi={M\bibinitperiod},
+         given={Mohammed},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AHuR}{%
+         family={Ahmed},
+         familyi={A\bibinitperiod},
+         given={Habib-ur-Rehman},
+         giveni={H\bibinithyphendelim u\bibinithyphendelim R\bibinitperiod},
+      }}%
+      {{hash=STA}{%
+         family={Saleh},
+         familyi={S\bibinitperiod},
+         given={Tawfik\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \keyw{Atomistic simulation,Cement phases,Hydration products,Molecular dynamics,Nanoengineering}
+    \strng{namehash}{BAA+1}
+    \strng{fullhash}{BAAAMABOSOIBMMAHuRSTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Hydrated cement is one of the complex composite systems due to the presence of multi-scale phases with varying morphologies. Calcium silicate hydrate, which is the principal binder phase in the hydrated cement, is responsible for the stiffness, strength, and durability of Portland cement concrete. To understand the mechanical and durability behavior of concrete, it is important to investigate the interactions of hydrated cement phases with other materials at the nanoscale. In this regard, the molecular simulation of cement-based materials is an effective approach to study the properties and interactions of the cement system at the fundamental scale. Recently, many studies have been published regarding atomistic simulations to investigate the cement phases to define/explain the microscopic physical and chemical properties, thereby improving the macroscopic performance of hardened binders. The research in molecular simulation of cementitious systems involves researchers with multidisciplinary backgrounds, mainly in two areas: \ding{172} cement chemistry, where the hydration reactions govern most of the chemical and physical properties at the atomic scale; and \ding{173} computational materials science and engineering, where the bottom-up approach is required. The latter approach is still in its infancy, and as such, a study of the prevailing knowledge is useful, namely through an exhaustive literature review. This state-of-the-art report provides a comprehensive survey on studies that were conducted in this area and cites the important findings.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.eng.2021.06.023
+    \endverb
+    \field{issn}{2095-8099}
+    \field{pages}{165\bibrangedash 178}
+    \field{title}{Molecular {{Simulation}} of {{Cement-Based Materials}} and {{Their Properties}}}
+    \field{volume}{15}
+    \verb{file}
+    \verb /home/qbit/Zotero/storage/I25AVSMV/Bahraq et al. - 2022 - Molecular S
+    \verb imulation of Cement-Based Materials and.pdf
+    \endverb
+    \field{journaltitle}{Engineering}
+    \field{month}{08}
+    \field{year}{2022}
+    \field{urlday}{17}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+\enddatalist
+\endinput

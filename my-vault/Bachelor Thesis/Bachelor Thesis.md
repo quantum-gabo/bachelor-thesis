@@ -11,9 +11,11 @@ Hello!! I have designated this section of my Obsidian vault to keep track of all
 
 %% Begin Waypoint %%
 - **[[Meetings]]**
+	- [[DFT]]
 	- [[Progress]]
 - **Outline**
 	- [[First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates]]
+	- [[Many-body Schrodinger Equation]]
 	- [[Presentations]]
 - **Useful tools**
 
