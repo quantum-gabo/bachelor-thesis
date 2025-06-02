@@ -223,3 +223,19 @@ Refitted models, 3 eos,
 >- For our 300 K model, we did used `IVDW = 11`, since it makes sense to match the nature of the calculations from the beginning. So keep that in mind for future calculations. 
 
 
+***
+## **Date:** 2025-04-10
+```bash
+touch * */* */*/* 
+```
+
+Consider memory 
+
+Retrain a existing system 
+
+Compute X-ray diffraction 
+
+Thermal expansion  (watch the tutorial!!!)
+
+
+

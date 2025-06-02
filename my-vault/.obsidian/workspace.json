@@ -28,23 +28,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "My Life/Daily Goals/2025-05-16.md",
+                "file": "My Life/Daily Goals/2025-05-24.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-05-16"
+              "title": "2025-05-24"
             }
           },
           {
             "id": "b0b5e66122a31e80",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Bachelor Thesis/Bachelor Thesis.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Bachelor Thesis"
             }
           },
           {
@@ -63,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -188,8 +193,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -219,16 +224,20 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "01ded31c0fc1c8e1",
+  "active": "b0b5e66122a31e80",
   "lastOpenFiles": [
-    "My Life/Mastering Poetic-Academic Grammar and Received Pronunciation (RP).md",
+    "Advanced Programming/Projects/Final Project.md",
+    "Bachelor Thesis/Meetings/Meetings.md",
+    "Advanced Programming/Advanced Programming.md",
+    "Advanced Programming/Lectures/AP - Lecture 6 - Iterators & Pointers.md",
+    "My Life/Daily Goals/2025-05-24.md",
     "My Life/Daily Goals/2025-05-16.md",
+    "My Life/Mastering Poetic-Academic Grammar and Received Pronunciation (RP).md",
     "Bachelor Thesis/Meetings/DFT.md",
     "My Life/Daily Goals/2025-05-14.md",
     "Bachelor Thesis/Outline/Many-body Schrodinger Equation.md",
     "My Life/My Life.md",
     "My Life/Motivation Letter.md",
-    "Bachelor Thesis/Meetings/Meetings.md",
     "Bachelor Thesis/Bachelor Thesis.md",
     "Untitled",
     "Bachelor Thesis/Meetings/Progress.md",
@@ -242,12 +251,8 @@
     "Advanced Programming/Projects/Midterm Project.md",
     "My Life/Languages/Favourite Words.md",
     "My Life/Daily Goals/2025-05-04.md",
-    "Advanced Programming/Projects/Final Project.md",
     "My Life/Daily Goals/2025-04-29.md",
     "My Life/Daily Goals/2025-04-30.md",
-    "My Life/Daily Goals/2025-05-01.md",
-    "My Life/Daily Goals/2025-05-02.md",
-    "My Life/Daily Goals/2025-05-03.md",
     "Advanced Programming/Figures/classes.png.png",
     "Advanced Programming/Figures/lec15.png",
     "Advanced Programming/Figures/containers-summary.png.png",
