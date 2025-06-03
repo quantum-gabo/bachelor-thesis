@@ -1,0 +1,26 @@
+# ICONST ml
+LR 1 7
+LR 2 7
+LR 3 7
+LA 2 3 7
+LA 1 3 7
+LA 1 2 7
+LV 7
+
+# ICONST MD
+LR 1 7
+LR 2 7
+LR 3 7
+LA 2 3 7
+LA 1 3 7
+LA 1 2 7
+LV 7
+
+# Directory for the working reffited MLFF
+/users/project1/scratch2/jagla/jgb/ml/refitted_ml/model-2
+
+# How to create a simbolic link for the MLFF
+ln -s /users/project1/scratch2/jagla/jgb/ml/ML_FFN ML_FF # original
+
+# Clean the dir after a unsuccessful run 
+rm OUTCAR PCDAT REPORT WAVECAR XDATCAR CHGCAR CHG DOSCAR EIGENVAL INCAR.md OSZICAR cem1.o* parll-param vasp*  ML_LOGFILE CONTCAR HILLSPOT IBZKPT 

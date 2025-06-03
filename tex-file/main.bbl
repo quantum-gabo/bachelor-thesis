@@ -419,5 +419,55 @@
     \field{urlmonth}{09}
     \field{urlyear}{2024}
   \endentry
+
+  \entry{AbdolhosseiniQomi2015}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=AQMJ}{%
+         family={Abdolhosseini\bibnamedelima Qomi},
+         familyi={A\bibinitperiod\bibinitdelim Q\bibinitperiod},
+         given={Mohammad\bibnamedelima Javad},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=UFJ}{%
+         family={Ulm},
+         familyi={U\bibinitperiod},
+         given={Franz-Josef},
+         giveni={F\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=PRJM}{%
+         family={Pellenq},
+         familyi={P\bibinitperiod},
+         given={Roland J.-M.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{AQMJUFJPRJM1}
+    \strng{fullhash}{AQMJUFJPRJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Despite the ever-increasing interest in multiscale porous materials, the chemophysical origin of their thermal properties at the nanoscale and its connection to the macroscale properties still remain rather obscure. In this paper, we link the atomic- and macroscopic-level thermal properties by combining tools of statistical physics and mean-field homogenization theory. We begin with analyzing the vibrational density of states of several calcium-silicate materials in the cement paste. Unlike crystalline phases, we indicate that calcium silicate hydrates (CSH) exhibit extra vibrational states at low frequencies ({$<$}2 THz) compared to the vibrational states predicted by the Debye model. This anomaly is commonly referred to as the boson peak in glass physics. In addition, the specific-heat capacity of CSH in both dry and saturated states scales linearly with the calcium-to-silicon ratio. We show that the nanoscale-confining environment of CSH decreases the apparent heat capacity of water by a factor of 4. Furthermore, full thermal conductivity tensors for all phases are calculated via the Green-Kubo formalism. We estimate the mean free path of phonons in calcium silicates to be on the order of interatomic bonds. This satisfies the scale separability condition and justifies the use of mean-field homogenization theories for upscaling purposes. Upscaling schemes yield a good estimate of the macroscopic specific-heat capacity and thermal conductivity of cement paste during the hydration process, independent of fitting parameters.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevApplied.3.064010
+    \endverb
+    \field{number}{6}
+    \field{pages}{064010}
+    \field{title}{Physical {{Origins}} of {{Thermal Properties}} of {{Cement Paste}}}
+    \field{volume}{3}
+    \verb{file}
+    \verb /home/qbit/Zotero/storage/8QIBMWSE/Abdolhosseini Qomi et al. - 2015 -
+    \verb  Physical Origins of Thermal Properties of Cement P.pdf
+    \endverb
+    \field{journaltitle}{Physical Review Applied}
+    \field{month}{06}
+    \field{year}{2015}
+    \field{urlday}{11}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
 \enddatalist
 \endinput
