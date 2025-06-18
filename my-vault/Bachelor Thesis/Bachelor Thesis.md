@@ -9,13 +9,17 @@ Hello!! I have designated this section of my Obsidian vault to keep track of all
 - **Purple:** Connections to my thesis 
 - **Red:** Critical statements 
 
+
+rm DOSCAR EIGENVAL IBZKPT INCAR INCAR.st OUTCAR OSZICAR PCDAT REPORT vasp* XDATCAR parll-param
+
 %% Begin Waypoint %%
 - **[[Meetings]]**
 	- [[DFT]]
 	- [[Progress]]
 - **Outline**
+	- [[Chapter 1]]
+	- [[Chapter 2]]
 	- [[First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates]]
-	- [[Many-body Schrodinger Equation]]
 	- [[Presentations]]
 - **Useful tools**
 

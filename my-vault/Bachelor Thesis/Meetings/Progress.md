@@ -75,6 +75,10 @@ We plotted the results of the benchmark. Results show that after `10 nodes` `tot
 >- [ ] We could reuse `WAVECAT` file for speedup. 
 
 ***
-## **Date:** 2025-03-20
+## **Date:** 2025-06-04
+
+Let's make a summary of what have we done so far, and specify the simulation files we have used to perform each one of the calculations. 
+
+
 
 

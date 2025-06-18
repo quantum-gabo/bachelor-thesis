@@ -7,24 +7,3 @@ In this project, we aim to investigate the atomic and mechanical properties of c
 </div>
 $\textbf{\emph{Keywords}}$:  
 
-***
-## Chapter 1: Introduction 
-### Background 
-<div style="text-align: justify; margin-bottom: 1em;"> 
-
-</div>
-
-### Motivation 
-
-
-### Objectives
-
-
-### Scope
-
-
-### Thesis Overview 
-
-
-***
-## Chapter 2: 

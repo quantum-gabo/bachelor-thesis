@@ -420,6 +420,56 @@
     \field{urlyear}{2024}
   \endentry
 
+  \entry{Foley2012}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=FEM}{%
+         family={Foley},
+         familyi={F\bibinitperiod},
+         given={Emmy\bibnamedelima M.},
+         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KJJ}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jung\bibnamedelima J.},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=RTMM}{%
+         family={Reda\bibnamedelima Taha},
+         familyi={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={M.\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{Calcium-silicate-hydrate (C-S-H) (B),Drying (A),Mechanical properties (C)}
+    \strng{namehash}{FEMKJJRTMM1}
+    \strng{fullhash}{FEMKJJRTMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In this study, calcium silicate hydrate (C-S-H) is synthesized and characterized. C-S-H slurry was made with calcium oxide (CaO) to micro-silica (SiO2) mixture ratio of 1.5 and enough deionized water. The slurry was continuously mixed for 7days, then the excess water was removed. Two methods of drying were implemented: one method used the standard d-dry technique and the other was equilibrated to 11\% relative humidity (RH). The dried powders were characterized using thermo gravimetric analysis (TGA), X-ray diffraction analysis (XRDA), and 29Si magic angle spinning (MAS) nuclear magnetic resonance (NMR) spectroscopy. The stoichiometric formulas of synthetic C-S-H powders dried to d-dry and 11\% RH in this study were approximated as C1.2SH0.7 and C1.2SH2.4 respectively. The powders were then compacted to create specimens with porosities similar to C-S-H in hydrated cement. The specimens underwent nanoindentation to mechanically characterize C-S-H. The experiments provide insight on the nanoscale mechanical characteristics of C-S-H.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.cemconres.2012.05.014
+    \endverb
+    \field{issn}{0008-8846}
+    \field{number}{9}
+    \field{pages}{1225\bibrangedash 1232}
+    \field{title}{Synthesis and Nano-Mechanical Characterization of Calcium-Silicate-Hydrate ({{C-S-H}}) Made with 1.5 {{CaO}}/{{SiO2}} Mixture}
+    \field{volume}{42}
+    \verb{file}
+    \verb /home/qbit/Zotero/storage/86BWH5VY/Foley et al. - 2012 - Synthesis an
+    \verb d nano-mechanical characterization of calcium-silicate-hydrate (C-S-H
+    \verb ) made with 1.5 CaO.pdf
+    \endverb
+    \field{journaltitle}{Cement and Concrete Research}
+    \field{month}{09}
+    \field{year}{2012}
+    \field{urlday}{05}
+    \field{urlmonth}{06}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{AbdolhosseiniQomi2015}{article}{}{}
     \name{author}{3}{}{%
       {{hash=AQMJ}{%
