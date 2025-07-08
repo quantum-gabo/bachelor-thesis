@@ -4,27 +4,167 @@
 
 \label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\lhead{Chapter 2. \emph{Theoretical Background}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+\lhead{Chapter 2. \emph{Theoretical Background}}
+This chapter is devoted to present the theoretical foundations and formalism of Density Functional Theory (DFT) and related methods required for the development of the results presented in this work. Starting with the many-body Schrödinger equation, this chapter covers the Born-Oppenheimer approximation, the Hartree-Fock approximation, Hohenberg-Kohn theorems, the Kohn-Sham equations, exchange-correlation functionals, and definitions on Ab initio molecular dynamics (AIMD) and machine learning force fields (MLFFs), along with implementation details in the Vienna Ab initio Simulation Package (VASP).
 
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
+Ultimately, the aim of this chapter is to provide a comprehensive understanding of the theoretical framework that underpins the computational methods utilised in this work, enabling the reader to grasp the principles and assumptions that govern the simulations and analyses performed throughout.
+
 \section{Many Body Schrödinger Equation}
-In the realm of materials science, comprehending particle behaviour within a system inevitably demands resorting to intricate principles of quantum mechanics. Our journey shall commence by describing the energy components that shape the interactions among particles constituting a system --electrons and nuclei alike.
+In the realm of materials science, comprehending particle behaviour within a system inevitably demands resorting to intricate principles of quantum mechanics. Our journey shall commence by describing the physical laws that shape the interactions among particles constituting a system---electrons and nuclei alike. 
 
+\subsection{The Coulomb Interaction}
+
+Materials may be thought of as complex assemblies of electrons and nuclei, held together by a delicate balance between attractive Coulomb interactions---primarily between electrons and nuclei---and repulsive interactions between like-charged particles, such as electron-electron and nucleus-nucleus pairs, which govern the overall dynamics of the material system\supercite{giustino2014materials, sholl2023density, kaxiras2003atomic}.  From classical electrostatics, these interactions can be mathematically expressed as follows: 
+
+\begin{itemize}
+\item Electron-electron interactions 
+  \begin{equation}
+    \label{eq1}
+    \hat{V}_{ee} = \frac{1}{2} \sum_{i\neq j} \frac{e^2}{4\pi\epsilon_0 |\mathbf{r}_i - \mathbf{r}_j|}
+  \end{equation}
+\item Electron-nucleus interactions 
+  \begin{equation}
+    \label{eq2}
+    \hat{V}_{nn} = \frac{1}{2} \sum_{I\neq J} \frac{e^2}{4\pi\epsilon_0} \frac{Z_I Z_J}{|\mathbf{R}_I - \mathbf{R}_J|}
+  \end{equation}
+\item Electron-nuclei interactions 
+\begin{equation}
+    \label{eq3}
+    \hat{V}_{en} = -\sum_{i\neq I} \frac{e^2}{4\pi\epsilon_0} \frac{Z_I}{|\mathbf{r}_i - \mathbf{R}_I|}
+  \end{equation}
+\end{itemize}
+
+where $e$ is the electronic charge, $\epsilon_0$ is the vacuum permittivity, $Z_I$ and $Z_J$ are the atomic numbers of nuclei $I$ and $J$, respectively, and $\mathbf{r}_i$ and $\mathbf{R}_I$ are the position vectors of electrons and nuclei, respectively. Moreover, we must also consider the kinetic energy of the collection of electrons and nuclei
+\begin{equation}
+    \label{eq4}
+    \hat{T} = -\sum_i \frac{\hbar^2}{2m_e} \nabla_i^2 - \sum_I \frac{\hbar^2}{2M_I} \nabla_I^2
+\end{equation}
+where $\hbar$ is the reduced Planck's constant, $m_e$ is the electron mass, and $M_I$ is the mass of the nucleus $I$.
+
+\subsection{The Time-Independent Schrödinger Equation}
+The Time-Independent Schrödinger Equation (TISE) lies at the heart of non-relativistic quantum mechanics, providing a mathematical framework to describe stationary electronic states of quantum systems. It takes the following form:
+\begin{equation}
+  \label{eq5}
+  \hat{H} \psi(\mathbf{r}) = E \psi(\mathbf{r})
+\end{equation}
+where $\hat{H}$ is the Hamiltonian of the system, encompassing both kinetic and potential energies, $\psi(\mathbf{r})$ is the wavefunction of the system, and $E$ is the energy eigenvalue associated with the state described by $\psi(\mathbf{r})$.  It is important to note that Equation \ref{eq5} is applicable to a single particle, yet a material system is composed of many electrons (N) and nuclei (M) with spatial coordinates $\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N$ and $\mathbf{R}_1, \mathbf{R}_2, \ldots, \mathbf{R}_M$, respectively. Therefore, we must introduce a so called many-body wavefunction given by:
+\begin{equation}
+  \Psi(\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N, \mathbf{R}_1, \mathbf{R}_2, \ldots, \mathbf{R}_M)
+  \label{eq5b}
+\end{equation}
+On this basis, the many-body version of Equation \ref{eq5} shall be constructed by combining the kinetic (Equation \ref{eq4}) and potential (Equations \ref{eq1}, \ref{eq2}, and \ref{eq3}) energy contributions, leading to the following expression:
+\begin{equation}
+  \label{eq6}
+  \begin{split}
+    \left[
+      -\sum_i \frac{\hbar^2}{2m_e} \nabla_i^2 
+      - \sum_I \frac{\hbar^2}{2M_I} \nabla_I^2 
+      + \frac{1}{2} \sum_{i\neq j} \frac{e^2}{4\pi\epsilon_0 |\mathbf{r}_i - \mathbf{r}_j|} +\right. \\
+      \left. \frac{1}{2} \sum_{I\neq J} \frac{e^2}{4\pi\epsilon_0} \frac{Z_I Z_J}{|\mathbf{R}_I - \mathbf{R}_J|} 
+      - \sum_{i, I} \frac{e^2}{4\pi\epsilon_0} \frac{Z_I}{|\mathbf{r}_i - \mathbf{R}_I|}
+    \right]\Psi = E_{\text{tot}} \Psi
+  \end{split}
+\end{equation}
+Equation \ref{eq6} provides a complete description of the stationary states of a non-relativistic many-body system, under time-independent conditions and in the absence of external fields. Additionally, we can achieve a more compact formulation by introducing the concept of atomic units. To this end, let us consider the simplest electron-nucleus  system---the hydrogen atom---where the electron orbital has an average radius $a_0 \approx 0.529 \, \text{Å}$. Thereby, the Coulomb energy for such a system is given by:
+\begin{equation}
+  \label{eq7}
+  E_{\text{Ha}} = \frac{e^2}{4 \pi \epsilon_0 a_0}
+\end{equation}
+where 'Ha' stands for Hartree. Within this framework, the Hartree energy represents the Coulomb interaction between two fundamental charges separated by a distance of one Bohr radius ($a_0$). Moreover, the angular momentum quantisation condition for the electron in the hydrogen atom is given by
+\begin{equation}
+  \label{eq8}
+  m_e v a_0 = \hbar
+\end{equation}
+Additionally, the equilibrium condition between the nuclear attraction and the electron's centrifugal force can be expressed as:
+\begin{equation}
+  \label{eq9}
+  \frac{e^2}{4 \pi \epsilon_0 a_0^2} = \frac{m_e v^2}{a_0}
+\end{equation}
+By combining Equations \ref{eq7}, \ref{eq8}, and \ref{eq9}, we derive the 
+following relationships:
+\begin{equation}
+  \label{eq10}
+  \frac{e^2}{4 \pi \epsilon_0 a_0} = \frac{\hbar^2}{m_e a_0^2}
+\end{equation}
+\begin{equation}
+  \label{eq11}
+  \frac{1}{2} m_e v^2 = \frac{1}{2}E_{\text{Ha}}
+\end{equation}
+This latter relation showcases that the kinetic energy is of the same order as $E_\text{Ha}$, rendering it convenient to normalise Equation \ref{eq6} by this quantity:
+\begin{equation}
+  \label{eq12}
+  \begin{split}
+    \left[
+      -\sum_i \frac{1}{2}a_0^2 \nabla_i^2 
+      - \sum_I \frac{1}{2} \frac{1}{(M_I/m_e)} \nabla_I^2 
+      + \frac{1}{2} \sum_{i\neq j} \frac{a_0}{|\mathbf{r}_i - \mathbf{r}_j|}\right. \\
+      \left. +  \frac{1}{2} \sum_{I\neq J} Z_I Z_J \frac{a_0}{|\mathbf{R}_I - \mathbf{R}_J|} 
+      - \sum_{i, I} Z_I \frac{a_0}{|\mathbf{r}_i - \mathbf{R}_I|}
+    \right]\Psi = \frac{E_{\text{tot}}}{E_{\text{Ha}}} \Psi
+  \end{split}
+\end{equation}
+A final simplification involves setting our energy units to Ha, distance units to $a_0$, and mass units to $m_e$. The last missing constant $e$ is set to 1, leading to the following expression: 
+\begin{equation}
+  \label{eq13}
+  \begin{split}
+    \left[
+      -\sum_i \frac{\nabla_i^2}{2}
+      - \sum_I \frac{\nabla_I^2}{2 M_I} 
+      + \frac{1}{2} \sum_{i\neq j} \frac{1}{|\mathbf{r}_i - \mathbf{r}_j|} + \right. \\
+      \left. \frac{1}{2} \sum_{I\neq J} \frac{Z_I Z_J} {|\mathbf{R}_I - \mathbf{R}_J|} 
+      - \sum_{i, I} \frac{Z_I}{|\mathbf{r}_i - \mathbf{R}_I|}
+    \right]\Psi = E_{\text{tot}} \Psi
+  \end{split}
+\end{equation}
+
+Ultimately, even though Equation \ref{eq13} provides an exact method capable of yielding varius properties of a material system---such as elastic, thermal, and electronic properties---a combination of mathematical complexity and computational limitations renders it intractable to solve for any realistic system. Moreover, the wavefunction contains vastly more information than is necessary to describe most observable properties of a material. Therefore, we must resort to alternative formulations that allow us to extract only the relevant information from the wavefunction. 
 %-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
 \section{The Born-Oppenheimer Approximation}
-
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
+For atoms in a solid, we can think of nuclei as being held immobile in a fixed position, while electrons instantaneously react to any nuclei movement. This assumption is based on the fact that nuclei are much heavier than electrons---by three to four orders of magnitude---making the former behave like classical particles. Thereby, we can rewrite the many-body wavefunction as a product of two wavefunctions:
+\begin{equation}
+  \Psi(\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N, \mathbf{R}_1, \mathbf{R}_2, \ldots, \mathbf{R}_M) = \psi_{\mathbf{R}}(\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N)\chi(\mathbf{R})
+  \label{eq14}
+\end{equation}
+where $\psi_{\mathbf{R}}$ is the electronic wavefunction parametrised by the nuclear positions $\mathbf{R}$, and $\chi$ is the nuclear wavefunction. Furthermore, this significant mass disparity enables a systematic approximation scheme, in which the electronic wavefunction is solved for fixed nuclei, and its solution is used as an effective potential for the nuclear dynamics afterwards. First, nuclei kinetic energy is neglected, as their positions are assumed to be fixed: 
+\begin{equation}
+  \label{eq15}
+  \sum_I \frac{\nabla_I^2}{2 M_I} = 0
+  \quad \text{and} \quad  E = E_{\text{tot}} - \sum_{I<J} \frac{Z_I Z_J}{|\mathbf{R}_I - \mathbf{R}_J|}
+\end{equation}
+Following, we define the Coulomb potential of the nuclei experienced by the electrons as:
+\begin{equation}
+  \label{eq16}
+  V_{\text{n}}(\mathbf{r}) = - \sum_{I} \frac{Z_I}{|\mathbf{r} - \mathbf{R}_I|}
+\end{equation}
+Then, Equation \ref{eq13} can be rewritten as:
+\begin{equation}
+  \label{eq17}
+  \left[
+    -\sum_i \frac{\nabla_i^2}{2} + \sum_i V_{\text{n}}(\mathbf{r}_i) + \frac{1}{2} \sum_{i\neq j} \frac{1}{|\mathbf{r}_i - \mathbf{r}_j|} 
+  \right] \Psi = E \Psi 
+\end{equation}
+Finally, by using Equation \ref{eq14}, we can define the electronic and nuclear Schrödinger equations as follows:
+\begin{equation}
+  \label{eq18}
+  \left[
+    -\sum_i \frac{\nabla_i^2}{2} + \sum_i V_{\text{n}}(\mathbf{r}_i) + \frac{1}{2} \sum_{i\neq j} \frac{1}{|\mathbf{r}_i - \mathbf{r}_j|} 
+  \right] \psi_{\mathbf{R}} = E_{\mathbf{R}} \psi_{\mathbf{R}}
+\end{equation}
+\begin{equation}
+  \label{eq19}
+  \left[
+    -\sum_I \frac{\nabla_I^2}{2 M_I} + \sum_{I<J} \frac{Z_I Z_J}{|\mathbf{R}_I - \mathbf{R}_J|} + E(\mathbf{R}_1,\dots,\mathbf{R}_M)\right] \chi(\mathbf{R}) = E_{\text{tot}} \chi(\mathbf{R})
+\end{equation}
+where $E_{\mathbf{R}}= E(\mathbf{R}_1,\dots,\mathbf{R}_M)$ is the electronic surface energy, which is a function of the nuclear positions, and serves as an effective potential shaping the nuclear dynamics. 
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 
 \section{Hartree-Fock Approximation}
-Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque. Cras in elit neque, quis varius elit. Phasellus fringilla, nibh eu tempus venenatis, dolor elit posuere quam, quis adipiscing urna leo nec orci. Sed nec nulla auctor odio aliquet consequat. Ut nec nulla in ante ullamcorper aliquam at sed dolor. Phasellus fermentum magna in augue gravida cursus. Cras sed pretium lorem. Pellentesque eget ornare odio. Proin accumsan, massa viverra cursus pharetra, ipsum nisi lobortis velit, a malesuada dolor lorem eu neque.
+Up to this point, 
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -32,6 +172,29 @@ Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar p
 
 \section{Density Functional Theory}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
+Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit. Time to write 
 
-\subsection{Hohenberg-Kohn Theorems}
+\subsection{First Hohenberg-Kohn Theorem}
+
+\subsection{Second Hohenberg-Kohn Theorem}
+
+\subsection{Kohn-Sham Equations}
+
+\subsection{Exchange-Correlation Functionals}
+
+\section{Ab initio Molecular Dynamics}
+
+\subsection{Born-Oppenheimer Molecular Dynamics}
+
+\subsection{Car-Parrinello Molecular Dynamics}
+
+\section{Machine Learning Force Fields}
+
+\section{Computational Implementation in VASP}
+\subsection{Plane Wave Basis Set}
+\subsection{K-Point Sampling and Cutoff Energy}
+\subsection{Pseudopotentials}
+\section{Density of States}
+
+
+

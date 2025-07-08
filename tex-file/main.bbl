@@ -59,8 +59,8 @@
     \field{volume}{16}
     \field{langid}{english}
     \verb{file}
-    \verb /home/qbit/Zotero/storage/8DP92EIR/Monteiro et al. - 2017 - Towards s
-    \verb ustainable concrete.pdf
+    \verb /home/starlord/Zotero/storage/8DP92EIR/Monteiro et al. - 2017 - Towar
+    \verb ds sustainable concrete.pdf
     \endverb
     \field{journaltitle}{Nature Materials}
     \field{month}{07}
@@ -96,9 +96,9 @@
     \field{title}{Concrete Material Science: {{Past}}, Present, and Future Innovations}
     \field{volume}{112}
     \verb{file}
-    \verb /home/qbit/Zotero/storage/H4DV4PPH/Van Damme - 2018 - Concrete materi
-    \verb al science Past, present, and future innovations.pdf;/home/qbit/Zoter
-    \verb o/storage/4299PER6/S0008884618300802.html
+    \verb /home/starlord/Zotero/storage/H4DV4PPH/Van Damme - 2018 - Concrete ma
+    \verb terial science Past, present, and future innovations.pdf;/home/starlo
+    \verb rd/Zotero/storage/4299PER6/S0008884618300802.html
     \endverb
     \field{journaltitle}{Cement and Concrete Research}
     \field{month}{10}
@@ -178,9 +178,9 @@
     \field{title}{A Comprehensive Review of the Models on the Nanostructure of Calcium Silicate Hydrates}
     \field{volume}{74}
     \verb{file}
-    \verb /home/qbit/Zotero/storage/IMQ8785A/Papatzani et al. - 2015 - A compre
-    \verb hensive review of the models on the nanostructure of calcium silicate
-    \verb  hydrates.pdf
+    \verb /home/starlord/Zotero/storage/IMQ8785A/Papatzani et al. - 2015 - A co
+    \verb mprehensive review of the models on the nanostructure of calcium sili
+    \verb cate hydrates.pdf
     \endverb
     \field{journaltitle}{Construction and Building Materials}
     \field{month}{01}
@@ -271,8 +271,8 @@
     \field{title}{Mesoscale Texture of Cement Hydrates}
     \field{volume}{113}
     \verb{file}
-    \verb /home/qbit/Zotero/storage/PAQ6KTEA/Ioannidou et al. - 2016 - Mesoscal
-    \verb e texture of cement hydrates.pdf
+    \verb /home/starlord/Zotero/storage/PAQ6KTEA/Ioannidou et al. - 2016 - Meso
+    \verb scale texture of cement hydrates.pdf
     \endverb
     \field{journaltitle}{Proceedings of the National Academy of Sciences}
     \field{month}{02}
@@ -339,8 +339,8 @@
       {Cham}%
     }
     \verb{file}
-    \verb /home/qbit/Zotero/storage/4UMPKPTB/Qomi et al. - 2020 - Nanoscale Com
-    \verb position-Texture-Property Relation in.pdf
+    \verb /home/starlord/Zotero/storage/4UMPKPTB/Qomi et al. - 2020 - Nanoscale
+    \verb  Composition-Texture-Property Relation in.pdf
     \endverb
     \field{year}{2020}
     \field{urlday}{24}
@@ -409,8 +409,8 @@
     \field{title}{Molecular {{Simulation}} of {{Cement-Based Materials}} and {{Their Properties}}}
     \field{volume}{15}
     \verb{file}
-    \verb /home/qbit/Zotero/storage/I25AVSMV/Bahraq et al. - 2022 - Molecular S
-    \verb imulation of Cement-Based Materials and.pdf
+    \verb /home/starlord/Zotero/storage/I25AVSMV/Bahraq et al. - 2022 - Molecul
+    \verb ar Simulation of Cement-Based Materials and.pdf
     \endverb
     \field{journaltitle}{Engineering}
     \field{month}{08}
@@ -458,9 +458,9 @@
     \field{title}{Synthesis and Nano-Mechanical Characterization of Calcium-Silicate-Hydrate ({{C-S-H}}) Made with 1.5 {{CaO}}/{{SiO2}} Mixture}
     \field{volume}{42}
     \verb{file}
-    \verb /home/qbit/Zotero/storage/86BWH5VY/Foley et al. - 2012 - Synthesis an
-    \verb d nano-mechanical characterization of calcium-silicate-hydrate (C-S-H
-    \verb ) made with 1.5 CaO.pdf
+    \verb /home/starlord/Zotero/storage/86BWH5VY/Foley et al. - 2012 - Synthesi
+    \verb s and nano-mechanical characterization of calcium-silicate-hydrate (C
+    \verb -S-H) made with 1.5 CaO.pdf
     \endverb
     \field{journaltitle}{Cement and Concrete Research}
     \field{month}{09}
@@ -509,8 +509,8 @@
     \field{title}{Physical {{Origins}} of {{Thermal Properties}} of {{Cement Paste}}}
     \field{volume}{3}
     \verb{file}
-    \verb /home/qbit/Zotero/storage/8QIBMWSE/Abdolhosseini Qomi et al. - 2015 -
-    \verb  Physical Origins of Thermal Properties of Cement P.pdf
+    \verb /home/starlord/Zotero/storage/8QIBMWSE/Abdolhosseini Qomi et al. - 20
+    \verb 15 - Physical Origins of Thermal Properties of Cement P.pdf
     \endverb
     \field{journaltitle}{Physical Review Applied}
     \field{month}{06}
@@ -518,6 +518,75 @@
     \field{urlday}{11}
     \field{urlmonth}{09}
     \field{urlyear}{2024}
+  \endentry
+
+  \entry{giustino2014materials}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=GF}{%
+         family={Giustino},
+         familyi={G\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{GF1}
+    \strng{fullhash}{GF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-19-966244-9}
+    \field{title}{Materials Modelling Using Density Functional Theory: {{Properties}} and Predictions}
+    \field{year}{2014}
+  \endentry
+
+  \entry{sholl2023density}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=SD}{%
+         family={Sholl},
+         familyi={S\bibinitperiod},
+         given={D.S.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Steckel},
+         familyi={S\bibinitperiod},
+         given={J.A.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{SDSJ1}
+    \strng{fullhash}{SDSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-1-119-84086-2}
+    \field{title}{Density Functional Theory: A Practical Introduction}
+    \field{year}{2023}
+  \endentry
+
+  \entry{kaxiras2003atomic}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=KE}{%
+         family={Kaxiras},
+         familyi={K\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{KE1}
+    \strng{fullhash}{KE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-521-81010-4}
+    \field{title}{Atomic and Electronic Structure of Solids}
+    \field{year}{2003}
   \endentry
 \enddatalist
 \endinput
