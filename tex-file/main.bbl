@@ -588,5 +588,276 @@
     \field{title}{Atomic and Electronic Structure of Solids}
     \field{year}{2003}
   \endentry
+
+  \entry{martin2016interacting}{book}{}{}
+    \name{author}{3}{}{%
+      {{hash=MR}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={R.M.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Reining},
+         familyi={R\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Ceperley},
+         familyi={C\bibinitperiod},
+         given={D.M.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{MRRLCD1}
+    \strng{fullhash}{MRRLCD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-521-87150-1}
+    \field{title}{Interacting Electrons}
+    \field{year}{2016}
+  \endentry
+
+  \entry{helgaker2014molecular}{book}{}{}
+    \name{author}{3}{}{%
+      {{hash=HT}{%
+         family={Helgaker},
+         familyi={H\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=JP}{%
+         family={Jorgensen},
+         familyi={J\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=OJ}{%
+         family={Olsen},
+         familyi={O\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{HTJPOJ1}
+    \strng{fullhash}{HTJPOJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-1-119-01955-8}
+    \field{title}{Molecular Electronic-Structure Theory}
+    \field{year}{2014}
+  \endentry
+
+  \entry{feng2005introduction}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=FD}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JG}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {World Scientific Publishing Company}%
+    }
+    \strng{namehash}{FDJG1}
+    \strng{fullhash}{FDJG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-981-310-219-4}
+    \field{title}{Introduction to Condensed Matter Physics, Volume 1}
+    \field{year}{2005}
+  \endentry
+
+  \entry{Hartree1928}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=HDR}{%
+         family={Hartree},
+         familyi={H\bibinitperiod},
+         given={D.\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HDR1}
+    \strng{fullhash}{HDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The paper is concerned with the practical determination of the characteristic values and functions of the wave equation of Schrodinger for a non-Coulomb central field, for which the potential is given as a function of the distance r from the nucleus.The method used is to integrate a modification of the equation outwards from initial conditions corresponding to a solution finite at r = 0, and inwards from initial conditions corresponding to a solution zero at r = {$\infty$}, with a trial value of the parameter (the energy) whose characteristic values are to be determined; the values of this parameter for which the two solutions fit at some convenient intermediate radius are the characteristic values required, and the solutions which so fit are the characteristic functions ({\S}{\S} 2, 10).Modifications of the wave equation suitable for numerical work in different parts of the range of r are given ({\S}{\S} 2, 3, 5), also exact equations for the variation of a solution with a variation in the potential or of the trial value of the energy ({\S} 4); the use of these variation equations in preference to a complete new integration of the equation for every trial change of field or of the energy parameter avoids a great deal of numerical work.For the range of r where the deviation from a Coulomb field is inappreciable, recurrence relations between different solutions of the wave equations which are zero at r = {$\infty$}, and correspond to terms with different values of the effective and subsidiary quantum numbers, are given and can be used to avoid carrying out the integration in each particular case ({\S}{\S} 6, 7).Formulae for the calculation of first order perturbations due to the relativity variation of mass and to the spinning electron are given ({\S} 8).The method used for integrating the equations numerically is outlined ({\S} 9).%
+    }
+    \verb{doi}
+    \verb 10.1017/S0305004100011919
+    \endverb
+    \field{issn}{1469-8064, 0305-0041}
+    \field{number}{1}
+    \field{pages}{89\bibrangedash 110}
+    \field{title}{The {{Wave Mechanics}} of an {{Atom}} with a {{Non-Coulomb Central Field}}. {{Part I}}. {{Theory}} and {{Methods}}}
+    \field{volume}{24}
+    \field{langid}{english}
+    \field{journaltitle}{Mathematical Proceedings of the Cambridge Philosophical Society}
+    \field{month}{01}
+    \field{year}{1928}
+    \field{urlday}{10}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Fock1930}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=FV}{%
+         family={Fock},
+         familyi={F\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \keyw{Ab Initio Calculations,Calculus of Variations and Optimization,Electronic Structure Calculations,Integral Equations,Mathematical Methods in Physics,Quantum Electrodynamics Relativistic and Many-body Calculations}
+    \strng{namehash}{FV1}
+    \strng{fullhash}{FV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Das Variationsprinzip {$\int\delta$}{\textasciimacron}{$\Psi$}(L - E) {$\Psi$}d{$\tau$}=0 (L=Energieoperator) liefert, bekanntlich die Wellengleichung im Konfigurationsraum. Es wird gezeigt, da{\ss} der Ansatz {$\Psi$}={$\psi$}1 ({$\chi$}1) {$\psi$}2 ({$\chi$}1)... {$\psi$}N({$\chi$}N) (N=Anzahl der Elektronen) zu den Gleichungen der Hartreeschen Theorie des ,,selfconsistent field`` f{\"u}hrt. Dieser Ansatz hat aber nicht die richtige Symmetrie. In dem wichtigen Spezialfall der ,,v{\"o}lligen Entartung des Termsystems`` kann aber {$\Psi$} durch {\.e}in Produkt zweier Determinanten [Formel (50) des Textes] approximiert werden. Die entsprechende Rechnung wird durchgef{\"u}hrt. Die Gleichungen, die sich f{\"u}r {$\psi$}i({$\chi$}) ergeben, enthalten ,,Austauschglieder`` und k{\"o}nnen als Eulersche Gleichungen eines dreidimensionalen Variationsproblems mit der Energie als Wirkungsintegral [Formel (93)] aufgefa{\ss}t werden. Die Gleichungen sind nicht wesentlich komplizierter als die von Hartree, d{\"u}rften aber viel genauere Resultate ergeben. Zum Schlu{\ss} wird eine Formel f{\"u}r die Intensit{\"a}ten angegeben, die- Glieder enth{\"a}lt, welche einer ,,Umgruppierung`` der inneren Elektronen bei einem Quantensprung entsprechen.%
+    }
+    \verb{doi}
+    \verb 10.1007/BF01340294
+    \endverb
+    \field{issn}{0044-3328}
+    \field{number}{1}
+    \field{pages}{126\bibrangedash 148}
+    \field{title}{{N{\"a}herungsmethode zur L{\"o}sung des quantenmechanischen Mehrk{\"o}rperproblems}}
+    \field{volume}{61}
+    \field{langid}{ngerman}
+    \field{journaltitle}{Zeitschrift f{\"u}r Physik}
+    \field{month}{01}
+    \field{year}{1930}
+    \field{urlday}{10}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{martin2020electronic}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=MR}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={R.M.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{MR1}
+    \strng{fullhash}{MR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-1-108-42990-0}
+    \field{title}{Electronic Structure: {{Basic}} Theory and Practical Methods}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Hohenberg1964}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=HP}{%
+         family={Hohenberg},
+         familyi={H\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KW}{%
+         family={Kohn},
+         familyi={K\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{HPKW1}
+    \strng{fullhash}{HPKW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This paper deals with the ground state of an interacting electron gas in an external potential {$v$}⁡(r). It is proved that there exists a universal functional of the density, {$F$}⁡[{$n$}⁡(r)], independent of {$v$}⁡(r), such that the expression {$E\equiv\intv$}⁡(r)⁢{$n$}⁡(r){$d$}r +{$F$}⁡[{$n$}⁡(r)] has as its minimum value the correct ground-state energy associated with {$v$}⁡(r). The functional {$F$}⁡[{$n$}⁡(r)] is then discussed for two situations: (1) {$n$}⁡(r) ={$n$}0 {\~+}{$n$}⁡(r),{\~ }{$nn$}0 {$\ll$}1, and (2) {$n$}⁡(r) ={$\phi$}⁡(r{$r$}0) with {$\phi$} arbitrary and {$r$}0 {$\rightarrow\infty$}. In both cases {$F$} can be expressed entirely in terms of the correlation energy and linear and higher order electronic polarizabilities of a uniform electron gas. This approach also sheds some light on generalized Thomas-Fermi methods and their limitations. Some new extensions of these methods are presented.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRev.136.B864
+    \endverb
+    \field{number}{3B}
+    \field{pages}{B864\bibrangedash B871}
+    \field{title}{Inhomogeneous {{Electron Gas}}}
+    \field{volume}{136}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/MY2YAWWL/Hohenberg and Kohn - 1964 - In
+    \verb homogeneous Electron Gas.pdf;/home/starlord/Zotero/storage/VZXEL97U/P
+    \verb hysRev.136.html
+    \endverb
+    \field{journaltitle}{Physical Review}
+    \field{month}{11}
+    \field{year}{1964}
+    \field{urlday}{12}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Kohn1965}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=KW}{%
+         family={Kohn},
+         familyi={K\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=SLJ}{%
+         family={Sham},
+         familyi={S\bibinitperiod},
+         given={L.\bibnamedelima J.},
+         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{KWSLJ1}
+    \strng{fullhash}{KWSLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    From a theory of Hohenberg and Kohn, approximation methods for treating an inhomogeneous system of interacting electrons are developed. These methods are exact for systems of slowly varying or high density. For the ground state, they lead to self-consistent equations analogous to the Hartree and Hartree-Fock equations, respectively. In these equations the exchange and correlation portions of the chemical potential of a uniform electron gas appear as additional effective potentials. (The exchange portion of our effective potential differs from that due to Slater by a factor of 23.) Electronic systems at finite temperatures and in magnetic fields are also treated by similar methods. An appendix deals with a further correction for systems with short-wavelength density oscillations.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRev.140.A1133
+    \endverb
+    \field{number}{4A}
+    \field{pages}{A1133\bibrangedash A1138}
+    \field{title}{Self-{{Consistent Equations Including Exchange}} and {{Correlation Effects}}}
+    \field{volume}{140}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/X8DCFUD5/Kohn and Sham - 1965 - Self-Co
+    \verb nsistent Equations Including Exchange and Correlation Effects.pdf;/ho
+    \verb me/starlord/Zotero/storage/K5BB22KM/PhysRev.140.html
+    \endverb
+    \field{journaltitle}{Physical Review}
+    \field{month}{11}
+    \field{year}{1965}
+    \field{urlday}{12}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
 \enddatalist
 \endinput

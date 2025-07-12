@@ -290,17 +290,79 @@ where $V^X_i$ stands for the exchange potential
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
-
 \section{Density Functional Theory}
+So far, we have acknowledged that determining the state of a system with N electrons remains a formidable challenge for it involves a  wavefunction defined in a $3N$-dimensional space. We also recognise that it is possible---heuristically speaking---to simplify such representation by utilising products of single-particle wavefunctions. Nevertheless, such independent electrons approximation necessitates the wavefuctions to be explicitly specified, thereby yielding a rather drastic approximation for the behaviour of the system. Thus, it is natural to consider a different approach to develop the appropriate single-particle framework in an exact manner, onto which approximations can be introduced afterwards.
 
-Hello 
+We hereby introduce the Density Functional Theory (DFT), which draws upon the insight that any property of a system of many electrons can be viewed as a functional of the ground-state density $n(\mathbf{r})$\supercite{martin2020electronic} (Equation \ref{eq39})---a scalar function defined over three spatial coordinates. 
+\begin{equation}
+  n(\mathbf{r}) = N \int \Psi^*(\mathbf{r}, \ldots, \mathbf{r}_N) \Psi(\mathbf{r},\ldots, \mathbf{r}_N) d\mathbf{r}_2 \ldots d\mathbf{r}_N
+  \label{eq39}
+\end{equation}
+The foundational principles of DFT were established in the original papers by Hohenberg, Kohn and Sham\supercite{Hohenberg1964, Kohn1965}, where they present two theorems that establish the theoretical framework of DFT.
+However, for the purposes of this discussion, we shall base our exposition on explanatory texts\supercite{martin2020electronic, giustino2014materials, kaxiras2003atomic, sholl2023density}.
 
 
 \subsection{First Hohenberg-Kohn Theorem}
 
+\begin{theorem}[First Hohenberg-Kohn Theorem]
+  The ground-state electron density $n(\mathbf{r})$ uniquely determines the external potential $V(\mathbf{r})$ and, consequently, the ground-state energy $E_0$ of a many-electron system.
+\end{theorem}
+\begin{proof}
+  Suppose two different external potentials, $V(\mathbf{r})$ and $V'(\mathbf{r})$ yield the same ground-state electron density $n(\mathbf{r})$. Given that $V(\mathbf{r})$ and $V'(\mathbf{r})$ are different in a non-trivial way, we will show that this statement leads to a contradiction. Let $E$ and $\Psi$ be the total energy and wavefunction and $E'$ and $\Psi'$ be the total energy and wavefunction corresponding to the systems with hamiltonians $\hat{H}$ and $\hat{H}'$, respectively, with the first hamiltonian containing $V(\mathbf{r})$  and the second containing $V'(\mathbf{r})$ as an external potential:
+  \begin{equation*}
+    \hat{H} = \hat{T} + \hat{U} + V, \quad \hat{H}' = \hat{T} + \hat{U} + V', \quad E = \langle \Psi | \hat{H} | \Psi \rangle, \quad E' = \langle \Psi' | \hat{H}' | \Psi' \rangle 
+  \end{equation*}
+  Here, $\hat{T}$ and $\hat{U}$ correspond to the kinetic and interaction energy operators, thereby being common for both hamiltonians. Now, we assume that the ground states of the two hamiltonians are different because the external potentials are different. Then, according to the variational principle: 
+  \begin{equation}
+    \label{eq40}
+    \begin{aligned}
+      E < \langle \Psi'|\hat{H}|\Psi'\rangle &= \langle \Psi'|\hat{T} + \hat{U} + V + V' - V' |\Psi'\rangle \\
+      &= \langle \Psi'|\hat{H}' + V - V' |\Psi'\rangle \\
+      &= E' + \langle \Psi'|(V - V')|\Psi'\rangle
+    \end{aligned}
+  \end{equation}
+  Following the same reasoning, we can prove that 
+  \begin{equation}
+    \label{eq41}
+    E' < E - \langle \Psi|(V - V')|\Psi\rangle
+  \end{equation}
+  Adding Equations \ref{eq40} and \ref{eq41}, we obtain:
+  \begin{equation}
+    \label{eq42}
+    E + E' < E' + E - \langle \Psi|(V - V')|\Psi\rangle + \langle \Psi'|(V - V')|\Psi'\rangle
+  \end{equation}
+  where the last two terms result in 
+  \begin{equation}
+    \label{eq43}
+    \int n'(\mathbf{r}) (V - V') d\mathbf{r} - \int n(\mathbf{r}) (V - V') d\mathbf{r} = 0
+  \end{equation}
+  since we assumed that the two densities $n(\mathbf{r})$ and $n'(\mathbf{r})$ corresponding to the two external potentials are equal. 
+\end{proof}
+
+
+
 \subsection{Second Hohenberg-Kohn Theorem}
+\begin{theorem}[Second Hohenberg-Kohn Theorem]
+  The ground-state energy $E_0$ of a many-electron system can be expressed as a functional of the electron density $n(\mathbf{r})$:
+  \begin{equation}
+    E_0[n] = T[n] + V_{\text{n}}[n] + E_{\text{H}}[n] + E_{\text{xc}}[n]
+  \end{equation}
+  where $T[n]$ is the kinetic energy functional, $V_{\text{n}}[n]$ is the external potential energy functional, $E_{\text{H}}[n]$ is the Hartree energy functional, and $E_{\text{xc}}[n]$ is the exchange-correlation energy functional.
+\end{theorem}
+\begin{proof}
+  The second Hohenberg-Kohn theorem states that the ground-state energy can be expressed as a functional of the electron density. This is achieved by expressing the total energy as a sum of contributions from the kinetic energy, external potential energy, Hartree energy, and exchange-correlation energy. The kinetic energy functional $T[n]$ is defined in terms of the single-particle wavefunctions, while the external potential energy functional $V_{\text{n}}[n]$ is determined by the external potential acting on the electrons. The Hartree energy functional $E_{\text{H}}[n]$ accounts for the classical electrostatic interaction between electrons, and the exchange-correlation energy functional $E_{\text{xc}}[n]$ captures the quantum mechanical effects of electron-electron interactions.
+\end{proof}
 
 \subsection{Kohn-Sham Equations}
+The Kohn-Sham equations are a set of single-particle equations that arise from the second Hohenberg-Kohn theorem. They provide a practical way to compute the ground-state electron density and energy of a many-electron system by introducing an auxiliary system of non-interacting electrons that yield the same ground-state density as the interacting system. The Kohn-Sham equations are given by:
+\begin{equation}
+  \left[-\frac{\nabla^2}{2} + V_{\text{n}}(\mathbf{r}) + V_{\text{H}}(\mathbf{r}) + V_{\text{xc}}(\mathbf{r})\right] \phi_i(\mathbf{r}) = \varepsilon_i \phi_i(\mathbf{r})
+\end{equation}
+where $\phi_i(\mathbf{r})$ are the Kohn-Sham orbitals, $\varepsilon_i$ are the corresponding eigenvalues, $V_{\text{H}}(\mathbf{r})$ is the Hartree potential, and $V_{\text{xc}}(\mathbf{r})$ is the exchange-correlation potential. The electron density is obtained from the Kohn-Sham orbitals as:
+\begin{equation}
+  n(\mathbf{r}) = \sum_i |\phi_i(\mathbf{r})|^2
+\end{equation}
+The Kohn-Sham equations are solved self-consistently, meaning that the exchange-correlation potential $V_{\text{xc}}(\mathbf{r})$ is updated iteratively based on the current electron density until convergence is achieved. The Kohn-Sham approach allows for the calculation of ground-state properties of many-electron systems while avoiding the computational complexity of directly solving the many-body Schrödinger equation.
 
 \subsection{Exchange-Correlation Functionals}
 
