@@ -308,7 +308,7 @@ However, for the purposes of this discussion, we shall base our exposition on ex
   The ground-state electron density $n(\mathbf{r})$ uniquely determines the external potential $V(\mathbf{r})$ and, consequently, the ground-state energy $E_0$ of a many-electron system.
 \end{theorem}
 \begin{proof}
-  Suppose two different external potentials, $V(\mathbf{r})$ and $V'(\mathbf{r})$ yield the same ground-state electron density $n(\mathbf{r})$. Given that $V(\mathbf{r})$ and $V'(\mathbf{r})$ are different in a non-trivial way, we will show that this statement leads to a contradiction. Let $E$ and $\Psi$ be the total energy and wavefunction and $E'$ and $\Psi'$ be the total energy and wavefunction corresponding to the systems with hamiltonians $\hat{H}$ and $\hat{H}'$, respectively, with the first hamiltonian containing $V(\mathbf{r})$  and the second containing $V'(\mathbf{r})$ as an external potential:
+  Suppose two different external potentials, $V(\mathbf{r})$ and $V'(\mathbf{r})$ (different ionic potentials) yield the same ground-state electron density $n(\mathbf{r})$. Given that $V(\mathbf{r})$ and $V'(\mathbf{r})$ are different in a non-trivial way, we will show that this statement leads to a contradiction. Let $E$ and $\Psi$ be the total energy and wavefunction and $E'$ and $\Psi'$ be the total energy and wavefunction corresponding to the systems with hamiltonians $\hat{H}$ and $\hat{H}'$, respectively, with the first hamiltonian containing $V(\mathbf{r})$  and the second containing $V'(\mathbf{r})$ as an external potential:
   \begin{equation*}
     \hat{H} = \hat{T} + \hat{U} + V, \quad \hat{H}' = \hat{T} + \hat{U} + V', \quad E = \langle \Psi | \hat{H} | \Psi \rangle, \quad E' = \langle \Psi' | \hat{H}' | \Psi' \rangle 
   \end{equation*}
@@ -336,35 +336,134 @@ However, for the purposes of this discussion, we shall base our exposition on ex
     \label{eq43}
     \int n'(\mathbf{r}) (V - V') d\mathbf{r} - \int n(\mathbf{r}) (V - V') d\mathbf{r} = 0
   \end{equation}
-  since we assumed that the two densities $n(\mathbf{r})$ and $n'(\mathbf{r})$ corresponding to the two external potentials are equal. 
+  since $n(\mathbf{r})=n'(\mathbf{r})$ by assumption. Finally, we arrive at the following expression: 
+  \begin{equation}
+    \label{eq44}
+    E + E' < E + E'
+  \end{equation}
+  Evidently, this is a contradiction, which implies that our initial assumption about the densities being the same ought to be false, thereby proving there is a one-to-one correspondence between an external potential $V(\mathbf{r})$ and the electron density $n(\mathbf{r})$. Moreover, since $V(\mathbf{r})$ determines the wavefunction, the wavefunction must be a unique functional of the density. So we conclude that the expression  
+  \begin{equation}
+    \label{eq45}
+    \mathcal{F}[n(\mathbf{r})] = \langle \Psi |\hat{T} + \hat{U} |\Psi \rangle 
+  \end{equation}
+  must be a universal functional of the electronic density---\emph{i.e.}, common to all solids---and that the ground state energy is a functional of the density: 
+  \begin{equation}
+    \label{eq46}
+    E[n(\mathbf{r})] = \mathcal{F}[n(\mathbf{r})] + \int V(\mathbf{r}) n(\mathbf{r}) d\mathbf{r}
+  \end{equation}
 \end{proof}
-
-
 
 \subsection{Second Hohenberg-Kohn Theorem}
 \begin{theorem}[Second Hohenberg-Kohn Theorem]
-  The ground-state energy $E_0$ of a many-electron system can be expressed as a functional of the electron density $n(\mathbf{r})$:
-  \begin{equation}
-    E_0[n] = T[n] + V_{\text{n}}[n] + E_{\text{H}}[n] + E_{\text{xc}}[n]
-  \end{equation}
-  where $T[n]$ is the kinetic energy functional, $V_{\text{n}}[n]$ is the external potential energy functional, $E_{\text{H}}[n]$ is the Hartree energy functional, and $E_{\text{xc}}[n]$ is the exchange-correlation energy functional.
+  The ground-state energy $E$ can be obtained through the variation of trial densities $\tilde{n}(\mathbf{r})$ instead of trial wavefunctions $\tilde{\Psi}$.
 \end{theorem}
 \begin{proof}
-  The second Hohenberg-Kohn theorem states that the ground-state energy can be expressed as a functional of the electron density. This is achieved by expressing the total energy as a sum of contributions from the kinetic energy, external potential energy, Hartree energy, and exchange-correlation energy. The kinetic energy functional $T[n]$ is defined in terms of the single-particle wavefunctions, while the external potential energy functional $V_{\text{n}}[n]$ is determined by the external potential acting on the electrons. The Hartree energy functional $E_{\text{H}}[n]$ accounts for the classical electrostatic interaction between electrons, and the exchange-correlation energy functional $E_{\text{xc}}[n]$ captures the quantum mechanical effects of electron-electron interactions.
+  First, we fix a trial density $\tilde{n}(\mathbf{r})$ and define the trial wavefunctions $\tilde{\Psi}^{\alpha}_{\tilde{n}(\mathbf{r})}$. Therefore, the constrained energy minimum is defined as 
+\begin{equation}
+  \label{eq47}
+  \begin{aligned}
+    E[\tilde{n}(\mathbf{r})] &= \min_{\alpha} \langle \tilde{\Psi}^{\alpha}_{\tilde{n}(\mathbf{r})} | \hat{H} | \tilde{\Psi}^{\alpha}_{\tilde{n}(\mathbf{r})} \rangle\\
+    &= \mathcal{F}[\tilde{n}(\mathbf{r})] + \int V(\mathbf{r}) \tilde{n}(\mathbf{r}) d\mathbf{r}
+  \end{aligned}
+\end{equation}
+  Secondly, we minimise Equation \ref{eq47} over all $n$
+  \begin{equation}
+    \label{eq48}
+    E = \min_{\tilde{n}(\mathbf{r})} E[\tilde{n}(\mathbf{r})] = \min_{\tilde{n}(\mathbf{r})} \left\{\mathcal{F}[\tilde{n}(\mathbf{r})] + \int V(\mathbf{r}) \tilde{n}(\mathbf{r}) d\mathbf{r}\right\}
+  \end{equation}
+For a non-degenerate ground state, the minimum corresponds to the ground-state $n(\mathbf{r})$, or to one of the ground-state densities otherwise.
 \end{proof}
+Finally, we have managed to map the formidable challenge of finding the minimum of $\langle \Psi | \hat{H} | \Psi \rangle$ involving a $3N$-dimensional wavefunction into a much simpler problem of finding the minimum of $E[n(\mathbf{r})]$ involving a $3$-dimensional function. This is the essence of DFT, which allows us to compute the ground-state properties of many-electron systems without explicitly solving the many-body Schrödinger equation.
 
 \subsection{Kohn-Sham Equations}
-The Kohn-Sham equations are a set of single-particle equations that arise from the second Hohenberg-Kohn theorem. They provide a practical way to compute the ground-state electron density and energy of a many-electron system by introducing an auxiliary system of non-interacting electrons that yield the same ground-state density as the interacting system. The Kohn-Sham equations are given by:
-\begin{equation}
-  \left[-\frac{\nabla^2}{2} + V_{\text{n}}(\mathbf{r}) + V_{\text{H}}(\mathbf{r}) + V_{\text{xc}}(\mathbf{r})\right] \phi_i(\mathbf{r}) = \varepsilon_i \phi_i(\mathbf{r})
-\end{equation}
-where $\phi_i(\mathbf{r})$ are the Kohn-Sham orbitals, $\varepsilon_i$ are the corresponding eigenvalues, $V_{\text{H}}(\mathbf{r})$ is the Hartree potential, and $V_{\text{xc}}(\mathbf{r})$ is the exchange-correlation potential. The electron density is obtained from the Kohn-Sham orbitals as:
+Even though the Hohenberg-Kohn theorems provide a rigorous foundation for DFT, they offer no guidance whatsoever for constructing the functional $\mathcal{F}[n(\mathbf{r})]$. As such, density functional theory would lack practical utility if it were not for the auxiliary system proposed by Kohn and Sham\supercite{martin2020electronic}. It consists of replacing the many-electron problem by an auxiliary independent-particle problem that yields the same ground-state density, incorporating the many-body effects into a so-called exchange-correlation functional. To this end, we first define the density of the auxiliary system as
 \begin{equation}
   n(\mathbf{r}) = \sum_i |\phi_i(\mathbf{r})|^2
+  \label{eq49}
 \end{equation}
-The Kohn-Sham equations are solved self-consistently, meaning that the exchange-correlation potential $V_{\text{xc}}(\mathbf{r})$ is updated iteratively based on the current electron density until convergence is achieved. The Kohn-Sham approach allows for the calculation of ground-state properties of many-electron systems while avoiding the computational complexity of directly solving the many-body Schrödinger equation.
+where $\phi_i(\mathbf{r})$ are the single-particle wavefunctions of the auxiliary system. Next, we define the independent-particle kinetic energy functional as 
+\begin{equation}
+  \label{eq50}
+  T_s[n(\mathbf{r})] = \frac{1}{2}\sum_i \int \phi_i^*(\mathbf{r}) (-\nabla^2 )\phi_i(\mathbf{r}) d\mathbf{r}
+\end{equation}
+and the Hartree energy functional can be redefined as 
+\begin{equation}
+  \label{eq51}
+  E_H[n(\mathbf{r})] = \frac{1}{2} \int \frac{n(\mathbf{r}) n(\mathbf{r'})}{|\mathbf{r} - \mathbf{r'}|} d\mathbf{r} d\mathbf{r'}
+\end{equation}
+yielding the following expression for the total energy functional:
+\begin{equation}
+  \label{eq52}
+  E[n(\mathbf{r})] = T_s[n(\mathbf{r})] + \int V_{\text{n}}(\mathbf{r}) n(\mathbf{r}) d\mathbf{r} + E_H[n(\mathbf{r})] + E_{xc}[n(\mathbf{r})]
+\end{equation}
+where $E_{xc}[n(\mathbf{r})]$ is the exchange-correlation energy functional is defined as
+\begin{equation}
+  \label{eq53}
+  E_{xc}[n(\mathbf{r})] = \langle \hat{T} \rangle - T_s[n(\mathbf{r})] + \langle \hat{U}\rangle - E_H[n(\mathbf{r})]
+\end{equation}
+having $\langle \hat{T} \rangle$ and $\langle \hat{U} \rangle$ being the exact kinetic energy and electron-electron interaction energy. Finally, we choose a variation in the density to be 
+\begin{equation}
+  \delta n(\mathbf{r}) = \delta \phi_i^*(\mathbf{r}) \phi_i(\mathbf{r}) 
+  \label{eq54}
+\end{equation}
+along with the following constraint 
+\begin{equation}
+  \int \delta n(\mathbf{r}) d\mathbf{r} = \int \delta \phi_i^*(\mathbf{r}) \phi_i(\mathbf{r}) d\mathbf{r} = 0
+  \label{eq55}
+\end{equation}
+and by applying the Kohn-Sham variational principle, we arrive at the Kohn-Sham equations: 
+\begin{equation}
+  \label{eq56}
+  \left[-\frac{\nabla^2}{2} + V_{\text{ext}}(\mathbf{r}) + V_H(\mathbf{r}) + V_{xc}(\mathbf{r})\right]\phi_i(\mathbf{r}) = \varepsilon_i \phi_i(\mathbf{r})
+\end{equation}
+where $V_{\text{ext}}(\mathbf{r})$ is the external potential, $V_H(\mathbf{r})$ is the Hartree potential, and $V_{xc}(\mathbf{r})$ is the exchange-correlation potential defined as 
+\begin{equation}
+  \label{eq57}
+  V_{xc}(\mathbf{r}) = \frac{\delta E_{xc}[n(\mathbf{r})]}{\delta n(\mathbf{r})}
+\end{equation}
+Our task now shall focus on constructing appropriate approximations for the exchange-correlation functional $E_{xc}[n(\mathbf{r})]$. 
 
 \subsection{Exchange-Correlation Functionals}
+The usefulness of DFT relies entirely on whether reliable approximations for the exchange-correlation functional $E_{xc}[n(\mathbf{r})]$ can be constructed with sufficient accuracy and computational efficiency. Therefore, we shall now present the most commonly used approximations for $E_{xc}[n(\mathbf{r})]$, as well as their strengths and weaknesses.  
+\subsubsection{Local Density Approximation}
+The simplest---and remarkably effective---approximation for the exchange-correlation functional is the local-density approximation (LDA)\supercite{Kohn1999}. It approximates the local electron density in a inhomogeneous system by an homogeneous electron gas (HEG) having the same electron density. 
+\begin{equation}
+  \label{eq58}
+  E_{xc}^{LDA}[n(\mathbf{r})] = \int n(\mathbf{r}) \epsilon_{xc}(n(\mathbf{r})) d\mathbf{r}
+\end{equation}
+where $\epsilon_{xc}(n)$  is the exchange and correlation energy per electron of a uniform electron gas of density $n$\supercite{Hohenberg1964, Kohn1965}. This quantity depends solely on the local density and surrounding electrons in the vicinity of $\mathbf{r}$---for example, a sphere of radius $\sim\lambda_F(\mathbf{r})$, the local Fermi wavelength\supercite{feng2005introduction} $\lambda_F(\mathbf{r})\equiv[3\pi^2 n(\mathbf{r})]^{-1/3}$.
+
+The exchange and correlation contributions to $E_{xc}^{LDA}$ can be separated into two terms 
+\begin{equation}
+  \label{eq59}
+  E_{xc}^{LDA}[n(\mathbf{r})] = E_x^{HEG}[n(\mathbf{r})] + E_c^{HEG}[n(\mathbf{r})]
+\end{equation}
+The first term corresponds to the exchange energy density contribution
+\begin{equation}
+  \label{eq60}
+  \begin{aligned}
+    \epsilon_x^{HEG}(n) &= -\frac{3}{4} \left(\frac{3}{\pi}\right)^{1/3} n^{1/3}\\
+    %&= -\frac{3 \lambda_F}{4\pi} \\
+    &= -\frac{0.458128}{r_s}
+  \end{aligned}
+\end{equation}
+where $r_s$ is the Wigner-Seitz radius---the radius of a sphere containing one electron and given by $(4\pi/3)r_s^3 = n^{-1}$.
+
+The second term corresponds to the correlation energy, which was computed by Ceperley and Alder\supercite{Ceperley1980} using quantum Monte Carlo methods. Subsequently, the extracted data was parameterised by Perdew and Zunger\supercite{Perdew1981}, yielding the following expression:
+\begin{equation}
+  \label{eq61}
+  \epsilon_c^{HEG(r_s)} = \begin{cases} 
+    0.0311\ln{r_s} - 0.0480 + 0.002 r_s \ln{r_s} - 0.0116 r_s& r_s < 1\\
+   \displaystyle \frac{-0.1423}{1 + 1.0529\sqrt{r_s} + 0.3334 r_s}& r_s \geq 1
+  \end{cases}
+\end{equation}
+LDA has demonstrated remarkable success for most applications involving systems with slowly varying densities or systems with high densities. Nevertheless, LDA---and LSDA, the spin-polarised version of LDA---fail in systems, like heavy fermion systems, so dominated by strong electron-electron interactions that it loses any resemblance to non-interacting electron gases.   
+
+\subsubsection{Generalised Gradient Approximation}
+
+
+
+\subsubsection{Hybrid Functionals}
 
 \section{Ab initio Molecular Dynamics}
 
@@ -373,6 +472,7 @@ The Kohn-Sham equations are solved self-consistently, meaning that the exchange-
 \subsection{Car-Parrinello Molecular Dynamics}
 
 \section{Machine Learning Force Fields}
+\subsection{Hyperparameters}
 
 \section{Computational Implementation in VASP}
 \subsection{Plane Wave Basis Set}

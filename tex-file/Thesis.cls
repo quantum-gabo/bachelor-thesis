@@ -159,7 +159,7 @@
 	
 	\vspace{16cm} % Add vertical space to push the name to the bottom
 	\begin{flushright}
-		{\normalsize Balarezo J. Gabriel} % Student's name at the left bottom
+    {\normalsize Balarezo J. Gabriel} % Student's name at the left bottom
 	\end{flushright}
 	\clearpage % Start a new page
 }
@@ -572,7 +572,7 @@ supervision.\\[2.5cm]
 \begin{center}{\Large \textit{#1}}\end{center}
 \vspace{10cm} % Add vertical space to push the name to the bottom
 \begin{flushright}
-{\normalsize Balarezo J. Gabriel} % Student's name at the left bottom
+{\normalsize ---Balarezo J. Gabriel} % Student's name at the left bottom
 \end{flushright}
 \vfil\null
 \cleardoublepage
