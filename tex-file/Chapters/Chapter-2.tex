@@ -7,7 +7,7 @@
 \lhead{Chapter 2. \emph{Theoretical Background}}
 This chapter is devoted to present the theoretical foundations and formalism of Density Functional Theory (DFT) and related methods required for the development of the results presented in this work. Starting with the many-body Schrödinger equation, this chapter covers the Born-Oppenheimer approximation, the Hartree-Fock approximation, Hohenberg-Kohn theorems, the Kohn-Sham equations, exchange-correlation functionals, and definitions on Ab initio molecular dynamics (AIMD) and machine learning force fields (MLFFs), along with implementation details in the Vienna Ab initio Simulation Package (VASP).
 
-Ultimately, the aim of this chapter is to provide a comprehensive understanding of the theoretical framework that underpins the computational methods utilised in this work, enabling the reader to grasp the principles and assumptions that govern the simulations and analyses performed throughout.
+Ultimately, this chapter aims to provide a comprehensive understanding of the theoretical framework that underpins the computational methods utilised in this work, enabling the reader to grasp the principles and assumptions that govern the simulations and analyses performed throughout.
 
 \section{Many Body Schrödinger Equation}
 In the realm of materials science, comprehending particle behaviour within a system inevitably demands resorting to intricate principles of quantum mechanics. Our journey shall commence by describing the physical laws that shape the interactions among particles constituting a system---electrons and nuclei alike. 
@@ -47,7 +47,7 @@ The Time-Independent Schrödinger Equation (TISE) lies at the heart of non-relat
   \label{eq5}
   \hat{H} \psi(\mathbf{r}) = E \psi(\mathbf{r})
 \end{equation}
-where $\hat{H}$ is the Hamiltonian of the system, encompassing both kinetic and potential energies, $\psi(\mathbf{r})$ is the wavefunction of the system, and $E$ is the energy eigenvalue associated with the state described by $\psi(\mathbf{r})$.  It is important to note that Equation \ref{eq5} is applicable to a single particle, yet a material system is composed of many electrons (N) and nuclei (M) with spatial coordinates $\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N$ and $\mathbf{R}_1, \mathbf{R}_2, \ldots, \mathbf{R}_M$, respectively. Therefore, we must introduce a so called many-body wavefunction given by:
+where $\hat{H}$ is the Hamiltonian of the system, encompassing both kinetic and potential energies, $\psi(\mathbf{r})$ is the wavefunction of the system, and $E$ is the energy eigenvalue associated with the state described by $\psi(\mathbf{r})$.  It is important to note that Equation \ref{eq5} is only applicable to a single particle, yet a material system is composed of many electrons (N) and nuclei (M) with spatial coordinates $\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N$ and $\mathbf{R}_1, \mathbf{R}_2, \ldots, \mathbf{R}_M$, respectively. Therefore, we must introduce a so-called many-body wavefunction given by:
 \begin{equation}
   \Psi(\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N, \mathbf{R}_1, \mathbf{R}_2, \ldots, \mathbf{R}_M)
   \label{eq5b}
@@ -65,7 +65,7 @@ On this basis, the many-body version of Equation \ref{eq5} shall be constructed 
     \right]\Psi = E_{\text{tot}} \Psi
   \end{split}
 \end{equation}
-Equation \ref{eq6} provides a complete description of the stationary states of a non-relativistic many-body system, under time-independent conditions and in the absence of external fields. Additionally, we can achieve a more compact formulation by introducing the concept of atomic units. To this end, let us consider the simplest electron-nucleus  system---the hydrogen atom---where the electron orbital has an average radius $a_0 \approx 0.529 \, \text{Å}$. Thereby, the Coulomb energy for such a system is given by:
+Equation \ref{eq6} provides a complete description of the stationary states of a non-relativistic many-body system, under time-independent conditions and in the absence of external fields. Additionally, we can achieve a more compact formulation by introducing the concept of atomic units. To this end, let us consider the simplest electron-nucleus system---the hydrogen atom---where the electron orbital has an average radius $a_0 \approx 0.529 \, \text{Å}$. Thereby, the Coulomb energy for such a system is given by:
 \begin{equation}
   \label{eq7}
   E_{\text{Ha}} = \frac{e^2}{4 \pi \epsilon_0 a_0}
@@ -123,12 +123,12 @@ Ultimately, even though Equation \ref{eq13} provides an exact method capable of 
 %	SUBSECTION 1
 %-----------------------------------
 \section{The Born-Oppenheimer Approximation}
-For atoms in a solid, we can think of nuclei as being held immobile in a fixed position, while electrons instantaneously react to any nuclei movement. This assumption is based on the fact that nuclei are much heavier than electrons---by three to four orders of magnitude---making the former behave like classical particles. Thereby, we can rewrite the many-body wavefunction as a product of two wavefunctions:
+For atoms in a solid, we can think of nuclei as being held immobile in a fixed position, while electrons instantaneously react to any nucleus's movement. This assumption is based on the fact that nuclei are much heavier than electrons---by three to four orders of magnitude---making the former behave like classical particles. Thereby, we can rewrite the many-body wavefunction as a product of two wavefunctions:
 \begin{equation}
   \Psi(\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N, \mathbf{R}_1, \mathbf{R}_2, \ldots, \mathbf{R}_M) = \psi_{\mathbf{R}}(\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N)\chi(\mathbf{R})
   \label{eq14}
 \end{equation}
-where $\psi_{\mathbf{R}}$ is the electronic wavefunction parametrised by the nuclear positions $\mathbf{R}$, and $\chi$ is the nuclear wavefunction. Furthermore, this significant mass disparity enables a systematic approximation scheme, in which the electronic wavefunction is solved for fixed nuclei, and its solution is used as an effective potential for the nuclear dynamics afterwards. First, nuclei kinetic energy is neglected, as their positions are assumed to be fixed: 
+where $\psi_{\mathbf{R}}$ is the electronic wavefunction parametrised by the nuclear positions $\mathbf{R}$, and $\chi$ is the nuclear wavefunction. Furthermore, this significant mass disparity enables a systematic approximation scheme, in which the electronic wavefunction is solved for fixed nuclei, and its solution is used as an effective potential for the nuclear dynamics afterwards. First, nuclei' kinetic energy is neglected, as their positions are assumed to be fixed: 
 \begin{equation}
   \label{eq15}
   \sum_I \frac{\nabla_I^2}{2 M_I} = 0
@@ -165,7 +165,7 @@ where $E_{\mathbf{R}}= E(\mathbf{R}_1,\dots,\mathbf{R}_M)$ is the electronic sur
 %-----------------------------------
 
 \section{Hartree-Fock Approximation}
-The essence of the Hartree-Fock approximation (HFA) is approximate the interacting many-electron system (Equation \ref{eq17}) by a set of non-interacting single-particle problems subject to an effective mean-field potential\supercite{martin2016interacting, helgaker2014molecular, feng2005introduction}. As a means to this, we first rewrite the total wavefunction for a system with N electrons as the product of single-electron wavefunctions---often referred to as the Hartree approximation\supercite{Hartree1928}---as showcased in Equation \ref{eq20}. 
+The essence of the Hartree-Fock approximation (HFA) is to approximate the interacting many-electron system (Equation \ref{eq17}) by a set of non-interacting single-particle problems subject to an effective mean-field potential\supercite{martin2016interacting, helgaker2014molecular, feng2005introduction}. As a means to this, we first rewrite the total wavefunction for a system with N electrons as the product of single-electron wavefunctions---often referred to as the Hartree approximation\supercite{Hartree1928}---as showcased in Equation \ref{eq20}. 
 \begin{equation}
   \Psi^H(\mathbf{r}_1, \dots, \mathbf{r}_N) = \prod_{i=1}^N \phi_i(\mathbf{r}_i)
   \label{eq20}
@@ -184,7 +184,7 @@ Expanding Equation \ref{eq21}:
     E^{H}[\{\phi_i\}] &= \sum^N_{i=1} \int \phi_i^*(\mathbf{r}) \left(-\frac{\nabla^2}{2} + V_{\text{n}}(\mathbf{r})\right) \phi_i(\mathbf{r}) d\mathbf{r}  + \frac{1}{2} \sum_{i\neq j} \int\int \frac{|\phi_i(\mathbf{r})|^2 |\phi_j(\mathbf{r'})|^2 }{|\mathbf{r} - \mathbf{r'}|} d\mathbf{r} d\mathbf{r'}
   \end{split}
 \end{equation}
-where the first term adds up the kinetic energy and electron-nuclear attraction overall electrons, whilst the second accounts for the classical electron-electron repulsion energy averaged over the electron density distribution. In order to find the set of orbitals $\{\phi_i\}$ that minimises the total energy functional we use the variational principle where we shall impose the orthonormality condition: 
+where the first term adds up the kinetic energy and electron-nuclear attraction overall electrons, whilst the second accounts for the classical electron-electron repulsion energy averaged over the electron density distribution. In order to find the set of orbitals $\{\phi_i\}$ that minimises the total energy functional, we use the variational principle where we shall impose the orthonormality condition: 
 \begin{equation}
   \label{eq23}
   \int \phi_i^*(\mathbf{r}) \phi_j(\mathbf{r}) d\mathbf{r} = \delta_{ij}
@@ -205,7 +205,7 @@ Then, we need to compute the derivative of $\mathcal{L}$ with respect to $\phi_i
   \label{eq26}
   \frac{\delta \mathcal{L}}{\delta \phi_i^*}(\mathbf{r}) = 0
 \end{equation}
-which yield to the Hartree equation:
+which yields to the Hartree equation:
 \begin{equation}
   \label{eq27}
   \left[-\frac{\nabla^2}{2} + V_{\text{n}}(\mathbf{r}) + V^H_i(\mathbf{r})\right]\phi_i(\mathbf{r})  = \varepsilon_i \phi_i(\mathbf{r})
@@ -217,7 +217,7 @@ where $V_n(\mathbf{r})$ represents the electrostatic interaction between electro
 \end{equation}
 accounts for the average electrostatic interaction experienced by the $i$-th electron due to all other electrons in the system. This effective mean-field potential replaces the electron-electron interactions, effectively simplifying the many-body problem into single-particle problems. 
 \subsection{The Pauli Exclusion Principle}
-So far, we have introduced the Hartree approximation, which assumes that the many-electron wavefunction can be expressed as a product of single-particle wavefunctions. However, this approach does not account for the indistinguishability of electrons and the Pauli exclusion principle, which states that no two fermions---half spin particles, such as electrons---can reside in the same quantum state simultaneously. In doing so, it imposes a restriction on the possible configurations of electrons in a system that shall be accounted for.
+So far, we have introduced the Hartree approximation, which assumes that the many-electron wavefunction can be expressed as a product of single-particle wavefunctions. However, this approach does not account for the indistinguishability of electrons and the Pauli exclusion principle, which states that no two fermions--- half-spin particles, such as electrons---can reside in the same quantum state simultaneously. In doing so, it imposes a restriction on the possible configurations of electrons in a system that shall be accounted for.
  
  In order to achieve this, V. Fock\supercite{Fock1930} introduced a different approximation to the wavefunction by using a Slater determinant---a mathematical construct that combines one-electron wavefunctions in such a way that satisfies the antisymmetry principle. This is done by expressing the overall wavefunction as the determinant of a matrix of single-electron wavefunctions:
 \begin{equation}
@@ -249,7 +249,7 @@ The Hartree-Fock equations are derived in a similar manner we addressed the Hart
     &- \frac{1}{2} \sum_{i\neq j} \langle \phi_i \phi_j \big| \frac{1}{|\mathbf{r}_i - \mathbf{r}_j|} \big| \phi_j \phi_i\rangle
   \end{split}
 \end{equation}
-Consecutively, using the variational principle, we derive the Hartree-Fock equations: 
+Consequently, using the variational principle, we derive the Hartree-Fock equations: 
 \begin{equation}
   \label{eq32}
   \left[-\frac{\nabla^2}{2} + V_{\text{n}}(\mathbf{r}) + V^H_i(\mathbf{r}) +\right]\phi_i(\mathbf{r})
@@ -291,7 +291,7 @@ where $V^X_i$ stands for the exchange potential
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 \section{Density Functional Theory}
-So far, we have acknowledged that determining the state of a system with N electrons remains a formidable challenge for it involves a  wavefunction defined in a $3N$-dimensional space. We also recognise that it is possible---heuristically speaking---to simplify such representation by utilising products of single-particle wavefunctions. Nevertheless, such independent electrons approximation necessitates the wavefuctions to be explicitly specified, thereby yielding a rather drastic approximation for the behaviour of the system. Thus, it is natural to consider a different approach to develop the appropriate single-particle framework in an exact manner, onto which approximations can be introduced afterwards.
+So far, we have acknowledged that determining the state of a system with N electrons remains a formidable challenge, for it involves a wavefunction defined in a $3N$-dimensional space. We also recognise that it is possible---heuristically speaking---to simplify such representation by utilising products of single-particle wavefunctions. Nevertheless, such independent electrons approximation necessitates the wavefunctions to be explicitly specified, thereby yielding a rather drastic approximation for the behaviour of the system. Thus, it is natural to consider a different approach to develop the appropriate single-particle framework in an exact manner, onto which approximations can be introduced afterwards.
 
 We hereby introduce the Density Functional Theory (DFT), which draws upon the insight that any property of a system of many electrons can be viewed as a functional of the ground-state density $n(\mathbf{r})$\supercite{martin2020electronic} (Equation \ref{eq39})---a scalar function defined over three spatial coordinates. 
 \begin{equation}
@@ -468,9 +468,9 @@ Within this framework, the exchange-correlation energy functional is expressed a
   \label{eq62}
   E_{xc}^{GGA}[n(\mathbf{r})] = \int n(\mathbf{r}) \epsilon_{xc}^{HEG}(n(\mathbf{r})) f(n_{\uparrow}(\mathbf{r}), n_{\downarrow}(\mathbf{r}),\nabla n_{\uparrow}(\mathbf{r}), \nabla n_{\downarrow}(\mathbf{r})) d\mathbf{r}
 \end{equation}
-where $n_{\uparrow}(\mathbf{r})$ and $n_{\downarrow}(\mathbf{r})$ are the spin-up and spin-down electron densities, respectively. Additionally the exact form of $f$---a parametrised analytic function---depends on the GGA under consideration.  
+where $n_{\uparrow}(\mathbf{r})$ and $n_{\downarrow}(\mathbf{r})$ are the spin-up and spin-down electron densities, respectively. Additionally, the exact form of $f$---a parametrised analytic function---depends on the GGA under consideration.  
 
-In this regard, one the most prominent and widely adopted GGA functionals is the Perdew-Burke-Ernzerhof (PBE)\supercite{Perdew1996} functional, which was proposed as a solution for the drawbacks of previously proposed GGAs, such as the Perdew-Wang (PW91) functional. Within PBE, all parameters---other than those in $\epsilon_{xc}^{HEG}(n(\mathbf{r}))$---are fundamental constants. Consequently, the exchange energy term in the PBE functional is given by 
+In this regard, one of the most prominent and widely adopted GGA functionals is the Perdew-Burke-Ernzerhof (PBE)\supercite{Perdew1996} functional, which was proposed as a solution for the drawbacks of previously proposed GGAs, such as the Perdew-Wang (PW91) functional. Within PBE, all parameters---other than those in $\epsilon_{xc}^{HEG}(n(\mathbf{r}))$---are fundamental constants. Consequently, the exchange energy term in the PBE functional is given by 
 \begin{equation}
   \label{eq63}
   E_{x}^{PBE} = \int n(\mathbf{r}) \epsilon_{x}^{HEG}(n(\mathbf{r})) \left[1 + \kappa - \frac{\kappa}{1 +  \mu s^2/\kappa}\right] d\mathbf{r}
@@ -503,7 +503,7 @@ To address this issue, a revised version of the PBE---the PBEsol functional\supe
 \subsubsection{Hybrid Functionals}
 Aforementioned functionals and their inherent limitations motivated the exploration of hybrid functionals. They offer improved accuracy by incorporating a fraction of the exact nonlocal Hartree-Fock exchange energy into the exchange-correlation functional, allowing efficient yet accurate calculations. 
 
-One of these functionals include PBE0\supercite{Heyd2003}---a combination of the PBE functional and the exact Hartree-Fock exchange energy. It is defined as 
+One of these functionals includes PBE0\supercite{Heyd2003}---a combination of the PBE functional and the exact Hartree-Fock exchange energy. It is defined as 
 \begin{equation}
   \label{eq66}
   E_{xc}^{PBE0} = \frac{1}{4}E_{x}^{HF} + \frac{3}{4}E_{x}^{PBE} + E_{c}^{PBE}
