@@ -426,12 +426,12 @@ Our task now shall focus on constructing appropriate approximations for the exch
 \subsection{Exchange-Correlation Functionals}
 The usefulness of DFT relies entirely on whether reliable approximations for the exchange-correlation functional $E_{xc}[n(\mathbf{r})]$ can be constructed with sufficient accuracy and computational efficiency. Therefore, we shall now present the most commonly used approximations for $E_{xc}[n(\mathbf{r})]$, as well as their strengths and weaknesses.  
 \subsubsection{Local Density Approximation}
-The simplest---and remarkably effective---approximation for the exchange-correlation functional is the local-density approximation (LDA)\supercite{Kohn1999}. It approximates the local electron density in a inhomogeneous system by an homogeneous electron gas (HEG) having the same electron density. 
+The simplest---and remarkably effective---approximation for the exchange-correlation functional is the local-density approximation (LDA)\supercite{Kohn1999}. It approximates the exchange-correlation energy of an inhomogeneous electron system by that of a homogeneous electron gas (HEG) having the same electron density. 
 \begin{equation}
   \label{eq58}
   E_{xc}^{LDA}[n(\mathbf{r})] = \int n(\mathbf{r}) \epsilon_{xc}(n(\mathbf{r})) d\mathbf{r}
 \end{equation}
-where $\epsilon_{xc}(n)$  is the exchange and correlation energy per electron of a uniform electron gas of density $n$\supercite{Hohenberg1964, Kohn1965}. This quantity depends solely on the local density and surrounding electrons in the vicinity of $\mathbf{r}$---for example, a sphere of radius $\sim\lambda_F(\mathbf{r})$, the local Fermi wavelength\supercite{feng2005introduction} $\lambda_F(\mathbf{r})\equiv[3\pi^2 n(\mathbf{r})]^{-1/3}$.
+where $\epsilon_{xc}(n)$  is the exchange and correlation energy per electron of a uniform electron gas of density $n$\supercite{Hohenberg1964, Kohn1965}. This quantity depends solely on the local density and surrounding electrons in the vicinity of $\mathbf{r}$, for example, a sphere of radius $\sim\lambda_F(\mathbf{r})$---the local Fermi wavelength\supercite{feng2005introduction} $\lambda_F(\mathbf{r})\equiv[3\pi^2 n(\mathbf{r})]^{-1/3}$.
 
 The exchange and correlation contributions to $E_{xc}^{LDA}$ can be separated into two terms 
 \begin{equation}
@@ -452,19 +452,75 @@ where $r_s$ is the Wigner-Seitz radius---the radius of a sphere containing one e
 The second term corresponds to the correlation energy, which was computed by Ceperley and Alder\supercite{Ceperley1980} using quantum Monte Carlo methods. Subsequently, the extracted data was parameterised by Perdew and Zunger\supercite{Perdew1981}, yielding the following expression:
 \begin{equation}
   \label{eq61}
-  \epsilon_c^{HEG(r_s)} = \begin{cases} 
+  \epsilon_c^{HEG}(r_s) = \begin{cases} 
     0.0311\ln{r_s} - 0.0480 + 0.002 r_s \ln{r_s} - 0.0116 r_s& r_s < 1\\
    \displaystyle \frac{-0.1423}{1 + 1.0529\sqrt{r_s} + 0.3334 r_s}& r_s \geq 1
   \end{cases}
 \end{equation}
-LDA has demonstrated remarkable success for most applications involving systems with slowly varying densities or systems with high densities. Nevertheless, LDA---and LSDA, the spin-polarised version of LDA---fail in systems, like heavy fermion systems, so dominated by strong electron-electron interactions that it loses any resemblance to non-interacting electron gases.   
+LDA has demonstrated remarkable success for most applications involving systems with slowly varying densities or systems with high densities. Nevertheless, LDA---and its spin-polarised version (LSDA)---
+breaks down in systems governed by strong correlation effects that it loses any resemblance to non-interacting electron gases.   
 
 \subsubsection{Generalised Gradient Approximation}
+In contrast to LDA---which considers the electronic density to be locally uniform---the generalised gradient approximation (GGA) systematically improves upon LDA by incorporating not only the local density $n(\mathbf{r})$, but also its gradient $\nabla n(\mathbf{r})$, thereby accounting for the inhomogeneities in the electron distribution.  
 
+Within this framework, the exchange-correlation energy functional is expressed as a function of the local density and its gradient 
+\begin{equation}
+  \label{eq62}
+  E_{xc}^{GGA}[n(\mathbf{r})] = \int n(\mathbf{r}) \epsilon_{xc}^{HEG}(n(\mathbf{r})) f(n_{\uparrow}(\mathbf{r}), n_{\downarrow}(\mathbf{r}),\nabla n_{\uparrow}(\mathbf{r}), \nabla n_{\downarrow}(\mathbf{r})) d\mathbf{r}
+\end{equation}
+where $n_{\uparrow}(\mathbf{r})$ and $n_{\downarrow}(\mathbf{r})$ are the spin-up and spin-down electron densities, respectively. Additionally the exact form of $f$---a parametrised analytic function---depends on the GGA under consideration.  
 
+In this regard, one the most prominent and widely adopted GGA functionals is the Perdew-Burke-Ernzerhof (PBE)\supercite{Perdew1996} functional, which was proposed as a solution for the drawbacks of previously proposed GGAs, such as the Perdew-Wang (PW91) functional. Within PBE, all parameters---other than those in $\epsilon_{xc}^{HEG}(n(\mathbf{r}))$---are fundamental constants. Consequently, the exchange energy term in the PBE functional is given by 
+\begin{equation}
+  \label{eq63}
+  E_{x}^{PBE} = \int n(\mathbf{r}) \epsilon_{x}^{HEG}(n(\mathbf{r})) \left[1 + \kappa - \frac{\kappa}{1 +  \mu s^2/\kappa}\right] d\mathbf{r}
+\end{equation}
+where $\kappa = 0.804$ and $\mu = 0.219$ are the parameters of the PBE functional, $k_F = (3\pi^2 n(\mathbf{r}))^{1/3}$ is the local Fermi wavevector and $s = |\nabla n(\mathbf{r})|/(2k_F n(\mathbf{r}))$ is a dimensionless density gradient.
+
+The correlation energy term in the PBE functional is expressed as 
+\begin{equation}
+  \label{eq64}
+  E_{c}^{PBE} = \int n(\mathbf{r}) \left[\epsilon_{c}^{HEG} + 
+  \gamma \phi^3 \ln\left\{ 1 + \frac{\beta}{\gamma}t^2 
+  \left[ 
+  \frac{1 + At^2}{1 + At^2 + A^2t^4}
+  \right]
+  \right\} 
+  \right]
+\end{equation}
+where $\gamma = 0.031091$, $\beta = 0.066725$, $\phi$ is a spin-scaling factor, and $A$ and $t$ are defined as 
+\begin{equation}
+  \label{eq65}
+  A = \frac{\beta}{\gamma} \left[\exp{\frac{-\epsilon_{c}^{HEG}}{\gamma\phi^3}} - 1  \right]^{-1}, \quad 
+  t(\mathbf{r}) = \frac{|\nabla n(\mathbf{r})|}{2\phi k_s n(\mathbf{r})}
+\end{equation}
+where $k_s = \sqrt{4 k_F / \pi}$ is the Thomas-Fermi screening wavenumber.
+
+Even though PBE holds a significant advantage over LDA in terms of accuracy, it is not exempt from certain limitations and shortcomings.  PBE tends to overestimate equilibrium lattice constants by about 1\%---LDA underestimates them by the same amount---which is detrimental for accurate calculations of other equilibrium properties, such as bulk moduli, phonon frequencies and magnetism.
+
+To address this issue, a revised version of the PBE---the PBEsol functional\supercite{Perdew2008}---was developed, which improves equilibrium properties of densely-packed solids and their surfaces, reducing the overestimation of lattice constants by a factor of $\sim 4$. Nonetheless, PBEsol does not perform well for semiconductors and can lead to less accurate total energy calculations compared to PBE.  Ultimately, the choice of GGA functional comes down to the specific system and properties under investigation, as well as the desired balance between accuracy and computational efficiency.
 
 \subsubsection{Hybrid Functionals}
+Aforementioned functionals and their inherent limitations motivated the exploration of hybrid functionals. They offer improved accuracy by incorporating a fraction of the exact nonlocal Hartree-Fock exchange energy into the exchange-correlation functional, allowing efficient yet accurate calculations. 
 
+One of these functionals include PBE0\supercite{Heyd2003}---a combination of the PBE functional and the exact Hartree-Fock exchange energy. It is defined as 
+\begin{equation}
+  \label{eq66}
+  E_{xc}^{PBE0} = \frac{1}{4}E_{x}^{HF} + \frac{3}{4}E_{x}^{PBE} + E_{c}^{PBE}
+\end{equation}
+Another prominent example is the HSE (Heyd-Scuseria-Ernzerhof) functional\supercite{Moussa2012}, which splits the exchange energy into short-range (SR) and long-range (LR) contributions
+\begin{equation}
+  \label{eq67}
+  E_{xc}^{HSE06} = \frac{1}{4}E_{x}^{HF,SR}(\omega) + \frac{3}{4}E_{x}^{PBE,SR}(\omega) + E_{c}^{PBE,LR}(\omega) + E_{c}^{PBE}(\omega)
+  \end{equation}
+  where $\omega$ is an adjustable parameter that controls the short and long-range separation in the decomposed Coulomb operator
+  \begin{equation}
+    \label{eq68}
+    \frac{1}{r} = SR_{\omega}(\mathbf{r}) + LR_{\omega}(\mathbf{r}) = 
+    \frac{erfc(\omega r)}{r} + \frac{erf(\omega r)}{r}
+  \end{equation}
+  While hybrid functionals often surpass LDA and GGA in terms of accuracy, they come at a higher computational cost, rendering them less suitable for large-scale calculations.  
+  
 \section{Ab initio Molecular Dynamics}
 
 \subsection{Born-Oppenheimer Molecular Dynamics}

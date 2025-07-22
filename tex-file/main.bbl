@@ -981,5 +981,241 @@
     \field{urlmonth}{07}
     \field{urlyear}{2025}
   \endentry
+
+  \entry{Perdew1996}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=PJP}{%
+         family={Perdew},
+         familyi={P\bibinitperiod},
+         given={John\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Burke},
+         familyi={B\bibinitperiod},
+         given={Kieron},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=EM}{%
+         family={Ernzerhof},
+         familyi={E\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{PJPBKEM1}
+    \strng{fullhash}{PJPBKEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Generalized gradient approximations (GGA's) for the exchange-correlation energy improve upon the local spin density (LSD) description of atoms, molecules, and solids. We present a simple derivation of a simple GGA, in which all parameters (other than those in LSD) are fundamental constants. Only general features of the detailed construction underlying the Perdew-Wang 1991 (PW91) GGA are invoked. Improvements over PW91 include an accurate description of the linear response of the uniform electron gas, correct behavior under uniform scaling, and a smoother potential.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.77.3865
+    \endverb
+    \field{number}{18}
+    \field{pages}{3865\bibrangedash 3868}
+    \field{title}{Generalized {{Gradient Approximation Made Simple}}}
+    \field{volume}{77}
+    \verb{file}
+    \verb /home/starlord/Downloads/perdew1996.pdf
+    \endverb
+    \field{journaltitle}{Physical Review Letters}
+    \field{month}{10}
+    \field{year}{1996}
+    \field{urlday}{19}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Perdew2008}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=PJP}{%
+         family={Perdew},
+         familyi={P\bibinitperiod},
+         given={John\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Ruzsinszky},
+         familyi={R\bibinitperiod},
+         given={Adrienn},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CGI}{%
+         family={Csonka},
+         familyi={C\bibinitperiod},
+         given={G{\'a}bor\bibnamedelima I.},
+         giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=VOA}{%
+         family={Vydrov},
+         familyi={V\bibinitperiod},
+         given={Oleg\bibnamedelima A.},
+         giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SGE}{%
+         family={Scuseria},
+         familyi={S\bibinitperiod},
+         given={Gustavo\bibnamedelima E.},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=CLA}{%
+         family={Constantin},
+         familyi={C\bibinitperiod},
+         given={Lucian\bibnamedelima A.},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Xiaolan},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Burke},
+         familyi={B\bibinitperiod},
+         given={Kieron},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{PJP+1}
+    \strng{fullhash}{PJPRACGIVOASGECLAZXBK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Popular modern generalized gradient approximations are biased toward the description of free-atom energies. Restoration of the first-principles gradient expansion for exchange over a wide range of density gradients eliminates this bias. We introduce a revised Perdew-Burke-Ernzerhof generalized gradient approximation that improves equilibrium properties of densely packed solids and their surfaces.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.100.136406
+    \endverb
+    \field{number}{13}
+    \field{pages}{136406}
+    \field{title}{Restoring the {{Density-Gradient Expansion}} for {{Exchange}} in {{Solids}} and {{Surfaces}}}
+    \field{volume}{100}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/FQ64MQI8/Perdew et al. - 2008 - Restori
+    \verb ng the Density-Gradient Expansion for Exchange in Solids and Surfaces
+    \verb .pdf;/home/starlord/Zotero/storage/D6GIY5FW/PhysRevLett.100.html
+    \endverb
+    \field{journaltitle}{Physical Review Letters}
+    \field{month}{04}
+    \field{year}{2008}
+    \field{urlday}{21}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Heyd2003}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=HJ}{%
+         family={Heyd},
+         familyi={H\bibinitperiod},
+         given={Jochen},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SGE}{%
+         family={Scuseria},
+         familyi={S\bibinitperiod},
+         given={Gustavo\bibnamedelima E.},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=EM}{%
+         family={Ernzerhof},
+         familyi={E\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AIP Publishing}%
+    }
+    \strng{namehash}{HJSGEEM1}
+    \strng{fullhash}{HJSGEEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Hybrid density functionals are very successful in describing a wide range of molecular properties accurately. In large molecules and solids, however, calculatin%
+    }
+    \verb{doi}
+    \verb 10.1063/1.1564060
+    \endverb
+    \field{issn}{0021-9606}
+    \field{number}{18}
+    \field{pages}{8207\bibrangedash 8215}
+    \field{title}{Hybrid Functionals Based on a Screened {{Coulomb}} Potential}
+    \field{volume}{118}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/NS8QY4UZ/Heyd et al. - 2003 - Hybrid fu
+    \verb nctionals based on a screened Coulomb potential.pdf
+    \endverb
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{month}{05}
+    \field{year}{2003}
+    \field{urlday}{19}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Moussa2012}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=MJE}{%
+         family={Moussa},
+         familyi={M\bibinitperiod},
+         given={Jonathan\bibnamedelima E.},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SPA}{%
+         family={Schultz},
+         familyi={S\bibinitperiod},
+         given={Peter\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CJR}{%
+         family={Chelikowsky},
+         familyi={C\bibinitperiod},
+         given={James\bibnamedelima R.},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \keyw{Condensed Matter - Materials Science}
+    \strng{namehash}{MJESPACJR1}
+    \strng{fullhash}{MJESPACJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The Heyd-Scuseria-Ernzerhof (HSE) density functionals are popular for their ability to improve the accuracy of standard semilocal functionals such as Perdew-Burke-Ernzerhof (PBE), particularly for semiconductor band gaps. They also have a reduced computational cost compared to hybrid functionals, which results from the restriction of Fock exchange calculations to small inter-electron separations. These functionals are defined by an overall fraction of Fock exchange and a length scale for exchange screening. We systematically examine this two-parameter space to assess the performance of hybrid screened exchange (sX) functionals and to determine a balance between improving accuracy and reducing the screening length, which can further reduce computational costs. Three parameter choices emerge as useful: "sX-PBE" is an approximation to the sX-LDA screened exchange density functionals based on the local density approximation (LDA); "HSE12" minimizes the overall error over all tests performed; and "HSE12s" is a range-minimized functional that matches the overall accuracy of the existing HSE06 parameterization but reduces the Fock exchange length scale by half. Analysis of the error trends over parameter space produces useful guidance for future improvement of density functionals.%
+    }
+    \verb{doi}
+    \verb 10.1063/1.4722993
+    \endverb
+    \verb{eprint}
+    \verb 1205.4999
+    \endverb
+    \field{issn}{0021-9606, 1089-7690}
+    \field{number}{20}
+    \field{title}{Analysis of the {{Heyd-Scuseria-Ernzerhof}} Density Functional Parameter Space}
+    \field{volume}{136}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/VDGAU5ZL/Moussa et al. - 2012 - Analysi
+    \verb s of the Heyd-Scuseria-Ernzerhof density functional parameter space.p
+    \verb df;/home/starlord/Zotero/storage/FHQU6BBD/1205.html
+    \endverb
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cond-mat}
+    \field{month}{05}
+    \field{year}{2012}
+    \field{urlday}{22}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
 \enddatalist
 \endinput
