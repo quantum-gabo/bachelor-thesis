@@ -498,10 +498,10 @@ where $k_s = \sqrt{4 k_F / \pi}$ is the Thomas-Fermi screening wavenumber.
 
 Even though PBE holds a significant advantage over LDA in terms of accuracy, it is not exempt from certain limitations and shortcomings.  PBE tends to overestimate equilibrium lattice constants by about 1\%---LDA underestimates them by the same amount---which is detrimental for accurate calculations of other equilibrium properties, such as bulk moduli, phonon frequencies and magnetism.
 
-To address this issue, a revised version of the PBE---the PBEsol functional\supercite{Perdew2008}---was developed, which improves equilibrium properties of densely-packed solids and their surfaces, reducing the overestimation of lattice constants by a factor of $\sim 4$. Nonetheless, PBEsol does not perform well for semiconductors and can lead to less accurate total energy calculations compared to PBE.  Ultimately, the choice of GGA functional comes down to the specific system and properties under investigation, as well as the desired balance between accuracy and computational efficiency.
+To address this issue, a revised version of the PBE---the PBEsol functional\supercite{Perdew2008}---was developed, which improves equilibrium properties of densely-packed solids and their surfaces, reducing the overestimation of lattice constants by a factor of $\sim 4$. Nonetheless, PBEsol does not perform well for semiconductors and can lead to less accurate total energy calculations compared to PBE.  Ultimately, the choice of GGA functional depends on the specific system and properties being investigated, as well as the desired balance between accuracy and computational efficiency.
 
 \subsubsection{Hybrid Functionals}
-Aforementioned functionals and their inherent limitations motivated the exploration of hybrid functionals. They offer improved accuracy by incorporating a fraction of the exact nonlocal Hartree-Fock exchange energy into the exchange-correlation functional, allowing efficient yet accurate calculations. 
+Functionals mentioned above and their inherent limitations motivated the exploration of hybrid functionals. They offer improved accuracy by incorporating a fraction of the exact nonlocal Hartree-Fock exchange energy into the exchange-correlation functional, allowing efficient yet accurate calculations. 
 
 One of these functionals includes PBE0\supercite{Heyd2003}---a combination of the PBE functional and the exact Hartree-Fock exchange energy. It is defined as 
 \begin{equation}
@@ -519,22 +519,36 @@ Another prominent example is the HSE (Heyd-Scuseria-Ernzerhof) functional\superc
     \frac{1}{r} = SR_{\omega}(\mathbf{r}) + LR_{\omega}(\mathbf{r}) = 
     \frac{erfc(\omega r)}{r} + \frac{erf(\omega r)}{r}
   \end{equation}
-  While hybrid functionals often surpass LDA and GGA in terms of accuracy, they come at a higher computational cost, rendering them less suitable for large-scale calculations.  
-  
+Ultimately, hybrid functionals provide a considerable improvement in the accuracy of electronic structure calculations over LDA and GGA. Nonetheless, this advantage comes at a higher computational cost. This hierarchy of exchange-correlation functionals is better summarised in the so-called Jacob's ladder\supercite{Perdew2001} (Figure \ref{fig:jacob-ladder}), depicting the trade-off between accuracy and computational cost as we ascend the ladder towards more sophisticated functionals. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Jacob-ladder.pdf}
+  \caption{Jacob's ladder of exchange-correlation functionals as proposed by J. Perdew\supercite{Perdew2001}. The ladder categorises the functionals into rungs, from the simplest approximation (LDA) at the bottom progressing to more sophisticated and accurate approximations (Generalised Random Phase) at the uppermost rung.  
+  }
+  \label{fig:jacob-ladder}
+\end{figure}
+
+\section{Density Functional Tight Binding}
+This is a placeholder 
+
 \section{Ab initio Molecular Dynamics}
+Molecular dynamics (MD) is a widely used technique in condensed matter physics, for it provides a powerful framework to simulate the time evolution of many-body systems and to investigate macroscopic properties of materials, such as temperature, pressure, and energy distributions\supercite{marx2009ab, frenkel2023understanding}.
+
+
+
+Molecular dynamics (MD) is a powerful computational technique serving to investigate many-body condensed matter systems by simulating the time evolution of its constituent particles under the influence of interatomic interactions\supercite{marx2009ab,frenkel2023understanding}. Given a set of initial conditions---positions and velocities of all atoms in the system, and the interatomic potential---MD provides a means to compute the trajectories of atoms over a time interval by solving Newton's equations of motion.
+
+
 
 \subsection{Born-Oppenheimer Molecular Dynamics}
 
 \subsection{Car-Parrinello Molecular Dynamics}
 
-\section{Machine Learning Force Fields}
-\subsection{Hyperparameters}
-
 \section{Computational Implementation in VASP}
-\subsection{Plane Wave Basis Set}
-\subsection{K-Point Sampling and Cutoff Energy}
 \subsection{Pseudopotentials}
-\section{Density of States}
+\subsection{K-Point Sampling and Cutoff Energy}
+\subsection{Projector Augmented Wave Method}
+\subsection{Machine Learning Interatomic Potentials}
 
 
 

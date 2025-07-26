@@ -1206,7 +1206,7 @@
     \verb{file}
     \verb /home/starlord/Zotero/storage/VDGAU5ZL/Moussa et al. - 2012 - Analysi
     \verb s of the Heyd-Scuseria-Ernzerhof density functional parameter space.p
-    \verb df;/home/starlord/Zotero/storage/FHQU6BBD/1205.html
+    \verb df
     \endverb
     \field{journaltitle}{The Journal of Chemical Physics}
     \field{eprinttype}{arXiv}
@@ -1216,6 +1216,107 @@
     \field{urlday}{22}
     \field{urlmonth}{07}
     \field{urlyear}{2025}
+  \endentry
+
+  \entry{Perdew2001}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=PJP}{%
+         family={Perdew},
+         familyi={P\bibinitperiod},
+         given={John\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Schmidt},
+         familyi={S\bibinitperiod},
+         given={Karla},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AIP Publishing}%
+    }
+    \strng{namehash}{PJPSK1}
+    \strng{fullhash}{PJPSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The ground-state energy and density of a many-electron system are often calculated by Kohn-Sham density functional theory. We describe a ladder of approximation%
+    }
+    \verb{doi}
+    \verb 10.1063/1.1390175
+    \endverb
+    \field{issn}{0094-243X}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 20}
+    \field{title}{Jacob's Ladder of Density Functional Approximations for the Exchange-Correlation Energy}
+    \field{volume}{577}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/D8BFM8XB/Perdew and Schmidt - 2001 - Ja
+    \verb cob’s ladder of density functional approximations for the exchange-
+    \verb correlation energy.pdf
+    \endverb
+    \field{journaltitle}{AIP Conference Proceedings}
+    \field{month}{07}
+    \field{year}{2001}
+    \field{urlday}{19}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{marx2009ab}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=MD}{%
+         family={Marx},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hutter},
+         familyi={H\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{MDHJ1}
+    \strng{fullhash}{MDHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-1-139-47719-2}
+    \field{title}{Ab Initio Molecular Dynamics: {{Basic}} Theory and Advanced Methods}
+    \field{year}{2009}
+  \endentry
+
+  \entry{frenkel2023understanding}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=FD}{%
+         family={Frenkel},
+         familyi={F\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Smit},
+         familyi={S\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{FDSB1}
+    \strng{fullhash}{FDSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-323-91318-8}
+    \field{title}{Understanding Molecular Simulation: {{From}} Algorithms to Applications}
+    \field{year}{2023}
   \endentry
 \enddatalist
 \endinput
