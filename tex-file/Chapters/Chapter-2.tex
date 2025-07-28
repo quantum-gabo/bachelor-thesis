@@ -528,21 +528,23 @@ Ultimately, hybrid functionals provide a considerable improvement in the accurac
   \label{fig:jacob-ladder}
 \end{figure}
 
-\section{Density Functional Tight Binding}
-This is a placeholder 
+%\section{Density Functional Tight Binding}
+%This is a placeholder 
 
-\section{Ab initio Molecular Dynamics}
-Molecular dynamics (MD) is a widely used technique in condensed matter physics, for it provides a powerful framework to simulate the time evolution of many-body systems and to investigate macroscopic properties of materials, such as temperature, pressure, and energy distributions\supercite{marx2009ab, frenkel2023understanding}.
-
-
-
-Molecular dynamics (MD) is a powerful computational technique serving to investigate many-body condensed matter systems by simulating the time evolution of its constituent particles under the influence of interatomic interactions\supercite{marx2009ab,frenkel2023understanding}. Given a set of initial conditions---positions and velocities of all atoms in the system, and the interatomic potential---MD provides a means to compute the trajectories of atoms over a time interval by solving Newton's equations of motion.
+\section{Ab initio Molecular Dynamics} 
+Molecular dynamics (MD)\supercite{marx2009ab, Kuhne2014} is a widely used computational method, which allows us to simulate a many-body condensed matter system and to compute its thermodynamic and dynamical properties. In MD, a system is modelled as a collection of particles---atoms or molecules--- whose trajectories evolve over time under the influence of interatomic forces following Newton's equations of motion. 
 
 
+One of the most challenging, yet crucial, aspects of MD is the calculation of the interatomic forces. In classical MD, these forces are typically computed using predefined potential functions or force fields either constructed upon empirical data or from independent electronic structure calculations that have been parameterised to reproduce experimental or \emph{ab initio} data for small reference systems. Despite their fair success---which we acknowledge but shall not discuss in detail---these empirical interatomic potentials are often limited in their accuracy and transferability. Certain atoms, molecules, or even large systems may give rise to extremely complex interatomic interactions that, if attempted to be modelled with empirical potentials, would demand a rather significant amount of effort. Likewise, these potentials are very often limited to a narrow range of configurations, making them ill-suited for processes involving significant structural changes, such as phase transitions or large deformations.  
+
+Therewith, classical MD can be extended by a first-principles approach, where the interatomic forces are computed on-the-fly from accurate electronic structure calculations, ultimately leading to \emph{ab initio} molecular dynamics (AIMD). This approach allows us to overcome the outlined limitations of classical MD, albeit at a significant computational cost. AIMD employs electronic structure methods such as DFT to compute the interatomic forces at each time step, without relying on predefined interatomic potentials, providing AIMD with an improved predictive power and flexibility.  
+
+
+\subsection{Hellman-Feynman Theorem}
+ The Hellman-Feynman theorem\supercite{Feynman1939, Politzer2018} relates the derivative of the total energy $E$ of a system with respect to a parameter $\lambda$ to the expectation value of the derivative of the hamiltonian with respect to that same parameter. In order to show this, let us consider the following system 
 
 \subsection{Born-Oppenheimer Molecular Dynamics}
 
-\subsection{Car-Parrinello Molecular Dynamics}
 
 \section{Computational Implementation in VASP}
 \subsection{Pseudopotentials}

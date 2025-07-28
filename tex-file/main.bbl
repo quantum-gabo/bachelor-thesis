@@ -1292,31 +1292,115 @@
     \field{year}{2009}
   \endentry
 
-  \entry{frenkel2023understanding}{book}{}{}
-    \name{author}{2}{}{%
-      {{hash=FD}{%
-         family={Frenkel},
-         familyi={F\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=SB}{%
-         family={Smit},
-         familyi={S\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
+  \entry{Kuhne2014}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=KTD}{%
+         family={K{\"u}hne},
+         familyi={K\bibinitperiod},
+         given={Thomas\bibnamedelima D.},
+         giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Academic Press}%
-    }
-    \strng{namehash}{FDSB1}
-    \strng{fullhash}{FDSB1}
+    \keyw{Condensed Matter - Materials Science,Condensed Matter - Soft Condensed Matter,Condensed Matter - Statistical Mechanics,Physics - Chemical Physics,Physics - Computational Physics}
+    \strng{namehash}{KTD1}
+    \strng{fullhash}{KTD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{isbn}{978-0-323-91318-8}
-    \field{title}{Understanding Molecular Simulation: {{From}} Algorithms to Applications}
-    \field{year}{2023}
+    \field{abstract}{%
+    Computer simulation methods, such as Monte Carlo or Molecular Dynamics, are very powerful computational techniques that provide detailed and essentially exact information on classical many-body problems. With the advent of ab-initio molecular dynamics, where the forces are computed on-the-fly by accurate electronic structure calculations, the scope of either method has been greatly extended. This new approach, which unifies Newton's and Schr{\textbackslash}"odinger's equations, allows for complex simulations without relying on any adjustable parameter. This review is intended to outline the basic principles as well as a survey of the field. Beginning with the derivation of Born-Oppenheimer molecular dynamics, the Car-Parrinello method and the recently devised efficient and accurate Car-Parrinello-like approach to Born-Oppenheimer molecular dynamics, which unifies best of both schemes are discussed. The predictive power of this novel second-generation Car-Parrinello approach is demonstrated by a series of applications ranging from liquid metals, to semiconductors and water. This development allows for ab-initio molecular dynamics simulations on much larger length and time scales than previously thought feasible.%
+    }
+    \verb{doi}
+    \verb 10.1002/wcms.1176
+    \endverb
+    \verb{eprint}
+    \verb 1201.5945
+    \endverb
+    \field{issn}{1759-0876, 1759-0884}
+    \field{number}{4}
+    \field{pages}{391\bibrangedash 406}
+    \field{title}{Ab-{{Initio Molecular Dynamics}}}
+    \field{volume}{4}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/IYJG5DHA/Kühne - 2014 - Ab-Initio Mole
+    \verb cular Dynamics.pdf
+    \endverb
+    \field{journaltitle}{WIREs Computational Molecular Science}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{physics}
+    \field{month}{07}
+    \field{year}{2014}
+    \field{urlday}{26}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Feynman1939}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=FRP}{%
+         family={Feynman},
+         familyi={F\bibinitperiod},
+         given={R.\bibnamedelima P.},
+         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FRP1}
+    \strng{fullhash}{FRP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRev.56.340
+    \endverb
+    \field{number}{4}
+    \field{pages}{340\bibrangedash 343}
+    \field{title}{Forces in {{Molecules}}}
+    \field{volume}{56}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/JPVQKSLH/Feynman - 1939 - Forces in Mol
+    \verb ecules.pdf
+    \endverb
+    \field{journaltitle}{Physical Review}
+    \field{year}{1939}
+  \endentry
+
+  \entry{Politzer2018}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=PP}{%
+         family={Politzer},
+         familyi={P\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MJS}{%
+         family={Murray},
+         familyi={M\bibinitperiod},
+         given={Jane\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \keyw{Atoms and molecules in external fields,Chemical bonding,Classical Electrodynamics,Coulombic forces,Density Functional Theory,Dispersion forces,Electronic densities,Electrostatic potentials at nuclei,Energies,Fundamental concepts and interpretations of QM,Hellmann-Feynman theorem,Theoretical Chemistry,Valence-Bond Theory}
+    \strng{namehash}{PPMJS1}
+    \strng{fullhash}{PPMJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    The Hellmann-Feynman theorem has, with a few exceptions, not been exploited to the degree that it merits. This is due, at least in part, to a widespread failure to recognize that its greatest value may be conceptual rather than numerical, i.e., in achieving insight into molecular properties and behavior. In this brief overview, we shall discuss three examples of significant concepts that have come out of the Hellmann-Feynman theorem: (1) The forces exerted upon the nuclei in molecules are entirely Coulombic in nature. (2) The total energies of atoms and molecules can be expressed rigorously in terms of just the electrostatic potentials at their nuclei that are produced by the electrons and other nuclei. (3) Dispersion forces are due to the attractions of nuclei to their own polarized electronic densities. To summarize, energy and force analyses should not be viewed as competitive but rather as complementary.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00894-018-3784-7
+    \endverb
+    \field{issn}{0948-5023}
+    \field{number}{9}
+    \field{pages}{266}
+    \field{shorttitle}{The {{Hellmann-Feynman}} Theorem}
+    \field{title}{The {{Hellmann-Feynman}} Theorem: A Perspective}
+    \field{volume}{24}
+    \field{langid}{english}
+    \field{journaltitle}{Journal of Molecular Modeling}
+    \field{month}{08}
+    \field{year}{2018}
+    \field{urlday}{28}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
   \endentry
 \enddatalist
 \endinput
