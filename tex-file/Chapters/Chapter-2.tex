@@ -394,7 +394,7 @@ and the Hartree energy functional can be redefined as
 yielding the following expression for the total energy functional:
 \begin{equation}
   \label{eq52}
-  E[n(\mathbf{r})] = T_s[n(\mathbf{r})] + \int V_{\text{n}}(\mathbf{r}) n(\mathbf{r}) d\mathbf{r} + E_H[n(\mathbf{r})] + E_{xc}[n(\mathbf{r})]
+  E^{\text{KS}}[n(\mathbf{r})] = T_s[n(\mathbf{r})] + \int V_{\text{n}}(\mathbf{r}) n(\mathbf{r}) d\mathbf{r} + E_H[n(\mathbf{r})] + E_{xc}[n(\mathbf{r})]
 \end{equation}
 where $E_{xc}[n(\mathbf{r})]$ is the exchange-correlation energy functional is defined as
 \begin{equation}
@@ -554,7 +554,7 @@ If $\lambda$ is a parameter that appears explicitly in the hamiltonian, then
 \begin{equation}
 	\label{eq70}
 \begin{aligned}
-	\frac{\partial E}{\partial \lambda} &= \frac{\partial}{\partial} \langle \Psi \big| \hat{H} \big| \Psi \rangle \\
+	\frac{\partial E}{\partial \lambda} &= \frac{\partial}{\partial \lambda} \langle \Psi \big| \hat{H} \big| \Psi \rangle \\
   &= \bigg\langle \Psi \bigg| \frac{\partial \hat{H}}{\partial \lambda} \bigg| \Psi \bigg\rangle + \bigg\langle \frac{\partial \Psi}{\partial \lambda} \bigg| \hat{H} \bigg| \Psi \bigg\rangle +  \bigg\langle \Psi \bigg| \hat{H} \bigg|  \frac{\partial \Psi}{\partial \lambda}  \bigg\rangle
 \end{aligned}
 \end{equation}
@@ -595,8 +595,43 @@ fundamental connection between quantum mechanical energy landscape and the
 classical nuclei motion in AIMD. 
 \subsection{Born-Oppenheimer Molecular Dynamics}
 As previously discussed, AIMD relies on solving the static electronic strucure 
-problem at each time step given a set of fixed nuclear positions at instant of time.
+problem at each time step, given a set of fixed nuclear positions at a certain instant in time.
+One approach to achieve this is the so-called Born-Oppenheimer molecular dynamics 
+(BOMD)\supercite{Kuhne2014}, wherein the potential energy $E[\{\psi_{i}\}; \mathbf{R}]$ 
+is minimised at each time step with respect to the single-electron wavefunctions
+$\{\psi_{i}(\mathbf{r})\}$ under the orthonormality constraint 
+$\langle \psi_i(\mathbf{r}) | \psi_j(\mathbf{r}) \rangle = \delta_{ij}$. 
+The result is a potential energy surface on which the nuclei evolve classically.
 
+
+This leads to the following Lagrangian
+\begin{equation}
+    \label{eq74}
+    \mathcal{L}_{\text{BO}}(\{\psi_{i}\}; \mathbf{R}, \dot{\mathbf{R}}) =
+    \frac{1}{2}\sum_{I} M_{I} \dot{\mathbf{R}}_{I}^2 - \min_{\{\psi_{i}\}} E[\{\psi_{i}(\mathbf{r})\}; \mathbf{R}]
+    + \sum_{ij} \lambda_{ij} \left( \langle \psi_i | \psi_j \rangle - \delta_{ij} \right)
+\end{equation}
+where the first term on the right-hand side corresponds to the classical kinetic energy 
+of the nuclei. The second term,
+$E[\{\psi_{i}\}; \mathbf{R}] = E^{\text{KS}}[\{\psi_{i}[n(\mathbf{r})]\}; \mathbf{R}] + E_{II}$, is the total 
+potential energy consisting of the Kohn-Sham ground-state energy and the 
+nuclear-nuclear interaction energy.
+
+By applying the Euler-Lagrange equations to Equation \ref{eq74}
+\begin{equation}
+    \label{eq75}
+\begin{aligned}
+    \frac{d}{dt}\frac{\partial \mathcal{L}}{\partial \dot{\mathbf{R}}_{I}} =& \frac{\partial \mathcal{L}}{\partial \mathbf{R}_{I}} \\
+    \frac{d}{dt}\frac{\partial \mathcal{L}}{\partial \langle\dot{\psi}_{i}|} =& \frac{\partial \mathcal{L}}{\partial \langle\psi_{i}|}
+\end{aligned}
+\end{equation}
+we obtain the equations of motion 
+    \begin{align}
+        M_{I}\ddot{\mathbf{R}}_{I} &= -\nabla_{\mathbf{R}_{I}} \left[\min_{\{\psi_{i}\}} E[\{\psi_{i}(\mathbf{r})\}; \mathbf{R}]\bigg|_{\{\langle \psi_i(\mathbf{r}) | \psi_j(\mathbf{r}) \rangle = \delta_{ij}\}} \right]\label{eq76} \\
+        0 &= -\hat{H}^{\text{KS}}|\psi_{i}\rangle  + \sum_{j} \lambda_{ij} | \psi_j \rangle \label{eq77}
+    \end{align}
+wherein Equation \ref{eq76} corresponds to the classical Newtonian equations of motion for the 
+nuclei, and Equation \ref{eq77} represents the Kohn-Sham eigenvalue problem.  
 
 \section{Computtional Implementation in VASP}
 \subsection{Pseudopotentials}
