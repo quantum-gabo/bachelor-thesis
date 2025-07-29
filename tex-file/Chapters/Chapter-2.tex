@@ -540,13 +540,65 @@ One of the most challenging, yet crucial, aspects of MD is the calculation of th
 Therewith, classical MD can be extended by a first-principles approach, where the interatomic forces are computed on-the-fly from accurate electronic structure calculations, ultimately leading to \emph{ab initio} molecular dynamics (AIMD). This approach allows us to overcome the outlined limitations of classical MD, albeit at a significant computational cost. AIMD employs electronic structure methods such as DFT to compute the interatomic forces at each time step, without relying on predefined interatomic potentials, providing AIMD with an improved predictive power and flexibility.  
 
 
-\subsection{Hellman-Feynman Theorem}
- The Hellman-Feynman theorem\supercite{Feynman1939, Politzer2018} relates the derivative of the total energy $E$ of a system with respect to a parameter $\lambda$ to the expectation value of the derivative of the hamiltonian with respect to that same parameter. In order to show this, let us consider the following system 
+\subsection{Hellmann-Feynman Theorem}
+ The Hellmann-Feynman theorem\supercite{Feynman1939, Politzer2018} relates the derivative of the total energy $E$ of a system with respect to a parameter $\lambda$ to the expectation value of the derivative of the hamiltonian with respect to that same parameter.
+ While the proof of this theorem is rather straightforward---as shown later in this section---
+ it plays a pivotal role in computing interatomic forces in AIMD. 
+ 
+To this end, let us consider the total energy of a system 
+\begin{equation}
+	\label{69}
+	E = \langle \Psi \big| \hat{H} \big| \Psi \rangle
+\end{equation}
+If $\lambda$ is a parameter that appears explicitly in the hamiltonian, then 
+\begin{equation}
+	\label{eq70}
+\begin{aligned}
+	\frac{\partial E}{\partial \lambda} &= \frac{\partial}{\partial} \langle \Psi \big| \hat{H} \big| \Psi \rangle \\
+  &= \bigg\langle \Psi \bigg| \frac{\partial \hat{H}}{\partial \lambda} \bigg| \Psi \bigg\rangle + \bigg\langle \frac{\partial \Psi}{\partial \lambda} \bigg| \hat{H} \bigg| \Psi \bigg\rangle +  \bigg\langle \Psi \bigg| \hat{H} \bigg|  \frac{\partial \Psi}{\partial \lambda}  \bigg\rangle
+\end{aligned}
+\end{equation}
+Provided that $\hat{H}$ is hermitian and $\Psi$ is an eigenstate of the hamiltonian, $\hat{H}|\Psi\rangle = E|\Psi\rangle$,
+Equation \ref{eq70} simplifies to
+\begin{equation}
+    \label{eq71}
+    \begin{aligned}
+        \frac{\partial E}{\partial \lambda} &= 
+    \bigg\langle \Psi \bigg| \frac{\partial \hat{H}}{\partial \lambda} \bigg| \Psi \bigg\rangle + 
+    \bigg\langle \frac{\partial \Psi}{\partial \lambda}\bigg| \hat{H} \bigg| \Psi \bigg\rangle +  
+    \bigg\langle\frac{\partial \Psi}{\partial \lambda}\bigg|\hat{H}\bigg|\Psi \bigg\rangle \\
+    &=\bigg\langle \Psi \bigg| \frac{\partial \hat{H}}{\partial \lambda}
+        \bigg| \Psi \bigg\rangle + E\frac{\partial}{\partial \lambda}
+        \langle \Psi|\Psi \rangle + E\frac{\partial}{\partial \lambda}
+        \langle \Psi|\Psi \rangle \\
+    \end{aligned}
+\end{equation}
+wherein the last two terms add up to zero, so that Equation \ref{eq71} becomes,
+\begin{equation}
+    \label{eq72}
+    \frac{\partial E}{\partial \lambda} = 
+    \bigg\langle \Psi \bigg| \frac{\partial \hat{H}}{\partial \lambda} \bigg| \Psi \bigg\rangle 
+\end{equation}
+yielding the Hellmann-Feynman theorem. 
 
+When $\lambda$ correspond to the position of a nucleus, the negative 
+derivative of the total energy with respect to $\lambda$ results 
+in the force acting on that nucleus.  More 
+generally, the force on nucleus $I$ can be expressed as 
+the negative gradient of the total energy with respect to its position $R_I$,
+\begin{equation}
+    \label{eq73}
+    \mathbf{F}_I = -\nabla_{R_I} \langle \Psi | \hat{H} | \Psi \rangle
+\end{equation}
+This result---referred to as the Hellmann-Feynman force---provides a 
+fundamental connection between quantum mechanical energy landscape and the 
+classical nuclei motion in AIMD. 
 \subsection{Born-Oppenheimer Molecular Dynamics}
+As previously discussed, AIMD relies on solving the static electronic strucure 
+problem at each time step given a set of fixed nuclear positions at instant of time.
 
 
-\section{Computational Implementation in VASP}
+\section{Computtional Implementation in VASP}
 \subsection{Pseudopotentials}
 \subsection{K-Point Sampling and Cutoff Energy}
 \subsection{Projector Augmented Wave Method}
