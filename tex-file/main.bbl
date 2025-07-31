@@ -959,8 +959,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The exact density functional for the ground-state energy is strictly self-interaction-free (i.e., orbitals demonstrably do not self-interact), but many approximations to it, including the local-spin-density (LSD) approximation for exchange and correlation, are not. We present two related methods for the self-interaction correction (SIC) of any density functional for the energy; correction of the self-consistent one-electron potenial follows naturally from the variational principle. Both methods are sanctioned by the Hohenberg-Kohn theorem. Although the first method introduces an orbital-dependent single-particle potential, the second involves a local potential as in the Kohn-Sham scheme. We apply the first method to LSD and show that it properly conserves the number content of the exchange-correlation hole, while substantially improving the description of its shape. We apply this method to a number of physical problems, where the uncorrected LSD approach produces systematic errors. We find systematic improvements, qualitative as well as quantitative, from this simple correction. Benefits of SIC in atomic calculations include (i) improved values for the total energy and for the separate exchange and correlation pieces of it, (ii) accurate binding energies of negative ions, which are wrongly unstable in LSD, (iii) more accurate electron densities, (iv) orbital eigenvalues that closely approximate physical removal energies, including relaxation, and (v) correct longrange behavior of the potential and density. It appears that SIC can also remedy the LSD underestimate of the band gaps in insulators (as shown by numerical calculations for the rare-gas solids and CuCl), and the LSD overestimate of the cohesive energies of transition metals. The LSD spin splitting in atomic Ni and {$s$} -{$d$} interconfigurational energies of transition elements are almost unchanged by SIC. We also discuss the admissibility of fractional occupation numbers, and present a parametrization
-  of the electron-gas correlation energy at any density, based on the recent results of Ceperley and Alder.%
+    The exact density functional for the ground-state energy is strictly self-interaction-free (i.e., orbitals demonstrably do not self-interact), but many approximations to it, including the local-spin-density (LSD) approximation for exchange and correlation, are not. We present two related methods for the self-interaction correction (SIC) of any density functional for the energy; correction of the self-consistent one-electron potenial follows naturally from the variational principle. Both methods are sanctioned by the Hohenberg-Kohn theorem. Although the first method introduces an orbital-dependent single-particle potential, the second involves a local potential as in the Kohn-Sham scheme. We apply the first method to LSD and show that it properly conserves the number content of the exchange-correlation hole, while substantially improving the description of its shape. We apply this method to a number of physical problems, where the uncorrected LSD approach produces systematic errors. We find systematic improvements, qualitative as well as quantitative, from this simple correction. Benefits of SIC in atomic calculations include (i) improved values for the total energy and for the separate exchange and correlation pieces of it, (ii) accurate binding energies of negative ions, which are wrongly unstable in LSD, (iii) more accurate electron densities, (iv) orbital eigenvalues that closely approximate physical removal energies, including relaxation, and (v) correct longrange behavior of the potential and density. It appears that SIC can also remedy the LSD underestimate of the band gaps in insulators (as shown by numerical calculations for the rare-gas solids and CuCl), and the LSD overestimate of the cohesive energies of transition metals. The LSD spin splitting in atomic Ni and {$s$} -{$d$} interconfigurational energies of transition elements are almost unchanged by SIC. We also discuss the admissibility of fractional occupation numbers, and present a parametrization of the electron-gas correlation energy at any density, based on the recent results of Ceperley and Alder.%
     }
     \verb{doi}
     \verb 10.1103/PhysRevB.23.5048
@@ -1402,6 +1401,371 @@
     \field{month}{08}
     \field{year}{2018}
     \field{urlday}{28}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{tuckerman2023statistical}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=TM}{%
+         family={Tuckerman},
+         familyi={T\bibinitperiod},
+         given={M.E.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{TM1}
+    \strng{fullhash}{TM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-19-882556-2}
+    \field{series}{Oxford Graduate Texts}
+    \field{title}{Statistical Mechanics: {{Theory}} and Molecular Simulation}
+    \field{year}{2023}
+  \endentry
+
+  \entry{frenkel2023understanding}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=FD}{%
+         family={Frenkel},
+         familyi={F\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Smit},
+         familyi={S\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{FDSB1}
+    \strng{fullhash}{FDSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-323-91318-8}
+    \field{title}{Understanding Molecular Simulation: {{From}} Algorithms to Applications}
+    \field{year}{2023}
+  \endentry
+
+  \entry{https://doi.org/10.1002/jcc.21057}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Hafner},
+         familyi={H\bibinitperiod},
+         given={J{\"u}rgen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{catalysis,density-functional theory,hybrid functionals,many-body perturbation theory,materials science,plane-wave basis,projector-augmented-waves,pseudopotentials,solid state chemistry,solid state physics,surface science}
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Abstract During the past decade, computer simulations based on a quantum-mechanical description of the interactions between electrons and between electrons and atomic nuclei have developed an increasingly important impact on solid-state physics and chemistry and on materials science---promoting not only a deeper understanding, but also the possibility to contribute significantly to materials design for future technologies. This development is based on two important columns: (i) The improved description of electronic many-body effects within density-functional theory (DFT) and the upcoming post-DFT methods. (ii) The implementation of the new functionals and many-body techniques within highly efficient, stable, and versatile computer codes, which allow to exploit the potential of modern computer architectures. In this review, I discuss the implementation of various DFT functionals [local-density approximation (LDA), generalized gradient approximation (GGA), meta-GGA, hybrid functional mixing DFT, and exact (Hartree-Fock) exchange] and post-DFT approaches [DFT + U for strong electronic correlations in narrow bands, many-body perturbation theory (GW) for quasiparticle spectra, dynamical correlation effects via the adiabatic-connection fluctuation-dissipation theorem (AC-FDT)] in the Vienna ab initio simulation package VASP. VASP is a plane-wave all-electron code using the projector-augmented wave method to describe the electron-core interaction. The code uses fast iterative techniques for the diagonalization of the DFT Hamiltonian and allows to perform total-energy calculations and structural optimizations for systems with thousands of atoms and ab initio molecular dynamics simulations for ensembles with a few hundred atoms extending over several tens of ps. Applications in many different areas (structure and phase stability, mechanical and dynamical properties, liquids, glasses and quasicrystals, magnetism and magnetic nanostructures, semiconductors and insulators, surfaces, interfaces and thin films, chemical reactions, and catalysis) are reviewed. {\copyright} 2008 Wiley Periodicals, Inc. J Comput Chem, 2008%
+    }
+    \verb{doi}
+    \verb 10.1002/jcc.21057
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.21057
+    \endverb
+    \field{number}{13}
+    \field{pages}{2044\bibrangedash 2078}
+    \field{title}{Ab-Initio Simulations of Materials Using {{VASP}}: {{Density-functional}} Theory and Beyond}
+    \field{volume}{29}
+    \field{journaltitle}{Journal of Computational Chemistry}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Hellmann1935}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=HH}{%
+         family={Hellmann},
+         familyi={H\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HH1}
+    \strng{fullhash}{HH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1063/1.1749559
+    \endverb
+    \field{issn}{0021-9606}
+    \field{number}{1}
+    \field{pages}{61}
+    \field{title}{A {{New Approximation Method}} in the {{Problem}} of {{Many Electrons}}}
+    \field{volume}{3}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/RW8F8V8T/1.html
+    \endverb
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{month}{01}
+    \field{year}{1935}
+    \field{urlday}{30}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Blochl1994}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=BPE}{%
+         family={Bl{\"o}chl},
+         familyi={B\bibinitperiod},
+         given={P.\bibnamedelima E.},
+         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{BPE1}
+    \strng{fullhash}{BPE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    An approach for electronic structure calculations is described that generalizes both the pseudopotential method and the linear augmented-plane-wave (LAPW) method in a natural way. The method allows high-quality first-principles molecular-dynamics calculations to be performed using the original fictitious Lagrangian approach of Car and Parrinello. Like the LAPW method it can be used to treat first-row and transition-metal elements with affordable effort and provides access to the full wave function. The augmentation procedure is generalized in that partial-wave expansions are not determined by the value and the derivative of the envelope function at some muffin-tin radius, but rather by the overlap with localized projector functions. The pseudopotential approach based on generalized separable pseudopotentials can be regained by a simple approximation.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevB.50.17953
+    \endverb
+    \field{number}{24}
+    \field{pages}{17953\bibrangedash 17979}
+    \field{title}{Projector Augmented-Wave Method}
+    \field{volume}{50}
+    \verb{file}
+    \verb /home/starlord/Downloads/10.1103@physrevb.50.17953.pdf
+    \endverb
+    \field{journaltitle}{Physical Review B}
+    \field{month}{12}
+    \field{year}{1994}
+    \field{urlday}{30}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Kresse1999}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=KG}{%
+         family={Kresse},
+         familyi={K\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Joubert},
+         familyi={J\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{KGJD1}
+    \strng{fullhash}{KGJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The formal relationship between ultrasoft (US) Vanderbilt-type pseudopotentials and Bl{\"o}chl's projector augmented wave (PAW) method is derived. It is shown that the total energy functional for US pseudopotentials can be obtained by linearization of two terms in a slightly modified PAW total energy functional. The Hamilton operator, the forces, and the stress tensor are derived for this modified PAW functional. A simple way to implement the PAW method in existing plane-wave codes supporting US pseudopotentials is pointed out. In addition, critical tests are presented to compare the accuracy and efficiency of the PAW and the US pseudopotential method with relaxed core all electron methods. These tests include small molecules (H2⁡,H2⁢O,Li2⁢,N2⁢,F2⁢,BF3⁢,SiF4) and several bulk systems (diamond, Si, V, Li, Ca, CaF2, Fe, Co, Ni). Particular attention is paid to the bulk properties and magnetic energies of Fe, Co, and Ni.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevB.59.1758
+    \endverb
+    \field{number}{3}
+    \field{pages}{1758\bibrangedash 1775}
+    \field{title}{From Ultrasoft Pseudopotentials to the Projector Augmented-Wave Method}
+    \field{volume}{59}
+    \verb{file}
+    \verb /home/starlord/Downloads/10.1103@physrevb.59.1758.pdf
+    \endverb
+    \field{journaltitle}{Physical Review B}
+    \field{month}{01}
+    \field{year}{1999}
+    \field{urlday}{30}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Birch1947}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=BF}{%
+         family={Birch},
+         familyi={B\bibinitperiod},
+         given={Francis},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{BF1}
+    \strng{fullhash}{BF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Murnaghan's theory of finite strain is developed for a medium of cubic symmetry subjected to finite hydrostatic compression, plus an arbitrary homogeneous infinitesimal strain. The free energy is developed for cubic symmetry to include terms of the third order in the strain components. The effect of pressure upon the second-order elastic constants is found and compared with experiment, with particular reference to the compressibility; the pressure-volume relation in several approximations is compared with the measurements to 100,000 kg/cm2. The simplest approximation is shown to give a satisfactory account of most of the experimental data. The results are also compared with some of the calculations based on Born's lattice theory.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRev.71.809
+    \endverb
+    \field{number}{11}
+    \field{pages}{809\bibrangedash 824}
+    \field{title}{Finite {{Elastic Strain}} of {{Cubic Crystals}}}
+    \field{volume}{71}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/ATUH9QQB/PhysRev.71.html
+    \endverb
+    \field{journaltitle}{Physical Review}
+    \field{month}{06}
+    \field{year}{1947}
+    \field{urlday}{30}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{poirier2000introduction}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=PJ}{%
+         family={Poirier},
+         familyi={P\bibinitperiod},
+         given={J.P.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{PJ1}
+    \strng{fullhash}{PJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-521-66392-2}
+    \field{series}{Introduction to the Physics of the Earth's Interior}
+    \field{title}{Introduction to the Physics of the Earth's Interior}
+    \field{year}{2000}
+  \endentry
+
+  \entry{Jinnouchi2019}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=JR}{%
+         family={Jinnouchi},
+         familyi={J\bibinitperiod},
+         given={Ryosuke},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Karsai},
+         familyi={K\bibinitperiod},
+         given={Ferenc},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kresse},
+         familyi={K\bibinitperiod},
+         given={Georg},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{JRKFKG1}
+    \strng{fullhash}{JRKFKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    An efficient and robust on-the-fly machine learning force field method is developed and integrated into an electronic-structure code. This method realizes automatic generation of machine learning force fields on the basis of Bayesian inference during molecular dynamics simulations, where the first-principles calculations are only executed, when new configurations out of already sampled datasets appear. The developed method is applied to the calculation of melting points of Al, Si, Ge, Sn and MgO. The applications indicate that more than 99\% of the first-principles calculations are bypassed during the force field generation. This allows the machine to quickly construct first-principles datasets over wide phase spaces. Furthermore, with the help of the generated machine learning force fields, simulations are accelerated by a factor of thousand compared with first-principles calculations. Accuracies of the melting points calculated by the force fields are examined by thermodynamic perturbation theory, and the examination indicates that the machine learning force fields can quantitatively reproduce the first-principles melting points.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevB.100.014105
+    \endverb
+    \field{number}{1}
+    \field{pages}{014105}
+    \field{shorttitle}{On-the-Fly Machine Learning Force Field Generation}
+    \field{title}{On-the-Fly Machine Learning Force Field Generation: {{Application}} to Melting Points}
+    \field{volume}{100}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/RMI3YEFA/Jinnouchi et al. - 2019 - On-t
+    \verb he-fly machine learning force field generation Application to melting
+    \verb  points.pdf;/home/starlord/Zotero/storage/EAEPV3C2/PhysRevB.100.html
+    \endverb
+    \field{journaltitle}{Physical Review B}
+    \field{month}{07}
+    \field{year}{2019}
+    \field{urlday}{31}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Jinnouchi2020}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=JR}{%
+         family={Jinnouchi},
+         familyi={J\bibinitperiod},
+         given={Ryosuke},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Karsai},
+         familyi={K\bibinitperiod},
+         given={Ferenc},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=VC}{%
+         family={Verdi},
+         familyi={V\bibinitperiod},
+         given={Carla},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AR}{%
+         family={Asahi},
+         familyi={A\bibinitperiod},
+         given={Ryoji},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kresse},
+         familyi={K\bibinitperiod},
+         given={Georg},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AIP Publishing}%
+    }
+    \strng{namehash}{JR+1}
+    \strng{fullhash}{JRKFVCARKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    When determining machine-learning models for inter-atomic potentials, the potential energy surface is often described as a non-linear function of descriptors re%
+    }
+    \verb{doi}
+    \verb 10.1063/5.0009491
+    \endverb
+    \field{issn}{0021-9606}
+    \field{number}{23}
+    \field{title}{Descriptors Representing Two- and Three-Body Atomic Distributions and Their Effects on the Accuracy of Machine-Learned Inter-Atomic Potentials}
+    \field{volume}{152}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/starlord/Downloads/jinnouchi2020.pdf
+    \endverb
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{month}{06}
+    \field{year}{2020}
+    \field{urlday}{31}
     \field{urlmonth}{07}
     \field{urlyear}{2025}
   \endentry

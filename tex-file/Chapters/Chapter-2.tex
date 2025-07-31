@@ -633,11 +633,280 @@ we obtain the equations of motion
 wherein Equation \ref{eq76} corresponds to the classical Newtonian equations of motion for the 
 nuclei, and Equation \ref{eq77} represents the Kohn-Sham eigenvalue problem.  
 
+Finally, AIMD simulations may also include temperature control, 
+which can be achieved by coupling a thermostat to the system in order 
+to simulate different thermodynamic ensembles---\emph{e.g.}, canonical (NVT) or isothermal-isobaric (NPT) ensembles.
+However, the details of thermostats and different ensembles are beyond the scope
+of this report, and we shall refer the reader to the literature\supercite{tuckerman2023statistical,frenkel2023understanding} for a more 
+detailed discussion of these topics.
+
 \section{Computtional Implementation in VASP}
+The computational studies presented in this report were performed using the 
+Vienna Ab initio Simulation Package (VASP). This is a software suited for performing 
+\emph{ab initio} quantum mechanical calculations\supercite{https://doi.org/10.1002/jcc.21057}. It employs DFT as the basic 
+method, albeit it also allows for beyond-DFT methods such as hybrid functionals, 
+many-body perturbation theory (the GW method) and random phase approximation (RPA). 
+
+VASP is widely adopted in areas such as meterials science, condensed matter physics and quantum chemistry, 
+owing to its demonstrated accuracy and state-of-the-art methods. Consequently, 
+this section is devoted to explain some important aspects of VASP, with great 
+emphasis on the computational methods employed in this work. 
+
 \subsection{Pseudopotentials}
-\subsection{K-Point Sampling and Cutoff Energy}
-\subsection{Projector Augmented Wave Method}
-\subsection{Machine Learning Interatomic Potentials}
+An important step towards defining the wavefunctions that describe an atom 
+is the effective modelling of the electron-ion potential. In this context, core electrons
+represent a challenge since their rapidly oscillating wavefunctions require 
+a denser real-space grid and a larger number of basis functions 
+to be accurately represented.
+
+To circumvent this problem, we first need to consider the fact that core electrons 
+are tightly bound and do not participate in chemical bonding. Therefore, we can 
+treat them as frozen---\emph{i.e.}, keeping them in their ground state and isolated 
+from the solid-state environment---focusing the calculations on valence electrons, 
+as they do participate in chemical bounding and determine the material's properties.
+Nonetheless, any adopted approximation must adequately account for the influence of core electrons 
+on the valence states, such as screening and exchange interactions.
+
+To this end, we shall introduce the concept of pseudopotentials\supercite{Hellmann1935}.
+This approximation aims to describe the valence electrons without explicitly treating 
+the core states, replacing the strong Coulomb potential near the nucleus with a 
+weaker one. We start by splitting the single-electron states into valence and 
+core states, identified as $|\psi_{v}\rangle$ and $|\psi_{c}\rangle$, respectively. We then define 
+a new set of valence states $|\tilde{\psi}_{v}\rangle$  through the following 
+relation 
+\begin{equation}
+    \label{eq78}
+    |\tilde{\psi}_{v}\rangle = |\psi_{v}\rangle + \sum_{c} |\psi_{c}\rangle 
+    \langle \psi_{c} |\tilde{\psi}_{v}\rangle
+\end{equation}
+Applying the single-particle Hamiltonian $H^{sp}$ to the pseudo-valence states,
+and taking into account that $|\psi_{v}\rangle$ and $|\psi_{c}\rangle$ are eigenstates of the
+single-particle Hamiltonian, we get
+\begin{equation}
+    \label{eq79}
+    \begin{aligned}
+    H^{sp} |\tilde{\psi}_{v}\rangle &= H^{sp}|\psi_{v}\rangle  + 
+    \sum_{c} H^{sp}|\psi_{c}\rangle \langle \psi_{c} |\tilde{\psi}_{v}\rangle\\
+    &= \epsilon_{v} |\psi_{v}\rangle + \sum_{c} \epsilon_{c} |\psi_{c}\rangle
+    \langle \psi_{c} |\tilde{\psi}_{v}\rangle\\
+    &= \epsilon_{v} |\psi_{v}\rangle + \sum_{c} (\epsilon_{c} - \epsilon_{v}) |\psi_{c}\rangle
+    \langle \psi_{c} |\tilde{\psi}_{v}\rangle\\
+    \end{aligned}
+\end{equation}
+Rearranging the terms, we obtain the following expression
+\begin{equation}
+    \label{eq80}
+    \left[H^{sp} + \sum_{c} (\epsilon_{v} - \epsilon_{c})|\psi_{c}\rangle \langle \psi_{c} | \right] 
+    |\tilde{\psi}_{v}\rangle = \epsilon_{v} |\tilde{\psi}_{v}\rangle
+\end{equation}
+Equation \ref{eq80} describes the hamiltonian of the pseudo-valence states,
+which we can define as 
+\begin{equation}
+    \label{eq81}
+    \hat{H}^{ps} = H^{sp} + \sum_{c} (\epsilon_{v} - \epsilon_{c})|\psi_{c}\rangle \langle \psi_{c} |
+\end{equation}
+The modified potential for these states is called the pseudopotential, given 
+by 
+\begin{equation}
+    \label{eq82}
+    V^{ps}(\mathbf{r}) = V^{sp} + \sum_{c} (\epsilon_{v} - \epsilon_{c})|\psi_{c}\rangle \langle \psi_{c} |
+\end{equation}
+We emphasise that the pseudo-valence states associated with 
+Equation \ref{eq80} have the same single-particle energies as the valence states and they remain 
+orthogonal to the core states. However, they are not strictly normalised, which can introduce 
+minor inaccuracies in practical calculations. 
+
+Various pseudopotentials have been proposed to achieve the desired 
+trade-off between accuracy and computational cost. Those pseudopotentials requiring 
+larger cut-off energies---hard pseudopotentials---are better suited for capturing 
+the strong interactions inherent of core electrons. In contrast, soft pseudopotentials 
+are often preferred as they require fewer basis functions reducing the 
+computational cost, albeit at the expense of accuracy.
+
+\subsection{Projector Augmented Wave Method (PAW)}
+The projector augmented wave (PAW) method\supercite{Blochl1994,Kresse1999}---implemented in VASP and 
+used in this work---aims to address some limitations of pseudopotentials 
+by introducing auxiliary functions called projectors, allowing for core and valence electrons 
+to be better represented and ehnacing computational efficiency. 
+
+However, before we introduce the PAW formalism---at least to the extent
+necessary for this report---we shall first introduce some important concepts 
+that underpin the PAW method.
+\subsubsection{Key Concepts}
+\begin{itemize}
+    \item \textbf{Brillouin Zone and k-points}
+
+    Crystalline solids are  described in real space in terms of a primitive unit cell (PUC)\supercite{kaxiras2003atomic}, which 
+    is the smallest repeating unit capable of generating the entire solid 
+    through periodic boundary conditions. It is characterised by periodic arrangement 
+    of lattice points, referred to as the Bravais lattice. All the lattice points 
+    are associated to a set of lattice vectors $\mathbf{R}$ formed by 
+    all the possible combinations of integer multiples of the primitive lattice vectors 
+    $\mathbf{a}_1$, $\mathbf{a}_2$ and $\mathbf{a}_3$
+
+    \begin{equation}
+        \label{eq83}
+        \mathbf{R} = n_1\mathbf{a}_1 + n_2\mathbf{a}_2 + n_3\mathbf{a}_3, \quad n_1, n_2, n_3 \in \mathbb{Z}
+    \end{equation}
+    The primitive unit cell is then defined as the volume enclosed by the 
+    primitive lattice vectors 
+    \begin{equation}
+        \label{eq84}
+        V_{PUC} = \mathbf{a}_1 \cdot (\mathbf{a}_2 \times \mathbf{a}_3)
+    \end{equation}
+Using this definition, it is possible to represent the entire crystal by
+modelling solely its unit cell. Additionally, to appropriately describe 
+electronic properties, we must transition to reciprocal space, defined by
+the reciprocal vectors 
+\begin{equation}
+    \label{eq85}
+    \mathbf{b}_1 = \frac{2\pi}{V_{PUC}} (\mathbf{a}_2 \times \mathbf{a}_3), \quad
+    \mathbf{b}_2 = \frac{2\pi}{V_{PUC}} (\mathbf{a}_3 \times \mathbf{a}_1), \quad
+    \mathbf{b}_3 = \frac{2\pi}{V_{PUC}} (\mathbf{a}_1 \times \mathbf{a}_2)
+\end{equation}
+that satisfy the condition $\mathbf{a}_{i}\vdot \mathbf{b}_{j} = 2\pi \delta_{ij}$. Any 
+reciprocal lattice vector $\mathbf{G}$ can then be expressed as
+\begin{equation}
+    \label{eq86}
+    \mathbf{G} = m_1\mathbf{b}_1 + m_2\mathbf{b}_2 + m_3\mathbf{b}_3, \quad m_1, m_2, m_3 \in \mathbb{Z}
+\end{equation}
 
 
+
+
+
+Additionally, to describe electrons in a crystal we consider they 
+are moving in a periodic potential---\emph{i.e.}, the potential in 
+the single-particle hamiltonian has the translational property 
+of the Bravais lattice, 
+\begin{equation}
+    \label{eq85}
+    V^{sp}(\mathbf{r} + \mathbf{R}) = V^{sp}(\mathbf{r}), \quad \forall \, \mathbf{R} \in \text{Bravais lattice}
+\end{equation}
+Then, according to Bloch's theorem, the single-particle wavefunctions 
+have the same translational symmetry, and can be expressed as
+\begin{equation}
+    \label{eq86}
+    \psi_{\mathbf{k}} = e^{i\mathbf{k} \cdot \mathbf{r}} u_{\mathbf{k}}(\mathbf{r})
+\end{equation}
+where $\mathbf{k}$ is the wave vector defined in reaciprocal space, and 
+$u_{\mathbf{k}}(\mathbf{r})$ is a periodic function of the Bravais lattice. 
+
+
+    \item \textbf{Plane-Wave Basis Set}
+    
+
+    \item \textbf{Cut-off Energy}
+\end{itemize}
+\subsection{Equation of State (EOS)}
+In order to study the mechanical properties of bulk materials, it is 
+important to establish a relationship between observables---such as the 
+ground state total energy---and macroscopic variables like volume or pressure. In this context, the 
+third-order Birch-Murnaghan equation of state\supercite{Birch1947,poirier2000introduction} provides
+a means to relate the total energy to the change in volume in the system. By fitting energy-volume data to this 
+equation, one can obtain important elastic properties, including equilibrium volume and energy,
+the bulk modulus and its pressure derivative. This equation is given by 
+\begin{equation}
+    \label{eq83}
+     E(V) = E_0 + \frac{9}{16} V_0 B_0 \left\{ \left[ \left( \frac{V_0}{V} \right)^{2/3} 
+     - 1 \right]^3 B_0' + \left[ \left( \frac{V_0}{V} \right)^{2/3} - 1 \right]^2 \left[6 - 4 \left( \frac{V_0}{V} \right)^{2/3} \right] \right\}
+\end{equation}
+where $E_0$, $V_0$, $B_0$ and $B_0'$ are the equilibrium energy, volume, bulk modulus and its pressure derivative, respectively.
+
+Equation \ref{eq83} is utilised in this work to report the aforementioned thermodynamical
+properties, which are essential for understanding the material's mechanical 
+response under compression or expansion. 
+
+\section{Machine Learning Force Fileds (MLFFs)}
+In an earlier discussion, we introduced the concept of \emph{ab initio} molecular 
+dynamics (AIMD) and highlighted its importance for determining the 
+dynamical properties of a material. Nonetheless---even though VASP is highly optimised for 
+these calculations---AIMD methods remain computationally expensive, 
+restricting its applicability to small simulation cells and 
+short simulation times. 
+
+% One way to hugely speed up AIMD calculations is by using force fields---
+% parameterised models of the interatomic potential.
+%  However making accurate classical force fields manually is a rather time-consuming task and often 
+% requires a tremendous expertise and know-how. 
+
+In this regard, machine learning force fields (MLFFs) represent a 
+promising alternative. These models are trained on accurate \emph{ab initio}
+datasets, allowing them to learn the underlying potential energy, 
+thereby producing fast and accurate predictions of atomic energies, forces and stresses. 
+MLFFs can drastically reduce computational cost while minimising any human 
+intervention and expertise required for the force field construction.
+
+In VASP, MLFFs are implemented following an on-the-fly machine learning algorithm\supercite{Jinnouchi2019} (see 
+Figure \ref{fig:MLFF-pipeline}). To construct the machine-learning force field
+several structure datasets are required. A structure dataset must define the Bravais lattice, atomic positions, total 
+energy, forces and the stress tensor computed from first principles (FP). 
+Given the datasets, local configurations around an atom are identified 
+and mapped onto a set of descriptors\supercite{Jinnouchi2020}, describing the local environment
+around each atom in terms of an atomic distribution function.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{MLFF-pipeline.pdf}
+    \caption{On-the-fly force field generation pipeline in VASP\supercite{Jinnouchi2019}. 
+    First the algorithm reads existing MLFF if avaliable, otherwise 
+    it generates a new one. If accurate enough, a new structure 
+    is generated using the force field, otherwise a first principles 
+    calculation is performed. If the predicted uncertainty is too large, 
+    the new structure is added to the dataset and the force field is 
+    retrained. This oscillating process between training and prediction 
+    continues until we reach the total number of ionic steps specified 
+    in the setup. }
+    \label{fig:MLFF-pipeline}
+\end{figure}
+\begin{align}
+    \rho_{i}^{(2)}(r) &= \frac{1}{4\pi} \int \rho(r\hat{\mathbf{r}}) d\hat{\mathbf{r}} \label{eq84} \\
+    \rho_{i}^{(3)}(r, s, \theta) &= \iint d\hat{\mathbf{r}} d\hat{\mathbf{s}} 
+    \, \delta (\hat{\mathbf{r}} \vdot \hat{\mathbf{s}}-\cos{\theta})
+    \sum_{j\neq 1}^{\text{N}_{a}}\sum_{k\neq i,j}^{\text{N}_{a}}
+    \tilde{\rho}_{ij}(r\hat{\mathbf{r}})\tilde{\rho}_{ik}(s\hat{\mathbf{s}}) \label{eq85}
+\end{align}
+Equation \ref{eq84} defines the two-body descriptor defined as the probability 
+of fiding an atom $j(j\neq i)$ at a distance $r$ from atom $i$. Conversely, 
+Equation \ref{eq85} is known as the three-body descriptor and describes 
+the probability to find an atom $j(j\neq i)$ at a distance $r$ from atom $i$
+and another atom $k(k\neq i,j)$ at a distance $s$ from atom $i$ 
+spanning an angle $\angle kij$ between them. These descriptors are then 
+used to construct the local potential energy functionals $U_{i}=F[\rho_{i}^{(2)}, \rho_{i}^{(3)}]$
+upon which the force field is constructed. 
+
+The force field is then generated during AIMD simulations following 
+the steps below:
+\begin{enumerate}
+    \item The machine predicts the energy, forces, stress tensor 
+    and uncertainty for the current atomic configuration using 
+    the avaliable force field. 
+
+    \item The algorithm decided whether to perform a FP calculation
+    or not. This decision is based on the uncertainty of the prediction. 
+    If the uncertainty is larger than a predefined threshold, the machine 
+    continues to step 3, otherwise it proceeds to step 5. 
+
+    \item The FP calculation is performed for the current structure, and the 
+    obtained dataset is then stored as a candidate for the training 
+    dataset. 
+
+    \item If the number of candidate structures reaches a certain threshold, or if 
+    the uncertainty becomes too large, the algorithm updates the training 
+    set and generates a new force field. 
+
+    \item Atomic positions and velocities are updated. If the algorithm 
+    judges that the force field is not accurate enough, the FP energy, forecs 
+    and stress tensor are used. Otherwise, those predicted by 
+    the force field are used. Afterwards, the algorithm returns to step 
+    1 until the total number of ionic steps is reached.
+\end{enumerate}
+
+Ultimately, MLFFs provide a powerful and efficient method for performing 
+MD simulations. It combines the accuracy of AIMD with the speed of classical
+MD, allowing for large and complex condensed matter systems 
+to be studied with  remarkable accuracy and efficiency.
+
+ 
+\section{DFTB+ software}
 
