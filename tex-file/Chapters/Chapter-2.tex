@@ -723,7 +723,7 @@ the strong interactions inherent of core electrons. In contrast, soft pseudopote
 are often preferred as they require fewer basis functions reducing the 
 computational cost, albeit at the expense of accuracy.
 
-\subsection{Projector Augmented Wave Method (PAW)}
+\subsection{Projector Augmented Wave Method (PAW) in VASP}
 The projector augmented wave (PAW) method\supercite{Blochl1994,Kresse1999}---implemented in VASP and 
 used in this work---aims to address some limitations of pseudopotentials 
 by introducing auxiliary functions called projectors, allowing for core and valence electrons 
@@ -771,19 +771,16 @@ reciprocal lattice vector $\mathbf{G}$ can then be expressed as
     \mathbf{G} = m_1\mathbf{b}_1 + m_2\mathbf{b}_2 + m_3\mathbf{b}_3, \quad m_1, m_2, m_3 \in \mathbb{Z}
 \end{equation}
 
-The reciprocal space is divided into regions called Brillouin zones. 
+The reciprocal space is divided into regions called Brillouin zones (BZs). 
 The first Brillouin zone is defined as the region in reciprocal space closest
-to the origin ($\Gamma$ point). It plays a crucial role in band structure and density of 
-states calculations, as it contains all the unique wave vectors $\mathbf{k}$ that 
-describe the electronic states of the crystal. Moreover, 
-the volume of the first Brillouin zone is given by
+to the origin ($\Gamma$ point). Moreover, the volume of the first BZ is given by
 \begin{equation}
     \label{eq87}
     V_{BZ} = \frac{(2\pi)^3}{V_{PUC}}
 \end{equation}
 which ensures consistency between the real and reciprocal spaces, and 
 proper normalisation when integrating physical quantities over the 
-Brillouin zone.
+BZ.
 
 Finally---because electrons in a crystal are subjected to a periodic potential
 ---single-electron wavefunctions follow Bloch's theorem, and can be expressed as 
@@ -791,7 +788,7 @@ Finally---because electrons in a crystal are subjected to a periodic potential
     \label{eq88}
     \psi_{\mathbf{k}} = e^{i\mathbf{k} \cdot \mathbf{r}} u_{\mathbf{k}}(\mathbf{r})
 \end{equation}
-where $\mathbf{k}$ is the wave vector inside the first Brillouin zone, and 
+where $\mathbf{k}$ is the wave vector inside the first BZ, and 
 $u_{\mathbf{k}}(\mathbf{r}) = u_{\mathbf{k}}(\mathbf{r}+\mathbf{R})$ is a periodic function of the Bravais lattice.
 Many quantities---such as the total energy, electronic density and the total density of states---
 can be computed by integrating functions of $\mathbf{k}$ over the 
@@ -800,15 +797,78 @@ Brillouin zone,
     \label{eq89}
     \langle A \rangle = \frac{V_{PUC}}{(2\pi)^3} \int_{BZ} A(\mathbf{k}) d\mathbf{k}
 \end{equation}
-Attempting to compute the integral 
+Attempting to compute this integral over the entire BZ would require 
+an infinite number of $\mathbf{k}$ points, which is intractable in practice. Instead, 
+we can discretise the BZ into a finite number of $\mathbf{k}$ points. 
+In VASP, it is achieved by following the Monkhorst-Pack\supercite{Monkhorst1976} scheme, 
+\begin{equation}
+    \label{eq90}
+    \mathbf{k} = \sum_{i=3}^{3} \frac{n_i + s_i + \frac{1 - N_i}{2}}{N_1} \mathbf{b}_i 
+\end{equation}
+where $n_i$ are indices representing the subdivisions along each reciprocal lattice vector, 
+$s_i$ is an optional shift in terms of subdivisions, and $N_i$ is the total 
+number of subdivisions along the $\mathbf{b}_i$ direction. 
+ 
+Ultimately, the Monkhorst-Pack scheme allows to generate a uniform and 
+symmetrical grid of $\mathbf{k}$ points in the BZ, and, consequently, to 
+compute integrals over the BZ by summing over a finite number of $\mathbf{k}$ points. 
 
-
-
-    \item \textbf{Plane-Wave Basis Set}
+    \item \textbf{Plane-Wave Expansion and Cut-off Energy}  
     
+Following from our previous discussion---where we expressed the single-electron 
+wavefunction as a combination of a periodic function and a plane wave---we can expand $u_{\mathbf{k}}(\mathbf{r})$ in terms of a set of plane waves 
+\begin{equation}
+\label{eq91}
+    u_{\mathbf{k}}(\mathbf{r}) = \sum_{\mathbf{G}} C_{\mathbf{G}} e^{i\mathbf{G} \cdot \mathbf{r}}
+\end{equation}
 
-    \item \textbf{Cut-off Energy}
+Combining Equations \ref{eq88} and \ref{eq91}, gives 
+\begin{equation}
+    \label{eq92}
+    \psi_{\mathbf{k}}(\mathbf{r}) =
+    \sum_{\mathbf{G}} C_{\mathbf{k+G}} e^{i(\mathbf{k} + \mathbf{G}) \cdot \mathbf{r}}
+\end{equation}
+where $C_{\mathbf{k+G}}$ are the corresponding Fourier coefficients 
+associated to the plane wave of wavevector $\mathbf{k} + \mathbf{G}$.
+
+Noticeably, Equation \ref{eq92} introduces a new complexity in the calculations---the 
+evaluation of a single k-point requires the summation over an infinite 
+number of possible $\mathbf{G}$ vectors. However, the interpretation of 
+Equation \ref{eq92} as solutions to the Schrödinger equation allows for 
+the kinetic energy to be expressed as
+\begin{equation}
+    \label{eq93}
+    E_{\text{kin}} = \frac{1}{2} |\mathbf{k} + \mathbf{G}|^2
+\end{equation}
+In practice, lower energy solutions are more physically relevant,
+thereby allowing us to truncate the infinite summation by including 
+only plane waves whose kinetic energy does not exceed a certain cut-off energy
+$E_{\text{cut}}$
+\begin{equation}
+\label{eq94} 
+\frac{1}{2} |\mathbf{k} + \mathbf{G}|^2 \leq E_{\text{cut}}
+\end{equation}
+This gives a finite expansion
+\begin{equation}
+    \label{eq95}
+    \psi_{\mathbf{k}}(\mathbf{r}) = \sum_{|\mathbf{k} + \mathbf{G}|^2/2 \leq E_{\text{cut}}}
+C_{\mathbf{k}+\mathbf{G}} \, e^{i(\mathbf{k} + \mathbf{G}) \cdot \mathbf{r}}
+\end{equation}
+Finally, in VASP, we often set the cut-off energy based on a convergence criterion of 
+the total energy of the system 
+\begin{equation}
+\label{eq96}
+    \Delta E_{tot} < 1 \text{meV/atom}
+\end{equation}
+ensuring a good description of the electronic structure of the system 
+and keeping the calculations computationally feasible.
+
 \end{itemize}
+
+\subsubsection{Projector Augmented Wave Method (PAW)}
+
+
+
 \subsection{Equation of State (EOS)}
 In order to study the mechanical properties of bulk materials, it is 
 important to establish a relationship between observables---such as the 

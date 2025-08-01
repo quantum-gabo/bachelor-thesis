@@ -133,6 +133,10 @@
     \field{edition}{4th Edition}
     \field{isbn}{978-0-07-179787-0}
     \field{title}{Introduction}
+    \verb{url}
+    \verb https://www.accessengineeringlibrary.com/content/book/9780071797870/c
+    \verb hapter/chapter1
+    \endverb
     \field{langid}{english}
     \list{location}{1}{%
       {New York}%
@@ -537,6 +541,9 @@
     \field{labeltitlesource}{title}
     \field{isbn}{978-0-19-966244-9}
     \field{title}{Materials Modelling Using Density Functional Theory: {{Properties}} and Predictions}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=FzOTAwAAQBAJ
+    \endverb
     \field{year}{2014}
   \endentry
 
@@ -564,6 +571,9 @@
     \field{labeltitlesource}{title}
     \field{isbn}{978-1-119-84086-2}
     \field{title}{Density Functional Theory: A Practical Introduction}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=BR-gEAAAQBAJ
+    \endverb
     \field{year}{2023}
   \endentry
 
@@ -585,6 +595,9 @@
     \field{labeltitlesource}{title}
     \field{isbn}{978-0-521-81010-4}
     \field{title}{Atomic and Electronic Structure of Solids}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=WTL_vgbWpHEC
+    \endverb
     \field{year}{2003}
   \endentry
 
@@ -618,6 +631,9 @@
     \field{labeltitlesource}{title}
     \field{isbn}{978-0-521-87150-1}
     \field{title}{Interacting Electrons}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=ch1CDAAAQBAJ
+    \endverb
     \field{year}{2016}
   \endentry
 
@@ -651,6 +667,9 @@
     \field{labeltitlesource}{title}
     \field{isbn}{978-1-119-01955-8}
     \field{title}{Molecular Electronic-Structure Theory}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=lNVLBAAAQBAJ
+    \endverb
     \field{year}{2014}
   \endentry
 
@@ -678,6 +697,9 @@
     \field{labeltitlesource}{title}
     \field{isbn}{978-981-310-219-4}
     \field{title}{Introduction to Condensed Matter Physics, Volume 1}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=IM47DQAAQBAJ
+    \endverb
     \field{year}{2005}
   \endentry
 
@@ -771,6 +793,9 @@
     \field{labeltitlesource}{title}
     \field{isbn}{978-1-108-42990-0}
     \field{title}{Electronic Structure: {{Basic}} Theory and Practical Methods}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=wvXvDwAAQBAJ
+    \endverb
     \field{year}{2020}
   \endentry
 
@@ -1288,6 +1313,9 @@
     \field{labeltitlesource}{title}
     \field{isbn}{978-1-139-47719-2}
     \field{title}{Ab Initio Molecular Dynamics: {{Basic}} Theory and Advanced Methods}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=VRZUw8Wk4CIC
+    \endverb
     \field{year}{2009}
   \endentry
 
@@ -1424,6 +1452,9 @@
     \field{isbn}{978-0-19-882556-2}
     \field{series}{Oxford Graduate Texts}
     \field{title}{Statistical Mechanics: {{Theory}} and Molecular Simulation}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=EEPJEAAAQBAJ
+    \endverb
     \field{year}{2023}
   \endentry
 
@@ -1451,6 +1482,9 @@
     \field{labeltitlesource}{title}
     \field{isbn}{978-0-323-91318-8}
     \field{title}{Understanding Molecular Simulation: {{From}} Algorithms to Applications}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=jyipEAAAQBAJ
+    \endverb
     \field{year}{2023}
   \endentry
 
@@ -1597,6 +1631,49 @@
     \field{urlyear}{2025}
   \endentry
 
+  \entry{Monkhorst1976}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=MHJ}{%
+         family={Monkhorst},
+         familyi={M\bibinitperiod},
+         given={Hendrik\bibnamedelima J.},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PJD}{%
+         family={Pack},
+         familyi={P\bibinitperiod},
+         given={James\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{MHJPJD1}
+    \strng{fullhash}{MHJPJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A method is given for generating sets of special points in the Brillouin zone which provides an efficient means of integrating periodic functions of the wave vector. The integration can be over the entire Brillouin zone or over specified portions thereof. This method also has applications in spectral and density-of-state calculations. The relationships to the Chadi-Cohen and Gilat-Raubenheimer methods are indicated.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevB.13.5188
+    \endverb
+    \field{number}{12}
+    \field{pages}{5188\bibrangedash 5192}
+    \field{title}{Special Points for {{Brillouin-zone}} Integrations}
+    \field{volume}{13}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/HW9MCIRP/PhysRevB.13.html
+    \endverb
+    \field{journaltitle}{Physical Review B}
+    \field{month}{06}
+    \field{year}{1976}
+    \field{urlday}{01}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{Birch1947}{article}{}{}
     \name{author}{1}{}{%
       {{hash=BF}{%
@@ -1653,6 +1730,9 @@
     \field{isbn}{978-0-521-66392-2}
     \field{series}{Introduction to the Physics of the Earth's Interior}
     \field{title}{Introduction to the Physics of the Earth's Interior}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=_YOCl86XPHoC
+    \endverb
     \field{year}{2000}
   \endentry
 
