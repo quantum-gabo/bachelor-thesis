@@ -771,26 +771,37 @@ reciprocal lattice vector $\mathbf{G}$ can then be expressed as
     \mathbf{G} = m_1\mathbf{b}_1 + m_2\mathbf{b}_2 + m_3\mathbf{b}_3, \quad m_1, m_2, m_3 \in \mathbb{Z}
 \end{equation}
 
-
-
-
-
-Additionally, to describe electrons in a crystal we consider they 
-are moving in a periodic potential---\emph{i.e.}, the potential in 
-the single-particle hamiltonian has the translational property 
-of the Bravais lattice, 
+The reciprocal space is divided into regions called Brillouin zones. 
+The first Brillouin zone is defined as the region in reciprocal space closest
+to the origin ($\Gamma$ point). It plays a crucial role in band structure and density of 
+states calculations, as it contains all the unique wave vectors $\mathbf{k}$ that 
+describe the electronic states of the crystal. Moreover, 
+the volume of the first Brillouin zone is given by
 \begin{equation}
-    \label{eq85}
-    V^{sp}(\mathbf{r} + \mathbf{R}) = V^{sp}(\mathbf{r}), \quad \forall \, \mathbf{R} \in \text{Bravais lattice}
+    \label{eq87}
+    V_{BZ} = \frac{(2\pi)^3}{V_{PUC}}
 \end{equation}
-Then, according to Bloch's theorem, the single-particle wavefunctions 
-have the same translational symmetry, and can be expressed as
+which ensures consistency between the real and reciprocal spaces, and 
+proper normalisation when integrating physical quantities over the 
+Brillouin zone.
+
+Finally---because electrons in a crystal are subjected to a periodic potential
+---single-electron wavefunctions follow Bloch's theorem, and can be expressed as 
 \begin{equation}
-    \label{eq86}
+    \label{eq88}
     \psi_{\mathbf{k}} = e^{i\mathbf{k} \cdot \mathbf{r}} u_{\mathbf{k}}(\mathbf{r})
 \end{equation}
-where $\mathbf{k}$ is the wave vector defined in reaciprocal space, and 
-$u_{\mathbf{k}}(\mathbf{r})$ is a periodic function of the Bravais lattice. 
+where $\mathbf{k}$ is the wave vector inside the first Brillouin zone, and 
+$u_{\mathbf{k}}(\mathbf{r}) = u_{\mathbf{k}}(\mathbf{r}+\mathbf{R})$ is a periodic function of the Bravais lattice.
+Many quantities---such as the total energy, electronic density and the total density of states---
+can be computed by integrating functions of $\mathbf{k}$ over the 
+Brillouin zone, 
+\begin{equation}
+    \label{eq89}
+    \langle A \rangle = \frac{V_{PUC}}{(2\pi)^3} \int_{BZ} A(\mathbf{k}) d\mathbf{k}
+\end{equation}
+Attempting to compute the integral 
+
 
 
     \item \textbf{Plane-Wave Basis Set}
@@ -909,4 +920,5 @@ to be studied with  remarkable accuracy and efficiency.
 
  
 \section{DFTB+ software}
-
+DFTB+ is a versatile open-sourse quantum mechanical simulation code 
+that uses
