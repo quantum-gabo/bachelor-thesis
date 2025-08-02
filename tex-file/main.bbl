@@ -1551,6 +1551,49 @@
     \field{urlyear}{2025}
   \endentry
 
+  \entry{Monkhorst1976}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=MHJ}{%
+         family={Monkhorst},
+         familyi={M\bibinitperiod},
+         given={Hendrik\bibnamedelima J.},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PJD}{%
+         family={Pack},
+         familyi={P\bibinitperiod},
+         given={James\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{MHJPJD1}
+    \strng{fullhash}{MHJPJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A method is given for generating sets of special points in the Brillouin zone which provides an efficient means of integrating periodic functions of the wave vector. The integration can be over the entire Brillouin zone or over specified portions thereof. This method also has applications in spectral and density-of-state calculations. The relationships to the Chadi-Cohen and Gilat-Raubenheimer methods are indicated.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevB.13.5188
+    \endverb
+    \field{number}{12}
+    \field{pages}{5188\bibrangedash 5192}
+    \field{title}{Special Points for {{Brillouin-zone}} Integrations}
+    \field{volume}{13}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/HW9MCIRP/PhysRevB.13.html
+    \endverb
+    \field{journaltitle}{Physical Review B}
+    \field{month}{06}
+    \field{year}{1976}
+    \field{urlday}{01}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{Blochl1994}{article}{}{}
     \name{author}{1}{}{%
       {{hash=BPE}{%
@@ -1628,49 +1671,6 @@
     \field{year}{1999}
     \field{urlday}{30}
     \field{urlmonth}{07}
-    \field{urlyear}{2025}
-  \endentry
-
-  \entry{Monkhorst1976}{article}{}{}
-    \name{author}{2}{}{%
-      {{hash=MHJ}{%
-         family={Monkhorst},
-         familyi={M\bibinitperiod},
-         given={Hendrik\bibnamedelima J.},
-         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=PJD}{%
-         family={Pack},
-         familyi={P\bibinitperiod},
-         given={James\bibnamedelima D.},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society}%
-    }
-    \strng{namehash}{MHJPJD1}
-    \strng{fullhash}{MHJPJD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    A method is given for generating sets of special points in the Brillouin zone which provides an efficient means of integrating periodic functions of the wave vector. The integration can be over the entire Brillouin zone or over specified portions thereof. This method also has applications in spectral and density-of-state calculations. The relationships to the Chadi-Cohen and Gilat-Raubenheimer methods are indicated.%
-    }
-    \verb{doi}
-    \verb 10.1103/PhysRevB.13.5188
-    \endverb
-    \field{number}{12}
-    \field{pages}{5188\bibrangedash 5192}
-    \field{title}{Special Points for {{Brillouin-zone}} Integrations}
-    \field{volume}{13}
-    \verb{file}
-    \verb /home/starlord/Zotero/storage/HW9MCIRP/PhysRevB.13.html
-    \endverb
-    \field{journaltitle}{Physical Review B}
-    \field{month}{06}
-    \field{year}{1976}
-    \field{urlday}{01}
-    \field{urlmonth}{08}
     \field{urlyear}{2025}
   \endentry
 
