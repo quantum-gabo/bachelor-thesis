@@ -10,7 +10,7 @@ notebooks/.ipynb_checkpoints
 figures
 old-tex-file
 **/*.svg
-tex-file/Figures/*.pdf
+
 
 # Ignore some files from my Obsidian vault 
 my-vault/Advanced Programming

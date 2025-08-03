@@ -1849,5 +1849,79 @@
     \field{urlmonth}{07}
     \field{urlyear}{2025}
   \endentry
+
+  \entry{Pellenq2009}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=PRJM}{%
+         family={Pellenq},
+         familyi={P\bibinitperiod},
+         given={Roland J.-M.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kushima},
+         familyi={K\bibinitperiod},
+         given={Akihiro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Shahsavari},
+         familyi={S\bibinitperiod},
+         given={Rouzbeh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VVKJ}{%
+         family={Van\bibnamedelima Vliet},
+         familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+         given={Krystyn\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BMJ}{%
+         family={Buehler},
+         familyi={B\bibinitperiod},
+         given={Markus\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yip},
+         familyi={Y\bibinitperiod},
+         given={Sidney},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=UFJ}{%
+         family={Ulm},
+         familyi={U\bibinitperiod},
+         given={Franz-Josef},
+         giveni={F\bibinithyphendelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Proceedings of the National Academy of Sciences}%
+    }
+    \strng{namehash}{PRJM+1}
+    \strng{fullhash}{PRJMKASRVVKJBMJYSUFJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Despite decades of studies of calcium-silicate-hydrate (C-S-H), the structurally complex binder phase of concrete, the interplay between chemical composition and density remains essentially unexplored. Together these characteristics of C-S-H define and modulate the physical and mechanical properties of this ``liquid stone'' gel phase. With the recent determination of the calcium/silicon (C/S = 1.7) ratio and the density of the C-S-H particle (2.6 g/cm3) by neutron scattering measurements, there is new urgency to the challenge of explaining these essential properties. Here we propose a molecular model of C-S-H based on a bottom-up atomistic simulation approach that considers only the chemical specificity of the system as the overriding constraint. By allowing for short silica chains distributed as monomers, dimers, and pentamers, this C-S-H archetype of a molecular description of interacting CaO, SiO2, and H2O units provides not only realistic values of the C/S ratio and the density computed by grand canonical Monte Carlo simulation of water adsorption at 300 K. The model, with a chemical composition of (CaO)1.65(SiO2)(H2O)1.75, also predicts other essential structural features and fundamental physical properties amenable to experimental validation, which suggest that the C-S-H gel structure includes both glass-like short-range order and crystalline features of the mineral tobermorite. Additionally, we probe the mechanical stiffness, strength, and hydrolytic shear response of our molecular model, as compared to experimentally measured properties of C-S-H. The latter results illustrate the prospect of treating cement on equal footing with metals and ceramics in the current application of mechanism-based models and multiscale simulations to study inelastic deformation and cracking.%
+    }
+    \verb{doi}
+    \verb 10.1073/pnas.0902180106
+    \endverb
+    \field{number}{38}
+    \field{pages}{16102\bibrangedash 16107}
+    \field{title}{A Realistic Molecular Model of Cement Hydrates}
+    \field{volume}{106}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/ZHC5WJNS/Pellenq et al. - 2009 - A real
+    \verb istic molecular model of cement hydrates.pdf
+    \endverb
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{month}{09}
+    \field{year}{2009}
+    \field{urlday}{11}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
 \enddatalist
 \endinput
