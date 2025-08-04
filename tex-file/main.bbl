@@ -1850,6 +1850,274 @@
     \field{urlyear}{2025}
   \endentry
 
+  \entry{Hourahine2020}{article}{}{}
+    \name{author}{39}{}{%
+      {{hash=HB}{%
+         family={Hourahine},
+         familyi={H\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Aradi},
+         familyi={A\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BV}{%
+         family={Blum},
+         familyi={B\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Bonaf{\'e}},
+         familyi={B\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Buccheri},
+         familyi={B\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Camacho},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Cevallos},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DMY}{%
+         family={Deshaye},
+         familyi={D\bibinitperiod},
+         given={M.\bibnamedelima Y.},
+         giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=DT}{%
+         family={Dumitric{\u a}},
+         familyi={D\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Dominguez},
+         familyi={D\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ES}{%
+         family={Ehlert},
+         familyi={E\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=EM}{%
+         family={Elstner},
+         familyi={E\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=vT}{%
+         family={{van der Heide}},
+         familyi={v\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hermann},
+         familyi={H\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Irle},
+         familyi={I\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KJJ}{%
+         family={Kranz},
+         familyi={K\bibinitperiod},
+         given={J.\bibnamedelima J.},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={K{\"o}hler},
+         familyi={K\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kowalczyk},
+         familyi={K\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kuba{\v r}},
+         familyi={K\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LIS}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={I.\bibnamedelima S.},
+         giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Lutsker},
+         familyi={L\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MRJ}{%
+         family={Maurer},
+         familyi={M\bibinitperiod},
+         given={R.\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MSK}{%
+         family={Min},
+         familyi={M\bibinitperiod},
+         given={S.\bibnamedelima K.},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=MI}{%
+         family={Mitchell},
+         familyi={M\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Negre},
+         familyi={N\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=NTA}{%
+         family={Niehaus},
+         familyi={N\bibinitperiod},
+         given={T.\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=NAMN}{%
+         family={Niklasson},
+         familyi={N\bibinitperiod},
+         given={A.\bibnamedelima M.\bibnamedelima N.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=PAJ}{%
+         family={Page},
+         familyi={P\bibinitperiod},
+         given={A.\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pecchia},
+         familyi={P\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Penazzi},
+         familyi={P\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PMP}{%
+         family={Persson},
+         familyi={P\bibinitperiod},
+         given={M.\bibnamedelima P.},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={{\v R}ez{\'a}{\v c}},
+         familyi={{\v R}\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SCG}{%
+         family={S{\'a}nchez},
+         familyi={S\bibinitperiod},
+         given={C.\bibnamedelima G.},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sternberg},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={St{\"o}hr},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Stuckenberg},
+         familyi={S\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tkatchenko},
+         familyi={T\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=YVWz}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={V.\bibnamedelima W.-z},
+         giveni={V\bibinitperiod\bibinitdelim W\bibinithyphendelim z},
+      }}%
+      {{hash=FT}{%
+         family={Frauenheim},
+         familyi={F\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AIP Publishing}%
+    }
+    \strng{namehash}{HB+1}
+    \strng{fullhash}{HBABBVBFBACCCCDMYDTDAESEMvTHJISKJJKCKTKTLISLVMRJMSKMINCNTANAMNPAJPAPGPMPRJSCGSMSMSFTAYVWzFT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    DFTB+ is a versatile community developed open source software package offering fast and efficient methods for carrying out atomistic quantum mechanical simulati%
+    }
+    \verb{doi}
+    \verb 10.1063/1.5143190
+    \endverb
+    \field{issn}{0021-9606}
+    \field{number}{12}
+    \field{title}{{{DFTB}}+, a Software Package for Efficient Approximate Density Functional Theory Based Atomistic Simulations}
+    \field{volume}{152}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/PYVUQZCA/Hourahine et al. - 2020 - DFTB
+    \verb +, a software package for efficient approximate density functional th
+    \verb eory based atomistic simula.pdf
+    \endverb
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{month}{03}
+    \field{year}{2020}
+    \field{urlday}{31}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
+  \endentry
+
   \entry{Pellenq2009}{article}{}{}
     \name{author}{7}{}{%
       {{hash=PRJM}{%
@@ -1922,6 +2190,17 @@
     \field{urlday}{11}
     \field{urlmonth}{09}
     \field{urlyear}{2024}
+  \endentry
+
+  \entry{zotero-item-672}{misc}{}{}
+    \field{labeltitlesource}{title}
+    \field{title}{The {{VASP Manual}}}
+    \verb{url}
+    \verb https://www.vasp.at/wiki/index.php/The_VASP_Manual
+    \endverb
+    \field{urlday}{31}
+    \field{urlmonth}{07}
+    \field{urlyear}{2025}
   \endentry
 \enddatalist
 \endinput

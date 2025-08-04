@@ -3,23 +3,36 @@
 \lhead{Chapter 3. \emph{Methodology}}  
 This chapter outlines the methodology followed in this work to perform the computational simulations of calcium silicate hydrates (C-S-H). All the calculateions were carried out using Density Functional Tight Binding (DFTB+)---primarily in the initial stages---and subsequently with the Vienna Ab-initio Simulation Package (VASP).
 
-We begin by describing the initial C-S-H structure, followed by a preliminary relaxation using DFTB+. Thereafter, we present the workflow adopted in VASP, detailing the main input and output files necessary for the simulations. Finally, we discuss the generation of the  machine learning force field (MLFF), covering the training, refinement and testing phases. 
+We begin by describing the initial C-S-H structure, followed by the 
+details of the VASP workflow, emphasising the self-consistent field (SCF) cycle. Then, we present the main input and output files necessary for the simulations. Following, we discuss the structure relaxation procedure, including an initial relaxation with DFTB+ followed by a full structure relaxation using VASP. Finally, we discuss the generation of the  machine learning force field (MLFF), covering the training, refinement and testing phases. 
 
 \section{Initial CSH Structure}
-The investigations performed in this work are based in the C-S-H structure proposed by Pellenq \emph{et al.}\supercite{Pellenq2009}. 
-This molecular model was constructed 
+The structure used for our investigations of calcium silicate hydrates (C-S-H)---from now on referred to as CSH---is the CSH molecular model proposed by Pellenq \emph{et al.}\supercite{Pellenq2009}. This model was constructed with chemical composition as the overriding constraint. As such, the model has a calcium/silicon ratio (C/S) of 1.7, and a density of 2.6 g/cm$^3$; consistent with experimental observations. 
 
+It was derived from a monoclinic periodic cell of dry tobermorite, from which SiO$_2$ groups were removed to achieve experimental C/S ratio. Thereafter, the strucure was relaxed using a core-shell potential model at 0 K. Finally, they carried out a Grand Canonical Monte Carlo simulation of water adsorption at 300 K, reporting a chemical composition of (CaO)$_{1.65}$(SiO$_2$)(H$_2$O)$_{1.75}$. 
+
+The model, shown in Figure \ref{fig:csh_structure}, contains
+99 calcium (Ca), 60 silicon (Si), 323 oxygen (O) and 208 hydrogen (H) atoms, making a total of 690 atoms. It is noteworthy that the model is not regarded as a perfect representation of C-S-H, but rather as a good approximation that captures the essential features of cement hydrates
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{POSCAR-extra-colours.png}
-    \caption{Molecular model of C-S-H proposed by Ref.\supercite{Pellenq2009}. Lavender and white spheres are oxygen and hydrogen from  water molecules respectively; light blue and brown spheres are inter and intra-layer calcium ions, respectively; electric blue and red spheres are silicon and oxigen atoms from silica tetrahedra, respectively. 
-    }
+    \caption{Molecular model of C-S-H proposed by Ref.\supercite{Pellenq2009}. Lavender and white spheres are oxygen and hydrogen from  water molecules respectively; light blue and brown spheres are inter and intra-layer calcium ions, respectively; electric blue and red spheres are silicon and oxigen atoms from silica tetrahedra, respectively.}
     \label{fig:csh_structure}
 \end{figure}
 
-
 \section{VASP Workflow}
+Most of our calculations were performed using the Vienna Ab Initio Simulation Package (VASP).  A central part of the VASP workflow is the self-consistent field (SCF) cycle, illustrated in Figure~\ref{fig:vasp_workflow}. This cycle is essential for structure relaxation, \emph{ab initio} molecular dynamics (AIMD) simulations, and other DFT calculations. We hereby present the main procedure of the SCF cycle:
+
+\begin{itemize}
+    \item At the beginning of the cycle, a trial electronic density is generated---either from a previous calculation or from an initial guess. 
+    \item The algorithm then proceeds to contruct the effective potential, defined as the sum of the Hartree, external and exchange-correlation potentials. This latter is specified by the user (e.g., PBEsol, HSE06).
+    \item VASP then solves the Kohn-Sham equation, generating a new set of single-electron wavefunctions at each iteration. 
+    \item A new electronic density is calculated from the wavefunctions. This process repeats until self-consistency is achieved---\emph{i.e.}, the total energy difference between consecutive iterations fall below a predefined tolerance. This value is set by the user, and for our calculations a value of \texttt{EDIFF = 1E-4} was used. 
+\end{itemize}
+
+
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{vasp-workflow.pdf}
@@ -30,9 +43,17 @@ This molecular model was constructed
 \end{figure}
 
 \section{VASP Input \& Output Files}
-One more section
-\subsection{Input Files}
+The VASP input and output files are essential for our calculations. On the one hand, the input files contains necessary information---such as the initial structure, exchange-correlation functionals, PAW pseudopotentials, k-point grid, and convergence criteria---that guide the different simulations. On the other hand, the output files contain the results of the different simulations, such as the total enery, forces, stress tensor, and the fully relaxed structure.
 
+This section provides an overview of the required input files for VASP calculations, as well as some relevant output files. For a detailed and rather technical description of the files herein described, we refer the reader to the VASP manual\supercite{zotero-item-672}
+
+\subsection{Input Files}
+\subsubsection{INCAR}
+The \texttt{INCAR} file defines the computational parameters in VASP and specifies the type of calculation to be performed. Each simulation stage---such as structure optimisation, Density of States (DOS) calculations, AIMD simulations, or MLFF training---are defined by an specific set of INCAR tags. This parameters control convergence thresholds, exchange-correlation functionals, long-range corrections, ensemble choices, and other simulation parameters. If not specified by the user, VASP uses default values. Nonetheless, for reliable and reproducible results, main parameters must be tailored to the system and the type of calculation.
+
+
+\subsubsection{POSCAR}
+The \texttt{POSCAR} (see Figure \ref{fig:csh_poscar}) file provides the actual structure to be studied. It is subdivided into several sections, each one providing specific information about the system.
 \begin{figure}[h]
 \resizebox{\textwidth}{!}{
 \begin{tabular}{>{\columncolor{blue!10}}c>{\columncolor{blue!10}}c>{\columncolor{blue!10}}c
@@ -65,15 +86,67 @@ One more section
 }
 \caption{Unit cell structure in fractional coordinates for the \ce{C-S-H} (Calcium-Silicate-Hydrate) system. The lattice vectors, atomic species (99 Ca, 60 Si, 323 O, 208 H), and the first 9 atomic positions are shown. All coordinates are expressed in direct (fractional) form.}
 \label{fig:csh_poscar}
+\end{figure}
+The first line contains a comment specifying the name of the system or a brief description. Lines 2-4 provide the scaling factor and the corresponding lattice vectors. The actual lattice vectors are obtained by mutiplying the scaling factor (line 2) by the numbers in lines 3-5. Lines 6-7 specify the atomic species as well as the number of ions of each species. Finally, lines 9-onwards provide the ionic positions in angstroms. 
 
+\subsubsection{KPOINTS}
+Defining the k-point grid is an essential and one of the first steps when performing DFT calculations, as the accuracy and convergence of the results depend on it. Figure \ref{kpoints} illustrates the \texttt{KPOINTS} file used in this work. The specified mesh is a $1\times 1\times 1$ Gamma centered grid, obtained after a convergence test. 
+\begin{figure}[H]
+\resizebox{\textwidth}{!}{
+	\begin{tabular}{>{\columncolor{blue!10}}c>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l>{\columncolor{blue!10}}l} \hline
+		\multicolumn{1}{l}{\cellcolor{blue!10} \textbf{CSH kpoints}} & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & &\\ 
+		\multicolumn{1}{l}{\cellcolor{blue!10}0}& & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & &\\
+		\multicolumn{1}{l}{\cellcolor{blue!10} \textbf{Gamma}}& & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & &\\ 
+		1 1 1& & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & \\
+		0 0 0& & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & \\  \hline
+	\end{tabular}
+ }
+	\centering
+	\caption{C-S-H k-point grid centerd at the Gamma point. The values "1 1 1" define the grid dimensions in the x, y and z directions. For large systems, a Gamma-centered grid is enough to achieve convergence.}
+	\label{kpoints}
 \end{figure}
 
-\subsection{Output Files}
+\subsubsection{POTCAR}
+The \texttt{POTCAR} file contains the PAW pseudopotentials for each atomic species in the system. As such, it defines how valence electrons interact with the atomic cores. It is constructed by concatenating the individual POTCAR files for each species into a single file. In our work we employed the following PAW pseudopotentials from the PAW\_PBE library:
+\begin{itemize}
+    \item Ca: Ca\_pv ([Ar] 4s$^2$)
+    \item Si: Si ([Ne] 3s$^2$ 3p$^2$)
+    \item O: O ([He] 2s$^2$ 2p$^4$)
+    \item H: H (1s$^1$)
+\end{itemize}
 
-\section{Strucure Optimisation and Relaxation}
+\subsection{Output Files}
+These are the main output files generated upon finishing a FP calculation in VASP. They provide essential information about the performance of the calculations, serving as a record of the simulation and allowing for further analysis.
+\subsubsection{OUTCAR}
+The \texttt{OUTCAR} file is a comprehensive output file that contains detailed information about the VASP calculation. It includes a summary of the input parameters, the evolution of the SCF cycle, the total energy, forces on the atoms, and stress tensor.
+\subsubsection{CONTCAR}
+The \texttt{CONTCAR} file records the final atomic positions and lattice vectors after a structure relaxation or optimisation. Besides, this file may also contain atomic velocities and predictor-corrector information if written during an AIMD simulation. It has a compatible format with the \texttt{POSCAR} file, making it reausable as an input structure for subsequent calculations.
+
+\subsubsection{DOSCAR}
+The \texttt{DOSCAR} file stores the Density of States (DOS) and integrated DOS, expressed in states/eV and cumulative number of states, respectively. This data is especially useful for analysing the electronic properties of the system, and understanding features such as the band gap and the distribution of states across the valence and conduction bands. 
+\subsubsection{OSZICAR}
+The \texttt{OSZICAR} file records a summary of the electronic and ionic iterations during a DFT calculation. It allows the user to monitor the progress of the SCF cycle convergence, visualise changes in the total energy, and follow the evolution of the ionic relaxation process. 
+\subsubsection{ML\_ABN}
+The \texttt{ML\_ABN} file contains the training dataset collected during an on-the-fly MLFF training process. As previously described, the MLFF is trained together with an AIMD simulation, where atomic configurations are sampled. Representative configurations are then written to this file, which can be reused to continue the training by renaiming it to a \texttt{ML\_AB} file.
+
+\subsubsection{ML\_FFN}
+The \texttt{ML\_FFN} file is a binary file that stores the trained machine learning force field (MLFF) model at the end of the training phase. It contains the model parameters, such as weights and hyperparameters, that define the MLFF. The model can be used for prediction or further refinement by renaming it to an \texttt{ML\_FF} file.
+
+
+\section{Strucure Relaxation}
+Relaxing the CSH structure is a crucial step towards obtaining equilibrium properties of this material. This process involves minimising both the forces on atoms and the total energy of the system, leading to a stable configuration. In this work, we performed the structure relaxation in two stages: an initial relaxation is performed using DFTB+, necessary to obtain a good starting point for VASP and to reduce the computational cost of the full structure relaxation. Thez second stage consists of a full structure relaxation using VASP. Here we outline both stages of the structure relaxation process.
+
 \subsection{Initial Relaxation with DFTB+}
+The first stage of the structure relaxation was performed in the DFTB+ code using the GFN1-xTB method. 
+
 \subsection{Full Structure Relaxation with VASP}
+
+
+
 \section{Machine Learning Force Field Generation}
+
+
+
 \subsection{MLFF Training}
 \subsection{MLFF Refinement}
 \subsection{MLFF Testing}
