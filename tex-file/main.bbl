@@ -2202,5 +2202,16 @@
     \field{urlmonth}{07}
     \field{urlyear}{2025}
   \endentry
+
+  \entry{zotero-item-698}{misc}{}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Available Pseudopotentials - {{VASP Wiki}}}
+    \verb{url}
+    \verb https://www.vasp.at/wiki/index.php/Available_pseudopotentials
+    \endverb
+    \field{urlday}{05}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
 \enddatalist
 \endinput
