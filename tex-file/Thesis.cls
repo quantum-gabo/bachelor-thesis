@@ -99,7 +99,7 @@
 	{\normalsize
 		Yo, \textbf{Balarezo Balarezo Juan Gabriel}, con c\'{e}dula de identidad 0106019219, declaro que las ideas, juicios, valoraciones, interpretaciones, consultas bibliogr\'{a}ficas, definiciones y conceptualizaciones expuestas en el presente trabajo; as\'{i} c\'{o}mo, los procedimientos y herramientas utilizadas en la investigaci\'{o}n, son de absoluta responsabilidad de el/la autora (a) del trabajo de integraci\'{o}n curricular. As\'{i} mismo, me acojo a los reglamentos internos de la Universidad de Investigaci\'{o}n de Tecnolog\'{i}a Experimental Yachay. 
 		
-		Urcuqu\'{i}, junio 2025. \\[2cm]
+		Urcuqu\'{i}, agosto 2025. \\[2cm]
 		
 		
 		\begin{center}
@@ -124,7 +124,7 @@
 		
 		Asimismo, autorizo a la Universidad que realice la digitalizaci\'{o}n y publicaci\'{o}n de este trabajo de integraci\'{o}n curricular en el repositorio virtual, de conformidad a lo dispuesto en el Art. 144 de la Ley Org\'{a}nica de Educaci\'{o}n Superior
 		
-		Urcuqu\'{i}, junio 2025. \\[2cm]
+		Urcuqu\'{i}, agosto 2025. \\[2cm]
 		
 		
 		\begin{center}
@@ -457,7 +457,7 @@ supervision.\\[2.5cm]
         
         \begin{center}
         	\fontsize{16}{26}\selectfont
-          \textbf{ \texorpdfstring{T\'{I}TULO: First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates (C-S-H).}{T\'{I}TULO: First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates (C-S-H).}}
+          \textbf{ \texorpdfstring{T\'{I}TULO: First-Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates.}{T\'{I}TULO: First Principles and Machine Learning Investigations into the Atomic and Mechanical Properties of Cement Hydrates (C-S-H).}}
         \end{center}
 
         \begin{center}
@@ -502,7 +502,7 @@ supervision.\\[2.5cm]
         
         \begin{center}
         	\fontsize{14}{26}\selectfont
-        	Urcuqu\'{i}, Junio 2025
+        	Urcuqu\'{i}, Agosto 2025
         \end{center}
         \vfill
     \end{center}

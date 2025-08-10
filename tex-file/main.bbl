@@ -17,6 +17,37 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global/global}
+  \entry{mehta2014concrete}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=MP}{%
+         family={Mehta},
+         familyi={M\bibinitperiod},
+         given={P.K.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Monteiro},
+         familyi={M\bibinitperiod},
+         given={P.J.M.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill Education}%
+    }
+    \strng{namehash}{MPMP1}
+    \strng{fullhash}{MPMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-07-179787-0}
+    \field{series}{{{McGraw-hill}}'s {{AccessEngineering}}}
+    \field{title}{Concrete: {{Microstructure}}, Properties, and Materials}
+    \verb{url}
+    \verb https://books.google.com.ec/books?id=X84TAgAAQBAJ
+    \endverb
+    \field{year}{2014}
+  \endentry
+
   \entry{Monteiro2017}{article}{}{}
     \name{author}{3}{}{%
       {{hash=MPJM}{%
@@ -96,8 +127,7 @@
     \field{title}{Concrete Material Science: {{Past}}, Present, and Future Innovations}
     \field{volume}{112}
     \verb{file}
-    \verb /home/starlord/Zotero/storage/H4DV4PPH/Van Damme - 2018 - Concrete ma
-    \verb terial science Past, present, and future innovations.pdf
+    \verb /home/starlord/Downloads/10.1016@j.cemconres.2018.05.002.pdf
     \endverb
     \field{journaltitle}{Cement and Concrete Research}
     \field{month}{10}
@@ -107,41 +137,176 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Mehta2014}{incollection}{}{}
-    \name{author}{2}{}{%
-      {{hash=MPK}{%
-         family={Mehta},
-         familyi={M\bibinitperiod},
-         given={P.\bibnamedelima Kumar},
-         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+  \entry{Biernacki2017}{article}{}{}
+    \name{author}{15}{}{%
+      {{hash=BJJ}{%
+         family={Biernacki},
+         familyi={B\bibinitperiod},
+         given={Joseph\bibnamedelima J.},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
-      {{hash=MPJM}{%
-         family={Monteiro},
-         familyi={M\bibinitperiod},
-         given={Paulo J.\bibnamedelima M.},
-         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      {{hash=BJW}{%
+         family={Bullard},
+         familyi={B\bibinitperiod},
+         given={Jeffrey\bibnamedelima W.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Sant},
+         familyi={S\bibinitperiod},
+         given={Gaurav},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GFP}{%
+         family={Glasser},
+         familyi={G\bibinitperiod},
+         given={Fredrik\bibnamedelima P.},
+         giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Ley},
+         familyi={L\bibinitperiod},
+         given={Tyler},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Livingston},
+         familyi={L\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=NL}{%
+         family={Nicoleau},
+         familyi={N\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=OJ}{%
+         family={Olek},
+         familyi={O\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Sanchez},
+         familyi={S\bibinitperiod},
+         given={Florence},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Shahsavari},
+         familyi={S\bibinitperiod},
+         given={Rouzbeh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SPE}{%
+         family={Stutzman},
+         familyi={S\bibinitperiod},
+         given={Paul\bibnamedelima E.},
+         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sobolev},
+         familyi={S\bibinitperiod},
+         given={Konstantine},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Prater},
+         familyi={P\bibinitperiod},
+         given={Tracie},
+         giveni={T\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {McGraw-Hill Education}%
+    \keyw{3-D printing,additive manufacturing,admixtures,CO2 emissions,history,ordinary portland cement}
+    \strng{namehash}{BJJ+1}
+    \strng{fullhash}{BJJBJWSGBKGFPJSLTLRNLOJSFSRSPESKPT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    Since its widespread use in concrete began over 100 years ago, the chemical composition and physical properties of portland cement have changed only incrementally in response to various and competing pressures of constructability and cost. Instead, the construction demands have been met largely through the development and introduction of chemical admixtures that are added to the binder during mixing. These same demands persist into the 21st Century and are just as important now as before, yet newer driving forces are simultaneously pushing the industry both toward more automated construction and toward more sustainable concrete materials that generate lower CO2 and have longer service life. These new cement binder formulations and new construction technologies are expected to go well outside the bounds of traditional portland cement compositions and batching and placing practices. This study examines the origins of these new market demands and the influence they are having on the construction industry. Seven scientific or technological pathways are identified that will be critical for enabling the kinds of transformational changes in cement and concrete construction that the industry needs: (i) additive manufacturing, (ii) designer admixtures, (iii) curated materials data repositories, (iv) computationally designed composites, (v) big data and smart materials, (vi) alternative binder compositions, and (vii) next-generation instrumentation.%
     }
-    \strng{namehash}{MPKMPJM1}
-    \strng{fullhash}{MPKMPJM1}
+    \verb{doi}
+    \verb 10.1111/jace.14948
+    \endverb
+    \field{issn}{1551-2916}
+    \field{number}{7}
+    \field{pages}{2746\bibrangedash 2773}
+    \field{shorttitle}{Cements in the 21st Century}
+    \field{title}{Cements in the 21st Century: {{Challenges}}, Perspectives, and Opportunities}
+    \field{volume}{100}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/R5N76UJJ/Biernacki et al. - 2017 - Ceme
+    \verb nts in the 21st century Challenges, perspectives, and opportunities.p
+    \verb df
+    \endverb
+    \field{journaltitle}{Journal of the American Ceramic Society}
+    \field{year}{2017}
+    \field{urlday}{16}
+    \field{urlmonth}{03}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Ji2012}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=JQ}{%
+         family={Ji},
+         familyi={J\bibinitperiod},
+         given={Qing},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=PRJM}{%
+         family={Pellenq},
+         familyi={P\bibinitperiod},
+         given={Roland J.\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=VVKJ}{%
+         family={Van\bibnamedelima Vliet},
+         familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+         given={Krystyn\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{C-S-H,Cement,Simulation,Water model}
+    \strng{namehash}{JQPRJMVVKJ1}
+    \strng{fullhash}{JQPRJMVVKJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Concrete: {{Microstructure}}, {{Properties}}, and {{Materials}}}
-    \field{edition}{4th Edition}
-    \field{isbn}{978-0-07-179787-0}
-    \field{title}{Introduction}
-    \verb{url}
-    \verb https://www.accessengineeringlibrary.com/content/book/9780071797870/c
-    \verb hapter/chapter1
-    \endverb
-    \field{langid}{english}
-    \list{location}{1}{%
-      {New York}%
+    \field{abstract}{%
+    Calcium silicate hydrate, or C--S--H, is the chief hydration product of Portland cement. The structure of the C--S--H phase within cement has been proposed and developed via molecular simulations. In such simulations, empirical interatomic potentials for water molecules within C--S--H are adopted to govern the position and relative motion of this key constituent. Initial simulations and force fields of C--S--H have assumed the simplest molecular model of H2O termed ``single point charge'' or SPC, but this choice has not been validated by comparison with other computational models of water that confer additional bond flexibility or charge distribution. To enable efficiently computational modeling of C--S--H and to explore the role that H2O plays in maintaining C--S--H structure and properties, the choice of an efficient and accurate water model is critical. Here, we consider five distinct, classical atomistic water models (SPC, TIP3P, TIP4P, TIP4P05, and TIP5P) to determine the effects of these computational simplifications on C--S--H properties. Quantitative comparison of all five water models shows that the appropriate water model depends on the C--S--H characteristics of interest. Among these models, both SPC and TIP5P models successfully predict key properties of the structure and elastic constants of C--S--H, as well as the dynamics of water molecules within C--S--H.%
     }
-    \field{year}{2014}
+    \verb{doi}
+    \verb 10.1016/j.commatsci.2011.08.024
+    \endverb
+    \field{issn}{0927-0256}
+    \field{number}{1}
+    \field{pages}{234\bibrangedash 240}
+    \field{title}{Comparison of Computational Water Models for Simulation of Calcium--Silicate--Hydrate}
+    \field{volume}{53}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/PX9UP7HR/Ji et al. - 2012 - Comparison
+    \verb of computational water models for simul.pdf
+    \endverb
+    \field{journaltitle}{Computational Materials Science}
+    \field{month}{02}
+    \field{year}{2012}
+    \field{urlday}{24}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
   \endentry
 
   \entry{Papatzani2015}{article}{}{}
@@ -190,98 +355,6 @@
     \field{year}{2015}
     \field{urlday}{16}
     \field{urlmonth}{03}
-    \field{urlyear}{2025}
-  \endentry
-
-  \entry{Ioannidou2016}{article}{}{}
-    \name{author}{10}{}{%
-      {{hash=IK}{%
-         family={Ioannidou},
-         familyi={I\bibinitperiod},
-         given={Katerina},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=KKJ}{%
-         family={Krakowiak},
-         familyi={K\bibinitperiod},
-         given={Konrad\bibnamedelima J.},
-         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=BM}{%
-         family={Bauchy},
-         familyi={B\bibinitperiod},
-         given={Mathieu},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=HCG}{%
-         family={Hoover},
-         familyi={H\bibinitperiod},
-         given={Christian\bibnamedelima G.},
-         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-      {{hash=ME}{%
-         family={Masoero},
-         familyi={M\bibinitperiod},
-         given={Enrico},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=YS}{%
-         family={Yip},
-         familyi={Y\bibinitperiod},
-         given={Sidney},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=UFJ}{%
-         family={Ulm},
-         familyi={U\bibinitperiod},
-         given={Franz-Josef},
-         giveni={F\bibinithyphendelim J\bibinitperiod},
-      }}%
-      {{hash=LP}{%
-         family={Levitz},
-         familyi={L\bibinitperiod},
-         given={Pierre},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=PRJM}{%
-         family={Pellenq},
-         familyi={P\bibinitperiod},
-         given={Roland J.-M.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
-      }}%
-      {{hash=DGE}{%
-         family={Del\bibnamedelima Gado},
-         familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod},
-         given={Emanuela},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Proceedings of the National Academy of Sciences}%
-    }
-    \strng{namehash}{IK+1}
-    \strng{fullhash}{IKKKJBMHCGMEYSUFJLPPRJMDGE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Strength and other mechanical properties of cement and concrete rely upon the formation of calcium--silicate--hydrates (C--S--H) during cement hydration. Controlling structure and properties of the C--S--H phase is a challenge, due to the complexity of this hydration product and of the mechanisms that drive its precipitation from the ionic solution upon dissolution of cement grains in water. Departing from traditional models mostly focused on length scales above the micrometer, recent research addressed the molecular structure of C--S--H. However, small-angle neutron scattering, electron-microscopy imaging, and nanoindentation experiments suggest that its mesoscale organization, extending over hundreds of nanometers, may be more important. Here we unveil the C--S--H mesoscale texture, a crucial step to connect the fundamental scales to the macroscale of engineering properties. We use simulations that combine information of the nanoscale building units of C--S--H and their effective interactions, obtained from atomistic simulations and experiments, into a statistical physics framework for aggregating nanoparticles. We compute small-angle scattering intensities, pore size distributions, specific surface area, local densities, indentation modulus, and hardness of the material, providing quantitative understanding of different experimental investigations. Our results provide insight into how the heterogeneities developed during the early stages of hydration persist in the structure of C--S--H and impact the mechanical performance of the hardened cement paste. Unraveling such links in cement hydrates can be groundbreaking and controlling them can be the key to smarter mix designs of cementitious materials.%
-    }
-    \verb{doi}
-    \verb 10.1073/pnas.1520487113
-    \endverb
-    \field{number}{8}
-    \field{pages}{2029\bibrangedash 2034}
-    \field{title}{Mesoscale Texture of Cement Hydrates}
-    \field{volume}{113}
-    \verb{file}
-    \verb /home/starlord/Zotero/storage/PAQ6KTEA/Ioannidou et al. - 2016 - Meso
-    \verb scale texture of cement hydrates.pdf
-    \endverb
-    \field{journaltitle}{Proceedings of the National Academy of Sciences}
-    \field{month}{02}
-    \field{year}{2016}
-    \field{urlday}{16}
-    \field{urlmonth}{01}
     \field{urlyear}{2025}
   \endentry
 
@@ -347,6 +420,704 @@
     \endverb
     \field{year}{2020}
     \field{urlday}{24}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Allen2007}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=AAJ}{%
+         family={Allen},
+         familyi={A\bibinitperiod},
+         given={Andrew\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=TJJ}{%
+         family={Thomas},
+         familyi={T\bibinitperiod},
+         given={Jeffrey\bibnamedelima J.},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=JHM}{%
+         family={Jennings},
+         familyi={J\bibinitperiod},
+         given={Hamlin\bibnamedelima M.},
+         giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \keyw{Biomaterials,Condensed Matter Physics,general,Materials Science,Nanotechnology,Optical and Electronic Materials}
+    \strng{namehash}{AAJTJJJHM1}
+    \strng{fullhash}{AAJTJJJHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Although Portland cement concrete is the world's most widely used manufactured material, basic questions persist regarding its internal structure and water content, and their effect on concrete behaviour. Here, for the first time without recourse to drying methods, we measure the composition and solid density of the principal binding reaction product of cement hydration, calcium--silicate--hydrate (C--S--H) gel, one of the most complex of all gels. We also quantify a nanoscale calcium hydroxide phase that coexists with C--S--H gel. By combining small-angle neutron and X-ray scattering data, and by exploiting the hydrogen/deuterium neutron isotope effect both in water and methanol, we determine the mean formula and mass density of the nanoscale C--S--H gel particles in hydrating cement. We show that the formula, (CaO)1.7(SiO2)(H2O)1.80, and density, 2.604\,Mg\,m-3, differ from previous values for C--S--H gel, associated with specific drying conditions. Whereas previous studies have classified water within C--S--H gel by how tightly it is bound, in this study we classify water by its location---with implications for defining the chemically active (C--S--H) surface area within cement, and for predicting concrete properties.%
+    }
+    \verb{doi}
+    \verb 10.1038/nmat1871
+    \endverb
+    \field{issn}{1476-4660}
+    \field{number}{4}
+    \field{pages}{311\bibrangedash 316}
+    \field{title}{Composition and Density of Nanoscale Calcium--Silicate--Hydrate in Cement}
+    \field{volume}{6}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/starlord/Downloads/10.1038@nmat1871.pdf
+    \endverb
+    \field{journaltitle}{Nature Materials}
+    \field{month}{04}
+    \field{year}{2007}
+    \field{urlday}{10}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Houston2009}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=HJR}{%
+         family={Houston},
+         familyi={H\bibinitperiod},
+         given={Jacqueline\bibnamedelima R.},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=MRS}{%
+         family={Maxwell},
+         familyi={M\bibinitperiod},
+         given={Robert\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=CSA}{%
+         family={Carroll},
+         familyi={C\bibinitperiod},
+         given={Susan\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \keyw{Batch Reaction,Calcium Silicate Hydrate,Solid Ratio,Tobermorite,United States Government}
+    \strng{namehash}{HJRMRSCSA1}
+    \strng{fullhash}{HJRMRSCSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    Understanding the integrity of well-bore systems that are lined with Portland-based cements is critical to the successful storage of sequestered CO2 in gas and oil reservoirs. As a first step, we investigate reaction rates and mechanistic pathways for cement mineral growth in the absence of CO2 by coupling water chemistry with XRD and NMR spectroscopic data. We find that semi-crystalline calcium (alumino-)silicate hydrate (Al-CSH) forms as a precursor solid to the cement mineral tobermorite. Rate constants for tobermorite growth were found to be k = 0.6 ({\textpm} 0.1) {\texttimes} 10-5 s-1 for a solution:solid of 10:1 and 1.6 ({\textpm} 0.8) {\texttimes} 10-4 s-1 for a solution:solid of 5:1 (batch mode; T = 150{$^\circ$}C). This data indicates that reaction rates for tobermorite growth are faster when the solution volume is reduced by half, suggesting that rates are dependent on solution saturation and that the Gibbs free energy is the reaction driver. However, calculated solution saturation indexes for Al-CSH and tobermorite differ by less than one log unit, which is within the measured uncertainty. Based on this data, we consider both heterogeneous nucleation as the thermodynamic driver and internal restructuring as possible mechanistic pathways for growth. We also use NMR spectroscopy to characterize the site symmetry and bonding environment of Al and Si in a reacted tobermorite sample. We find two [4]Al coordination structures at {$\delta$}iso= 59.9 ppm and 66.3 ppm with quadrupolar product parameters (PQ) of 0.21 MHz and 0.10 MHz ({\textpm} 0.08) from 27Al 3Q-MAS NMR and speculate on the Al occupancy of framework sites by probing the protonation environment of Al metal centers using 27Al\{1H\}CP-MAS NMR.%
+    }
+    \verb{doi}
+    \verb 10.1186/1467-4866-10-1
+    \endverb
+    \field{issn}{1467-4866}
+    \field{number}{1}
+    \field{pages}{1}
+    \field{shorttitle}{Transformation of Meta-Stable Calcium Silicate Hydrates to Tobermorite}
+    \field{title}{Transformation of Meta-Stable Calcium Silicate Hydrates to Tobermorite: Reaction Kinetics and Molecular Structure from {{XRD}} and {{NMR}} Spectroscopy}
+    \field{volume}{10}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/YRMV63NX/Houston et al. - 2009 - Transf
+    \verb ormation of meta-stable calcium silicate hydrates to tobermorite reac
+    \verb tion kinetics and molecu.pdf
+    \endverb
+    \field{journaltitle}{Geochemical Transactions}
+    \field{month}{01}
+    \field{year}{2009}
+    \field{urlday}{10}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Oh2012}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=OJE}{%
+         family={Oh},
+         familyi={O\bibinitperiod},
+         given={Jae\bibnamedelima Eun},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=CSM}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Simon\bibnamedelima M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=WHR}{%
+         family={Wenk},
+         familyi={W\bibinitperiod},
+         given={Hans-Rudolf},
+         giveni={H\bibinithyphendelim R\bibinitperiod},
+      }}%
+      {{hash=MPJM}{%
+         family={Monteiro},
+         familyi={M\bibinitperiod},
+         given={Paulo J.\bibnamedelima M.},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{14A tobermorite,C-S-H (B),Elastic moduli (C),Mechanical properties (C),X-ray diffraction (B)}
+    \strng{namehash}{OJE+1}
+    \strng{fullhash}{OJECSMWHRMPJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Using a diamond anvil cell, 14{\AA} tobermorite, a structural analogue of calcium silicate hydrates (C--S--H), was examined by high-pressure synchrotron X-ray diffraction up to 4.8GPa under hydrostatic conditions. The bulk modulus of 14{\AA} tobermorite was calculated, Ko=47GPa. Comparison of the current results with previous high pressure studies on C--S--H(I) indicates that: (1) the compression behavior of the lattice parameters a and b of 14{\AA} tobermorite and C--S--H(I) are very similar, implying that both materials may have very similar Ca--O layers, and also implying that an introduction of structural defects into the Ca--O layers may not substantially change in-plane incompressibility of the ab plane of 14{\AA} tobermorite; and (2) the bulk modulus values of 14{\AA} tobermorite and C--S--H(I) are dominated by the incompressibility of the lattice parameter c, which is directly related to the interlayer spacing composed of dreierketten silicate chains, interlayer Ca, and water molecules.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.cemconres.2011.11.004
+    \endverb
+    \field{issn}{0008-8846}
+    \field{number}{2}
+    \field{pages}{397\bibrangedash 403}
+    \field{title}{Experimental Determination of Bulk Modulus of 14 ~ {{{\AA}}} Tobermorite Using High Pressure Synchrotron {{X-ray}} Diffraction}
+    \field{volume}{42}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/ARCZJ2QG/Oh et al. - 2012 - Experimenta
+    \verb l determination of bulk modulus of 14   Å tobermorite using high pr
+    \verb essure synchrotron X-r.pdf
+    \endverb
+    \field{journaltitle}{Cement and Concrete Research}
+    \field{month}{02}
+    \field{year}{2012}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Foley2012}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=FEM}{%
+         family={Foley},
+         familyi={F\bibinitperiod},
+         given={Emmy\bibnamedelima M.},
+         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KJJ}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jung\bibnamedelima J.},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=RTMM}{%
+         family={Reda\bibnamedelima Taha},
+         familyi={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={M.\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{Calcium-silicate-hydrate (C-S-H) (B),Drying (A),Mechanical properties (C)}
+    \strng{namehash}{FEMKJJRTMM1}
+    \strng{fullhash}{FEMKJJRTMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In this study, calcium silicate hydrate (C-S-H) is synthesized and characterized. C-S-H slurry was made with calcium oxide (CaO) to micro-silica (SiO2) mixture ratio of 1.5 and enough deionized water. The slurry was continuously mixed for 7days, then the excess water was removed. Two methods of drying were implemented: one method used the standard d-dry technique and the other was equilibrated to 11\% relative humidity (RH). The dried powders were characterized using thermo gravimetric analysis (TGA), X-ray diffraction analysis (XRDA), and 29Si magic angle spinning (MAS) nuclear magnetic resonance (NMR) spectroscopy. The stoichiometric formulas of synthetic C-S-H powders dried to d-dry and 11\% RH in this study were approximated as C1.2SH0.7 and C1.2SH2.4 respectively. The powders were then compacted to create specimens with porosities similar to C-S-H in hydrated cement. The specimens underwent nanoindentation to mechanically characterize C-S-H. The experiments provide insight on the nanoscale mechanical characteristics of C-S-H.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.cemconres.2012.05.014
+    \endverb
+    \field{issn}{0008-8846}
+    \field{number}{9}
+    \field{pages}{1225\bibrangedash 1232}
+    \field{title}{Synthesis and Nano-Mechanical Characterization of Calcium-Silicate-Hydrate ({{C-S-H}}) Made with 1.5 {{CaO}}/{{SiO2}} Mixture}
+    \field{volume}{42}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/86BWH5VY/Foley et al. - 2012 - Synthesi
+    \verb s and nano-mechanical characterization of calcium-silicate-hydrate (C
+    \verb -S-H) made with 1.5 CaO.pdf
+    \endverb
+    \field{journaltitle}{Cement and Concrete Research}
+    \field{month}{09}
+    \field{year}{2012}
+    \field{urlday}{05}
+    \field{urlmonth}{06}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Maddalena2019}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=MR}{%
+         family={Maddalena},
+         familyi={M\bibinitperiod},
+         given={Riccardo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Kefei},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CPA}{%
+         family={Chater},
+         familyi={C\bibinitperiod},
+         given={Philip\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Michalik},
+         familyi={M\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hamilton},
+         familyi={H\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Calcium-silicate-hydrate (C-S-H),Characterization,Thermal analysis,X-ray diffraction}
+    \strng{namehash}{MR+1}
+    \strng{fullhash}{MRLKCPAMSHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We present new results on solid (monolithic) synthetic C-S-H made at room temperature from easily obtainable calcium sources (calcium oxide, calcium hydroxide) and nanosilica (w/s\,=\,2) with a 2 minute mixing time. Using synchrotron X-ray diffraction combined with TGA/DSC, 29Si NMR and synchrotron pair distribution function (PDF) data we show that the solid C-S-H is crystallographically similar to the more conventionally made synthetic C-S-H slurry. We show that C-S-H is present after 1 day curing (C/S\,=\,0.81) and no X-ray visible portlandite is present at day 3. PDF data shows that the ordered domain size is 2.5 -- 4.5 nm, depending on the fit chosen.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.conbuildmat.2019.06.024
+    \endverb
+    \field{issn}{0950-0618}
+    \field{pages}{554\bibrangedash 565}
+    \field{title}{Direct Synthesis of a Solid Calcium-Silicate-Hydrate ({{C-S-H}})}
+    \field{volume}{223}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/2XT27L6H/Maddalena et al. - 2019 - Dire
+    \verb ct synthesis of a solid calcium-silicate-hydrate (C-S-H).pdf
+    \endverb
+    \field{journaltitle}{Construction and Building Materials}
+    \field{month}{10}
+    \field{year}{2019}
+    \field{urlday}{05}
+    \field{urlmonth}{06}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Pellenq2009}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=PRJM}{%
+         family={Pellenq},
+         familyi={P\bibinitperiod},
+         given={Roland J.-M.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kushima},
+         familyi={K\bibinitperiod},
+         given={Akihiro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Shahsavari},
+         familyi={S\bibinitperiod},
+         given={Rouzbeh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VVKJ}{%
+         family={Van\bibnamedelima Vliet},
+         familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+         given={Krystyn\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BMJ}{%
+         family={Buehler},
+         familyi={B\bibinitperiod},
+         given={Markus\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yip},
+         familyi={Y\bibinitperiod},
+         given={Sidney},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=UFJ}{%
+         family={Ulm},
+         familyi={U\bibinitperiod},
+         given={Franz-Josef},
+         giveni={F\bibinithyphendelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Proceedings of the National Academy of Sciences}%
+    }
+    \strng{namehash}{PRJM+1}
+    \strng{fullhash}{PRJMKASRVVKJBMJYSUFJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Despite decades of studies of calcium-silicate-hydrate (C-S-H), the structurally complex binder phase of concrete, the interplay between chemical composition and density remains essentially unexplored. Together these characteristics of C-S-H define and modulate the physical and mechanical properties of this ``liquid stone'' gel phase. With the recent determination of the calcium/silicon (C/S = 1.7) ratio and the density of the C-S-H particle (2.6 g/cm3) by neutron scattering measurements, there is new urgency to the challenge of explaining these essential properties. Here we propose a molecular model of C-S-H based on a bottom-up atomistic simulation approach that considers only the chemical specificity of the system as the overriding constraint. By allowing for short silica chains distributed as monomers, dimers, and pentamers, this C-S-H archetype of a molecular description of interacting CaO, SiO2, and H2O units provides not only realistic values of the C/S ratio and the density computed by grand canonical Monte Carlo simulation of water adsorption at 300 K. The model, with a chemical composition of (CaO)1.65(SiO2)(H2O)1.75, also predicts other essential structural features and fundamental physical properties amenable to experimental validation, which suggest that the C-S-H gel structure includes both glass-like short-range order and crystalline features of the mineral tobermorite. Additionally, we probe the mechanical stiffness, strength, and hydrolytic shear response of our molecular model, as compared to experimentally measured properties of C-S-H. The latter results illustrate the prospect of treating cement on equal footing with metals and ceramics in the current application of mechanism-based models and multiscale simulations to study inelastic deformation and cracking.%
+    }
+    \verb{doi}
+    \verb 10.1073/pnas.0902180106
+    \endverb
+    \field{number}{38}
+    \field{pages}{16102\bibrangedash 16107}
+    \field{title}{A Realistic Molecular Model of Cement Hydrates}
+    \field{volume}{106}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/ZHC5WJNS/Pellenq et al. - 2009 - A real
+    \verb istic molecular model of cement hydrates.pdf
+    \endverb
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{month}{09}
+    \field{year}{2009}
+    \field{urlday}{11}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{AbdolhosseiniQomi2014}{article}{}{}
+    \name{author}{13}{}{%
+      {{hash=AQMJ}{%
+         family={Abdolhosseini\bibnamedelima Qomi},
+         familyi={A\bibinitperiod\bibinitdelim Q\bibinitperiod},
+         given={M.\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KKJ}{%
+         family={Krakowiak},
+         familyi={K\bibinitperiod},
+         given={K.\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bauchy},
+         familyi={B\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SKL}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={K.\bibnamedelima L.},
+         giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Shahsavari},
+         familyi={S\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Jagannathan},
+         familyi={J\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BDB}{%
+         family={Brommer},
+         familyi={B\bibinitperiod},
+         given={D.\bibnamedelima B.},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Baronnet},
+         familyi={B\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BMJ}{%
+         family={Buehler},
+         familyi={B\bibinitperiod},
+         given={M.\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yip},
+         familyi={Y\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=UFJ}{%
+         family={Ulm},
+         familyi={U\bibinitperiod},
+         given={F.-J.},
+         giveni={F\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=VVKJ}{%
+         family={Van\bibnamedelima Vliet},
+         familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+         given={K.\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PRJM}{%
+         family={Pellenq},
+         familyi={P\bibinitperiod},
+         given={R.\bibnamedelima J.-M.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \keyw{Mechanical properties,Theory and computation}
+    \strng{namehash}{AQMJ+1}
+    \strng{fullhash}{AQMJKKJBMSKLSRJDBDBBABMJYSUFJVVKJPRJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Despite its ubiquitous presence in the built environment, concrete's molecular-level properties are only recently being explored using experimental and simulation studies. Increasing societal concerns about concrete's environmental footprint have provided strong motivation to develop new concrete with greater specific stiffness or strength (for structures with less material). Herein, a combinatorial approach is described to optimize properties of cement hydrates. The method entails screening a computationally generated database of atomic structures of calcium-silicate-hydrate, the binding phase of concrete, against a set of three defect attributes: calcium-to-silicon ratio as compositional index and two correlation distances describing medium-range silicon-oxygen and calcium-oxygen environments. Although structural and mechanical properties correlate well with calcium-to-silicon ratio, the cross-correlation between all three defect attributes reveals an indentation modulus-to-hardness ratio extremum, analogous to identifying optimum network connectivity in glass rheology. We also comment on implications of the present findings for a novel route to optimize the nanoscale mechanical properties of cement hydrate.%
+    }
+    \verb{doi}
+    \verb 10.1038/ncomms5960
+    \endverb
+    \field{issn}{2041-1723}
+    \field{number}{1}
+    \field{pages}{4960}
+    \field{title}{Combinatorial Molecular Optimization of Cement Hydrates}
+    \field{volume}{5}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/KW4GYAJE/Abdolhosseini Qomi et al. - 20
+    \verb 14 - Combinatorial molecular optimization of cement hyd.pdf
+    \endverb
+    \field{journaltitle}{Nature Communications}
+    \field{month}{09}
+    \field{year}{2014}
+    \field{urlday}{20}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Richardson2014}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=RI}{%
+         family={Richardson},
+         familyi={R\bibinitperiod},
+         given={I.G.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{binding phase,cement-based concrete,tobermorite}
+    \strng{namehash}{RI1}
+    \strng{fullhash}{RI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    C-(A)-S-H(I) is a calcium silicate hydrate that is studied extensively as a model for the main binding phase in concrete. It is a structurally imperfect form of 14{\AA} tobermorite that has variable composition and length of (alumino)silicate anions. New structural-chemical formulae are presented for single- and double-chain tobermorite-based phases and equations are provided that can be used to calculate a number of useful quantities from 29Si NMR data. It is shown that there are no interlayer calcium ions when the silicate chains are of infinite length and that one is added for each tetrahedral 'bridging' site that is vacant. Preparations that have Ca/Si greater than about 1.4 include an intermixed Ca-rich phase. It is not possible to generate a structural model for a dimer that is crystal-chemically consistent with known calcium silicate hydrates if the starting structure is an orthotobermorite, i.e. of the type that has been used in all previous studies. Crystal-chemically plausible models are developed that are based instead on clinotobermorite. A number of models that represent different mean chain lengths are developed using crystal-chemical and geometrical reasoning. The models account for experimental observations, including variations in Ca/Si, H2O/Si, (alumino)silicate anion structure and layer spacing. {\copyright} 2014.%
+    }
+    \verb{doi}
+    \verb 10.1107/S2052520614021982
+    \endverb
+    \field{number}{6}
+    \field{pages}{903\bibrangedash 923}
+    \field{title}{Model Structures for {{C-}}({{A}})-{{S-H}}({{I}})}
+    \field{volume}{70}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/IJCURBY3/Richardson - 2014 - Model stru
+    \verb ctures for C-(A)-S-H(I).pdf
+    \endverb
+    \field{journaltitle}{Acta Crystallographica Section B: Structural Science, Crystal Engineering and Materials}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Bauchy2014}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=BM}{%
+         family={Bauchy},
+         familyi={B\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=QM}{%
+         family={Qomi},
+         familyi={Q\bibinitperiod},
+         given={M.J.A.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=UFJ}{%
+         family={Ulm},
+         familyi={U\bibinitperiod},
+         given={F.-J.},
+         giveni={F\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=PRM}{%
+         family={Pellenq},
+         familyi={P\bibinitperiod},
+         given={R.J.-M.},
+         giveni={R\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BM+1}
+    \strng{fullhash}{BMQMUFJPRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Despite advances in the characterization and modeling of cement hydrates, the atomic order in Calcium-Silicate-Hydrate (C-S-H), the binding phase of cement, remains an open question. Indeed, in contrast to the former crystalline model, recent molecular models suggest that the nanoscale structure of C-S-H is amorphous. To elucidate this issue, we analyzed the structure of a realistic simulated model of C-S-H, and compared the latter to crystalline tobermorite, a natural analogue of C-S-H, and to an artificial ideal glass. The results clearly indicate that C-S-H appears as amorphous, when averaged on all atoms. However, an analysis of the order around each atomic species reveals that its structure shows an intermediate degree of order, retaining some characteristics of the crystal while acquiring an overall glass-like disorder. Thanks to a detailed quantification of order and disorder, we show that, while C-S-H retains some signatures of a tobermorite-like layered structure, hydrated species are completely amorphous. {\copyright} 2014 AIP Publishing LLC.%
+    }
+    \verb{doi}
+    \verb 10.1063/1.4878656
+    \endverb
+    \field{number}{21}
+    \field{title}{Order and Disorder in Calcium-Silicate-Hydrate}
+    \field{volume}{140}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/GCS7ZYS7/Bauchy et al. - 2014 - Order a
+    \verb nd disorder in calcium-silicate-hydrate.pdf
+    \endverb
+    \field{journaltitle}{Journal of Chemical Physics}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Kovacevic2016}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=KG}{%
+         family={Kova{\v c}evi{\'c}},
+         familyi={K\bibinitperiod},
+         given={Goran},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=NL}{%
+         family={Nicoleau},
+         familyi={N\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Nonat},
+         familyi={N\bibinitperiod},
+         given={Andr{\'e}},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Veryazov},
+         familyi={V\bibinitperiod},
+         given={Valera},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {De Gruyter (O)}%
+    }
+    \keyw{Atomistic Simulation,C-S-H Structure,ReaxFF Force Field,Semiempirical Quantum Chemistry}
+    \strng{namehash}{KG+1}
+    \strng{fullhash}{KGNLNAVV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The atomic structure of calcium-silicate-hydrate (C 1.67 --S--H x ) has been studied. Atomistic C--S--H models suggested in our previous study have been revised in order to perform a direct comparison of energetic stability of the different structures. An extensive set of periodic structures of C--S--H with variation of water content was created, and then optimized using molecular dynamics with reactive force field ReaxFF and quantum chemical semiempirical method PM6. All models show organization of water molecules inside the structure of C--S--H. The new geometries of C--S--H, reported in this paper, show lower relative energy with respect to the geometries from the original definition of C--S--H models. Model that corresponds to calcium enriched tobermorite structure has the lowest relative energy and the density closest to the experimental values.%
+    }
+    \verb{doi}
+    \verb 10.1515/zpch-2015-0718
+    \endverb
+    \field{issn}{2196-7156}
+    \field{number}{9}
+    \field{pages}{1411\bibrangedash 1424}
+    \field{title}{Revised {{Atomistic Models}} of the {{Crystal Structure}} of {{C}}--{{S}}--{{H}} with High {{C}}/{{S Ratio}}}
+    \field{volume}{230}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/3MG4JN7S/10.1515@zpch-2015-0718.pdf
+    \endverb
+    \field{journaltitle}{Zeitschrift f{\"u}r Physikalische Chemie}
+    \field{month}{09}
+    \field{year}{2016}
+    \field{urlday}{20}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{KunhiMohamed2018}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=KMA}{%
+         family={Kunhi\bibnamedelima Mohamed},
+         familyi={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Aslam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PSC}{%
+         family={Parker},
+         familyi={P\bibinitperiod},
+         given={Stephen\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Bowen},
+         familyi={B\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Galmarini},
+         familyi={G\bibinitperiod},
+         given={Sandra},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{C-S-H,Cementitious systems,Crystal structure,Density functional theory,Molecular dynamics}
+    \strng{namehash}{KMA+1}
+    \strng{fullhash}{KMAPSCBPGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Understanding the atomistic structure of Calcium silicate hydrate (C-S-H), the main product of cement hydration, is of paramount importance to better formulate sustainable cement. The existing atomistic models are not in total agreement with experimental results and fail to explain the nanosized nature of C-S-H. Here, we present a new approach for describing the complexity of these structures at the molecular level, enabling a detailed comparison of C-S-H models. The new methodology encodes a full, large scale atomistic C-S-H structure by a simple, readable string of characters, similar to the way the base sequence in DNA encodes a vast range of different proteins. We then use the methodology to assess 14{\AA} tobermorite-defect structures and their stabilities using DFT and classical molecular dynamics. Finally we highlight how the model may be extended to develop reliable atomistic C-S-H models for a range of Ca/Si ratios and conditions.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.cemconres.2018.01.007
+    \endverb
+    \field{issn}{0008-8846}
+    \field{pages}{221\bibrangedash 235}
+    \field{title}{An Atomistic Building Block Description of {{C-S-H}} - {{Towards}} a Realistic {{C-S-H}} Model}
+    \field{volume}{107}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/T3U829KR/kunhimohamed2018.pdf
+    \endverb
+    \field{journaltitle}{Cement and Concrete Research}
+    \field{month}{05}
+    \field{year}{2018}
+    \field{urlday}{17}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{AbdolhosseiniQomi2015}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=AQMJ}{%
+         family={Abdolhosseini\bibnamedelima Qomi},
+         familyi={A\bibinitperiod\bibinitdelim Q\bibinitperiod},
+         given={Mohammad\bibnamedelima Javad},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=UFJ}{%
+         family={Ulm},
+         familyi={U\bibinitperiod},
+         given={Franz-Josef},
+         giveni={F\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=PRJM}{%
+         family={Pellenq},
+         familyi={P\bibinitperiod},
+         given={Roland J.-M.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{AQMJUFJPRJM1}
+    \strng{fullhash}{AQMJUFJPRJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Despite the ever-increasing interest in multiscale porous materials, the chemophysical origin of their thermal properties at the nanoscale and its connection to the macroscale properties still remain rather obscure. In this paper, we link the atomic- and macroscopic-level thermal properties by combining tools of statistical physics and mean-field homogenization theory. We begin with analyzing the vibrational density of states of several calcium-silicate materials in the cement paste. Unlike crystalline phases, we indicate that calcium silicate hydrates (CSH) exhibit extra vibrational states at low frequencies ({$<$}2 THz) compared to the vibrational states predicted by the Debye model. This anomaly is commonly referred to as the boson peak in glass physics. In addition, the specific-heat capacity of CSH in both dry and saturated states scales linearly with the calcium-to-silicon ratio. We show that the nanoscale-confining environment of CSH decreases the apparent heat capacity of water by a factor of 4. Furthermore, full thermal conductivity tensors for all phases are calculated via the Green-Kubo formalism. We estimate the mean free path of phonons in calcium silicates to be on the order of interatomic bonds. This satisfies the scale separability condition and justifies the use of mean-field homogenization theories for upscaling purposes. Upscaling schemes yield a good estimate of the macroscopic specific-heat capacity and thermal conductivity of cement paste during the hydration process, independent of fitting parameters.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevApplied.3.064010
+    \endverb
+    \field{number}{6}
+    \field{pages}{064010}
+    \field{title}{Physical {{Origins}} of {{Thermal Properties}} of {{Cement Paste}}}
+    \field{volume}{3}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/8QIBMWSE/Abdolhosseini Qomi et al. - 20
+    \verb 15 - Physical Origins of Thermal Properties of Cement P.pdf
+    \endverb
+    \field{journaltitle}{Physical Review Applied}
+    \field{month}{06}
+    \field{year}{2015}
+    \field{urlday}{11}
     \field{urlmonth}{09}
     \field{urlyear}{2024}
   \endentry
@@ -423,103 +1194,217 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{Foley2012}{article}{}{}
+  \entry{Cho2020}{article}{}{}
     \name{author}{3}{}{%
-      {{hash=FEM}{%
-         family={Foley},
-         familyi={F\bibinitperiod},
-         given={Emmy\bibnamedelima M.},
-         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      {{hash=CBH}{%
+         family={Cho},
+         familyi={C\bibinitperiod},
+         given={Byoung\bibnamedelima Hooi},
+         giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
-      {{hash=KJJ}{%
-         family={Kim},
-         familyi={K\bibinitperiod},
-         given={Jung\bibnamedelima J.},
-         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      {{hash=CW}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Wonseok},
+         giveni={W\bibinitperiod},
       }}%
-      {{hash=RTMM}{%
-         family={Reda\bibnamedelima Taha},
-         familyi={R\bibinitperiod\bibinitdelim T\bibinitperiod},
-         given={M.\bibnamedelima M.},
-         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \keyw{Calcium-silicate-hydrate (C-S-H) (B),Drying (A),Mechanical properties (C)}
-    \strng{namehash}{FEMKJJRTMM1}
-    \strng{fullhash}{FEMKJJRTMM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    In this study, calcium silicate hydrate (C-S-H) is synthesized and characterized. C-S-H slurry was made with calcium oxide (CaO) to micro-silica (SiO2) mixture ratio of 1.5 and enough deionized water. The slurry was continuously mixed for 7days, then the excess water was removed. Two methods of drying were implemented: one method used the standard d-dry technique and the other was equilibrated to 11\% relative humidity (RH). The dried powders were characterized using thermo gravimetric analysis (TGA), X-ray diffraction analysis (XRDA), and 29Si magic angle spinning (MAS) nuclear magnetic resonance (NMR) spectroscopy. The stoichiometric formulas of synthetic C-S-H powders dried to d-dry and 11\% RH in this study were approximated as C1.2SH0.7 and C1.2SH2.4 respectively. The powders were then compacted to create specimens with porosities similar to C-S-H in hydrated cement. The specimens underwent nanoindentation to mechanically characterize C-S-H. The experiments provide insight on the nanoscale mechanical characteristics of C-S-H.%
-    }
-    \verb{doi}
-    \verb 10.1016/j.cemconres.2012.05.014
-    \endverb
-    \field{issn}{0008-8846}
-    \field{number}{9}
-    \field{pages}{1225\bibrangedash 1232}
-    \field{title}{Synthesis and Nano-Mechanical Characterization of Calcium-Silicate-Hydrate ({{C-S-H}}) Made with 1.5 {{CaO}}/{{SiO2}} Mixture}
-    \field{volume}{42}
-    \verb{file}
-    \verb /home/starlord/Zotero/storage/86BWH5VY/Foley et al. - 2012 - Synthesi
-    \verb s and nano-mechanical characterization of calcium-silicate-hydrate (C
-    \verb -S-H) made with 1.5 CaO.pdf
-    \endverb
-    \field{journaltitle}{Cement and Concrete Research}
-    \field{month}{09}
-    \field{year}{2012}
-    \field{urlday}{05}
-    \field{urlmonth}{06}
-    \field{urlyear}{2025}
-  \endentry
-
-  \entry{AbdolhosseiniQomi2015}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=AQMJ}{%
-         family={Abdolhosseini\bibnamedelima Qomi},
-         familyi={A\bibinitperiod\bibinitdelim Q\bibinitperiod},
-         given={Mohammad\bibnamedelima Javad},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=UFJ}{%
-         family={Ulm},
-         familyi={U\bibinitperiod},
-         given={Franz-Josef},
-         giveni={F\bibinithyphendelim J\bibinitperiod},
-      }}%
-      {{hash=PRJM}{%
-         family={Pellenq},
-         familyi={P\bibinitperiod},
-         given={Roland J.-M.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+      {{hash=NBH}{%
+         family={Nam},
+         familyi={N\bibinitperiod},
+         given={Boo\bibnamedelima Hyun},
+         giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {American Physical Society}%
+      {Multidisciplinary Digital Publishing Institute}%
     }
-    \strng{namehash}{AQMJUFJPRJM1}
-    \strng{fullhash}{AQMJUFJPRJM1}
+    \keyw{calcium-silicate-hydrate,carbon-based nanomaterials,cement-polymer nanocomposites,molecular dynamics,nano-engineered cement materials}
+    \strng{namehash}{CBHCWNBH1}
+    \strng{fullhash}{CBHCWNBH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Despite the ever-increasing interest in multiscale porous materials, the chemophysical origin of their thermal properties at the nanoscale and its connection to the macroscale properties still remain rather obscure. In this paper, we link the atomic- and macroscopic-level thermal properties by combining tools of statistical physics and mean-field homogenization theory. We begin with analyzing the vibrational density of states of several calcium-silicate materials in the cement paste. Unlike crystalline phases, we indicate that calcium silicate hydrates (CSH) exhibit extra vibrational states at low frequencies ({$<$}2 THz) compared to the vibrational states predicted by the Debye model. This anomaly is commonly referred to as the boson peak in glass physics. In addition, the specific-heat capacity of CSH in both dry and saturated states scales linearly with the calcium-to-silicon ratio. We show that the nanoscale-confining environment of CSH decreases the apparent heat capacity of water by a factor of 4. Furthermore, full thermal conductivity tensors for all phases are calculated via the Green-Kubo formalism. We estimate the mean free path of phonons in calcium silicates to be on the order of interatomic bonds. This satisfies the scale separability condition and justifies the use of mean-field homogenization theories for upscaling purposes. Upscaling schemes yield a good estimate of the macroscopic specific-heat capacity and thermal conductivity of cement paste during the hydration process, independent of fitting parameters.%
+    With the continuous research efforts, sophisticated predictive molecular dynamics (MD) models for C-S-H have been developed, and the application of MD simulation has been expanded from fundamental understanding of C-S-H to nano-engineered cement composites. This paper comprehensively reviewed the current state of MD simulation on calcium-silicate-hydrate (C-S-H) and its diverse applications to nano-engineered cement composites, including carbon-based nanomaterials (i.e., carbon nanotube, graphene, graphene oxide), reinforced cement, cement--polymer nanocomposites (with an application on 3D printing concrete), and chemical additives for improving environmental resistance. In conclusion, the MD method could not only compute but also visualize the nanoscale behaviors of cement hydrates and other ingredients in the cement matrix; thus, fundamental properties of C-S-H structure and its interaction with nanoparticles can be well understood. As a result, the MD enabled us to identify and evaluate the performance of new advanced nano-engineered cement composites.%
     }
     \verb{doi}
-    \verb 10.1103/PhysRevApplied.3.064010
+    \verb 10.3390/nano10112158
     \endverb
-    \field{number}{6}
-    \field{pages}{064010}
-    \field{title}{Physical {{Origins}} of {{Thermal Properties}} of {{Cement Paste}}}
-    \field{volume}{3}
+    \field{issn}{2079-4991}
+    \field{number}{11}
+    \field{pages}{2158}
+    \field{title}{Molecular {{Dynamics Simulation}} of {{Calcium-Silicate-Hydrate}} for {{Nano-Engineered Cement Composites}}---{{A Review}}}
+    \field{volume}{10}
+    \field{langid}{english}
     \verb{file}
-    \verb /home/starlord/Zotero/storage/8QIBMWSE/Abdolhosseini Qomi et al. - 20
-    \verb 15 - Physical Origins of Thermal Properties of Cement P.pdf
+    \verb /home/starlord/Zotero/storage/VF4G2U7M/Cho et al. - 2020 - Molecular
+    \verb Dynamics Simulation of Calcium-Silicate-Hydrate for Nano-Engineered C
+    \verb ement Composites—A Re.pdf
     \endverb
-    \field{journaltitle}{Physical Review Applied}
-    \field{month}{06}
-    \field{year}{2015}
-    \field{urlday}{11}
-    \field{urlmonth}{09}
+    \field{journaltitle}{Nanomaterials}
+    \field{month}{11}
+    \field{year}{2020}
+    \field{urlday}{17}
+    \field{urlmonth}{03}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Barbhuiya2023}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=BS}{%
+         family={Barbhuiya},
+         familyi={B\bibinitperiod},
+         given={Salim},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DBB}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Bibhuti\bibnamedelima Bhusan},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \keyw{Calcium-silicate-hydrate,Concrete properties,Durability,Molecular dynamics simulation}
+    \strng{namehash}{BSDBB1}
+    \strng{fullhash}{BSDBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    This paper presents a comprehensive review of the application of molecular dynamics simulation in concrete research. The study addresses the background and significance of the topic, providing an overview of the principles, applications, and types of molecular dynamics simulation, with a particular focus on its role in enhancing the understanding of concrete properties. Moreover, it critically examines existing research studies that employ molecular dynamics simulation in concrete research, highlighting the associated benefits and limitations. The paper further investigates various simulation techniques and models employed in concrete research, offering a comparative analysis of their effectiveness. Additionally, the study explores future directions and identifies research needs in the field of molecular dynamics simulation in concrete, while also discussing the potential impact of this approach on the sustainability of the construction industry. By providing a comprehensive overview and critical analysis, this review serves as a valuable resource for researchers and practitioners interested in leveraging molecular dynamics simulation for advancing concrete science and engineering.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.jobe.2023.107267
+    \endverb
+    \field{issn}{2352-7102}
+    \field{pages}{107267}
+    \field{shorttitle}{Molecular Dynamics Simulation in Concrete Research}
+    \field{title}{Molecular Dynamics Simulation in Concrete Research: {{A}} Systematic Review of Techniques, Models and Future Directions}
+    \field{volume}{76}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/MF5FMLMH/Barbhuiya and Das - 2023 - Mol
+    \verb ecular dynamics simulation in concrete research A systematic review o
+    \verb f techniques, models and fu.pdf
+    \endverb
+    \field{journaltitle}{Journal of Building Engineering}
+    \field{month}{10}
+    \field{year}{2023}
+    \field{urlday}{08}
+    \field{urlmonth}{02}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{zotero-item-16}{misc}{}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Machine Learning in Concrete Science: Applications, Challenges, and Best Practices {\textbar} Npj {{Computational Materials}}}
+    \verb{url}
+    \verb https://www.nature.com/articles/s41524-022-00810-x
+    \endverb
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/FYHCF4MI/s41524-022-00810-x.html
+    \endverb
+    \field{urlday}{21}
+    \field{urlmonth}{11}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Kobayashi2021}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=KK}{%
+         family={Kobayashi},
+         familyi={K\bibinitperiod},
+         given={Keita},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NH}{%
+         family={Nakamura},
+         familyi={N\bibinitperiod},
+         given={Hiroki},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=YA}{%
+         family={Yamaguchi},
+         familyi={Y\bibinitperiod},
+         given={Akiko},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Itakura},
+         familyi={I\bibinitperiod},
+         given={Mitsuhiro},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Machida},
+         familyi={M\bibinitperiod},
+         given={Masahiko},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=OM}{%
+         family={Okumura},
+         familyi={O\bibinitperiod},
+         given={Masahiko},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Calcium-silicate-hydrate,Cement,Density functional theory,Machine learning potential,Molecular dynamics,Tobermorite}
+    \strng{namehash}{KK+1}
+    \strng{fullhash}{KKNHYAIMMMOM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Molecular dynamics (MD) simulation is an important tool to understand the physical and chemical properties of cement hydrates at the atomic level. MD with the machine learning potential (MLP) is considered a promising approach for accurate prediction of material properties. However, the applications of machine learning MD for multicomponent systems with a liquid--solid interface have been limited so far. In this work, we used artificial neural networks (ANNs) to construct MLPs for tobermorite minerals. Two MLPs were produced by optimization using different objective functions: one MLP was optimized for both the forces and energies of density functional theory (DFT) results (MLP-FE), and the other MLP was fitted to only the energies (MLP-E). Accuracy assessments of the MLPs were performed for lattice parameters, elastic constants, and bulk, shear moduli, and vibrational density of states. The results of the assessments showed that the accuracy of the potentials largely depended on the objective functions used in the training of the ANNs, i.e., MLP-FE was comparable to the potential energy surface (PES) of DFT, although MLP-E failed to reproduce the several physical quantities given by DFT. To evaluate the applicability of MLP-FE to extended systems beyond the limits of DFT calculations, a large scale MD simulation of a nanoporous tobermorite model was demonstrated using MLP-FE. The transport and distribution properties of atoms in the liquid part of the porous model were investigated. Slow diffusion of water confined in a nanopore was detected, and the results were consistent with experimental data and previous works using classical force fields. The results obtained in this study suggested that MD with MLP is a practical method for large scale molecular simulations of cement hydrates with DFT accuracy.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.commatsci.2020.110173
+    \endverb
+    \field{issn}{0927-0256}
+    \field{pages}{110173}
+    \field{title}{Machine Learning Potentials for Tobermorite Minerals}
+    \field{volume}{188}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/YJNIEG5Y/Kobayashi et al. - 2021 - Mach
+    \verb ine learning potentials for tobermorite minera.pdf
+    \endverb
+    \field{journaltitle}{Computational Materials Science}
+    \field{month}{02}
+    \field{year}{2021}
+    \field{urlday}{08}
+    \field{urlmonth}{10}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Zhu2024}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=ZK}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Keming},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{Graph convolutional neural network,Machine Learning Interatomic Potential,Molecular dynamics,Tobermorite}
+    \strng{namehash}{ZK1}
+    \strng{fullhash}{ZK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Machine Learning Interatomic Potentials (MLIPs) present a significant advancement in fitting molecular potential energy surfaces and predicting molecular crystal structures and mechanical properties by closely approximating first-principles (FP) calculations results while substantially reducing computational time. In this work, utilizing datasets derived from FP calculations, neural equivariant interatomic potentials (NequIP) and Deep Potential Molecular Dynamics (DPMD) was implemented to develop MLIPs for tobermorite 9, 11, 14 {\AA}. The accuracy and efficiency of NequIP and DPMD were assessed by predicting energies and forces as well as performing molecular dynamics (MD) simulations. The findings indicate that NequIP closely fits the results of FP calculations, with both accuracy and efficiency improved by 1{$\sim$}2 orders of magnitude compared to the DPMD. This demonstrates that MLIPs developed through NequIP for tobermorites have the capacity to enhance the capability of large-scale molecular dynamics simulations.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.commatsci.2024.113212
+    \endverb
+    \field{issn}{0927-0256}
+    \field{pages}{113212}
+    \field{title}{Performance {{Comparisons}} of {{NequIP}} and {{DPMD Machine Learning Interatomic Potentials}} for {{Tobermorites}}}
+    \field{volume}{244}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/AG7QW23V/Zhu - 2024 - Performance Compa
+    \verb risons of NequIP and DPMD Machine.pdf
+    \endverb
+    \field{journaltitle}{Computational Materials Science}
+    \field{month}{09}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{10}
     \field{urlyear}{2024}
   \endentry
 
@@ -2116,80 +3001,6 @@
     \field{urlday}{31}
     \field{urlmonth}{07}
     \field{urlyear}{2025}
-  \endentry
-
-  \entry{Pellenq2009}{article}{}{}
-    \name{author}{7}{}{%
-      {{hash=PRJM}{%
-         family={Pellenq},
-         familyi={P\bibinitperiod},
-         given={Roland J.-M.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
-      }}%
-      {{hash=KA}{%
-         family={Kushima},
-         familyi={K\bibinitperiod},
-         given={Akihiro},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=SR}{%
-         family={Shahsavari},
-         familyi={S\bibinitperiod},
-         given={Rouzbeh},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=VVKJ}{%
-         family={Van\bibnamedelima Vliet},
-         familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod},
-         given={Krystyn\bibnamedelima J.},
-         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=BMJ}{%
-         family={Buehler},
-         familyi={B\bibinitperiod},
-         given={Markus\bibnamedelima J.},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=YS}{%
-         family={Yip},
-         familyi={Y\bibinitperiod},
-         given={Sidney},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=UFJ}{%
-         family={Ulm},
-         familyi={U\bibinitperiod},
-         given={Franz-Josef},
-         giveni={F\bibinithyphendelim J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Proceedings of the National Academy of Sciences}%
-    }
-    \strng{namehash}{PRJM+1}
-    \strng{fullhash}{PRJMKASRVVKJBMJYSUFJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Despite decades of studies of calcium-silicate-hydrate (C-S-H), the structurally complex binder phase of concrete, the interplay between chemical composition and density remains essentially unexplored. Together these characteristics of C-S-H define and modulate the physical and mechanical properties of this ``liquid stone'' gel phase. With the recent determination of the calcium/silicon (C/S = 1.7) ratio and the density of the C-S-H particle (2.6 g/cm3) by neutron scattering measurements, there is new urgency to the challenge of explaining these essential properties. Here we propose a molecular model of C-S-H based on a bottom-up atomistic simulation approach that considers only the chemical specificity of the system as the overriding constraint. By allowing for short silica chains distributed as monomers, dimers, and pentamers, this C-S-H archetype of a molecular description of interacting CaO, SiO2, and H2O units provides not only realistic values of the C/S ratio and the density computed by grand canonical Monte Carlo simulation of water adsorption at 300 K. The model, with a chemical composition of (CaO)1.65(SiO2)(H2O)1.75, also predicts other essential structural features and fundamental physical properties amenable to experimental validation, which suggest that the C-S-H gel structure includes both glass-like short-range order and crystalline features of the mineral tobermorite. Additionally, we probe the mechanical stiffness, strength, and hydrolytic shear response of our molecular model, as compared to experimentally measured properties of C-S-H. The latter results illustrate the prospect of treating cement on equal footing with metals and ceramics in the current application of mechanism-based models and multiscale simulations to study inelastic deformation and cracking.%
-    }
-    \verb{doi}
-    \verb 10.1073/pnas.0902180106
-    \endverb
-    \field{number}{38}
-    \field{pages}{16102\bibrangedash 16107}
-    \field{title}{A Realistic Molecular Model of Cement Hydrates}
-    \field{volume}{106}
-    \verb{file}
-    \verb /home/starlord/Zotero/storage/ZHC5WJNS/Pellenq et al. - 2009 - A real
-    \verb istic molecular model of cement hydrates.pdf
-    \endverb
-    \field{journaltitle}{Proceedings of the National Academy of Sciences}
-    \field{month}{09}
-    \field{year}{2009}
-    \field{urlday}{11}
-    \field{urlmonth}{09}
-    \field{urlyear}{2024}
   \endentry
 
   \entry{zotero-item-672}{misc}{}{}
