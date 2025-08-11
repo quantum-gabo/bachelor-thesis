@@ -7,6 +7,7 @@ We begin by describing the initial C-S-H structure, followed by the
 details of the VASP workflow, emphasising the self-consistent field (SCF) cycle. We then present the main input and output files required for the simulations. Next, we discuss the structure relaxation procedure, which includes an initial relaxation using DFTB+ followed by a full structure relaxation with VASP. Finally, we discuss the generation of the machine learning force field (MLFF), covering the training, refinement, and testing phases. 
 
 \section{Initial CSH Structure}
+\label{sec:csh-structure}
 The structure used for our investigations of calcium silicate hydrates (C-S-H)---from now on referred to as CSH---is the CSH molecular model proposed by Pellenq \emph{et al.}\supercite{Pellenq2009}. We constructed this model with chemical composition as the overriding constraint. As such, the model has a calcium/silicon ratio (C/S) of 1.7, and a density of 2.6 g/cm$^3$; consistent with experimental observations. 
 
 It was derived from a monoclinic periodic cell of dry tobermorite, from which SiO$_2$ groups were removed to achieve an experimental C/S ratio. Thereafter, the structure was relaxed using a core-shell potential model at 0 K. Finally, they carried out a Grand Canonical Monte Carlo simulation of water adsorption at 300 K, reporting a chemical composition of (CaO)$_{1.65}$(SiO$_2$)(H$_2$O)$_{1.75}$. 
@@ -22,6 +23,7 @@ The model, shown in Figure \ref{fig:csh_structure}, contains
 \end{figure}
 
 \section{VASP Workflow}
+\label{sec:vasp-workflow}
 Most of our calculations were performed using the Vienna Ab Initio Simulation Package (VASP). A central part of the VASP workflow is the self-consistent field (SCF) cycle, illustrated in Figure~\ref{fig:vasp_workflow}. This cycle is essential for structure relaxation, \emph{ab initio} molecular dynamics (AIMD) simulations, and other DFT calculations. We hereby present the main procedure of the SCF cycle:
 
 \begin{itemize}
@@ -43,6 +45,7 @@ Most of our calculations were performed using the Vienna Ab Initio Simulation Pa
 \end{figure}
 
 \section{VASP Input \& Output Files}
+\label{sec:vasp-input-output-files}
 The VASP input and output files are essential for our calculations. On the one hand, the input files contain necessary information---such as the initial structure, exchange-correlation functionals, PAW pseudopotentials, k-point grid, and convergence criteria---that guide the different simulations. On the other hand, the output files contain the results of the different simulations, such as the total energy, forces, stress tensor, and the fully relaxed structure.
 
 This section provides an overview of the required input files for VASP calculations, as well as some relevant output files. For a detailed and rather technical description of the files herein described, we refer the reader to the VASP manual\supercite{zotero-item-672}
@@ -134,6 +137,7 @@ The \texttt{ML\_FFN} file is a binary file that stores the trained machine learn
 
 
 \section{Strucure Relaxation}
+\label{sec:structure-relaxation}
 Relaxing the CSH structure is a crucial step towards obtaining equilibrium properties of this material. This process involves minimising both the forces on atoms and the total energy of the system, leading to a stable configuration. In this work, we performed structure relaxation in two stages: an initial relaxation was conducted using DFTB+, which provided a good starting point for VASP and reduced the computational cost of the full structure relaxation. The second stage consists of a full structure relaxation using VASP. Here we outline both stages of the structure relaxation process.
 
 \subsection{Initial Relaxation with DFTB+}
@@ -143,6 +147,7 @@ Given the large size of the CSH structure, it was necessary to perform a prelimi
 After the rough approximation provided by DFTB+, a full structure relaxation is performed using VASP. To achieve this, we first perform a cut-off energy convergence test, followed by a k-point convergence test. Thereafter, we define the k-point mesh in the \texttt{KPOINTS} file, and the cut-off energy in the \texttt{INCAR} file, where we also specified the PBEsol functional and a force convergence criteria of 0.01 eV/\AA. Once the structure has been fully relaxed, it is used to study the Density of States (DOS) and to train the machine learning force field.
 
 \section{Machine Learning Force Field Generation}
+\label{sec:mlff-generation}
 This stage is subdivided into three main phases: training, refinement, and testing. In this section, we describe each one of them in detail 
 \subsection{Training}
 As previously discussed, the MLFF is generated on-the-fly during an AIMD simulation. To begin, we use the \texttt{CONTCAR} file, which contains our relaxed structure, as the input \texttt{POSCAR} file for this step. In the \texttt{INCAR} file some parameters need to be set: \texttt{IBRION=0}, indicates VASP to switch to an AIMD simulation; \texttt{NSW=50000} indicates the number of ionic steps; \texttt{POTIM=2.0} is the MD time step in fs; \texttt{MDALGO=3} tells VASP to use the Langevin thermostat; \texttt{TEBEG=400} sets the temperature (in K) at wich the simulation is performed, and \texttt{ISIF=3} allows for positions, cell shape and volume to be~updated. 

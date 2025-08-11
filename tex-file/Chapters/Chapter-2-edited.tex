@@ -10,6 +10,7 @@ This chapter presents the theoretical foundations and formalism of Density Funct
 Ultimately, this chapter aims to provide a comprehensive understanding of the theoretical framework that underpins the computational methods utilised in this work, enabling the reader to grasp the principles and assumptions that govern the simulations and analyses performed throughout.
 
 \section{Many Body Schrödinger Equation}
+\label{sec:many-body-schrodinger-equation}
 In our efforts to unravel the tapestry of materials, quantum mechanics guides our path towards describing the complex yet fundamental interactions that govern particle behavior at the atomic scale. Our journey shall commence by describing the physical laws that shape the interactions among particles constituting a system---electrons and nuclei alike. 
 
 \subsection{The Coulomb Interaction}
@@ -123,6 +124,7 @@ Ultimately, even though Equation \ref{eq13} provides an exact method capable of 
 %	SUBSECTION 1
 %-----------------------------------
 \section{The Born-Oppenheimer Approximation}
+\label{sec:born-oppenheimer-approximation}
 For atoms in a solid, we can think of nuclei as being held immobile in a fixed position, while electrons instantaneously react to any nucleus's movement. This assumption is based on the fact that nuclei are much heavier than electrons---by three to four orders of magnitude---making the former behave like classical particles. Thereby, we can rewrite the many-body wavefunction as a product of two wavefunctions:
 \begin{equation}
   \Psi(\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N, \mathbf{R}_1, \mathbf{R}_2, \ldots, \mathbf{R}_M) = \psi_{\mathbf{R}}(\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N)\chi(\mathbf{R})
@@ -165,6 +167,7 @@ where $E_{\mathbf{R}}= E(\mathbf{R}_1,\dots,\mathbf{R}_M)$ is the electronic sur
 %-----------------------------------
 
 \section{Hartree-Fock Approximation}
+\label{sec:hartree-fock-approximation}
 The essence of the Hartree-Fock approximation (HFA) is to approximate the interacting many-electron system (Equation \ref{eq17}) by a set of non-interacting single-particle problems subject to an effective mean-field potential\supercite{martin2016interacting, helgaker2014molecular, feng2005introduction}. As a means to this, we first rewrite the total wavefunction for a system with N electrons as the product of single-electron wavefunctions---often referred to as the Hartree approximation\supercite{Hartree1928}---as showcased in Equation \ref{eq20}. 
 \begin{equation}
   \Psi^H(\mathbf{r}_1, \dots, \mathbf{r}_N) = \prod_{i=1}^N \phi_i(\mathbf{r}_i)
@@ -291,6 +294,7 @@ where $V^X_i$ stands for the exchange potential
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 \section{Density Functional Theory}
+\label{sec:density-functional-theory}
 So far, we have acknowledged that determining the state of a system with N electrons remains a formidable challenge, for it involves a wavefunction defined in a $3N$-dimensional space. We also recognise that it is possible---heuristically speaking---to simplify such representation by utilising products of single-particle wavefunctions. Nevertheless, such an independent electron approximation necessitates the wavefunctions to be explicitly specified, thereby yielding a rather drastic approximation for the behaviour of the system. Thus, it is natural to consider a different approach to develop an exact single-particle framework, onto which approximations can be introduced afterwards.
 
 We hereby introduce the Density Functional Theory (DFT), which draws upon the insight that any property of a system of many electrons can be viewed as a functional of the ground-state density $n(\mathbf{r})$\supercite{martin2020electronic} (Equation \ref{eq39})---a scalar function defined over three spatial coordinates. 
@@ -532,13 +536,13 @@ Ultimately, hybrid functionals provide a considerable improvement in the accurac
 %This is a placeholder 
 
 \section{Ab initio Molecular Dynamics} 
+\label{sec:ab-initio-molecular-dynamics}
 Molecular dynamics (MD)\supercite{marx2009ab, Kuhne2014} is a widely used computational method that allows us to simulate a many-body condensed matter system and compute its thermodynamic and dynamical properties. In MD, a system is modelled as a collection of particles---atoms or molecules--- whose trajectories evolve under the influence of interatomic forces following Newton's equations of motion. 
 
 
 One of the most challenging yet crucial aspects of MD is calculating the interatomic forces. In classical MD, these forces are typically computed using predefined potential functions or force fields, either constructed upon empirical data or from independent electronic structure calculations that have been parameterised to reproduce experimental or \emph{ab initio} data for small reference systems. Despite their fair success---which we acknowledge but shall not discuss in detail---these empirical interatomic potentials are often limited in their accuracy and transferability. Certain atoms, molecules, or even large systems may give rise to highly complex interatomic interactions that, if attempted to be modelled with empirical potentials, would require a significant amount of effort. Likewise, these potentials are very often limited to a narrow range of configurations, making them ill-suited for processes involving significant structural changes, such as phase transitions or large deformations.  
 
 Therewith, classical MD can be extended by a first-principles approach, where the interatomic forces are computed on-the-fly from accurate electronic structure calculations, ultimately leading to \emph{ab initio} molecular dynamics (AIMD). This approach enables us to overcome the limitations outlined for classical MD, albeit at a significant computational cost. AIMD employs electronic structure methods, such as DFT, to compute the interatomic forces at each time step, without relying on predefined interatomic potentials, thereby providing AIMD with improved predictive power and flexibility.  
-
 
 \subsection{Hellmann-Feynman Theorem}
  The Hellmann-Feynman theorem\supercite{Feynman1939, Politzer2018} establishes a relation between the derivative of the total energy $E$ of a system concerning a parameter $\lambda$ and the expectation value of the derivative of the Hamiltonian with respect to that same parameter.
@@ -632,6 +636,7 @@ Finally, AIMD simulations may also include temperature control, which can be ach
 However, the details of thermostats and different ensembles are beyond the scope of this report, and we shall refer the reader to the literature\supercite{tuckerman2023statistical,frenkel2023understanding} for a more detailed discussion of these topics.
 
 \section{Computational Implementation in VASP}
+\label{sec:computational-implementation-in-vasp}
 The computational studies presented in this report were performed using the Vienna Ab initio Simulation Package (VASP). This is a software suited for performing \emph{ab initio} quantum mechanical calculations\supercite{https://doi.org/10.1002/jcc.21057}. It employs DFT as the basic method, albeit it also allows for beyond-DFT methods such as hybrid functionals, many-body perturbation theory (the GW method), and random phase approximation (RPA). 
 
 VASP is widely adopted in areas such as materials science, condensed matter physics, and quantum chemistry, owing to its demonstrated accuracy and state-of-the-art methods. Consequently, this section is devoted to explaining some important aspects of VASP, with great emphasis on the computational methods employed in this work. 
@@ -863,4 +868,5 @@ The force field is then generated during AIMD simulations following the steps be
 Ultimately, MLFFs provide a robust and efficient method for performing MD simulations. It combines the accuracy of AIMD with the speed of classical MD, allowing for large and complex condensed matter systems to be studied with remarkable accuracy and efficiency.
 
 \section{Density Functional Tight Binding (DFTB+)}
+\label{sec:dftb}
 Density Functional Tight Binding (DFTB) implemented in the DFTB+ code\supercite{Hourahine2020} is a semi-empirical method derived from the Kohn-Sham DFT by performing a Taylor expansion of the total energy functional around a reference electronic density. This method is computationally efficient, allowing for simulations involving large systems and long timescales with reasonable accuracy, and is significantly faster compared to \emph{ab initio} methods. In this work, the GFN1-xTB (Geometry, Frequency, Noncovalent – extended Tight Binding) method was used to perform an initial relaxation prior to the full structure relaxation using VASP.
