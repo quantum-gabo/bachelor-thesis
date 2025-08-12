@@ -192,12 +192,12 @@
 	\begin{center}{\large\bf Abstract\par}\end{center}
 	{\normalsize
 		Concrete is the second-most-used substance in the world after water, with more than 35 billion tons produced, every year. Yet, understanding the atomic and mechanical properties of the main component of concrete, calcium-silicate-hydrate (C-S-H) cement hydrates--the complex binder phase of concrete---still poses a challenge.
-  
-In this project, we aim to investigate the atomic and mechanical properties of cement hydrates leveraging density-functional theory (DFT) and machine learning (ML) tools. We will first start by using DFT to study the electronic structure, bonding, and mechanical responses of C-S-H  at the atomic level. Afterwards, we will use \emph{ab initio} molecular dynamics (AIMD) with ML to create a force field on the fly of C-S-H, which will allow us to accurately simulate and capture the complex atomic interactions of cement hydrates while reducing the computation time. By integrating both DFT, AIMD and ML, we seek to provide deeper insights into the fundamental properties of C-S-H and to develop a predictive model that could inform the design of more sustainable and durable concrete materials.  
+
+        In this project, we aim to investigate the atomic and mechanical properties of cement hydrates leveraging density-functional theory (DFT) and machine learning (ML) tools. We will first start by using DFT to study the electronic structure, bonding, and mechanical responses of C-S-H  at the atomic level. Afterwards, we will use \emph{ab initio} molecular dynamics (AIMD) with ML to create a force field on the fly of C-S-H, which will allow us to accurately simulate and capture the complex atomic interactions of cement hydrates while reducing the computation time. By integrating both DFT, AIMD and ML, we seek to provide deeper insights into the fundamental properties of C-S-H and to develop a predictive model that could inform the design of more sustainable and durable concrete materials.  
 		% This prints a line to write the date
 	}
 	
-	\textbf{Keywords:} Density Functional Theory, monolayers, ferromagnetism, anti-ferromagnetism, half-metal,random alloys.
+	\textbf{Keywords:} Density Functional Theory, Calcium Silicate Hydrates, Mahine Learning, Force Fields, Ab Initio Molecular Dynamics, Cement Hydrates.
 	
 	\clearpage % Start a new page
 }
@@ -210,11 +210,11 @@ In this project, we aim to investigate the atomic and mechanical properties of c
 	{\normalsize
 		El concreto es la segunda sustancia más utilizada en el mundo después del agua, con más de 35 mil millones de toneladas producidas cada año. Sin embargo, comprender las propiedades atómicas y mecánicas del principal componente del concreto, los hidratos de cemento de silicato de calcio (C-S-H), la fase aglutinante compleja del concreto, sigue siendo un desafío.
 
-En este proyecto, nuestro objetivo es investigar las propiedades atómicas y mecánicas de los hidratos de cemento utilizando teoría de funcionales de densidad (DFT) y herramientas de aprendizaje automático (ML). Comenzaremos utilizando DFT para estudiar la estructura electrónica, los enlaces y las respuestas mecánicas de C-S-H a nivel atómico. Posteriormente, utilizaremos dinámica molecular \emph{ab initio} (AIMD) junto con ML para crear un campo de fuerza en tiempo real de C-S-H, lo que nos permitirá simular con precisión y capturar las complejas interacciones atómicas de los hidratos de cemento, reduciendo al mismo tiempo el tiempo de cálculo. Al integrar DFT, AIMD y ML, buscamos proporcionar una comprensión más profunda de las propiedades fundamentales de C-S-H y desarrollar un modelo predictivo que pueda orientar el diseño de materiales de concreto más sostenibles y duraderos.   
+        En este proyecto, nuestro objetivo es investigar las propiedades atómicas y mecánicas de los hidratos de cemento utilizando teoría de funcionales de densidad (DFT) y herramientas de aprendizaje automático (ML). Comenzaremos utilizando DFT para estudiar la estructura electrónica, los enlaces y las respuestas mecánicas de C-S-H a nivel atómico. Posteriormente, utilizaremos dinámica molecular \emph{ab initio} (AIMD) junto con ML para crear un campo de fuerza en tiempo real de C-S-H, lo que nos permitirá simular con precisión y capturar las complejas interacciones atómicas de los hidratos de cemento, reduciendo al mismo tiempo el tiempo de cálculo. Al integrar DFT, AIMD y ML, buscamos proporcionar una comprensión más profunda de las propiedades fundamentales de C-S-H y desarrollar un modelo predictivo que pueda orientar el diseño de materiales de concreto más sostenibles y duraderos.   
 		% Esto imprime una línea para escribir la fecha
 	}
 	
-	\textbf{Palabras clave:} Teor\'{i}a del Funcional de la Densidad, monocapas, ferromagnetismo, anti-ferromagnetismo, semi-metal, aleaciones aleatorias.
+	\textbf{Palabras clave:} Teor\'{i}a del Funcional de la Densidad, monocapas, Hidratos de Silicato de Calcio, Aprendizaje Autom\'{a}tico, Campos de Fuerza, Din\'{a}mica Molecular \emph{ab initio}, Hidratos de Cemento.
 	
 	\clearpage % Comenzar una nueva página
 }
