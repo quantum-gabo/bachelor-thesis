@@ -3024,5 +3024,153 @@
     \field{urlmonth}{08}
     \field{urlyear}{2025}
   \endentry
+
+  \entry{Kresse1996}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=KG}{%
+         family={Kresse},
+         familyi={K\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KG1}
+    \strng{fullhash}{KG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevB.54.11169
+    \endverb
+    \field{number}{16}
+    \field{pages}{11169\bibrangedash 11186}
+    \field{title}{Efficient Iterative Schemes for {\emph{Ab Initio}} Total-Energy Calculations Using a Plane-Wave Basis Set}
+    \field{volume}{54}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/WQPIJNV3/PhysRevB.54.html
+    \endverb
+    \field{journaltitle}{Physical Review B}
+    \field{year}{1996}
+  \endentry
+
+  \entry{Dharmawardhana2018}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=DCC}{%
+         family={Dharmawardhana},
+         familyi={D\bibinitperiod},
+         given={C.\bibnamedelima C.},
+         giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Misra},
+         familyi={M\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CWY}{%
+         family={Ching},
+         familyi={C\bibinitperiod},
+         given={Wai-Yim},
+         giveni={W\bibinithyphendelim Y\bibinitperiod},
+      }}%
+    }
+    \keyw{C-(A)-S-H(I) models,calculations,Electronic and bonding,Mechanical properties,Total bond order density}
+    \strng{namehash}{DCCMACWY1}
+    \strng{fullhash}{DCCMACWY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The atomic-level understanding of the correlation of chemical, electronic and bonding behavior to mechanical properties of complex multi-component calcium (alumino)silicate hydrates [C-(A)-S-H] (The Cement Chemist Notation heavily used in this manuscript refers to C=CaO; A=Al2O3; S=SiO2; H=H2O or --OH), which is among the main binding phases of concrete could provide a point of departure for the study of cement behavior. In this paper, models of highly ordered C-(A)-S-H(I) are proposed and investigated. These models have been optimized and constructed in close relation and guidance of relevant experiments. The focus of the work is on illuminating the effect of Al substitution on chemical and mechanical properties of highly ordered synthetic cement phases. Furthermore, we show the importance of hydrogen bonds to mechanical properties in cements. We show, for the first time, that in the absence of vacancies in Dreierketten chains, the Al substitution in bridging sites reduces the mechanical anisotropy of C-(A)-S-H(I) cement. The study also shows the average partial charge of O, H, Si of different structural units are effectively independent of the chemical environment. This finding could have profound implications upon relevant classical molecular dynamics force fields for cements and could lead to further improvements in the modeling capabilities.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.conbuildmat.2018.07.004
+    \endverb
+    \field{issn}{0950-0618}
+    \field{pages}{536\bibrangedash 548}
+    \field{title}{Theoretical Investigation of {{C-}}({{A}})-{{S-H}}({{I}}) Cement Hydrates}
+    \field{volume}{184}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/9FFHV4Z7/Dharmawardhana et al. - 2018 -
+    \verb  Theoretical investigation of C-(A)-S-H(I) cement hydrates.pdf
+    \endverb
+    \field{journaltitle}{Construction and Building Materials}
+    \field{month}{09}
+    \field{year}{2018}
+    \field{urlday}{11}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{zotero-item-773}{misc}{}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Category:{{Machine-learned}} Force Fields - {{VASP Wiki}}}
+    \verb{url}
+    \verb https://www.vasp.at/wiki/index.php/Category:Machine-learned_force_fie
+    \verb lds
+    \endverb
+    \field{urlday}{11}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Xu2007}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=XH}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=VSC}{%
+         family={Vogel},
+         familyi={V\bibinitperiod},
+         given={S.\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=DLL}{%
+         family={Daemen},
+         familyi={D\bibinitperiod},
+         given={L.\bibnamedelima L.},
+         giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=HDD}{%
+         family={Hickmott},
+         familyi={H\bibinitperiod},
+         given={D.\bibnamedelima D.},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \keyw{Crystal chemistry,Hydrogen bonding,Neutron diffraction,Portlandite,Thermal expansion}
+    \strng{namehash}{XH+1}
+    \strng{fullhash}{XHZYVSCDLLHDD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    The structure of deuterated portlandite, Ca(OD)2, was investigated using time-of-flight neutron diffraction in the temperature range 308--643K. Rietveld analysis reveals that with increasing temperature, the c dimension expands at a rate {$\sim$}4.5 times larger than that for a. This anisotropy of thermal expansion is due to rapid increase in the interlayer thickness along c with increasing temperature. Fitting of the measured cell volumes yields a coefficient of thermal expansion, {$\alpha$}={$\alpha$}0+{$\alpha$}1T, where {$\alpha$}0=5.966{\texttimes}10-5K-1 and {$\alpha$}1=3.333{\texttimes}10-8K-2. On heating, hydrogen-mediated interatomic interactions within the interlayer become weakened, as reflected by increases in the interlayer D{$\cdots$}O and D{$\cdots$}D distances with increasing temperature. Correspondingly, the three equivalent sites over which D is disordered become further apart, suggesting a more delocalized configuration of D at high temperatures.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.jssc.2007.03.004
+    \endverb
+    \field{issn}{0022-4596}
+    \field{number}{4}
+    \field{pages}{1519\bibrangedash 1525}
+    \field{shorttitle}{Anisotropic Thermal Expansion and Hydrogen Bonding Behavior of Portlandite}
+    \field{title}{Anisotropic Thermal Expansion and Hydrogen Bonding Behavior of Portlandite: {{A}} High-Temperature Neutron Diffraction Study}
+    \field{volume}{180}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/KXZ94KCS/S0022459607001016.html
+    \endverb
+    \field{journaltitle}{Journal of Solid State Chemistry}
+    \field{month}{04}
+    \field{year}{2007}
+    \field{urlday}{12}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
 \enddatalist
 \endinput
