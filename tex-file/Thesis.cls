@@ -197,7 +197,7 @@
 		% This prints a line to write the date
 	}
 	
-	\textbf{Keywords:} Density Functional Theory, Calcium Silicate Hydrates, Mahine Learning, Force Fields, Ab Initio Molecular Dynamics, Cement Hydrates.
+	\textbf{Keywords:} Density Functional Theory, Calcium Silicate Hydrates, Machine Learning, Force Fields, Ab Initio Molecular Dynamics, Cement Hydrates.
 	
 	\clearpage % Start a new page
 }
