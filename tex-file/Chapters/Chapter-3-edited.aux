@@ -1,0 +1,220 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\zref@newlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Methodology}{31}{chapter.152}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{Chapter3}{{3}{31}{Methodology}{chapter.152}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Initial C--S--H Structure}{31}{section.153}\protected@file@percent }
+\newlabel{sec:csh-structure}{{3.1}{31}{Initial C--S--H Structure}{section.153}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Molecular model of C--S--H proposed by Ref. \blx@tocontentsinit {0}\cite {Pellenq2009}. Lavender and white spheres are oxygen and hydrogen from water molecules, respectively; light blue and brown spheres are inter- and intra-layer calcium ions, respectively; electric blue and red spheres are silicon and oxygen atoms from silica tetrahedra, respectively.\relax }}{32}{figure.caption.154}\protected@file@percent }
+\newlabel{fig:csh_structure}{{3.1}{32}{Molecular model of C--S--H proposed by Ref. \cite {Pellenq2009}. Lavender and white spheres are oxygen and hydrogen from water molecules, respectively; light blue and brown spheres are inter- and intra-layer calcium ions, respectively; electric blue and red spheres are silicon and oxygen atoms from silica tetrahedra, respectively.\relax }{figure.caption.154}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}VASP Workflow}{32}{section.155}\protected@file@percent }
+\newlabel{sec:vasp-workflow}{{3.2}{32}{VASP Workflow}{section.155}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces  Self-consistent field (SFC) cycle in VASP for DFT calculations adapted from Ref. \blx@tocontentsinit {0}\cite {sholl2023density}. The entire cycle starts with an initial guess of the electronic density $n_0(\mathbf  {r})$, which is then used to calculate the effective potential $v_{\text  {eff}}(\mathbf  {r})$. Then, the resulting potential is used to solve the Kohn-Sham equations, from which single-electron wavefunctions $\psi _i(\mathbf  {r})$ are obtained. Consequently, the new electronic density $n_{i+1}(\mathbf  {r})$ is calculated. Should the old and new densities be close enough---up to a predefined threshold---the cycle stops, and the final electronic density is used to calculate the energies, forces, and stress tensor of the system. Otherwise, the cycle repeats itself until convergence is achieved. \relax }}{33}{figure.caption.156}\protected@file@percent }
+\newlabel{fig:vasp_workflow}{{3.2}{33}{Self-consistent field (SFC) cycle in VASP for DFT calculations adapted from Ref. \cite {sholl2023density}. The entire cycle starts with an initial guess of the electronic density $n_0(\mathbf {r})$, which is then used to calculate the effective potential $v_{\text {eff}}(\mathbf {r})$. Then, the resulting potential is used to solve the Kohn-Sham equations, from which single-electron wavefunctions $\psi _i(\mathbf {r})$ are obtained. Consequently, the new electronic density $n_{i+1}(\mathbf {r})$ is calculated. Should the old and new densities be close enough---up to a predefined threshold---the cycle stops, and the final electronic density is used to calculate the energies, forces, and stress tensor of the system. Otherwise, the cycle repeats itself until convergence is achieved. \relax }{figure.caption.156}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}VASP Input \& Output Files}{33}{section.157}\protected@file@percent }
+\newlabel{sec:vasp-input-output-files}{{3.3}{33}{VASP Input \& Output Files}{section.157}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Input Files}{34}{subsection.158}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}INCAR}{34}{subsubsection.159}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of an \texttt  {INCAR} file used for structure relaxation of C--S--H. This file specifies the optimisation algorithm, force convergence criteria, exchange-correlation functional (PBEsol) and ionic relaxation parameters. Depending on the type of calculation to be performed, different tags may be added or removed. \relax }}{34}{figure.caption.161}\protected@file@percent }
+\newlabel{fig:incar}{{3.3}{34}{Example of an \texttt {INCAR} file used for structure relaxation of C--S--H. This file specifies the optimisation algorithm, force convergence criteria, exchange-correlation functional (PBEsol) and ionic relaxation parameters. Depending on the type of calculation to be performed, different tags may be added or removed. \relax }{figure.caption.161}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.2}POSCAR}{35}{subsubsection.162}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Unit cell structure in fractional coordinates for the C--S--H (Calcium Silicate Hydrates) system. The lattice vectors, atomic species (99 Ca, 60 Si, 323 O, 208 H), and the first 9 atomic positions are shown. All coordinates are expressed in direct (fractional) form.\relax }}{35}{figure.caption.163}\protected@file@percent }
+\newlabel{fig:csh_poscar}{{3.4}{35}{Unit cell structure in fractional coordinates for the C--S--H (Calcium Silicate Hydrates) system. The lattice vectors, atomic species (99 Ca, 60 Si, 323 O, 208 H), and the first 9 atomic positions are shown. All coordinates are expressed in direct (fractional) form.\relax }{figure.caption.163}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.3}KPOINTS}{36}{subsubsection.164}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces  C--S--H k-point grid centered at the Gamma point. The values "1 1 1" define the grid dimensions in the $x$, $y$, and $z$ directions. For large systems, a Gamma-centered grid is enough to achieve convergence.\relax }}{36}{figure.caption.165}\protected@file@percent }
+\newlabel{kpoints}{{3.5}{36}{C--S--H k-point grid centered at the Gamma point. The values "1 1 1" define the grid dimensions in the $x$, $y$, and $z$ directions. For large systems, a Gamma-centered grid is enough to achieve convergence.\relax }{figure.caption.165}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.4}POTCAR}{36}{subsubsection.166}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Output Files}{36}{subsection.167}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.1}OUTCAR}{36}{subsubsection.168}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.2}CONTCAR}{37}{subsubsection.169}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.3}DOSCAR}{37}{subsubsection.170}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.4}OSZICAR}{37}{subsubsection.171}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.5}ML\_ABN}{37}{subsubsection.172}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.6}ML\_FFN}{37}{subsubsection.173}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Strucure Relaxation}{38}{section.174}\protected@file@percent }
+\newlabel{sec:structure-relaxation}{{3.4}{38}{Strucure Relaxation}{section.174}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Initial Relaxation with DFTB+}{38}{subsection.175}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Full Structure Relaxation with VASP}{38}{subsection.176}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Machine Learning Force Field Generation}{38}{section.177}\protected@file@percent }
+\newlabel{sec:mlff-generation}{{3.5}{38}{Machine Learning Force Field Generation}{section.177}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Training}{39}{subsection.178}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Refinement}{39}{subsection.179}\protected@file@percent }
+\newlabel{eq:rmse_per_conf}{{3.1}{39}{Refinement}{equation.180}{}}
+\newlabel{eq:energy_error}{{3.1a}{39}{Refinement}{equation.181}{}}
+\newlabel{eq:force_error}{{3.1b}{39}{Refinement}{equation.182}{}}
+\newlabel{eq:stress_error}{{3.1c}{39}{Refinement}{equation.183}{}}
+\newlabel{eq:rmse_global}{{3.2}{40}{Refinement}{equation.184}{}}
+\newlabel{eq:rmse_e}{{3.2a}{40}{Refinement}{equation.185}{}}
+\newlabel{eq:rmse_f}{{3.2b}{40}{Refinement}{equation.186}{}}
+\newlabel{eq:rmse_s}{{3.2c}{40}{Refinement}{equation.187}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Testing}{40}{subsection.188}\protected@file@percent }
+\@setckpt{Chapters/Chapter-3-edited}{
+\setcounter{page}{41}
+\setcounter{equation}{2}
+\setcounter{enumi}{5}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{5}
+\setcounter{subsection}{3}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{5}
+\setcounter{table}{0}
+\setcounter{parentequation}{2}
+\setcounter{example}{0}
+\setcounter{theorem}{0}
+\setcounter{caption@flags}{0}
+\setcounter{continuedfloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{float@type}{16}
+\setcounter{FBl@b}{0}
+\setcounter{FRobj}{0}
+\setcounter{FRsobj}{0}
+\setcounter{FBcnt}{0}
+\setcounter{r@tfl@t}{0}
+\setcounter{lstnumber}{1}
+\setcounter{Item}{5}
+\setcounter{Hfootnote}{1}
+\setcounter{bookmark@seq@number}{0}
+\setcounter{su@anzahl}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{dummy}{3}
+\setcounter{tabx@nest}{0}
+\setcounter{listtotal}{0}
+\setcounter{listcount}{0}
+\setcounter{liststart}{0}
+\setcounter{liststop}{0}
+\setcounter{citecount}{0}
+\setcounter{citetotal}{0}
+\setcounter{multicitecount}{0}
+\setcounter{multicitetotal}{0}
+\setcounter{instcount}{90}
+\setcounter{maxnames}{3}
+\setcounter{minnames}{1}
+\setcounter{maxitems}{3}
+\setcounter{minitems}{1}
+\setcounter{citecounter}{0}
+\setcounter{maxcitecounter}{0}
+\setcounter{savedcitecounter}{0}
+\setcounter{uniquelist}{0}
+\setcounter{uniquename}{0}
+\setcounter{refsection}{0}
+\setcounter{refsegment}{0}
+\setcounter{maxextratitle}{0}
+\setcounter{maxextratitleyear}{0}
+\setcounter{maxextraname}{0}
+\setcounter{maxextradate}{0}
+\setcounter{maxextraalpha}{0}
+\setcounter{abbrvpenalty}{50}
+\setcounter{highnamepenalty}{50}
+\setcounter{lownamepenalty}{25}
+\setcounter{maxparens}{3}
+\setcounter{parenlevel}{0}
+\setcounter{blx@maxsection}{0}
+\setcounter{blx@maxsegment@0}{0}
+\setcounter{blx@sectionciteorder@0}{61}
+\setcounter{mincomprange}{10}
+\setcounter{maxcomprange}{100000}
+\setcounter{mincompwidth}{1}
+\setcounter{afterword}{0}
+\setcounter{savedafterword}{0}
+\setcounter{annotator}{0}
+\setcounter{savedannotator}{0}
+\setcounter{author}{0}
+\setcounter{savedauthor}{0}
+\setcounter{bookauthor}{0}
+\setcounter{savedbookauthor}{0}
+\setcounter{commentator}{0}
+\setcounter{savedcommentator}{0}
+\setcounter{editor}{0}
+\setcounter{savededitor}{0}
+\setcounter{editora}{0}
+\setcounter{savededitora}{0}
+\setcounter{editorb}{0}
+\setcounter{savededitorb}{0}
+\setcounter{editorc}{0}
+\setcounter{savededitorc}{0}
+\setcounter{foreword}{0}
+\setcounter{savedforeword}{0}
+\setcounter{holder}{0}
+\setcounter{savedholder}{0}
+\setcounter{introduction}{0}
+\setcounter{savedintroduction}{0}
+\setcounter{namea}{0}
+\setcounter{savednamea}{0}
+\setcounter{nameb}{0}
+\setcounter{savednameb}{0}
+\setcounter{namec}{0}
+\setcounter{savednamec}{0}
+\setcounter{translator}{0}
+\setcounter{savedtranslator}{0}
+\setcounter{shortauthor}{0}
+\setcounter{savedshortauthor}{0}
+\setcounter{shorteditor}{0}
+\setcounter{savedshorteditor}{0}
+\setcounter{labelname}{0}
+\setcounter{savedlabelname}{0}
+\setcounter{institution}{0}
+\setcounter{savedinstitution}{0}
+\setcounter{lista}{0}
+\setcounter{savedlista}{0}
+\setcounter{listb}{0}
+\setcounter{savedlistb}{0}
+\setcounter{listc}{0}
+\setcounter{savedlistc}{0}
+\setcounter{listd}{0}
+\setcounter{savedlistd}{0}
+\setcounter{liste}{0}
+\setcounter{savedliste}{0}
+\setcounter{listf}{0}
+\setcounter{savedlistf}{0}
+\setcounter{location}{0}
+\setcounter{savedlocation}{0}
+\setcounter{organization}{0}
+\setcounter{savedorganization}{0}
+\setcounter{origlocation}{0}
+\setcounter{savedoriglocation}{0}
+\setcounter{origpublisher}{0}
+\setcounter{savedorigpublisher}{0}
+\setcounter{publisher}{0}
+\setcounter{savedpublisher}{0}
+\setcounter{language}{0}
+\setcounter{savedlanguage}{0}
+\setcounter{origlanguage}{0}
+\setcounter{savedoriglanguage}{0}
+\setcounter{pageref}{0}
+\setcounter{savedpageref}{0}
+\setcounter{textcitecount}{0}
+\setcounter{textcitetotal}{0}
+\setcounter{textcitemaxnames}{0}
+\setcounter{biburlbigbreakpenalty}{100}
+\setcounter{biburlbreakpenalty}{200}
+\setcounter{biburlnumpenalty}{0}
+\setcounter{biburlucpenalty}{0}
+\setcounter{biburllcpenalty}{0}
+\setcounter{smartand}{1}
+\setcounter{bbx:relatedcount}{0}
+\setcounter{bbx:relatedtotal}{0}
+\setcounter{nlinenum}{0}
+\setcounter{mdf@globalstyle@cnt}{0}
+\setcounter{mdfcountframes}{0}
+\setcounter{mdf@env@i}{0}
+\setcounter{mdf@env@ii}{0}
+\setcounter{mdf@zref@counter}{0}
+\setcounter{tcbbreakpart}{0}
+\setcounter{tcblayer}{0}
+\setcounter{tcolorbox@number}{0}
+\setcounter{FBLTpage}{0}
+\setcounter{lstlisting}{0}
+\setcounter{section@level}{2}
+}

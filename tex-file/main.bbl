@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,8 +16,8 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global/global}
-  \entry{mehta2014concrete}{book}{}{}
+\datalist[entry]{none/global//global/global}
+  \entry{mehta2014concrete}{book}{}
     \name{author}{2}{}{%
       {{hash=MP}{%
          family={Mehta},
@@ -48,13 +48,14 @@
     \field{year}{2014}
   \endentry
 
-  \entry{Monteiro2017}{article}{}{}
+  \entry{Monteiro2017}{article}{}
     \name{author}{3}{}{%
       {{hash=MPJM}{%
          family={Monteiro},
          familyi={M\bibinitperiod},
          given={Paulo J.\bibnamedelima M.},
-         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
       }}%
       {{hash=MSA}{%
          family={Miller},
@@ -78,7 +79,9 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Paulo J. M. Monteiro, Sabbie A. Miller and Arpad Horvath provide an overview of the challenges and accomplishments in reducing the environmental burden of concrete production.%
+    Paulo J. M. Monteiro, Sabbie A. Miller and Arpad Horvath provide an
+  overview of the challenges and accomplishments in reducing the environmental
+  burden of concrete production.%
     }
     \verb{doi}
     \verb 10.1038/nmat4930
@@ -101,7 +104,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{VanDamme2018}{article}{}{}
+  \entry{VanDamme2018}{article}{}
     \name{author}{1}{}{%
       {{hash=VDH}{%
          family={Van\bibnamedelima Damme},
@@ -115,7 +118,19 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{abstract}{%
-    Concrete is flying off, but it is simultaneously facing tremendous challenges in terms of environmental impact, financial needs, societal acceptance and image. Based on an historical approach of the science of concrete and reinforced concrete in particular, this paper calls for the exploration of radical changes in three key aspects of concrete use: reinforcement, binder content, and implementation methods. More precisely, it is suggested that, in parallel to the introduction of robotic fabrication methods, digital technologies may be key for the introduction several innovations like (i) rebar-free reinforcement using non-convex granular media; (ii) compression-optimized concrete structures, using topology optimization, architectural geometry, and 3D-printing or origami-patterned formworks; (iii) truly digital concrete through the coupling of massive data collection and deep learning.%
+    Concrete is flying off, but it is simultaneously facing tremendous
+  challenges in terms of environmental impact, financial needs, societal
+  acceptance and image. Based on an historical approach of the science of
+  concrete and reinforced concrete in particular, this paper calls for the
+  exploration of radical changes in three key aspects of concrete use:
+  reinforcement, binder content, and implementation methods. More precisely, it
+  is suggested that, in parallel to the introduction of robotic fabrication
+  methods, digital technologies may be key for the introduction several
+  innovations like (i) rebar-free reinforcement using non-convex granular
+  media; (ii) compression-optimized concrete structures, using topology
+  optimization, architectural geometry, and 3D-printing or origami-patterned
+  formworks; (iii) truly digital concrete through the coupling of massive data
+  collection and deep learning.%
     }
     \verb{doi}
     \verb 10.1016/j.cemconres.2018.05.002
@@ -124,7 +139,8 @@
     \field{pages}{5\bibrangedash 24}
     \field{series}{{{SI}} : {{Digital}} Concrete 2018}
     \field{shorttitle}{Concrete Material Science}
-    \field{title}{Concrete Material Science: {{Past}}, Present, and Future Innovations}
+    \field{title}{Concrete Material Science: {{Past}}, Present, and Future
+  Innovations}
     \field{volume}{112}
     \verb{file}
     \verb /home/starlord/Downloads/10.1016@j.cemconres.2018.05.002.pdf
@@ -137,7 +153,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Biernacki2017}{article}{}{}
+  \entry{Biernacki2017}{article}{}
     \name{author}{15}{}{%
       {{hash=BJJ}{%
          family={Biernacki},
@@ -230,13 +246,33 @@
          giveni={T\bibinitperiod},
       }}%
     }
-    \keyw{3-D printing,additive manufacturing,admixtures,CO2 emissions,history,ordinary portland cement}
+    \keyw{3-D printing,additive manufacturing,admixtures,CO2
+  emissions,history,ordinary portland cement}
     \strng{namehash}{BJJ+1}
     \strng{fullhash}{BJJBJWSGBKGFPJSLTLRNLOJSFSRSPESKPT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{abstract}{%
-    Since its widespread use in concrete began over 100 years ago, the chemical composition and physical properties of portland cement have changed only incrementally in response to various and competing pressures of constructability and cost. Instead, the construction demands have been met largely through the development and introduction of chemical admixtures that are added to the binder during mixing. These same demands persist into the 21st Century and are just as important now as before, yet newer driving forces are simultaneously pushing the industry both toward more automated construction and toward more sustainable concrete materials that generate lower CO2 and have longer service life. These new cement binder formulations and new construction technologies are expected to go well outside the bounds of traditional portland cement compositions and batching and placing practices. This study examines the origins of these new market demands and the influence they are having on the construction industry. Seven scientific or technological pathways are identified that will be critical for enabling the kinds of transformational changes in cement and concrete construction that the industry needs: (i) additive manufacturing, (ii) designer admixtures, (iii) curated materials data repositories, (iv) computationally designed composites, (v) big data and smart materials, (vi) alternative binder compositions, and (vii) next-generation instrumentation.%
+    Since its widespread use in concrete began over 100 years ago, the chemical
+  composition and physical properties of portland cement have changed only
+  incrementally in response to various and competing pressures of
+  constructability and cost. Instead, the construction demands have been met
+  largely through the development and introduction of chemical admixtures that
+  are added to the binder during mixing. These same demands persist into the
+  21st Century and are just as important now as before, yet newer driving
+  forces are simultaneously pushing the industry both toward more automated
+  construction and toward more sustainable concrete materials that generate
+  lower CO2 and have longer service life. These new cement binder formulations
+  and new construction technologies are expected to go well outside the bounds
+  of traditional portland cement compositions and batching and placing
+  practices. This study examines the origins of these new market demands and
+  the influence they are having on the construction industry. Seven scientific
+  or technological pathways are identified that will be critical for enabling
+  the kinds of transformational changes in cement and concrete construction
+  that the industry needs: (i) additive manufacturing, (ii) designer
+  admixtures, (iii) curated materials data repositories, (iv) computationally
+  designed composites, (v) big data and smart materials, (vi) alternative
+  binder compositions, and (vii) next-generation instrumentation.%
     }
     \verb{doi}
     \verb 10.1111/jace.14948
@@ -245,7 +281,8 @@
     \field{number}{7}
     \field{pages}{2746\bibrangedash 2773}
     \field{shorttitle}{Cements in the 21st Century}
-    \field{title}{Cements in the 21st Century: {{Challenges}}, Perspectives, and Opportunities}
+    \field{title}{Cements in the 21st Century: {{Challenges}}, Perspectives,
+  and Opportunities}
     \field{volume}{100}
     \field{langid}{english}
     \verb{file}
@@ -260,7 +297,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Ji2012}{article}{}{}
+  \entry{Ji2012}{article}{}
     \name{author}{3}{}{%
       {{hash=JQ}{%
          family={Ji},
@@ -272,7 +309,8 @@
          family={Pellenq},
          familyi={P\bibinitperiod},
          given={Roland J.\bibnamedelima M.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
       }}%
       {{hash=VVKJ}{%
          family={Van\bibnamedelima Vliet},
@@ -287,7 +325,25 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Calcium silicate hydrate, or C--S--H, is the chief hydration product of Portland cement. The structure of the C--S--H phase within cement has been proposed and developed via molecular simulations. In such simulations, empirical interatomic potentials for water molecules within C--S--H are adopted to govern the position and relative motion of this key constituent. Initial simulations and force fields of C--S--H have assumed the simplest molecular model of H2O termed ``single point charge'' or SPC, but this choice has not been validated by comparison with other computational models of water that confer additional bond flexibility or charge distribution. To enable efficiently computational modeling of C--S--H and to explore the role that H2O plays in maintaining C--S--H structure and properties, the choice of an efficient and accurate water model is critical. Here, we consider five distinct, classical atomistic water models (SPC, TIP3P, TIP4P, TIP4P05, and TIP5P) to determine the effects of these computational simplifications on C--S--H properties. Quantitative comparison of all five water models shows that the appropriate water model depends on the C--S--H characteristics of interest. Among these models, both SPC and TIP5P models successfully predict key properties of the structure and elastic constants of C--S--H, as well as the dynamics of water molecules within C--S--H.%
+    Calcium silicate hydrate, or C--S--H, is the chief hydration product of
+  Portland cement. The structure of the C--S--H phase within cement has been
+  proposed and developed via molecular simulations. In such simulations,
+  empirical interatomic potentials for water molecules within C--S--H are
+  adopted to govern the position and relative motion of this key constituent.
+  Initial simulations and force fields of C--S--H have assumed the simplest
+  molecular model of H2O termed ``single point charge'' or SPC, but this choice
+  has not been validated by comparison with other computational models of water
+  that confer additional bond flexibility or charge distribution. To enable
+  efficiently computational modeling of C--S--H and to explore the role that
+  H2O plays in maintaining C--S--H structure and properties, the choice of an
+  efficient and accurate water model is critical. Here, we consider five
+  distinct, classical atomistic water models (SPC, TIP3P, TIP4P, TIP4P05, and
+  TIP5P) to determine the effects of these computational simplifications on
+  C--S--H properties. Quantitative comparison of all five water models shows
+  that the appropriate water model depends on the C--S--H characteristics of
+  interest. Among these models, both SPC and TIP5P models successfully predict
+  key properties of the structure and elastic constants of C--S--H, as well as
+  the dynamics of water molecules within C--S--H.%
     }
     \verb{doi}
     \verb 10.1016/j.commatsci.2011.08.024
@@ -295,7 +351,8 @@
     \field{issn}{0927-0256}
     \field{number}{1}
     \field{pages}{234\bibrangedash 240}
-    \field{title}{Comparison of Computational Water Models for Simulation of Calcium--Silicate--Hydrate}
+    \field{title}{Comparison of Computational Water Models for Simulation of
+  Calcium--Silicate--Hydrate}
     \field{volume}{53}
     \verb{file}
     \verb /home/starlord/Zotero/storage/PX9UP7HR/Ji et al. - 2012 - Comparison
@@ -309,7 +366,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{Papatzani2015}{article}{}{}
+  \entry{Papatzani2015}{article}{}
     \name{author}{3}{}{%
       {{hash=PS}{%
          family={Papatzani},
@@ -336,14 +393,37 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The need to master factors affecting the performance of concrete has sparked research on its basic constituent, cement, whose properties are determined by one of the most critical cement hydration products, the calcium silicate hydrate. The present paper discusses the evolution of models describing the nanostructure of the calcium silicate hydrate (C--S--H) over the past century (descriptive models), with a focus on the models presented in the last fifteen years, 2000--2014 (descriptive and predictive models), marked with the breakthrough of nanotechnology. The purposes and outcomes of the suggested models are discussed, along with their limitations. The article concludes that notwithstanding the enormous potentials nanotechnology and advanced molecular modelling have offered in the field, modern models are, in essence, still expanding on the colloidal or layered models suggested in the 60s, rather than providing a ground breaking new approach. However, it is generally recognised that nanotechnology and molecular modelling have, facilitated the shift from descriptive to predictive models, saving time and resources by extrapolating results of very lengthy experiments, e.g. sorption isotherms, or by mathematically manipulating the C--S--H components to derive different structures and assemblages, that would have been difficult or impossible in practice. In that sense, the new experimental methods available, paired with analytical models are able to provide further justification of the pioneering studies and advance cement nanoscience, paving the way to the production of innovative, nanomodified cements, with minimum Portland cement content.%
+    The need to master factors affecting the performance of concrete has
+  sparked research on its basic constituent, cement, whose properties are
+  determined by one of the most critical cement hydration products, the calcium
+  silicate hydrate. The present paper discusses the evolution of models
+  describing the nanostructure of the calcium silicate hydrate (C--S--H) over
+  the past century (descriptive models), with a focus on the models presented
+  in the last fifteen years, 2000--2014 (descriptive and predictive models),
+  marked with the breakthrough of nanotechnology. The purposes and outcomes of
+  the suggested models are discussed, along with their limitations. The article
+  concludes that notwithstanding the enormous potentials nanotechnology and
+  advanced molecular modelling have offered in the field, modern models are, in
+  essence, still expanding on the colloidal or layered models suggested in the
+  60s, rather than providing a ground breaking new approach. However, it is
+  generally recognised that nanotechnology and molecular modelling have,
+  facilitated the shift from descriptive to predictive models, saving time and
+  resources by extrapolating results of very lengthy experiments, e.g. sorption
+  isotherms, or by mathematically manipulating the C--S--H components to derive
+  different structures and assemblages, that would have been difficult or
+  impossible in practice. In that sense, the new experimental methods
+  available, paired with analytical models are able to provide further
+  justification of the pioneering studies and advance cement nanoscience,
+  paving the way to the production of innovative, nanomodified cements, with
+  minimum Portland cement content.%
     }
     \verb{doi}
     \verb 10.1016/j.conbuildmat.2014.10.029
     \endverb
     \field{issn}{0950-0618}
     \field{pages}{219\bibrangedash 234}
-    \field{title}{A Comprehensive Review of the Models on the Nanostructure of Calcium Silicate Hydrates}
+    \field{title}{A Comprehensive Review of the Models on the Nanostructure of
+  Calcium Silicate Hydrates}
     \field{volume}{74}
     \verb{file}
     \verb /home/starlord/Zotero/storage/IMQ8785A/Papatzani et al. - 2015 - A co
@@ -358,13 +438,14 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Qomi2020}{incollection}{}{}
+  \entry{Qomi2020}{incollection}{}
     \name{author}{3}{}{%
       {{hash=QMJA}{%
          family={Qomi},
          familyi={Q\bibinitperiod},
          given={Mohammad Javad\bibnamedelima Abdolhosseini},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim A\bibinitperiod},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
       }}%
       {{hash=BM}{%
          family={Bauchy},
@@ -376,7 +457,8 @@
          family={Pellenq},
          familyi={P\bibinitperiod},
          given={Roland J.-M.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim
+  M\bibinitperiod},
       }}%
     }
     \name{editor}{2}{}{%
@@ -401,15 +483,35 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The more than 20 billion tons of concrete, produced every year, is responsible for 5--7\% of global anthropogenic carbon dioxide emissions. Yet, there is no other viable material that can substitute concrete to meet the need for civil infrastructure in the developed and developing countries. This leaves reducing concrete's carbon footprint as the only path forward to meet environmental targets. The strength and durability properties of concrete rely on the calcium-silicate-hydrate (CSH) phase that forms during cement hydration. Controlling the structure and properties of CSH phase is challenging, due to the intrinsic multiscale complexity of this hydration product that spans several orders of magnitude in length scale (from nanometers to microns). The existing lack in scientifically consistent insights into structure and properties of CSH has been the major obstacle to the development of greener formulations of modern concrete. In this chapter, we review how bridging general concepts from condense matter physics to cement and concrete research has revolutionized our contemporary understanding of the CSH phase and its making-up at the nanoscale, redefining this ubiquitous material described simultaneously as a spanning space continuous matrix and as a cohesive granular material that degrades and creeps over time.%
+    The more than 20 billion tons of concrete, produced every year, is
+  responsible for 5--7\% of global anthropogenic carbon dioxide emissions. Yet,
+  there is no other viable material that can substitute concrete to meet the
+  need for civil infrastructure in the developed and developing countries. This
+  leaves reducing concrete's carbon footprint as the only path forward to meet
+  environmental targets. The strength and durability properties of concrete
+  rely on the calcium-silicate-hydrate (CSH) phase that forms during cement
+  hydration. Controlling the structure and properties of CSH phase is
+  challenging, due to the intrinsic multiscale complexity of this hydration
+  product that spans several orders of magnitude in length scale (from
+  nanometers to microns). The existing lack in scientifically consistent
+  insights into structure and properties of CSH has been the major obstacle to
+  the development of greener formulations of modern concrete. In this chapter,
+  we review how bridging general concepts from condense matter physics to
+  cement and concrete research has revolutionized our contemporary
+  understanding of the CSH phase and its making-up at the nanoscale, redefining
+  this ubiquitous material described simultaneously as a spanning space
+  continuous matrix and as a cohesive granular material that degrades and
+  creeps over time.%
     }
-    \field{booktitle}{Handbook of {{Materials Modeling}}: {{Applications}}: {{Current}} and {{Emerging Materials}}}
+    \field{booktitle}{Handbook of {{Materials Modeling}}: {{Applications}}:
+  {{Current}} and {{Emerging Materials}}}
     \verb{doi}
     \verb 10.1007/978-3-319-44680-6_128
     \endverb
     \field{isbn}{978-3-319-44680-6}
     \field{pages}{1761\bibrangedash 1792}
-    \field{title}{Nanoscale {{Composition-Texture-Property Relation}} in {{Calcium-Silicate-Hydrates}}}
+    \field{title}{Nanoscale {{Composition-Texture-Property Relation}} in
+  {{Calcium-Silicate-Hydrates}}}
     \field{langid}{english}
     \list{location}{1}{%
       {Cham}%
@@ -424,7 +526,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{Allen2007}{article}{}{}
+  \entry{Allen2007}{article}{}
     \name{author}{3}{}{%
       {{hash=AAJ}{%
          family={Allen},
@@ -448,13 +550,30 @@
     \list{publisher}{1}{%
       {Nature Publishing Group}%
     }
-    \keyw{Biomaterials,Condensed Matter Physics,general,Materials Science,Nanotechnology,Optical and Electronic Materials}
+    \keyw{Biomaterials,Condensed Matter Physics,general,Materials
+  Science,Nanotechnology,Optical and Electronic Materials}
     \strng{namehash}{AAJTJJJHM1}
     \strng{fullhash}{AAJTJJJHM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Although Portland cement concrete is the world's most widely used manufactured material, basic questions persist regarding its internal structure and water content, and their effect on concrete behaviour. Here, for the first time without recourse to drying methods, we measure the composition and solid density of the principal binding reaction product of cement hydration, calcium--silicate--hydrate (C--S--H) gel, one of the most complex of all gels. We also quantify a nanoscale calcium hydroxide phase that coexists with C--S--H gel. By combining small-angle neutron and X-ray scattering data, and by exploiting the hydrogen/deuterium neutron isotope effect both in water and methanol, we determine the mean formula and mass density of the nanoscale C--S--H gel particles in hydrating cement. We show that the formula, (CaO)1.7(SiO2)(H2O)1.80, and density, 2.604\,Mg\,m-3, differ from previous values for C--S--H gel, associated with specific drying conditions. Whereas previous studies have classified water within C--S--H gel by how tightly it is bound, in this study we classify water by its location---with implications for defining the chemically active (C--S--H) surface area within cement, and for predicting concrete properties.%
+    Although Portland cement concrete is the world's most widely used
+  manufactured material, basic questions persist regarding its internal
+  structure and water content, and their effect on concrete behaviour. Here,
+  for the first time without recourse to drying methods, we measure the
+  composition and solid density of the principal binding reaction product of
+  cement hydration, calcium--silicate--hydrate (C--S--H) gel, one of the most
+  complex of all gels. We also quantify a nanoscale calcium hydroxide phase
+  that coexists with C--S--H gel. By combining small-angle neutron and X-ray
+  scattering data, and by exploiting the hydrogen/deuterium neutron isotope
+  effect both in water and methanol, we determine the mean formula and mass
+  density of the nanoscale C--S--H gel particles in hydrating cement. We show
+  that the formula, (CaO)1.7(SiO2)(H2O)1.80, and density, 2.604\,Mg\,m-3,
+  differ from previous values for C--S--H gel, associated with specific drying
+  conditions. Whereas previous studies have classified water within C--S--H gel
+  by how tightly it is bound, in this study we classify water by its
+  location---with implications for defining the chemically active (C--S--H)
+  surface area within cement, and for predicting concrete properties.%
     }
     \verb{doi}
     \verb 10.1038/nmat1871
@@ -462,7 +581,8 @@
     \field{issn}{1476-4660}
     \field{number}{4}
     \field{pages}{311\bibrangedash 316}
-    \field{title}{Composition and Density of Nanoscale Calcium--Silicate--Hydrate in Cement}
+    \field{title}{Composition and Density of Nanoscale
+  Calcium--Silicate--Hydrate in Cement}
     \field{volume}{6}
     \field{langid}{english}
     \verb{file}
@@ -476,7 +596,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Houston2009}{article}{}{}
+  \entry{Houston2009}{article}{}
     \name{author}{3}{}{%
       {{hash=HJR}{%
          family={Houston},
@@ -497,13 +617,37 @@
          giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
-    \keyw{Batch Reaction,Calcium Silicate Hydrate,Solid Ratio,Tobermorite,United States Government}
+    \keyw{Batch Reaction,Calcium Silicate Hydrate,Solid
+  Ratio,Tobermorite,United States Government}
     \strng{namehash}{HJRMRSCSA1}
     \strng{fullhash}{HJRMRSCSA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{abstract}{%
-    Understanding the integrity of well-bore systems that are lined with Portland-based cements is critical to the successful storage of sequestered CO2 in gas and oil reservoirs. As a first step, we investigate reaction rates and mechanistic pathways for cement mineral growth in the absence of CO2 by coupling water chemistry with XRD and NMR spectroscopic data. We find that semi-crystalline calcium (alumino-)silicate hydrate (Al-CSH) forms as a precursor solid to the cement mineral tobermorite. Rate constants for tobermorite growth were found to be k = 0.6 ({\textpm} 0.1) {\texttimes} 10-5 s-1 for a solution:solid of 10:1 and 1.6 ({\textpm} 0.8) {\texttimes} 10-4 s-1 for a solution:solid of 5:1 (batch mode; T = 150{$^\circ$}C). This data indicates that reaction rates for tobermorite growth are faster when the solution volume is reduced by half, suggesting that rates are dependent on solution saturation and that the Gibbs free energy is the reaction driver. However, calculated solution saturation indexes for Al-CSH and tobermorite differ by less than one log unit, which is within the measured uncertainty. Based on this data, we consider both heterogeneous nucleation as the thermodynamic driver and internal restructuring as possible mechanistic pathways for growth. We also use NMR spectroscopy to characterize the site symmetry and bonding environment of Al and Si in a reacted tobermorite sample. We find two [4]Al coordination structures at {$\delta$}iso= 59.9 ppm and 66.3 ppm with quadrupolar product parameters (PQ) of 0.21 MHz and 0.10 MHz ({\textpm} 0.08) from 27Al 3Q-MAS NMR and speculate on the Al occupancy of framework sites by probing the protonation environment of Al metal centers using 27Al\{1H\}CP-MAS NMR.%
+    Understanding the integrity of well-bore systems that are lined with
+  Portland-based cements is critical to the successful storage of sequestered
+  CO2 in gas and oil reservoirs. As a first step, we investigate reaction rates
+  and mechanistic pathways for cement mineral growth in the absence of CO2 by
+  coupling water chemistry with XRD and NMR spectroscopic data. We find that
+  semi-crystalline calcium (alumino-)silicate hydrate (Al-CSH) forms as a
+  precursor solid to the cement mineral tobermorite. Rate constants for
+  tobermorite growth were found to be k = 0.6 ({\textpm} 0.1) {\texttimes} 10-5
+  s-1 for a solution:solid of 10:1 and 1.6 ({\textpm} 0.8) {\texttimes} 10-4
+  s-1 for a solution:solid of 5:1 (batch mode; T = 150{$^\circ$}C). This data
+  indicates that reaction rates for tobermorite growth are faster when the
+  solution volume is reduced by half, suggesting that rates are dependent on
+  solution saturation and that the Gibbs free energy is the reaction driver.
+  However, calculated solution saturation indexes for Al-CSH and tobermorite
+  differ by less than one log unit, which is within the measured uncertainty.
+  Based on this data, we consider both heterogeneous nucleation as the
+  thermodynamic driver and internal restructuring as possible mechanistic
+  pathways for growth. We also use NMR spectroscopy to characterize the site
+  symmetry and bonding environment of Al and Si in a reacted tobermorite
+  sample. We find two [4]Al coordination structures at {$\delta$}iso= 59.9 ppm
+  and 66.3 ppm with quadrupolar product parameters (PQ) of 0.21 MHz and 0.10
+  MHz ({\textpm} 0.08) from 27Al 3Q-MAS NMR and speculate on the Al occupancy
+  of framework sites by probing the protonation environment of Al metal centers
+  using 27Al\{1H\}CP-MAS NMR.%
     }
     \verb{doi}
     \verb 10.1186/1467-4866-10-1
@@ -511,8 +655,11 @@
     \field{issn}{1467-4866}
     \field{number}{1}
     \field{pages}{1}
-    \field{shorttitle}{Transformation of Meta-Stable Calcium Silicate Hydrates to Tobermorite}
-    \field{title}{Transformation of Meta-Stable Calcium Silicate Hydrates to Tobermorite: Reaction Kinetics and Molecular Structure from {{XRD}} and {{NMR}} Spectroscopy}
+    \field{shorttitle}{Transformation of Meta-Stable Calcium Silicate Hydrates
+  to Tobermorite}
+    \field{title}{Transformation of Meta-Stable Calcium Silicate Hydrates to
+  Tobermorite: Reaction Kinetics and Molecular Structure from {{XRD}} and
+  {{NMR}} Spectroscopy}
     \field{volume}{10}
     \field{langid}{english}
     \verb{file}
@@ -528,7 +675,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Oh2012}{article}{}{}
+  \entry{Oh2012}{article}{}
     \name{author}{4}{}{%
       {{hash=OJE}{%
          family={Oh},
@@ -552,16 +699,31 @@
          family={Monteiro},
          familyi={M\bibinitperiod},
          given={Paulo J.\bibnamedelima M.},
-         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
       }}%
     }
-    \keyw{14A tobermorite,C-S-H (B),Elastic moduli (C),Mechanical properties (C),X-ray diffraction (B)}
+    \keyw{14A tobermorite,C-S-H (B),Elastic moduli (C),Mechanical properties
+  (C),X-ray diffraction (B)}
     \strng{namehash}{OJE+1}
     \strng{fullhash}{OJECSMWHRMPJM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Using a diamond anvil cell, 14{\AA} tobermorite, a structural analogue of calcium silicate hydrates (C--S--H), was examined by high-pressure synchrotron X-ray diffraction up to 4.8GPa under hydrostatic conditions. The bulk modulus of 14{\AA} tobermorite was calculated, Ko=47GPa. Comparison of the current results with previous high pressure studies on C--S--H(I) indicates that: (1) the compression behavior of the lattice parameters a and b of 14{\AA} tobermorite and C--S--H(I) are very similar, implying that both materials may have very similar Ca--O layers, and also implying that an introduction of structural defects into the Ca--O layers may not substantially change in-plane incompressibility of the ab plane of 14{\AA} tobermorite; and (2) the bulk modulus values of 14{\AA} tobermorite and C--S--H(I) are dominated by the incompressibility of the lattice parameter c, which is directly related to the interlayer spacing composed of dreierketten silicate chains, interlayer Ca, and water molecules.%
+    Using a diamond anvil cell, 14{\AA} tobermorite, a structural analogue of
+  calcium silicate hydrates (C--S--H), was examined by high-pressure
+  synchrotron X-ray diffraction up to 4.8GPa under hydrostatic conditions. The
+  bulk modulus of 14{\AA} tobermorite was calculated, Ko=47GPa. Comparison of
+  the current results with previous high pressure studies on C--S--H(I)
+  indicates that: (1) the compression behavior of the lattice parameters a and
+  b of 14{\AA} tobermorite and C--S--H(I) are very similar, implying that both
+  materials may have very similar Ca--O layers, and also implying that an
+  introduction of structural defects into the Ca--O layers may not
+  substantially change in-plane incompressibility of the ab plane of 14{\AA}
+  tobermorite; and (2) the bulk modulus values of 14{\AA} tobermorite and
+  C--S--H(I) are dominated by the incompressibility of the lattice parameter c,
+  which is directly related to the interlayer spacing composed of dreierketten
+  silicate chains, interlayer Ca, and water molecules.%
     }
     \verb{doi}
     \verb 10.1016/j.cemconres.2011.11.004
@@ -569,7 +731,8 @@
     \field{issn}{0008-8846}
     \field{number}{2}
     \field{pages}{397\bibrangedash 403}
-    \field{title}{Experimental Determination of Bulk Modulus of 14 ~ {{{\AA}}} Tobermorite Using High Pressure Synchrotron {{X-ray}} Diffraction}
+    \field{title}{Experimental Determination of Bulk Modulus of 14 ~ {{{\AA}}}
+  Tobermorite Using High Pressure Synchrotron {{X-ray}} Diffraction}
     \field{volume}{42}
     \verb{file}
     \verb /home/starlord/Zotero/storage/ARCZJ2QG/Oh et al. - 2012 - Experimenta
@@ -584,7 +747,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Foley2012}{article}{}{}
+  \entry{Foley2012}{article}{}
     \name{author}{3}{}{%
       {{hash=FEM}{%
          family={Foley},
@@ -605,13 +768,28 @@
          giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
     }
-    \keyw{Calcium-silicate-hydrate (C-S-H) (B),Drying (A),Mechanical properties (C)}
+    \keyw{Calcium-silicate-hydrate (C-S-H) (B),Drying (A),Mechanical properties
+  (C)}
     \strng{namehash}{FEMKJJRTMM1}
     \strng{fullhash}{FEMKJJRTMM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    In this study, calcium silicate hydrate (C-S-H) is synthesized and characterized. C-S-H slurry was made with calcium oxide (CaO) to micro-silica (SiO2) mixture ratio of 1.5 and enough deionized water. The slurry was continuously mixed for 7days, then the excess water was removed. Two methods of drying were implemented: one method used the standard d-dry technique and the other was equilibrated to 11\% relative humidity (RH). The dried powders were characterized using thermo gravimetric analysis (TGA), X-ray diffraction analysis (XRDA), and 29Si magic angle spinning (MAS) nuclear magnetic resonance (NMR) spectroscopy. The stoichiometric formulas of synthetic C-S-H powders dried to d-dry and 11\% RH in this study were approximated as C1.2SH0.7 and C1.2SH2.4 respectively. The powders were then compacted to create specimens with porosities similar to C-S-H in hydrated cement. The specimens underwent nanoindentation to mechanically characterize C-S-H. The experiments provide insight on the nanoscale mechanical characteristics of C-S-H.%
+    In this study, calcium silicate hydrate (C-S-H) is synthesized and
+  characterized. C-S-H slurry was made with calcium oxide (CaO) to micro-silica
+  (SiO2) mixture ratio of 1.5 and enough deionized water. The slurry was
+  continuously mixed for 7days, then the excess water was removed. Two methods
+  of drying were implemented: one method used the standard d-dry technique and
+  the other was equilibrated to 11\% relative humidity (RH). The dried powders
+  were characterized using thermo gravimetric analysis (TGA), X-ray diffraction
+  analysis (XRDA), and 29Si magic angle spinning (MAS) nuclear magnetic
+  resonance (NMR) spectroscopy. The stoichiometric formulas of synthetic C-S-H
+  powders dried to d-dry and 11\% RH in this study were approximated as
+  C1.2SH0.7 and C1.2SH2.4 respectively. The powders were then compacted to
+  create specimens with porosities similar to C-S-H in hydrated cement. The
+  specimens underwent nanoindentation to mechanically characterize C-S-H. The
+  experiments provide insight on the nanoscale mechanical characteristics of
+  C-S-H.%
     }
     \verb{doi}
     \verb 10.1016/j.cemconres.2012.05.014
@@ -619,7 +797,8 @@
     \field{issn}{0008-8846}
     \field{number}{9}
     \field{pages}{1225\bibrangedash 1232}
-    \field{title}{Synthesis and Nano-Mechanical Characterization of Calcium-Silicate-Hydrate ({{C-S-H}}) Made with 1.5 {{CaO}}/{{SiO2}} Mixture}
+    \field{title}{Synthesis and Nano-Mechanical Characterization of
+  Calcium-Silicate-Hydrate ({{C-S-H}}) Made with 1.5 {{CaO}}/{{SiO2}} Mixture}
     \field{volume}{42}
     \verb{file}
     \verb /home/starlord/Zotero/storage/86BWH5VY/Foley et al. - 2012 - Synthesi
@@ -634,7 +813,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Maddalena2019}{article}{}{}
+  \entry{Maddalena2019}{article}{}
     \name{author}{5}{}{%
       {{hash=MR}{%
          family={Maddalena},
@@ -667,20 +846,30 @@
          giveni={A\bibinitperiod},
       }}%
     }
-    \keyw{Calcium-silicate-hydrate (C-S-H),Characterization,Thermal analysis,X-ray diffraction}
+    \keyw{Calcium-silicate-hydrate (C-S-H),Characterization,Thermal
+  analysis,X-ray diffraction}
     \strng{namehash}{MR+1}
     \strng{fullhash}{MRLKCPAMSHA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    We present new results on solid (monolithic) synthetic C-S-H made at room temperature from easily obtainable calcium sources (calcium oxide, calcium hydroxide) and nanosilica (w/s\,=\,2) with a 2 minute mixing time. Using synchrotron X-ray diffraction combined with TGA/DSC, 29Si NMR and synchrotron pair distribution function (PDF) data we show that the solid C-S-H is crystallographically similar to the more conventionally made synthetic C-S-H slurry. We show that C-S-H is present after 1 day curing (C/S\,=\,0.81) and no X-ray visible portlandite is present at day 3. PDF data shows that the ordered domain size is 2.5 -- 4.5 nm, depending on the fit chosen.%
+    We present new results on solid (monolithic) synthetic C-S-H made at room
+  temperature from easily obtainable calcium sources (calcium oxide, calcium
+  hydroxide) and nanosilica (w/s\,=\,2) with a 2 minute mixing time. Using
+  synchrotron X-ray diffraction combined with TGA/DSC, 29Si NMR and synchrotron
+  pair distribution function (PDF) data we show that the solid C-S-H is
+  crystallographically similar to the more conventionally made synthetic C-S-H
+  slurry. We show that C-S-H is present after 1 day curing (C/S\,=\,0.81) and
+  no X-ray visible portlandite is present at day 3. PDF data shows that the
+  ordered domain size is 2.5 -- 4.5 nm, depending on the fit chosen.%
     }
     \verb{doi}
     \verb 10.1016/j.conbuildmat.2019.06.024
     \endverb
     \field{issn}{0950-0618}
     \field{pages}{554\bibrangedash 565}
-    \field{title}{Direct Synthesis of a Solid Calcium-Silicate-Hydrate ({{C-S-H}})}
+    \field{title}{Direct Synthesis of a Solid Calcium-Silicate-Hydrate
+  ({{C-S-H}})}
     \field{volume}{223}
     \verb{file}
     \verb /home/starlord/Zotero/storage/2XT27L6H/Maddalena et al. - 2019 - Dire
@@ -694,13 +883,14 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Pellenq2009}{article}{}{}
+  \entry{Pellenq2009}{article}{}
     \name{author}{7}{}{%
       {{hash=PRJM}{%
          family={Pellenq},
          familyi={P\bibinitperiod},
          given={Roland J.-M.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim
+  M\bibinitperiod},
       }}%
       {{hash=KA}{%
          family={Kushima},
@@ -747,7 +937,31 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Despite decades of studies of calcium-silicate-hydrate (C-S-H), the structurally complex binder phase of concrete, the interplay between chemical composition and density remains essentially unexplored. Together these characteristics of C-S-H define and modulate the physical and mechanical properties of this ``liquid stone'' gel phase. With the recent determination of the calcium/silicon (C/S = 1.7) ratio and the density of the C-S-H particle (2.6 g/cm3) by neutron scattering measurements, there is new urgency to the challenge of explaining these essential properties. Here we propose a molecular model of C-S-H based on a bottom-up atomistic simulation approach that considers only the chemical specificity of the system as the overriding constraint. By allowing for short silica chains distributed as monomers, dimers, and pentamers, this C-S-H archetype of a molecular description of interacting CaO, SiO2, and H2O units provides not only realistic values of the C/S ratio and the density computed by grand canonical Monte Carlo simulation of water adsorption at 300 K. The model, with a chemical composition of (CaO)1.65(SiO2)(H2O)1.75, also predicts other essential structural features and fundamental physical properties amenable to experimental validation, which suggest that the C-S-H gel structure includes both glass-like short-range order and crystalline features of the mineral tobermorite. Additionally, we probe the mechanical stiffness, strength, and hydrolytic shear response of our molecular model, as compared to experimentally measured properties of C-S-H. The latter results illustrate the prospect of treating cement on equal footing with metals and ceramics in the current application of mechanism-based models and multiscale simulations to study inelastic deformation and cracking.%
+    Despite decades of studies of calcium-silicate-hydrate (C-S-H), the
+  structurally complex binder phase of concrete, the interplay between chemical
+  composition and density remains essentially unexplored. Together these
+  characteristics of C-S-H define and modulate the physical and mechanical
+  properties of this ``liquid stone'' gel phase. With the recent determination
+  of the calcium/silicon (C/S = 1.7) ratio and the density of the C-S-H
+  particle (2.6 g/cm3) by neutron scattering measurements, there is new urgency
+  to the challenge of explaining these essential properties. Here we propose a
+  molecular model of C-S-H based on a bottom-up atomistic simulation approach
+  that considers only the chemical specificity of the system as the overriding
+  constraint. By allowing for short silica chains distributed as monomers,
+  dimers, and pentamers, this C-S-H archetype of a molecular description of
+  interacting CaO, SiO2, and H2O units provides not only realistic values of
+  the C/S ratio and the density computed by grand canonical Monte Carlo
+  simulation of water adsorption at 300 K. The model, with a chemical
+  composition of (CaO)1.65(SiO2)(H2O)1.75, also predicts other essential
+  structural features and fundamental physical properties amenable to
+  experimental validation, which suggest that the C-S-H gel structure includes
+  both glass-like short-range order and crystalline features of the mineral
+  tobermorite. Additionally, we probe the mechanical stiffness, strength, and
+  hydrolytic shear response of our molecular model, as compared to
+  experimentally measured properties of C-S-H. The latter results illustrate
+  the prospect of treating cement on equal footing with metals and ceramics in
+  the current application of mechanism-based models and multiscale simulations
+  to study inelastic deformation and cracking.%
     }
     \verb{doi}
     \verb 10.1073/pnas.0902180106
@@ -768,7 +982,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{AbdolhosseiniQomi2014}{article}{}{}
+  \entry{AbdolhosseiniQomi2014}{article}{}
     \name{author}{13}{}{%
       {{hash=AQMJ}{%
          family={Abdolhosseini\bibnamedelima Qomi},
@@ -846,7 +1060,8 @@
          family={Pellenq},
          familyi={P\bibinitperiod},
          given={R.\bibnamedelima J.-M.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim
+  M\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
@@ -858,7 +1073,23 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Despite its ubiquitous presence in the built environment, concrete's molecular-level properties are only recently being explored using experimental and simulation studies. Increasing societal concerns about concrete's environmental footprint have provided strong motivation to develop new concrete with greater specific stiffness or strength (for structures with less material). Herein, a combinatorial approach is described to optimize properties of cement hydrates. The method entails screening a computationally generated database of atomic structures of calcium-silicate-hydrate, the binding phase of concrete, against a set of three defect attributes: calcium-to-silicon ratio as compositional index and two correlation distances describing medium-range silicon-oxygen and calcium-oxygen environments. Although structural and mechanical properties correlate well with calcium-to-silicon ratio, the cross-correlation between all three defect attributes reveals an indentation modulus-to-hardness ratio extremum, analogous to identifying optimum network connectivity in glass rheology. We also comment on implications of the present findings for a novel route to optimize the nanoscale mechanical properties of cement hydrate.%
+    Despite its ubiquitous presence in the built environment, concrete's
+  molecular-level properties are only recently being explored using
+  experimental and simulation studies. Increasing societal concerns about
+  concrete's environmental footprint have provided strong motivation to develop
+  new concrete with greater specific stiffness or strength (for structures with
+  less material). Herein, a combinatorial approach is described to optimize
+  properties of cement hydrates. The method entails screening a computationally
+  generated database of atomic structures of calcium-silicate-hydrate, the
+  binding phase of concrete, against a set of three defect attributes:
+  calcium-to-silicon ratio as compositional index and two correlation distances
+  describing medium-range silicon-oxygen and calcium-oxygen environments.
+  Although structural and mechanical properties correlate well with
+  calcium-to-silicon ratio, the cross-correlation between all three defect
+  attributes reveals an indentation modulus-to-hardness ratio extremum,
+  analogous to identifying optimum network connectivity in glass rheology. We
+  also comment on implications of the present findings for a novel route to
+  optimize the nanoscale mechanical properties of cement hydrate.%
     }
     \verb{doi}
     \verb 10.1038/ncomms5960
@@ -881,7 +1112,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{Richardson2014}{article}{}{}
+  \entry{Richardson2014}{article}{}
     \name{author}{1}{}{%
       {{hash=RI}{%
          family={Richardson},
@@ -896,7 +1127,25 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    C-(A)-S-H(I) is a calcium silicate hydrate that is studied extensively as a model for the main binding phase in concrete. It is a structurally imperfect form of 14{\AA} tobermorite that has variable composition and length of (alumino)silicate anions. New structural-chemical formulae are presented for single- and double-chain tobermorite-based phases and equations are provided that can be used to calculate a number of useful quantities from 29Si NMR data. It is shown that there are no interlayer calcium ions when the silicate chains are of infinite length and that one is added for each tetrahedral 'bridging' site that is vacant. Preparations that have Ca/Si greater than about 1.4 include an intermixed Ca-rich phase. It is not possible to generate a structural model for a dimer that is crystal-chemically consistent with known calcium silicate hydrates if the starting structure is an orthotobermorite, i.e. of the type that has been used in all previous studies. Crystal-chemically plausible models are developed that are based instead on clinotobermorite. A number of models that represent different mean chain lengths are developed using crystal-chemical and geometrical reasoning. The models account for experimental observations, including variations in Ca/Si, H2O/Si, (alumino)silicate anion structure and layer spacing. {\copyright} 2014.%
+    C-(A)-S-H(I) is a calcium silicate hydrate that is studied extensively as a
+  model for the main binding phase in concrete. It is a structurally imperfect
+  form of 14{\AA} tobermorite that has variable composition and length of
+  (alumino)silicate anions. New structural-chemical formulae are presented for
+  single- and double-chain tobermorite-based phases and equations are provided
+  that can be used to calculate a number of useful quantities from 29Si NMR
+  data. It is shown that there are no interlayer calcium ions when the silicate
+  chains are of infinite length and that one is added for each tetrahedral
+  'bridging' site that is vacant. Preparations that have Ca/Si greater than
+  about 1.4 include an intermixed Ca-rich phase. It is not possible to generate
+  a structural model for a dimer that is crystal-chemically consistent with
+  known calcium silicate hydrates if the starting structure is an
+  orthotobermorite, i.e. of the type that has been used in all previous
+  studies. Crystal-chemically plausible models are developed that are based
+  instead on clinotobermorite. A number of models that represent different mean
+  chain lengths are developed using crystal-chemical and geometrical reasoning.
+  The models account for experimental observations, including variations in
+  Ca/Si, H2O/Si, (alumino)silicate anion structure and layer spacing.
+  {\copyright} 2014.%
     }
     \verb{doi}
     \verb 10.1107/S2052520614021982
@@ -909,11 +1158,12 @@
     \verb /home/starlord/Zotero/storage/IJCURBY3/Richardson - 2014 - Model stru
     \verb ctures for C-(A)-S-H(I).pdf
     \endverb
-    \field{journaltitle}{Acta Crystallographica Section B: Structural Science, Crystal Engineering and Materials}
+    \field{journaltitle}{Acta Crystallographica Section B: Structural Science,
+  Crystal Engineering and Materials}
     \field{year}{2014}
   \endentry
 
-  \entry{Bauchy2014}{article}{}{}
+  \entry{Bauchy2014}{article}{}
     \name{author}{4}{}{%
       {{hash=BM}{%
          family={Bauchy},
@@ -945,7 +1195,21 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Despite advances in the characterization and modeling of cement hydrates, the atomic order in Calcium-Silicate-Hydrate (C-S-H), the binding phase of cement, remains an open question. Indeed, in contrast to the former crystalline model, recent molecular models suggest that the nanoscale structure of C-S-H is amorphous. To elucidate this issue, we analyzed the structure of a realistic simulated model of C-S-H, and compared the latter to crystalline tobermorite, a natural analogue of C-S-H, and to an artificial ideal glass. The results clearly indicate that C-S-H appears as amorphous, when averaged on all atoms. However, an analysis of the order around each atomic species reveals that its structure shows an intermediate degree of order, retaining some characteristics of the crystal while acquiring an overall glass-like disorder. Thanks to a detailed quantification of order and disorder, we show that, while C-S-H retains some signatures of a tobermorite-like layered structure, hydrated species are completely amorphous. {\copyright} 2014 AIP Publishing LLC.%
+    Despite advances in the characterization and modeling of cement hydrates,
+  the atomic order in Calcium-Silicate-Hydrate (C-S-H), the binding phase of
+  cement, remains an open question. Indeed, in contrast to the former
+  crystalline model, recent molecular models suggest that the nanoscale
+  structure of C-S-H is amorphous. To elucidate this issue, we analyzed the
+  structure of a realistic simulated model of C-S-H, and compared the latter to
+  crystalline tobermorite, a natural analogue of C-S-H, and to an artificial
+  ideal glass. The results clearly indicate that C-S-H appears as amorphous,
+  when averaged on all atoms. However, an analysis of the order around each
+  atomic species reveals that its structure shows an intermediate degree of
+  order, retaining some characteristics of the crystal while acquiring an
+  overall glass-like disorder. Thanks to a detailed quantification of order and
+  disorder, we show that, while C-S-H retains some signatures of a
+  tobermorite-like layered structure, hydrated species are completely
+  amorphous. {\copyright} 2014 AIP Publishing LLC.%
     }
     \verb{doi}
     \verb 10.1063/1.4878656
@@ -961,7 +1225,7 @@
     \field{year}{2014}
   \endentry
 
-  \entry{Kovacevic2016}{article}{}{}
+  \entry{Kovacevic2016}{article}{}
     \name{author}{4}{}{%
       {{hash=KG}{%
          family={Kova{\v c}evi{\'c}},
@@ -991,13 +1255,25 @@
     \list{publisher}{1}{%
       {De Gruyter (O)}%
     }
-    \keyw{Atomistic Simulation,C-S-H Structure,ReaxFF Force Field,Semiempirical Quantum Chemistry}
+    \keyw{Atomistic Simulation,C-S-H Structure,ReaxFF Force Field,Semiempirical
+  Quantum Chemistry}
     \strng{namehash}{KG+1}
     \strng{fullhash}{KGNLNAVV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The atomic structure of calcium-silicate-hydrate (C 1.67 --S--H x ) has been studied. Atomistic C--S--H models suggested in our previous study have been revised in order to perform a direct comparison of energetic stability of the different structures. An extensive set of periodic structures of C--S--H with variation of water content was created, and then optimized using molecular dynamics with reactive force field ReaxFF and quantum chemical semiempirical method PM6. All models show organization of water molecules inside the structure of C--S--H. The new geometries of C--S--H, reported in this paper, show lower relative energy with respect to the geometries from the original definition of C--S--H models. Model that corresponds to calcium enriched tobermorite structure has the lowest relative energy and the density closest to the experimental values.%
+    The atomic structure of calcium-silicate-hydrate (C 1.67 --S--H x ) has
+  been studied. Atomistic C--S--H models suggested in our previous study have
+  been revised in order to perform a direct comparison of energetic stability
+  of the different structures. An extensive set of periodic structures of
+  C--S--H with variation of water content was created, and then optimized using
+  molecular dynamics with reactive force field ReaxFF and quantum chemical
+  semiempirical method PM6. All models show organization of water molecules
+  inside the structure of C--S--H. The new geometries of C--S--H, reported in
+  this paper, show lower relative energy with respect to the geometries from
+  the original definition of C--S--H models. Model that corresponds to calcium
+  enriched tobermorite structure has the lowest relative energy and the density
+  closest to the experimental values.%
     }
     \verb{doi}
     \verb 10.1515/zpch-2015-0718
@@ -1005,7 +1281,8 @@
     \field{issn}{2196-7156}
     \field{number}{9}
     \field{pages}{1411\bibrangedash 1424}
-    \field{title}{Revised {{Atomistic Models}} of the {{Crystal Structure}} of {{C}}--{{S}}--{{H}} with High {{C}}/{{S Ratio}}}
+    \field{title}{Revised {{Atomistic Models}} of the {{Crystal Structure}} of
+  {{C}}--{{S}}--{{H}} with High {{C}}/{{S Ratio}}}
     \field{volume}{230}
     \field{langid}{english}
     \verb{file}
@@ -1019,7 +1296,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{KunhiMohamed2018}{article}{}{}
+  \entry{KunhiMohamed2018}{article}{}
     \name{author}{4}{}{%
       {{hash=KMA}{%
          family={Kunhi\bibnamedelima Mohamed},
@@ -1046,20 +1323,34 @@
          giveni={S\bibinitperiod},
       }}%
     }
-    \keyw{C-S-H,Cementitious systems,Crystal structure,Density functional theory,Molecular dynamics}
+    \keyw{C-S-H,Cementitious systems,Crystal structure,Density functional
+  theory,Molecular dynamics}
     \strng{namehash}{KMA+1}
     \strng{fullhash}{KMAPSCBPGS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Understanding the atomistic structure of Calcium silicate hydrate (C-S-H), the main product of cement hydration, is of paramount importance to better formulate sustainable cement. The existing atomistic models are not in total agreement with experimental results and fail to explain the nanosized nature of C-S-H. Here, we present a new approach for describing the complexity of these structures at the molecular level, enabling a detailed comparison of C-S-H models. The new methodology encodes a full, large scale atomistic C-S-H structure by a simple, readable string of characters, similar to the way the base sequence in DNA encodes a vast range of different proteins. We then use the methodology to assess 14{\AA} tobermorite-defect structures and their stabilities using DFT and classical molecular dynamics. Finally we highlight how the model may be extended to develop reliable atomistic C-S-H models for a range of Ca/Si ratios and conditions.%
+    Understanding the atomistic structure of Calcium silicate hydrate (C-S-H),
+  the main product of cement hydration, is of paramount importance to better
+  formulate sustainable cement. The existing atomistic models are not in total
+  agreement with experimental results and fail to explain the nanosized nature
+  of C-S-H. Here, we present a new approach for describing the complexity of
+  these structures at the molecular level, enabling a detailed comparison of
+  C-S-H models. The new methodology encodes a full, large scale atomistic C-S-H
+  structure by a simple, readable string of characters, similar to the way the
+  base sequence in DNA encodes a vast range of different proteins. We then use
+  the methodology to assess 14{\AA} tobermorite-defect structures and their
+  stabilities using DFT and classical molecular dynamics. Finally we highlight
+  how the model may be extended to develop reliable atomistic C-S-H models for
+  a range of Ca/Si ratios and conditions.%
     }
     \verb{doi}
     \verb 10.1016/j.cemconres.2018.01.007
     \endverb
     \field{issn}{0008-8846}
     \field{pages}{221\bibrangedash 235}
-    \field{title}{An Atomistic Building Block Description of {{C-S-H}} - {{Towards}} a Realistic {{C-S-H}} Model}
+    \field{title}{An Atomistic Building Block Description of {{C-S-H}} -
+  {{Towards}} a Realistic {{C-S-H}} Model}
     \field{volume}{107}
     \verb{file}
     \verb /home/starlord/Zotero/storage/T3U829KR/kunhimohamed2018.pdf
@@ -1072,7 +1363,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{AbdolhosseiniQomi2015}{article}{}{}
+  \entry{AbdolhosseiniQomi2015}{article}{}
     \name{author}{3}{}{%
       {{hash=AQMJ}{%
          family={Abdolhosseini\bibnamedelima Qomi},
@@ -1090,7 +1381,8 @@
          family={Pellenq},
          familyi={P\bibinitperiod},
          given={Roland J.-M.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim M\bibinitperiod},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinithyphendelim
+  M\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
@@ -1101,14 +1393,35 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Despite the ever-increasing interest in multiscale porous materials, the chemophysical origin of their thermal properties at the nanoscale and its connection to the macroscale properties still remain rather obscure. In this paper, we link the atomic- and macroscopic-level thermal properties by combining tools of statistical physics and mean-field homogenization theory. We begin with analyzing the vibrational density of states of several calcium-silicate materials in the cement paste. Unlike crystalline phases, we indicate that calcium silicate hydrates (CSH) exhibit extra vibrational states at low frequencies ({$<$}2 THz) compared to the vibrational states predicted by the Debye model. This anomaly is commonly referred to as the boson peak in glass physics. In addition, the specific-heat capacity of CSH in both dry and saturated states scales linearly with the calcium-to-silicon ratio. We show that the nanoscale-confining environment of CSH decreases the apparent heat capacity of water by a factor of 4. Furthermore, full thermal conductivity tensors for all phases are calculated via the Green-Kubo formalism. We estimate the mean free path of phonons in calcium silicates to be on the order of interatomic bonds. This satisfies the scale separability condition and justifies the use of mean-field homogenization theories for upscaling purposes. Upscaling schemes yield a good estimate of the macroscopic specific-heat capacity and thermal conductivity of cement paste during the hydration process, independent of fitting parameters.%
+    Despite the ever-increasing interest in multiscale porous materials, the
+  chemophysical origin of their thermal properties at the nanoscale and its
+  connection to the macroscale properties still remain rather obscure. In this
+  paper, we link the atomic- and macroscopic-level thermal properties by
+  combining tools of statistical physics and mean-field homogenization theory.
+  We begin with analyzing the vibrational density of states of several
+  calcium-silicate materials in the cement paste. Unlike crystalline phases, we
+  indicate that calcium silicate hydrates (CSH) exhibit extra vibrational
+  states at low frequencies ({$<$}2 THz) compared to the vibrational states
+  predicted by the Debye model. This anomaly is commonly referred to as the
+  boson peak in glass physics. In addition, the specific-heat capacity of CSH
+  in both dry and saturated states scales linearly with the calcium-to-silicon
+  ratio. We show that the nanoscale-confining environment of CSH decreases the
+  apparent heat capacity of water by a factor of 4. Furthermore, full thermal
+  conductivity tensors for all phases are calculated via the Green-Kubo
+  formalism. We estimate the mean free path of phonons in calcium silicates to
+  be on the order of interatomic bonds. This satisfies the scale separability
+  condition and justifies the use of mean-field homogenization theories for
+  upscaling purposes. Upscaling schemes yield a good estimate of the
+  macroscopic specific-heat capacity and thermal conductivity of cement paste
+  during the hydration process, independent of fitting parameters.%
     }
     \verb{doi}
     \verb 10.1103/PhysRevApplied.3.064010
     \endverb
     \field{number}{6}
     \field{pages}{064010}
-    \field{title}{Physical {{Origins}} of {{Thermal Properties}} of {{Cement Paste}}}
+    \field{title}{Physical {{Origins}} of {{Thermal Properties}} of {{Cement
+  Paste}}}
     \field{volume}{3}
     \verb{file}
     \verb /home/starlord/Zotero/storage/8QIBMWSE/Abdolhosseini Qomi et al. - 20
@@ -1122,7 +1435,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{Bahraq2022}{article}{}{}
+  \entry{Bahraq2022}{article}{}
     \name{author}{7}{}{%
       {{hash=BAA}{%
          family={Bahraq},
@@ -1167,20 +1480,43 @@
          giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
-    \keyw{Atomistic simulation,Cement phases,Hydration products,Molecular dynamics,Nanoengineering}
+    \keyw{Atomistic simulation,Cement phases,Hydration products,Molecular
+  dynamics,Nanoengineering}
     \strng{namehash}{BAA+1}
     \strng{fullhash}{BAAAMABOSOIBMMAHuRSTA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Hydrated cement is one of the complex composite systems due to the presence of multi-scale phases with varying morphologies. Calcium silicate hydrate, which is the principal binder phase in the hydrated cement, is responsible for the stiffness, strength, and durability of Portland cement concrete. To understand the mechanical and durability behavior of concrete, it is important to investigate the interactions of hydrated cement phases with other materials at the nanoscale. In this regard, the molecular simulation of cement-based materials is an effective approach to study the properties and interactions of the cement system at the fundamental scale. Recently, many studies have been published regarding atomistic simulations to investigate the cement phases to define/explain the microscopic physical and chemical properties, thereby improving the macroscopic performance of hardened binders. The research in molecular simulation of cementitious systems involves researchers with multidisciplinary backgrounds, mainly in two areas: \ding{172} cement chemistry, where the hydration reactions govern most of the chemical and physical properties at the atomic scale; and \ding{173} computational materials science and engineering, where the bottom-up approach is required. The latter approach is still in its infancy, and as such, a study of the prevailing knowledge is useful, namely through an exhaustive literature review. This state-of-the-art report provides a comprehensive survey on studies that were conducted in this area and cites the important findings.%
+    Hydrated cement is one of the complex composite systems due to the presence
+  of multi-scale phases with varying morphologies. Calcium silicate hydrate,
+  which is the principal binder phase in the hydrated cement, is responsible
+  for the stiffness, strength, and durability of Portland cement concrete. To
+  understand the mechanical and durability behavior of concrete, it is
+  important to investigate the interactions of hydrated cement phases with
+  other materials at the nanoscale. In this regard, the molecular simulation of
+  cement-based materials is an effective approach to study the properties and
+  interactions of the cement system at the fundamental scale. Recently, many
+  studies have been published regarding atomistic simulations to investigate
+  the cement phases to define/explain the microscopic physical and chemical
+  properties, thereby improving the macroscopic performance of hardened
+  binders. The research in molecular simulation of cementitious systems
+  involves researchers with multidisciplinary backgrounds, mainly in two areas:
+  \ding{172} cement chemistry, where the hydration reactions govern most of the
+  chemical and physical properties at the atomic scale; and \ding{173}
+  computational materials science and engineering, where the bottom-up approach
+  is required. The latter approach is still in its infancy, and as such, a
+  study of the prevailing knowledge is useful, namely through an exhaustive
+  literature review. This state-of-the-art report provides a comprehensive
+  survey on studies that were conducted in this area and cites the important
+  findings.%
     }
     \verb{doi}
     \verb 10.1016/j.eng.2021.06.023
     \endverb
     \field{issn}{2095-8099}
     \field{pages}{165\bibrangedash 178}
-    \field{title}{Molecular {{Simulation}} of {{Cement-Based Materials}} and {{Their Properties}}}
+    \field{title}{Molecular {{Simulation}} of {{Cement-Based Materials}} and
+  {{Their Properties}}}
     \field{volume}{15}
     \verb{file}
     \verb /home/starlord/Zotero/storage/I25AVSMV/Bahraq et al. - 2022 - Molecul
@@ -1194,7 +1530,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{Cho2020}{article}{}{}
+  \entry{Cho2020}{article}{}
     \name{author}{3}{}{%
       {{hash=CBH}{%
          family={Cho},
@@ -1218,13 +1554,28 @@
     \list{publisher}{1}{%
       {Multidisciplinary Digital Publishing Institute}%
     }
-    \keyw{calcium-silicate-hydrate,carbon-based nanomaterials,cement-polymer nanocomposites,molecular dynamics,nano-engineered cement materials}
+    \keyw{calcium-silicate-hydrate,carbon-based nanomaterials,cement-polymer
+  nanocomposites,molecular dynamics,nano-engineered cement materials}
     \strng{namehash}{CBHCWNBH1}
     \strng{fullhash}{CBHCWNBH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    With the continuous research efforts, sophisticated predictive molecular dynamics (MD) models for C-S-H have been developed, and the application of MD simulation has been expanded from fundamental understanding of C-S-H to nano-engineered cement composites. This paper comprehensively reviewed the current state of MD simulation on calcium-silicate-hydrate (C-S-H) and its diverse applications to nano-engineered cement composites, including carbon-based nanomaterials (i.e., carbon nanotube, graphene, graphene oxide), reinforced cement, cement--polymer nanocomposites (with an application on 3D printing concrete), and chemical additives for improving environmental resistance. In conclusion, the MD method could not only compute but also visualize the nanoscale behaviors of cement hydrates and other ingredients in the cement matrix; thus, fundamental properties of C-S-H structure and its interaction with nanoparticles can be well understood. As a result, the MD enabled us to identify and evaluate the performance of new advanced nano-engineered cement composites.%
+    With the continuous research efforts, sophisticated predictive molecular
+  dynamics (MD) models for C-S-H have been developed, and the application of MD
+  simulation has been expanded from fundamental understanding of C-S-H to
+  nano-engineered cement composites. This paper comprehensively reviewed the
+  current state of MD simulation on calcium-silicate-hydrate (C-S-H) and its
+  diverse applications to nano-engineered cement composites, including
+  carbon-based nanomaterials (i.e., carbon nanotube, graphene, graphene oxide),
+  reinforced cement, cement--polymer nanocomposites (with an application on 3D
+  printing concrete), and chemical additives for improving environmental
+  resistance. In conclusion, the MD method could not only compute but also
+  visualize the nanoscale behaviors of cement hydrates and other ingredients in
+  the cement matrix; thus, fundamental properties of C-S-H structure and its
+  interaction with nanoparticles can be well understood. As a result, the MD
+  enabled us to identify and evaluate the performance of new advanced
+  nano-engineered cement composites.%
     }
     \verb{doi}
     \verb 10.3390/nano10112158
@@ -1232,7 +1583,9 @@
     \field{issn}{2079-4991}
     \field{number}{11}
     \field{pages}{2158}
-    \field{title}{Molecular {{Dynamics Simulation}} of {{Calcium-Silicate-Hydrate}} for {{Nano-Engineered Cement Composites}}---{{A Review}}}
+    \field{title}{Molecular {{Dynamics Simulation}} of
+  {{Calcium-Silicate-Hydrate}} for {{Nano-Engineered Cement Composites}}---{{A
+  Review}}}
     \field{volume}{10}
     \field{langid}{english}
     \verb{file}
@@ -1248,7 +1601,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Barbhuiya2023}{article}{}{}
+  \entry{Barbhuiya2023}{article}{}
     \name{author}{2}{}{%
       {{hash=BS}{%
          family={Barbhuiya},
@@ -1263,13 +1616,30 @@
          giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
       }}%
     }
-    \keyw{Calcium-silicate-hydrate,Concrete properties,Durability,Molecular dynamics simulation}
+    \keyw{Calcium-silicate-hydrate,Concrete properties,Durability,Molecular
+  dynamics simulation}
     \strng{namehash}{BSDBB1}
     \strng{fullhash}{BSDBB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{abstract}{%
-    This paper presents a comprehensive review of the application of molecular dynamics simulation in concrete research. The study addresses the background and significance of the topic, providing an overview of the principles, applications, and types of molecular dynamics simulation, with a particular focus on its role in enhancing the understanding of concrete properties. Moreover, it critically examines existing research studies that employ molecular dynamics simulation in concrete research, highlighting the associated benefits and limitations. The paper further investigates various simulation techniques and models employed in concrete research, offering a comparative analysis of their effectiveness. Additionally, the study explores future directions and identifies research needs in the field of molecular dynamics simulation in concrete, while also discussing the potential impact of this approach on the sustainability of the construction industry. By providing a comprehensive overview and critical analysis, this review serves as a valuable resource for researchers and practitioners interested in leveraging molecular dynamics simulation for advancing concrete science and engineering.%
+    This paper presents a comprehensive review of the application of molecular
+  dynamics simulation in concrete research. The study addresses the background
+  and significance of the topic, providing an overview of the principles,
+  applications, and types of molecular dynamics simulation, with a particular
+  focus on its role in enhancing the understanding of concrete properties.
+  Moreover, it critically examines existing research studies that employ
+  molecular dynamics simulation in concrete research, highlighting the
+  associated benefits and limitations. The paper further investigates various
+  simulation techniques and models employed in concrete research, offering a
+  comparative analysis of their effectiveness. Additionally, the study explores
+  future directions and identifies research needs in the field of molecular
+  dynamics simulation in concrete, while also discussing the potential impact
+  of this approach on the sustainability of the construction industry. By
+  providing a comprehensive overview and critical analysis, this review serves
+  as a valuable resource for researchers and practitioners interested in
+  leveraging molecular dynamics simulation for advancing concrete science and
+  engineering.%
     }
     \verb{doi}
     \verb 10.1016/j.jobe.2023.107267
@@ -1277,7 +1647,8 @@
     \field{issn}{2352-7102}
     \field{pages}{107267}
     \field{shorttitle}{Molecular Dynamics Simulation in Concrete Research}
-    \field{title}{Molecular Dynamics Simulation in Concrete Research: {{A}} Systematic Review of Techniques, Models and Future Directions}
+    \field{title}{Molecular Dynamics Simulation in Concrete Research: {{A}}
+  Systematic Review of Techniques, Models and Future Directions}
     \field{volume}{76}
     \verb{file}
     \verb /home/starlord/Zotero/storage/MF5FMLMH/Barbhuiya and Das - 2023 - Mol
@@ -1292,9 +1663,10 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{zotero-item-16}{misc}{}{}
+  \entry{zotero-item-16}{misc}{}
     \field{labeltitlesource}{title}
-    \field{title}{Machine Learning in Concrete Science: Applications, Challenges, and Best Practices {\textbar} Npj {{Computational Materials}}}
+    \field{title}{Machine Learning in Concrete Science: Applications,
+  Challenges, and Best Practices {\textbar} Npj {{Computational Materials}}}
     \verb{url}
     \verb https://www.nature.com/articles/s41524-022-00810-x
     \endverb
@@ -1306,7 +1678,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{Kobayashi2021}{article}{}{}
+  \entry{Kobayashi2021}{article}{}
     \name{author}{6}{}{%
       {{hash=KK}{%
          family={Kobayashi},
@@ -1345,13 +1717,38 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \keyw{Calcium-silicate-hydrate,Cement,Density functional theory,Machine learning potential,Molecular dynamics,Tobermorite}
+    \keyw{Calcium-silicate-hydrate,Cement,Density functional theory,Machine
+  learning potential,Molecular dynamics,Tobermorite}
     \strng{namehash}{KK+1}
     \strng{fullhash}{KKNHYAIMMMOM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Molecular dynamics (MD) simulation is an important tool to understand the physical and chemical properties of cement hydrates at the atomic level. MD with the machine learning potential (MLP) is considered a promising approach for accurate prediction of material properties. However, the applications of machine learning MD for multicomponent systems with a liquid--solid interface have been limited so far. In this work, we used artificial neural networks (ANNs) to construct MLPs for tobermorite minerals. Two MLPs were produced by optimization using different objective functions: one MLP was optimized for both the forces and energies of density functional theory (DFT) results (MLP-FE), and the other MLP was fitted to only the energies (MLP-E). Accuracy assessments of the MLPs were performed for lattice parameters, elastic constants, and bulk, shear moduli, and vibrational density of states. The results of the assessments showed that the accuracy of the potentials largely depended on the objective functions used in the training of the ANNs, i.e., MLP-FE was comparable to the potential energy surface (PES) of DFT, although MLP-E failed to reproduce the several physical quantities given by DFT. To evaluate the applicability of MLP-FE to extended systems beyond the limits of DFT calculations, a large scale MD simulation of a nanoporous tobermorite model was demonstrated using MLP-FE. The transport and distribution properties of atoms in the liquid part of the porous model were investigated. Slow diffusion of water confined in a nanopore was detected, and the results were consistent with experimental data and previous works using classical force fields. The results obtained in this study suggested that MD with MLP is a practical method for large scale molecular simulations of cement hydrates with DFT accuracy.%
+    Molecular dynamics (MD) simulation is an important tool to understand the
+  physical and chemical properties of cement hydrates at the atomic level. MD
+  with the machine learning potential (MLP) is considered a promising approach
+  for accurate prediction of material properties. However, the applications of
+  machine learning MD for multicomponent systems with a liquid--solid interface
+  have been limited so far. In this work, we used artificial neural networks
+  (ANNs) to construct MLPs for tobermorite minerals. Two MLPs were produced by
+  optimization using different objective functions: one MLP was optimized for
+  both the forces and energies of density functional theory (DFT) results
+  (MLP-FE), and the other MLP was fitted to only the energies (MLP-E). Accuracy
+  assessments of the MLPs were performed for lattice parameters, elastic
+  constants, and bulk, shear moduli, and vibrational density of states. The
+  results of the assessments showed that the accuracy of the potentials largely
+  depended on the objective functions used in the training of the ANNs, i.e.,
+  MLP-FE was comparable to the potential energy surface (PES) of DFT, although
+  MLP-E failed to reproduce the several physical quantities given by DFT. To
+  evaluate the applicability of MLP-FE to extended systems beyond the limits of
+  DFT calculations, a large scale MD simulation of a nanoporous tobermorite
+  model was demonstrated using MLP-FE. The transport and distribution
+  properties of atoms in the liquid part of the porous model were investigated.
+  Slow diffusion of water confined in a nanopore was detected, and the results
+  were consistent with experimental data and previous works using classical
+  force fields. The results obtained in this study suggested that MD with MLP
+  is a practical method for large scale molecular simulations of cement
+  hydrates with DFT accuracy.%
     }
     \verb{doi}
     \verb 10.1016/j.commatsci.2020.110173
@@ -1372,7 +1769,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{Zhu2024}{article}{}{}
+  \entry{Zhu2024}{article}{}
     \name{author}{1}{}{%
       {{hash=ZK}{%
          family={Zhu},
@@ -1381,20 +1778,36 @@
          giveni={K\bibinitperiod},
       }}%
     }
-    \keyw{Graph convolutional neural network,Machine Learning Interatomic Potential,Molecular dynamics,Tobermorite}
+    \keyw{Graph convolutional neural network,Machine Learning Interatomic
+  Potential,Molecular dynamics,Tobermorite}
     \strng{namehash}{ZK1}
     \strng{fullhash}{ZK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Machine Learning Interatomic Potentials (MLIPs) present a significant advancement in fitting molecular potential energy surfaces and predicting molecular crystal structures and mechanical properties by closely approximating first-principles (FP) calculations results while substantially reducing computational time. In this work, utilizing datasets derived from FP calculations, neural equivariant interatomic potentials (NequIP) and Deep Potential Molecular Dynamics (DPMD) was implemented to develop MLIPs for tobermorite 9, 11, 14 {\AA}. The accuracy and efficiency of NequIP and DPMD were assessed by predicting energies and forces as well as performing molecular dynamics (MD) simulations. The findings indicate that NequIP closely fits the results of FP calculations, with both accuracy and efficiency improved by 1{$\sim$}2 orders of magnitude compared to the DPMD. This demonstrates that MLIPs developed through NequIP for tobermorites have the capacity to enhance the capability of large-scale molecular dynamics simulations.%
+    Machine Learning Interatomic Potentials (MLIPs) present a significant
+  advancement in fitting molecular potential energy surfaces and predicting
+  molecular crystal structures and mechanical properties by closely
+  approximating first-principles (FP) calculations results while substantially
+  reducing computational time. In this work, utilizing datasets derived from FP
+  calculations, neural equivariant interatomic potentials (NequIP) and Deep
+  Potential Molecular Dynamics (DPMD) was implemented to develop MLIPs for
+  tobermorite 9, 11, 14 {\AA}. The accuracy and efficiency of NequIP and DPMD
+  were assessed by predicting energies and forces as well as performing
+  molecular dynamics (MD) simulations. The findings indicate that NequIP
+  closely fits the results of FP calculations, with both accuracy and
+  efficiency improved by 1{$\sim$}2 orders of magnitude compared to the DPMD.
+  This demonstrates that MLIPs developed through NequIP for tobermorites have
+  the capacity to enhance the capability of large-scale molecular dynamics
+  simulations.%
     }
     \verb{doi}
     \verb 10.1016/j.commatsci.2024.113212
     \endverb
     \field{issn}{0927-0256}
     \field{pages}{113212}
-    \field{title}{Performance {{Comparisons}} of {{NequIP}} and {{DPMD Machine Learning Interatomic Potentials}} for {{Tobermorites}}}
+    \field{title}{Performance {{Comparisons}} of {{NequIP}} and {{DPMD Machine
+  Learning Interatomic Potentials}} for {{Tobermorites}}}
     \field{volume}{244}
     \verb{file}
     \verb /home/starlord/Zotero/storage/AG7QW23V/Zhu - 2024 - Performance Compa
@@ -1408,7 +1821,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{giustino2014materials}{book}{}{}
+  \entry{giustino2014materials}{book}{}
     \name{author}{1}{}{%
       {{hash=GF}{%
          family={Giustino},
@@ -1425,14 +1838,15 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{isbn}{978-0-19-966244-9}
-    \field{title}{Materials Modelling Using Density Functional Theory: {{Properties}} and Predictions}
+    \field{title}{Materials Modelling Using Density Functional Theory:
+  {{Properties}} and Predictions}
     \verb{url}
     \verb https://books.google.com.ec/books?id=FzOTAwAAQBAJ
     \endverb
     \field{year}{2014}
   \endentry
 
-  \entry{sholl2023density}{book}{}{}
+  \entry{sholl2023density}{book}{}
     \name{author}{2}{}{%
       {{hash=SD}{%
          family={Sholl},
@@ -1462,7 +1876,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{kaxiras2003atomic}{book}{}{}
+  \entry{kaxiras2003atomic}{book}{}
     \name{author}{1}{}{%
       {{hash=KE}{%
          family={Kaxiras},
@@ -1486,7 +1900,7 @@
     \field{year}{2003}
   \endentry
 
-  \entry{martin2016interacting}{book}{}{}
+  \entry{martin2016interacting}{book}{}
     \name{author}{3}{}{%
       {{hash=MR}{%
          family={Martin},
@@ -1522,7 +1936,7 @@
     \field{year}{2016}
   \endentry
 
-  \entry{helgaker2014molecular}{book}{}{}
+  \entry{helgaker2014molecular}{book}{}
     \name{author}{3}{}{%
       {{hash=HT}{%
          family={Helgaker},
@@ -1558,7 +1972,7 @@
     \field{year}{2014}
   \endentry
 
-  \entry{feng2005introduction}{book}{}{}
+  \entry{feng2005introduction}{book}{}
     \name{author}{2}{}{%
       {{hash=FD}{%
          family={Feng},
@@ -1588,7 +2002,7 @@
     \field{year}{2005}
   \endentry
 
-  \entry{Hartree1928}{article}{}{}
+  \entry{Hartree1928}{article}{}
     \name{author}{1}{}{%
       {{hash=HDR}{%
          family={Hartree},
@@ -1602,7 +2016,32 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The paper is concerned with the practical determination of the characteristic values and functions of the wave equation of Schrodinger for a non-Coulomb central field, for which the potential is given as a function of the distance r from the nucleus.The method used is to integrate a modification of the equation outwards from initial conditions corresponding to a solution finite at r = 0, and inwards from initial conditions corresponding to a solution zero at r = {$\infty$}, with a trial value of the parameter (the energy) whose characteristic values are to be determined; the values of this parameter for which the two solutions fit at some convenient intermediate radius are the characteristic values required, and the solutions which so fit are the characteristic functions ({\S}{\S} 2, 10).Modifications of the wave equation suitable for numerical work in different parts of the range of r are given ({\S}{\S} 2, 3, 5), also exact equations for the variation of a solution with a variation in the potential or of the trial value of the energy ({\S} 4); the use of these variation equations in preference to a complete new integration of the equation for every trial change of field or of the energy parameter avoids a great deal of numerical work.For the range of r where the deviation from a Coulomb field is inappreciable, recurrence relations between different solutions of the wave equations which are zero at r = {$\infty$}, and correspond to terms with different values of the effective and subsidiary quantum numbers, are given and can be used to avoid carrying out the integration in each particular case ({\S}{\S} 6, 7).Formulae for the calculation of first order perturbations due to the relativity variation of mass and to the spinning electron are given ({\S} 8).The method used for integrating the equations numerically is outlined ({\S} 9).%
+    The paper is concerned with the practical determination of the
+  characteristic values and functions of the wave equation of Schrodinger for a
+  non-Coulomb central field, for which the potential is given as a function of
+  the distance r from the nucleus.The method used is to integrate a
+  modification of the equation outwards from initial conditions corresponding
+  to a solution finite at r = 0, and inwards from initial conditions
+  corresponding to a solution zero at r = {$\infty$}, with a trial value of the
+  parameter (the energy) whose characteristic values are to be determined; the
+  values of this parameter for which the two solutions fit at some convenient
+  intermediate radius are the characteristic values required, and the solutions
+  which so fit are the characteristic functions ({\S}{\S} 2, 10).Modifications
+  of the wave equation suitable for numerical work in different parts of the
+  range of r are given ({\S}{\S} 2, 3, 5), also exact equations for the
+  variation of a solution with a variation in the potential or of the trial
+  value of the energy ({\S} 4); the use of these variation equations in
+  preference to a complete new integration of the equation for every trial
+  change of field or of the energy parameter avoids a great deal of numerical
+  work.For the range of r where the deviation from a Coulomb field is
+  inappreciable, recurrence relations between different solutions of the wave
+  equations which are zero at r = {$\infty$}, and correspond to terms with
+  different values of the effective and subsidiary quantum numbers, are given
+  and can be used to avoid carrying out the integration in each particular case
+  ({\S}{\S} 6, 7).Formulae for the calculation of first order perturbations due
+  to the relativity variation of mass and to the spinning electron are given
+  ({\S} 8).The method used for integrating the equations numerically is
+  outlined ({\S} 9).%
     }
     \verb{doi}
     \verb 10.1017/S0305004100011919
@@ -1610,7 +2049,8 @@
     \field{issn}{1469-8064, 0305-0041}
     \field{number}{1}
     \field{pages}{89\bibrangedash 110}
-    \field{title}{The {{Wave Mechanics}} of an {{Atom}} with a {{Non-Coulomb Central Field}}. {{Part I}}. {{Theory}} and {{Methods}}}
+    \field{title}{The {{Wave Mechanics}} of an {{Atom}} with a {{Non-Coulomb
+  Central Field}}. {{Part I}}. {{Theory}} and {{Methods}}}
     \field{volume}{24}
     \field{langid}{english}
     \verb{file}
@@ -1618,7 +2058,8 @@
     \verb anics of an Atom with a Non-Coulomb Central Field. Part I. Theory and
     \verb  Methods.pdf
     \endverb
-    \field{journaltitle}{Mathematical Proceedings of the Cambridge Philosophical Society}
+    \field{journaltitle}{Mathematical Proceedings of the Cambridge
+  Philosophical Society}
     \field{month}{01}
     \field{year}{1928}
     \field{urlday}{10}
@@ -1626,7 +2067,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Fock1930}{article}{}{}
+  \entry{Fock1930}{article}{}
     \name{author}{1}{}{%
       {{hash=FV}{%
          family={Fock},
@@ -1635,13 +2076,33 @@
          giveni={V\bibinitperiod},
       }}%
     }
-    \keyw{Ab Initio Calculations,Calculus of Variations and Optimization,Electronic Structure Calculations,Integral Equations,Mathematical Methods in Physics,Quantum Electrodynamics Relativistic and Many-body Calculations}
+    \keyw{Ab Initio Calculations,Calculus of Variations and
+  Optimization,Electronic Structure Calculations,Integral
+  Equations,Mathematical Methods in Physics,Quantum Electrodynamics
+  Relativistic and Many-body Calculations}
     \strng{namehash}{FV1}
     \strng{fullhash}{FV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Das Variationsprinzip {$\int\delta$}{\textasciimacron}{$\Psi$}(L - E) {$\Psi$}d{$\tau$}=0 (L=Energieoperator) liefert, bekanntlich die Wellengleichung im Konfigurationsraum. Es wird gezeigt, da{\ss} der Ansatz {$\Psi$}={$\psi$}1 ({$\chi$}1) {$\psi$}2 ({$\chi$}1)... {$\psi$}N({$\chi$}N) (N=Anzahl der Elektronen) zu den Gleichungen der Hartreeschen Theorie des ,,selfconsistent field`` f{\"u}hrt. Dieser Ansatz hat aber nicht die richtige Symmetrie. In dem wichtigen Spezialfall der ,,v{\"o}lligen Entartung des Termsystems`` kann aber {$\Psi$} durch {\.e}in Produkt zweier Determinanten [Formel (50) des Textes] approximiert werden. Die entsprechende Rechnung wird durchgef{\"u}hrt. Die Gleichungen, die sich f{\"u}r {$\psi$}i({$\chi$}) ergeben, enthalten ,,Austauschglieder`` und k{\"o}nnen als Eulersche Gleichungen eines dreidimensionalen Variationsproblems mit der Energie als Wirkungsintegral [Formel (93)] aufgefa{\ss}t werden. Die Gleichungen sind nicht wesentlich komplizierter als die von Hartree, d{\"u}rften aber viel genauere Resultate ergeben. Zum Schlu{\ss} wird eine Formel f{\"u}r die Intensit{\"a}ten angegeben, die- Glieder enth{\"a}lt, welche einer ,,Umgruppierung`` der inneren Elektronen bei einem Quantensprung entsprechen.%
+    Das Variationsprinzip {$\int\delta$}{\textasciimacron}{$\Psi$}(L - E)
+  {$\Psi$}d{$\tau$}=0 (L=Energieoperator) liefert, bekanntlich die
+  Wellengleichung im Konfigurationsraum. Es wird gezeigt, da{\ss} der Ansatz
+  {$\Psi$}={$\psi$}1 ({$\chi$}1) {$\psi$}2 ({$\chi$}1)... {$\psi$}N({$\chi$}N)
+  (N=Anzahl der Elektronen) zu den Gleichungen der Hartreeschen Theorie des
+  ,,selfconsistent field`` f{\"u}hrt. Dieser Ansatz hat aber nicht die richtige
+  Symmetrie. In dem wichtigen Spezialfall der ,,v{\"o}lligen Entartung des
+  Termsystems`` kann aber {$\Psi$} durch {\.e}in Produkt zweier Determinanten
+  [Formel (50) des Textes] approximiert werden. Die entsprechende Rechnung wird
+  durchgef{\"u}hrt. Die Gleichungen, die sich f{\"u}r {$\psi$}i({$\chi$})
+  ergeben, enthalten ,,Austauschglieder`` und k{\"o}nnen als Eulersche
+  Gleichungen eines dreidimensionalen Variationsproblems mit der Energie als
+  Wirkungsintegral [Formel (93)] aufgefa{\ss}t werden. Die Gleichungen sind
+  nicht wesentlich komplizierter als die von Hartree, d{\"u}rften aber viel
+  genauere Resultate ergeben. Zum Schlu{\ss} wird eine Formel f{\"u}r die
+  Intensit{\"a}ten angegeben, die- Glieder enth{\"a}lt, welche einer
+  ,,Umgruppierung`` der inneren Elektronen bei einem Quantensprung
+  entsprechen.%
     }
     \verb{doi}
     \verb 10.1007/BF01340294
@@ -1649,7 +2110,8 @@
     \field{issn}{0044-3328}
     \field{number}{1}
     \field{pages}{126\bibrangedash 148}
-    \field{title}{{N{\"a}herungsmethode zur L{\"o}sung des quantenmechanischen Mehrk{\"o}rperproblems}}
+    \field{title}{{N{\"a}herungsmethode zur L{\"o}sung des quantenmechanischen
+  Mehrk{\"o}rperproblems}}
     \field{volume}{61}
     \field{langid}{ngerman}
     \field{journaltitle}{Zeitschrift f{\"u}r Physik}
@@ -1660,7 +2122,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{martin2020electronic}{book}{}{}
+  \entry{martin2020electronic}{book}{}
     \name{author}{1}{}{%
       {{hash=MR}{%
          family={Martin},
@@ -1684,7 +2146,7 @@
     \field{year}{2020}
   \endentry
 
-  \entry{Hohenberg1964}{article}{}{}
+  \entry{Hohenberg1964}{article}{}
     \name{author}{2}{}{%
       {{hash=HP}{%
          family={Hohenberg},
@@ -1707,7 +2169,20 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    This paper deals with the ground state of an interacting electron gas in an external potential {$v$}⁡(r). It is proved that there exists a universal functional of the density, {$F$}⁡[{$n$}⁡(r)], independent of {$v$}⁡(r), such that the expression {$E\equiv\intv$}⁡(r)⁢{$n$}⁡(r){$d$}r +{$F$}⁡[{$n$}⁡(r)] has as its minimum value the correct ground-state energy associated with {$v$}⁡(r). The functional {$F$}⁡[{$n$}⁡(r)] is then discussed for two situations: (1) {$n$}⁡(r) ={$n$}0 {\~+}{$n$}⁡(r),{\~ }{$nn$}0 {$\ll$}1, and (2) {$n$}⁡(r) ={$\phi$}⁡(r{$r$}0) with {$\phi$} arbitrary and {$r$}0 {$\rightarrow\infty$}. In both cases {$F$} can be expressed entirely in terms of the correlation energy and linear and higher order electronic polarizabilities of a uniform electron gas. This approach also sheds some light on generalized Thomas-Fermi methods and their limitations. Some new extensions of these methods are presented.%
+    This paper deals with the ground state of an interacting electron gas in an
+  external potential {$v$}⁡(r). It is proved that there exists a universal
+  functional of the density, {$F$}⁡[{$n$}⁡(r)], independent of {$v$}⁡(r),
+  such that the expression {$E\equiv\intv$}⁡(r)⁢{$n$}⁡(r){$d$}r
+  +{$F$}⁡[{$n$}⁡(r)] has as its minimum value the correct ground-state
+  energy associated with {$v$}⁡(r). The functional {$F$}⁡[{$n$}⁡(r)] is
+  then discussed for two situations: (1) {$n$}⁡(r) ={$n$}0
+  {\~+}{$n$}⁡(r),{\~ }{$nn$}0 {$\ll$}1, and (2) {$n$}⁡(r)
+  ={$\phi$}⁡(r{$r$}0) with {$\phi$} arbitrary and {$r$}0
+  {$\rightarrow\infty$}. In both cases {$F$} can be expressed entirely in terms
+  of the correlation energy and linear and higher order electronic
+  polarizabilities of a uniform electron gas. This approach also sheds some
+  light on generalized Thomas-Fermi methods and their limitations. Some new
+  extensions of these methods are presented.%
     }
     \verb{doi}
     \verb 10.1103/PhysRev.136.B864
@@ -1728,7 +2203,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Kohn1965}{article}{}{}
+  \entry{Kohn1965}{article}{}
     \name{author}{2}{}{%
       {{hash=KW}{%
          family={Kohn},
@@ -1751,14 +2226,25 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    From a theory of Hohenberg and Kohn, approximation methods for treating an inhomogeneous system of interacting electrons are developed. These methods are exact for systems of slowly varying or high density. For the ground state, they lead to self-consistent equations analogous to the Hartree and Hartree-Fock equations, respectively. In these equations the exchange and correlation portions of the chemical potential of a uniform electron gas appear as additional effective potentials. (The exchange portion of our effective potential differs from that due to Slater by a factor of 23.) Electronic systems at finite temperatures and in magnetic fields are also treated by similar methods. An appendix deals with a further correction for systems with short-wavelength density oscillations.%
+    From a theory of Hohenberg and Kohn, approximation methods for treating an
+  inhomogeneous system of interacting electrons are developed. These methods
+  are exact for systems of slowly varying or high density. For the ground
+  state, they lead to self-consistent equations analogous to the Hartree and
+  Hartree-Fock equations, respectively. In these equations the exchange and
+  correlation portions of the chemical potential of a uniform electron gas
+  appear as additional effective potentials. (The exchange portion of our
+  effective potential differs from that due to Slater by a factor of 23.)
+  Electronic systems at finite temperatures and in magnetic fields are also
+  treated by similar methods. An appendix deals with a further correction for
+  systems with short-wavelength density oscillations.%
     }
     \verb{doi}
     \verb 10.1103/PhysRev.140.A1133
     \endverb
     \field{number}{4A}
     \field{pages}{A1133\bibrangedash A1138}
-    \field{title}{Self-{{Consistent Equations Including Exchange}} and {{Correlation Effects}}}
+    \field{title}{Self-{{Consistent Equations Including Exchange}} and
+  {{Correlation Effects}}}
     \field{volume}{140}
     \verb{file}
     \verb /home/starlord/Zotero/storage/X8DCFUD5/Kohn and Sham - 1965 - Self-Co
@@ -1772,7 +2258,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Kohn1999}{article}{}{}
+  \entry{Kohn1999}{article}{}
     \name{author}{1}{}{%
       {{hash=KW}{%
          family={Kohn},
@@ -1791,7 +2277,8 @@
     \field{number}{5}
     \field{pages}{1253\bibrangedash 1266}
     \field{shorttitle}{Nobel {{Lecture}}}
-    \field{title}{Nobel {{Lecture}}: {{Electronic}} Structure of Matter---Wave Functions and Density Functionals}
+    \field{title}{Nobel {{Lecture}}: {{Electronic}} Structure of Matter---Wave
+  Functions and Density Functionals}
     \field{volume}{71}
     \verb{file}
     \verb /home/starlord/Zotero/storage/LEXTBSTG/Kohn - 1999 - Nobel Lecture El
@@ -1802,7 +2289,7 @@
     \field{year}{1999}
   \endentry
 
-  \entry{Ceperley1980}{article}{}{}
+  \entry{Ceperley1980}{article}{}
     \name{author}{2}{}{%
       {{hash=CDM}{%
          family={Ceperley},
@@ -1825,14 +2312,19 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    An exact stochastic simulation of the Schroedinger equation for charged bosons and fermions has been used to calculate the correlation energies, to locate the transitions to their respective crystal phases at zero temperature within 10\%, and to establish the stability at intermediate densities of a ferromagnetic fluid of electrons.%
+    An exact stochastic simulation of the Schroedinger equation for charged
+  bosons and fermions has been used to calculate the correlation energies, to
+  locate the transitions to their respective crystal phases at zero temperature
+  within 10\%, and to establish the stability at intermediate densities of a
+  ferromagnetic fluid of electrons.%
     }
     \verb{doi}
     \verb 10.1103/PhysRevLett.45.566
     \endverb
     \field{number}{7}
     \field{pages}{566\bibrangedash 569}
-    \field{title}{Ground {{State}} of the {{Electron Gas}} by a {{Stochastic Method}}}
+    \field{title}{Ground {{State}} of the {{Electron Gas}} by a {{Stochastic
+  Method}}}
     \field{volume}{45}
     \verb{file}
     \verb /home/starlord/Zotero/storage/3CUMDQY4/Ceperley and Alder - 1980 - Gr
@@ -1846,7 +2338,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Perdew1981}{article}{}{}
+  \entry{Perdew1981}{article}{}
     \name{author}{2}{}{%
       {{hash=PJP}{%
          family={Perdew},
@@ -1869,14 +2361,43 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The exact density functional for the ground-state energy is strictly self-interaction-free (i.e., orbitals demonstrably do not self-interact), but many approximations to it, including the local-spin-density (LSD) approximation for exchange and correlation, are not. We present two related methods for the self-interaction correction (SIC) of any density functional for the energy; correction of the self-consistent one-electron potenial follows naturally from the variational principle. Both methods are sanctioned by the Hohenberg-Kohn theorem. Although the first method introduces an orbital-dependent single-particle potential, the second involves a local potential as in the Kohn-Sham scheme. We apply the first method to LSD and show that it properly conserves the number content of the exchange-correlation hole, while substantially improving the description of its shape. We apply this method to a number of physical problems, where the uncorrected LSD approach produces systematic errors. We find systematic improvements, qualitative as well as quantitative, from this simple correction. Benefits of SIC in atomic calculations include (i) improved values for the total energy and for the separate exchange and correlation pieces of it, (ii) accurate binding energies of negative ions, which are wrongly unstable in LSD, (iii) more accurate electron densities, (iv) orbital eigenvalues that closely approximate physical removal energies, including relaxation, and (v) correct longrange behavior of the potential and density. It appears that SIC can also remedy the LSD underestimate of the band gaps in insulators (as shown by numerical calculations for the rare-gas solids and CuCl), and the LSD overestimate of the cohesive energies of transition metals. The LSD spin splitting in atomic Ni and {$s$} -{$d$} interconfigurational energies of transition elements are almost unchanged by SIC. We also discuss the admissibility of fractional occupation numbers, and present a parametrization of the electron-gas correlation energy at any density, based on the recent results of Ceperley and Alder.%
+    The exact density functional for the ground-state energy is strictly
+  self-interaction-free (i.e., orbitals demonstrably do not self-interact), but
+  many approximations to it, including the local-spin-density (LSD)
+  approximation for exchange and correlation, are not. We present two related
+  methods for the self-interaction correction (SIC) of any density functional
+  for the energy; correction of the self-consistent one-electron potenial
+  follows naturally from the variational principle. Both methods are sanctioned
+  by the Hohenberg-Kohn theorem. Although the first method introduces an
+  orbital-dependent single-particle potential, the second involves a local
+  potential as in the Kohn-Sham scheme. We apply the first method to LSD and
+  show that it properly conserves the number content of the
+  exchange-correlation hole, while substantially improving the description of
+  its shape. We apply this method to a number of physical problems, where the
+  uncorrected LSD approach produces systematic errors. We find systematic
+  improvements, qualitative as well as quantitative, from this simple
+  correction. Benefits of SIC in atomic calculations include (i) improved
+  values for the total energy and for the separate exchange and correlation
+  pieces of it, (ii) accurate binding energies of negative ions, which are
+  wrongly unstable in LSD, (iii) more accurate electron densities, (iv) orbital
+  eigenvalues that closely approximate physical removal energies, including
+  relaxation, and (v) correct longrange behavior of the potential and density.
+  It appears that SIC can also remedy the LSD underestimate of the band gaps in
+  insulators (as shown by numerical calculations for the rare-gas solids and
+  CuCl), and the LSD overestimate of the cohesive energies of transition
+  metals. The LSD spin splitting in atomic Ni and {$s$} -{$d$}
+  interconfigurational energies of transition elements are almost unchanged by
+  SIC. We also discuss the admissibility of fractional occupation numbers, and
+  present a parametrization of the electron-gas correlation energy at any
+  density, based on the recent results of Ceperley and Alder.%
     }
     \verb{doi}
     \verb 10.1103/PhysRevB.23.5048
     \endverb
     \field{number}{10}
     \field{pages}{5048\bibrangedash 5079}
-    \field{title}{Self-Interaction Correction to Density-Functional Approximations for Many-Electron Systems}
+    \field{title}{Self-Interaction Correction to Density-Functional
+  Approximations for Many-Electron Systems}
     \field{volume}{23}
     \verb{file}
     \verb /home/starlord/Zotero/storage/3LRYB96F/Perdew and Zunger - 1981 - Sel
@@ -1891,7 +2412,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Perdew1996}{article}{}{}
+  \entry{Perdew1996}{article}{}
     \name{author}{3}{}{%
       {{hash=PJP}{%
          family={Perdew},
@@ -1920,7 +2441,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Generalized gradient approximations (GGA's) for the exchange-correlation energy improve upon the local spin density (LSD) description of atoms, molecules, and solids. We present a simple derivation of a simple GGA, in which all parameters (other than those in LSD) are fundamental constants. Only general features of the detailed construction underlying the Perdew-Wang 1991 (PW91) GGA are invoked. Improvements over PW91 include an accurate description of the linear response of the uniform electron gas, correct behavior under uniform scaling, and a smoother potential.%
+    Generalized gradient approximations (GGA's) for the exchange-correlation
+  energy improve upon the local spin density (LSD) description of atoms,
+  molecules, and solids. We present a simple derivation of a simple GGA, in
+  which all parameters (other than those in LSD) are fundamental constants.
+  Only general features of the detailed construction underlying the Perdew-Wang
+  1991 (PW91) GGA are invoked. Improvements over PW91 include an accurate
+  description of the linear response of the uniform electron gas, correct
+  behavior under uniform scaling, and a smoother potential.%
     }
     \verb{doi}
     \verb 10.1103/PhysRevLett.77.3865
@@ -1940,7 +2468,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Perdew2008}{article}{}{}
+  \entry{Perdew2008}{article}{}
     \name{author}{8}{}{%
       {{hash=PJP}{%
          family={Perdew},
@@ -1999,14 +2527,20 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Popular modern generalized gradient approximations are biased toward the description of free-atom energies. Restoration of the first-principles gradient expansion for exchange over a wide range of density gradients eliminates this bias. We introduce a revised Perdew-Burke-Ernzerhof generalized gradient approximation that improves equilibrium properties of densely packed solids and their surfaces.%
+    Popular modern generalized gradient approximations are biased toward the
+  description of free-atom energies. Restoration of the first-principles
+  gradient expansion for exchange over a wide range of density gradients
+  eliminates this bias. We introduce a revised Perdew-Burke-Ernzerhof
+  generalized gradient approximation that improves equilibrium properties of
+  densely packed solids and their surfaces.%
     }
     \verb{doi}
     \verb 10.1103/PhysRevLett.100.136406
     \endverb
     \field{number}{13}
     \field{pages}{136406}
-    \field{title}{Restoring the {{Density-Gradient Expansion}} for {{Exchange}} in {{Solids}} and {{Surfaces}}}
+    \field{title}{Restoring the {{Density-Gradient Expansion}} for {{Exchange}}
+  in {{Solids}} and {{Surfaces}}}
     \field{volume}{100}
     \verb{file}
     \verb /home/starlord/Zotero/storage/FQ64MQI8/Perdew et al. - 2008 - Restori
@@ -2021,7 +2555,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Heyd2003}{article}{}{}
+  \entry{Heyd2003}{article}{}
     \name{author}{3}{}{%
       {{hash=HJ}{%
          family={Heyd},
@@ -2050,7 +2584,9 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Hybrid density functionals are very successful in describing a wide range of molecular properties accurately. In large molecules and solids, however, calculatin%
+    Hybrid density functionals are very successful in describing a wide range
+  of molecular properties accurately. In large molecules and solids, however,
+  calculatin%
     }
     \verb{doi}
     \verb 10.1063/1.1564060
@@ -2073,7 +2609,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Moussa2012}{article}{}{}
+  \entry{Moussa2012}{article}{}
     \name{author}{3}{}{%
       {{hash=MJE}{%
          family={Moussa},
@@ -2100,7 +2636,24 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The Heyd-Scuseria-Ernzerhof (HSE) density functionals are popular for their ability to improve the accuracy of standard semilocal functionals such as Perdew-Burke-Ernzerhof (PBE), particularly for semiconductor band gaps. They also have a reduced computational cost compared to hybrid functionals, which results from the restriction of Fock exchange calculations to small inter-electron separations. These functionals are defined by an overall fraction of Fock exchange and a length scale for exchange screening. We systematically examine this two-parameter space to assess the performance of hybrid screened exchange (sX) functionals and to determine a balance between improving accuracy and reducing the screening length, which can further reduce computational costs. Three parameter choices emerge as useful: "sX-PBE" is an approximation to the sX-LDA screened exchange density functionals based on the local density approximation (LDA); "HSE12" minimizes the overall error over all tests performed; and "HSE12s" is a range-minimized functional that matches the overall accuracy of the existing HSE06 parameterization but reduces the Fock exchange length scale by half. Analysis of the error trends over parameter space produces useful guidance for future improvement of density functionals.%
+    The Heyd-Scuseria-Ernzerhof (HSE) density functionals are popular for their
+  ability to improve the accuracy of standard semilocal functionals such as
+  Perdew-Burke-Ernzerhof (PBE), particularly for semiconductor band gaps. They
+  also have a reduced computational cost compared to hybrid functionals, which
+  results from the restriction of Fock exchange calculations to small
+  inter-electron separations. These functionals are defined by an overall
+  fraction of Fock exchange and a length scale for exchange screening. We
+  systematically examine this two-parameter space to assess the performance of
+  hybrid screened exchange (sX) functionals and to determine a balance between
+  improving accuracy and reducing the screening length, which can further
+  reduce computational costs. Three parameter choices emerge as useful:
+  "sX-PBE" is an approximation to the sX-LDA screened exchange density
+  functionals based on the local density approximation (LDA); "HSE12" minimizes
+  the overall error over all tests performed; and "HSE12s" is a range-minimized
+  functional that matches the overall accuracy of the existing HSE06
+  parameterization but reduces the Fock exchange length scale by half. Analysis
+  of the error trends over parameter space produces useful guidance for future
+  improvement of density functionals.%
     }
     \verb{doi}
     \verb 10.1063/1.4722993
@@ -2110,7 +2663,8 @@
     \endverb
     \field{issn}{0021-9606, 1089-7690}
     \field{number}{20}
-    \field{title}{Analysis of the {{Heyd-Scuseria-Ernzerhof}} Density Functional Parameter Space}
+    \field{title}{Analysis of the {{Heyd-Scuseria-Ernzerhof}} Density
+  Functional Parameter Space}
     \field{volume}{136}
     \verb{file}
     \verb /home/starlord/Zotero/storage/VDGAU5ZL/Moussa et al. - 2012 - Analysi
@@ -2127,7 +2681,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Perdew2001}{article}{}{}
+  \entry{Perdew2001}{article}{}
     \name{author}{2}{}{%
       {{hash=PJP}{%
          family={Perdew},
@@ -2150,7 +2704,9 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The ground-state energy and density of a many-electron system are often calculated by Kohn-Sham density functional theory. We describe a ladder of approximation%
+    The ground-state energy and density of a many-electron system are often
+  calculated by Kohn-Sham density functional theory. We describe a ladder of
+  approximation%
     }
     \verb{doi}
     \verb 10.1063/1.1390175
@@ -2158,7 +2714,8 @@
     \field{issn}{0094-243X}
     \field{number}{1}
     \field{pages}{1\bibrangedash 20}
-    \field{title}{Jacob's Ladder of Density Functional Approximations for the Exchange-Correlation Energy}
+    \field{title}{Jacob's Ladder of Density Functional Approximations for the
+  Exchange-Correlation Energy}
     \field{volume}{577}
     \field{langid}{english}
     \verb{file}
@@ -2174,7 +2731,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{marx2009ab}{book}{}{}
+  \entry{marx2009ab}{book}{}
     \name{author}{2}{}{%
       {{hash=MD}{%
          family={Marx},
@@ -2197,14 +2754,15 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{isbn}{978-1-139-47719-2}
-    \field{title}{Ab Initio Molecular Dynamics: {{Basic}} Theory and Advanced Methods}
+    \field{title}{Ab Initio Molecular Dynamics: {{Basic}} Theory and Advanced
+  Methods}
     \verb{url}
     \verb https://books.google.com.ec/books?id=VRZUw8Wk4CIC
     \endverb
     \field{year}{2009}
   \endentry
 
-  \entry{Kuhne2014}{article}{}{}
+  \entry{Kuhne2014}{article}{}
     \name{author}{1}{}{%
       {{hash=KTD}{%
          family={K{\"u}hne},
@@ -2213,13 +2771,31 @@
          giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
     }
-    \keyw{Condensed Matter - Materials Science,Condensed Matter - Soft Condensed Matter,Condensed Matter - Statistical Mechanics,Physics - Chemical Physics,Physics - Computational Physics}
+    \keyw{Condensed Matter - Materials Science,Condensed Matter - Soft
+  Condensed Matter,Condensed Matter - Statistical Mechanics,Physics - Chemical
+  Physics,Physics - Computational Physics}
     \strng{namehash}{KTD1}
     \strng{fullhash}{KTD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Computer simulation methods, such as Monte Carlo or Molecular Dynamics, are very powerful computational techniques that provide detailed and essentially exact information on classical many-body problems. With the advent of ab-initio molecular dynamics, where the forces are computed on-the-fly by accurate electronic structure calculations, the scope of either method has been greatly extended. This new approach, which unifies Newton's and Schr{\textbackslash}"odinger's equations, allows for complex simulations without relying on any adjustable parameter. This review is intended to outline the basic principles as well as a survey of the field. Beginning with the derivation of Born-Oppenheimer molecular dynamics, the Car-Parrinello method and the recently devised efficient and accurate Car-Parrinello-like approach to Born-Oppenheimer molecular dynamics, which unifies best of both schemes are discussed. The predictive power of this novel second-generation Car-Parrinello approach is demonstrated by a series of applications ranging from liquid metals, to semiconductors and water. This development allows for ab-initio molecular dynamics simulations on much larger length and time scales than previously thought feasible.%
+    Computer simulation methods, such as Monte Carlo or Molecular Dynamics, are
+  very powerful computational techniques that provide detailed and essentially
+  exact information on classical many-body problems. With the advent of
+  ab-initio molecular dynamics, where the forces are computed on-the-fly by
+  accurate electronic structure calculations, the scope of either method has
+  been greatly extended. This new approach, which unifies Newton's and
+  Schr{\textbackslash}"odinger's equations, allows for complex simulations
+  without relying on any adjustable parameter. This review is intended to
+  outline the basic principles as well as a survey of the field. Beginning with
+  the derivation of Born-Oppenheimer molecular dynamics, the Car-Parrinello
+  method and the recently devised efficient and accurate Car-Parrinello-like
+  approach to Born-Oppenheimer molecular dynamics, which unifies best of both
+  schemes are discussed. The predictive power of this novel second-generation
+  Car-Parrinello approach is demonstrated by a series of applications ranging
+  from liquid metals, to semiconductors and water. This development allows for
+  ab-initio molecular dynamics simulations on much larger length and time
+  scales than previously thought feasible.%
     }
     \verb{doi}
     \verb 10.1002/wcms.1176
@@ -2246,7 +2822,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Feynman1939}{article}{}{}
+  \entry{Feynman1939}{article}{}
     \name{author}{1}{}{%
       {{hash=FRP}{%
          family={Feynman},
@@ -2274,7 +2850,7 @@
     \field{year}{1939}
   \endentry
 
-  \entry{Politzer2018}{article}{}{}
+  \entry{Politzer2018}{article}{}
     \name{author}{2}{}{%
       {{hash=PP}{%
          family={Politzer},
@@ -2289,13 +2865,29 @@
          giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
     }
-    \keyw{Atoms and molecules in external fields,Chemical bonding,Classical Electrodynamics,Coulombic forces,Density Functional Theory,Dispersion forces,Electronic densities,Electrostatic potentials at nuclei,Energies,Fundamental concepts and interpretations of QM,Hellmann-Feynman theorem,Theoretical Chemistry,Valence-Bond Theory}
+    \keyw{Atoms and molecules in external fields,Chemical bonding,Classical
+  Electrodynamics,Coulombic forces,Density Functional Theory,Dispersion
+  forces,Electronic densities,Electrostatic potentials at
+  nuclei,Energies,Fundamental concepts and interpretations of
+  QM,Hellmann-Feynman theorem,Theoretical Chemistry,Valence-Bond Theory}
     \strng{namehash}{PPMJS1}
     \strng{fullhash}{PPMJS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{abstract}{%
-    The Hellmann-Feynman theorem has, with a few exceptions, not been exploited to the degree that it merits. This is due, at least in part, to a widespread failure to recognize that its greatest value may be conceptual rather than numerical, i.e., in achieving insight into molecular properties and behavior. In this brief overview, we shall discuss three examples of significant concepts that have come out of the Hellmann-Feynman theorem: (1) The forces exerted upon the nuclei in molecules are entirely Coulombic in nature. (2) The total energies of atoms and molecules can be expressed rigorously in terms of just the electrostatic potentials at their nuclei that are produced by the electrons and other nuclei. (3) Dispersion forces are due to the attractions of nuclei to their own polarized electronic densities. To summarize, energy and force analyses should not be viewed as competitive but rather as complementary.%
+    The Hellmann-Feynman theorem has, with a few exceptions, not been exploited
+  to the degree that it merits. This is due, at least in part, to a widespread
+  failure to recognize that its greatest value may be conceptual rather than
+  numerical, i.e., in achieving insight into molecular properties and behavior.
+  In this brief overview, we shall discuss three examples of significant
+  concepts that have come out of the Hellmann-Feynman theorem: (1) The forces
+  exerted upon the nuclei in molecules are entirely Coulombic in nature. (2)
+  The total energies of atoms and molecules can be expressed rigorously in
+  terms of just the electrostatic potentials at their nuclei that are produced
+  by the electrons and other nuclei. (3) Dispersion forces are due to the
+  attractions of nuclei to their own polarized electronic densities. To
+  summarize, energy and force analyses should not be viewed as competitive but
+  rather as complementary.%
     }
     \verb{doi}
     \verb 10.1007/s00894-018-3784-7
@@ -2318,7 +2910,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{tuckerman2023statistical}{book}{}{}
+  \entry{tuckerman2023statistical}{book}{}
     \name{author}{1}{}{%
       {{hash=TM}{%
          family={Tuckerman},
@@ -2343,7 +2935,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{frenkel2023understanding}{book}{}{}
+  \entry{frenkel2023understanding}{book}{}
     \name{author}{2}{}{%
       {{hash=FD}{%
          family={Frenkel},
@@ -2366,14 +2958,15 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{isbn}{978-0-323-91318-8}
-    \field{title}{Understanding Molecular Simulation: {{From}} Algorithms to Applications}
+    \field{title}{Understanding Molecular Simulation: {{From}} Algorithms to
+  Applications}
     \verb{url}
     \verb https://books.google.com.ec/books?id=jyipEAAAQBAJ
     \endverb
     \field{year}{2023}
   \endentry
 
-  \entry{https://doi.org/10.1002/jcc.21057}{article}{}{}
+  \entry{https://doi.org/10.1002/jcc.21057}{article}{}
     \name{author}{1}{}{%
       {{hash=HJ}{%
          family={Hafner},
@@ -2382,13 +2975,45 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{catalysis,density-functional theory,hybrid functionals,many-body perturbation theory,materials science,plane-wave basis,projector-augmented-waves,pseudopotentials,solid state chemistry,solid state physics,surface science}
+    \keyw{catalysis,density-functional theory,hybrid functionals,many-body
+  perturbation theory,materials science,plane-wave
+  basis,projector-augmented-waves,pseudopotentials,solid state chemistry,solid
+  state physics,surface science}
     \strng{namehash}{HJ1}
     \strng{fullhash}{HJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Abstract During the past decade, computer simulations based on a quantum-mechanical description of the interactions between electrons and between electrons and atomic nuclei have developed an increasingly important impact on solid-state physics and chemistry and on materials science---promoting not only a deeper understanding, but also the possibility to contribute significantly to materials design for future technologies. This development is based on two important columns: (i) The improved description of electronic many-body effects within density-functional theory (DFT) and the upcoming post-DFT methods. (ii) The implementation of the new functionals and many-body techniques within highly efficient, stable, and versatile computer codes, which allow to exploit the potential of modern computer architectures. In this review, I discuss the implementation of various DFT functionals [local-density approximation (LDA), generalized gradient approximation (GGA), meta-GGA, hybrid functional mixing DFT, and exact (Hartree-Fock) exchange] and post-DFT approaches [DFT + U for strong electronic correlations in narrow bands, many-body perturbation theory (GW) for quasiparticle spectra, dynamical correlation effects via the adiabatic-connection fluctuation-dissipation theorem (AC-FDT)] in the Vienna ab initio simulation package VASP. VASP is a plane-wave all-electron code using the projector-augmented wave method to describe the electron-core interaction. The code uses fast iterative techniques for the diagonalization of the DFT Hamiltonian and allows to perform total-energy calculations and structural optimizations for systems with thousands of atoms and ab initio molecular dynamics simulations for ensembles with a few hundred atoms extending over several tens of ps. Applications in many different areas (structure and phase stability, mechanical and dynamical properties, liquids, glasses and quasicrystals, magnetism and magnetic nanostructures, semiconductors and insulators, surfaces, interfaces and thin films, chemical reactions, and catalysis) are reviewed. {\copyright} 2008 Wiley Periodicals, Inc. J Comput Chem, 2008%
+    Abstract During the past decade, computer simulations based on a
+  quantum-mechanical description of the interactions between electrons and
+  between electrons and atomic nuclei have developed an increasingly important
+  impact on solid-state physics and chemistry and on materials
+  science---promoting not only a deeper understanding, but also the possibility
+  to contribute significantly to materials design for future technologies. This
+  development is based on two important columns: (i) The improved description
+  of electronic many-body effects within density-functional theory (DFT) and
+  the upcoming post-DFT methods. (ii) The implementation of the new functionals
+  and many-body techniques within highly efficient, stable, and versatile
+  computer codes, which allow to exploit the potential of modern computer
+  architectures. In this review, I discuss the implementation of various DFT
+  functionals [local-density approximation (LDA), generalized gradient
+  approximation (GGA), meta-GGA, hybrid functional mixing DFT, and exact
+  (Hartree-Fock) exchange] and post-DFT approaches [DFT + U for strong
+  electronic correlations in narrow bands, many-body perturbation theory (GW)
+  for quasiparticle spectra, dynamical correlation effects via the
+  adiabatic-connection fluctuation-dissipation theorem (AC-FDT)] in the Vienna
+  ab initio simulation package VASP. VASP is a plane-wave all-electron code
+  using the projector-augmented wave method to describe the electron-core
+  interaction. The code uses fast iterative techniques for the diagonalization
+  of the DFT Hamiltonian and allows to perform total-energy calculations and
+  structural optimizations for systems with thousands of atoms and ab initio
+  molecular dynamics simulations for ensembles with a few hundred atoms
+  extending over several tens of ps. Applications in many different areas
+  (structure and phase stability, mechanical and dynamical properties, liquids,
+  glasses and quasicrystals, magnetism and magnetic nanostructures,
+  semiconductors and insulators, surfaces, interfaces and thin films, chemical
+  reactions, and catalysis) are reviewed. {\copyright} 2008 Wiley Periodicals,
+  Inc. J Comput Chem, 2008%
     }
     \verb{doi}
     \verb 10.1002/jcc.21057
@@ -2398,13 +3023,14 @@
     \endverb
     \field{number}{13}
     \field{pages}{2044\bibrangedash 2078}
-    \field{title}{Ab-Initio Simulations of Materials Using {{VASP}}: {{Density-functional}} Theory and Beyond}
+    \field{title}{Ab-Initio Simulations of Materials Using {{VASP}}:
+  {{Density-functional}} Theory and Beyond}
     \field{volume}{29}
     \field{journaltitle}{Journal of Computational Chemistry}
     \field{year}{2008}
   \endentry
 
-  \entry{Hellmann1935}{article}{}{}
+  \entry{Hellmann1935}{article}{}
     \name{author}{1}{}{%
       {{hash=HH}{%
          family={Hellmann},
@@ -2423,7 +3049,8 @@
     \field{issn}{0021-9606}
     \field{number}{1}
     \field{pages}{61}
-    \field{title}{A {{New Approximation Method}} in the {{Problem}} of {{Many Electrons}}}
+    \field{title}{A {{New Approximation Method}} in the {{Problem}} of {{Many
+  Electrons}}}
     \field{volume}{3}
     \verb{file}
     \verb /home/starlord/Zotero/storage/RW8F8V8T/1.html
@@ -2436,7 +3063,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Monkhorst1976}{article}{}{}
+  \entry{Monkhorst1976}{article}{}
     \name{author}{2}{}{%
       {{hash=MHJ}{%
          family={Monkhorst},
@@ -2459,7 +3086,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A method is given for generating sets of special points in the Brillouin zone which provides an efficient means of integrating periodic functions of the wave vector. The integration can be over the entire Brillouin zone or over specified portions thereof. This method also has applications in spectral and density-of-state calculations. The relationships to the Chadi-Cohen and Gilat-Raubenheimer methods are indicated.%
+    A method is given for generating sets of special points in the Brillouin
+  zone which provides an efficient means of integrating periodic functions of
+  the wave vector. The integration can be over the entire Brillouin zone or
+  over specified portions thereof. This method also has applications in
+  spectral and density-of-state calculations. The relationships to the
+  Chadi-Cohen and Gilat-Raubenheimer methods are indicated.%
     }
     \verb{doi}
     \verb 10.1103/PhysRevB.13.5188
@@ -2479,7 +3111,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Blochl1994}{article}{}{}
+  \entry{Blochl1994}{article}{}
     \name{author}{1}{}{%
       {{hash=BPE}{%
          family={Bl{\"o}chl},
@@ -2496,7 +3128,18 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    An approach for electronic structure calculations is described that generalizes both the pseudopotential method and the linear augmented-plane-wave (LAPW) method in a natural way. The method allows high-quality first-principles molecular-dynamics calculations to be performed using the original fictitious Lagrangian approach of Car and Parrinello. Like the LAPW method it can be used to treat first-row and transition-metal elements with affordable effort and provides access to the full wave function. The augmentation procedure is generalized in that partial-wave expansions are not determined by the value and the derivative of the envelope function at some muffin-tin radius, but rather by the overlap with localized projector functions. The pseudopotential approach based on generalized separable pseudopotentials can be regained by a simple approximation.%
+    An approach for electronic structure calculations is described that
+  generalizes both the pseudopotential method and the linear
+  augmented-plane-wave (LAPW) method in a natural way. The method allows
+  high-quality first-principles molecular-dynamics calculations to be performed
+  using the original fictitious Lagrangian approach of Car and Parrinello. Like
+  the LAPW method it can be used to treat first-row and transition-metal
+  elements with affordable effort and provides access to the full wave
+  function. The augmentation procedure is generalized in that partial-wave
+  expansions are not determined by the value and the derivative of the envelope
+  function at some muffin-tin radius, but rather by the overlap with localized
+  projector functions. The pseudopotential approach based on generalized
+  separable pseudopotentials can be regained by a simple approximation.%
     }
     \verb{doi}
     \verb 10.1103/PhysRevB.50.17953
@@ -2516,7 +3159,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Kresse1999}{article}{}{}
+  \entry{Kresse1999}{article}{}
     \name{author}{2}{}{%
       {{hash=KG}{%
          family={Kresse},
@@ -2539,14 +3182,27 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The formal relationship between ultrasoft (US) Vanderbilt-type pseudopotentials and Bl{\"o}chl's projector augmented wave (PAW) method is derived. It is shown that the total energy functional for US pseudopotentials can be obtained by linearization of two terms in a slightly modified PAW total energy functional. The Hamilton operator, the forces, and the stress tensor are derived for this modified PAW functional. A simple way to implement the PAW method in existing plane-wave codes supporting US pseudopotentials is pointed out. In addition, critical tests are presented to compare the accuracy and efficiency of the PAW and the US pseudopotential method with relaxed core all electron methods. These tests include small molecules (H2⁡,H2⁢O,Li2⁢,N2⁢,F2⁢,BF3⁢,SiF4) and several bulk systems (diamond, Si, V, Li, Ca, CaF2, Fe, Co, Ni). Particular attention is paid to the bulk properties and magnetic energies of Fe, Co, and Ni.%
+    The formal relationship between ultrasoft (US) Vanderbilt-type
+  pseudopotentials and Bl{\"o}chl's projector augmented wave (PAW) method is
+  derived. It is shown that the total energy functional for US pseudopotentials
+  can be obtained by linearization of two terms in a slightly modified PAW
+  total energy functional. The Hamilton operator, the forces, and the stress
+  tensor are derived for this modified PAW functional. A simple way to
+  implement the PAW method in existing plane-wave codes supporting US
+  pseudopotentials is pointed out. In addition, critical tests are presented to
+  compare the accuracy and efficiency of the PAW and the US pseudopotential
+  method with relaxed core all electron methods. These tests include small
+  molecules (H2⁡,H2⁢O,Li2⁢,N2⁢,F2⁢,BF3⁢,SiF4) and several bulk
+  systems (diamond, Si, V, Li, Ca, CaF2, Fe, Co, Ni). Particular attention is
+  paid to the bulk properties and magnetic energies of Fe, Co, and Ni.%
     }
     \verb{doi}
     \verb 10.1103/PhysRevB.59.1758
     \endverb
     \field{number}{3}
     \field{pages}{1758\bibrangedash 1775}
-    \field{title}{From Ultrasoft Pseudopotentials to the Projector Augmented-Wave Method}
+    \field{title}{From Ultrasoft Pseudopotentials to the Projector
+  Augmented-Wave Method}
     \field{volume}{59}
     \verb{file}
     \verb /home/starlord/Downloads/10.1103@physrevb.59.1758.pdf
@@ -2559,7 +3215,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Birch1947}{article}{}{}
+  \entry{Birch1947}{article}{}
     \name{author}{1}{}{%
       {{hash=BF}{%
          family={Birch},
@@ -2576,7 +3232,16 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Murnaghan's theory of finite strain is developed for a medium of cubic symmetry subjected to finite hydrostatic compression, plus an arbitrary homogeneous infinitesimal strain. The free energy is developed for cubic symmetry to include terms of the third order in the strain components. The effect of pressure upon the second-order elastic constants is found and compared with experiment, with particular reference to the compressibility; the pressure-volume relation in several approximations is compared with the measurements to 100,000 kg/cm2. The simplest approximation is shown to give a satisfactory account of most of the experimental data. The results are also compared with some of the calculations based on Born's lattice theory.%
+    Murnaghan's theory of finite strain is developed for a medium of cubic
+  symmetry subjected to finite hydrostatic compression, plus an arbitrary
+  homogeneous infinitesimal strain. The free energy is developed for cubic
+  symmetry to include terms of the third order in the strain components. The
+  effect of pressure upon the second-order elastic constants is found and
+  compared with experiment, with particular reference to the compressibility;
+  the pressure-volume relation in several approximations is compared with the
+  measurements to 100,000 kg/cm2. The simplest approximation is shown to give a
+  satisfactory account of most of the experimental data. The results are also
+  compared with some of the calculations based on Born's lattice theory.%
     }
     \verb{doi}
     \verb 10.1103/PhysRev.71.809
@@ -2596,7 +3261,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{poirier2000introduction}{book}{}{}
+  \entry{poirier2000introduction}{book}{}
     \name{author}{1}{}{%
       {{hash=PJ}{%
          family={Poirier},
@@ -2621,7 +3286,7 @@
     \field{year}{2000}
   \endentry
 
-  \entry{Jinnouchi2019}{article}{}{}
+  \entry{Jinnouchi2019}{article}{}
     \name{author}{3}{}{%
       {{hash=JR}{%
          family={Jinnouchi},
@@ -2650,7 +3315,22 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{abstract}{%
-    An efficient and robust on-the-fly machine learning force field method is developed and integrated into an electronic-structure code. This method realizes automatic generation of machine learning force fields on the basis of Bayesian inference during molecular dynamics simulations, where the first-principles calculations are only executed, when new configurations out of already sampled datasets appear. The developed method is applied to the calculation of melting points of Al, Si, Ge, Sn and MgO. The applications indicate that more than 99\% of the first-principles calculations are bypassed during the force field generation. This allows the machine to quickly construct first-principles datasets over wide phase spaces. Furthermore, with the help of the generated machine learning force fields, simulations are accelerated by a factor of thousand compared with first-principles calculations. Accuracies of the melting points calculated by the force fields are examined by thermodynamic perturbation theory, and the examination indicates that the machine learning force fields can quantitatively reproduce the first-principles melting points.%
+    An efficient and robust on-the-fly machine learning force field method is
+  developed and integrated into an electronic-structure code. This method
+  realizes automatic generation of machine learning force fields on the basis
+  of Bayesian inference during molecular dynamics simulations, where the
+  first-principles calculations are only executed, when new configurations out
+  of already sampled datasets appear. The developed method is applied to the
+  calculation of melting points of Al, Si, Ge, Sn and MgO. The applications
+  indicate that more than 99\% of the first-principles calculations are
+  bypassed during the force field generation. This allows the machine to
+  quickly construct first-principles datasets over wide phase spaces.
+  Furthermore, with the help of the generated machine learning force fields,
+  simulations are accelerated by a factor of thousand compared with
+  first-principles calculations. Accuracies of the melting points calculated by
+  the force fields are examined by thermodynamic perturbation theory, and the
+  examination indicates that the machine learning force fields can
+  quantitatively reproduce the first-principles melting points.%
     }
     \verb{doi}
     \verb 10.1103/PhysRevB.100.014105
@@ -2658,7 +3338,8 @@
     \field{number}{1}
     \field{pages}{014105}
     \field{shorttitle}{On-the-Fly Machine Learning Force Field Generation}
-    \field{title}{On-the-Fly Machine Learning Force Field Generation: {{Application}} to Melting Points}
+    \field{title}{On-the-Fly Machine Learning Force Field Generation:
+  {{Application}} to Melting Points}
     \field{volume}{100}
     \verb{file}
     \verb /home/starlord/Zotero/storage/RMI3YEFA/Jinnouchi et al. - 2019 - On-t
@@ -2673,7 +3354,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Jinnouchi2020}{article}{}{}
+  \entry{Jinnouchi2020}{article}{}
     \name{author}{5}{}{%
       {{hash=JR}{%
          family={Jinnouchi},
@@ -2714,14 +3395,18 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    When determining machine-learning models for inter-atomic potentials, the potential energy surface is often described as a non-linear function of descriptors re%
+    When determining machine-learning models for inter-atomic potentials, the
+  potential energy surface is often described as a non-linear function of
+  descriptors re%
     }
     \verb{doi}
     \verb 10.1063/5.0009491
     \endverb
     \field{issn}{0021-9606}
     \field{number}{23}
-    \field{title}{Descriptors Representing Two- and Three-Body Atomic Distributions and Their Effects on the Accuracy of Machine-Learned Inter-Atomic Potentials}
+    \field{title}{Descriptors Representing Two- and Three-Body Atomic
+  Distributions and Their Effects on the Accuracy of Machine-Learned
+  Inter-Atomic Potentials}
     \field{volume}{152}
     \field{langid}{english}
     \verb{file}
@@ -2735,7 +3420,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Hourahine2020}{article}{}{}
+  \entry{Hourahine2020}{article}{}
     \name{author}{39}{}{%
       {{hash=HB}{%
          family={Hourahine},
@@ -2897,7 +3582,8 @@
          family={Niklasson},
          familyi={N\bibinitperiod},
          given={A.\bibnamedelima M.\bibnamedelima N.},
-         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim N\bibinitperiod},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
       }}%
       {{hash=PAJ}{%
          family={Page},
@@ -2976,18 +3662,21 @@
       {AIP Publishing}%
     }
     \strng{namehash}{HB+1}
-    \strng{fullhash}{HBABBVBFBACCCCDMYDTDAESEMvTHJISKJJKCKTKTLISLVMRJMSKMINCNTANAMNPAJPAPGPMPRJSCGSMSMSFTAYVWzFT1}
+  \strng{fullhash}{HBABBVBFBACCCCDMYDTDAESEMvTHJISKJJKCKTKTLISLVMRJMSKMINCNTANAMNPAJPAPGPMPRJSCGSMSMSFTAYVWzFT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    DFTB+ is a versatile community developed open source software package offering fast and efficient methods for carrying out atomistic quantum mechanical simulati%
+    DFTB+ is a versatile community developed open source software package
+  offering fast and efficient methods for carrying out atomistic quantum
+  mechanical simulati%
     }
     \verb{doi}
     \verb 10.1063/1.5143190
     \endverb
     \field{issn}{0021-9606}
     \field{number}{12}
-    \field{title}{{{DFTB}}+, a Software Package for Efficient Approximate Density Functional Theory Based Atomistic Simulations}
+    \field{title}{{{DFTB}}+, a Software Package for Efficient Approximate
+  Density Functional Theory Based Atomistic Simulations}
     \field{volume}{152}
     \field{langid}{english}
     \verb{file}
@@ -3003,7 +3692,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{zotero-item-672}{misc}{}{}
+  \entry{zotero-item-672}{misc}{}
     \field{labeltitlesource}{title}
     \field{title}{The {{VASP Manual}}}
     \verb{url}
@@ -3014,7 +3703,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{zotero-item-698}{misc}{}{}
+  \entry{zotero-item-698}{misc}{}
     \field{labeltitlesource}{title}
     \field{title}{Available Pseudopotentials - {{VASP Wiki}}}
     \verb{url}
@@ -3025,7 +3714,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Kresse1996}{article}{}{}
+  \entry{Kresse1996}{article}{}
     \name{author}{1}{}{%
       {{hash=KG}{%
          family={Kresse},
@@ -3043,7 +3732,8 @@
     \endverb
     \field{number}{16}
     \field{pages}{11169\bibrangedash 11186}
-    \field{title}{Efficient Iterative Schemes for {\emph{Ab Initio}} Total-Energy Calculations Using a Plane-Wave Basis Set}
+    \field{title}{Efficient Iterative Schemes for {\emph{Ab Initio}}
+  Total-Energy Calculations Using a Plane-Wave Basis Set}
     \field{volume}{54}
     \verb{file}
     \verb /home/starlord/Zotero/storage/WQPIJNV3/PhysRevB.54.html
@@ -3052,7 +3742,63 @@
     \field{year}{1996}
   \endentry
 
-  \entry{Dharmawardhana2018}{article}{}{}
+  \entry{Schimka2011}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SL}{%
+         family={Schimka},
+         familyi={S\bibinitperiod},
+         given={Laurids},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Harl},
+         familyi={H\bibinitperiod},
+         given={Judith},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kresse},
+         familyi={K\bibinitperiod},
+         given={Georg},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SLHJKG1}
+    \strng{fullhash}{SLHJKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    We introduce the hybrid functional HSEsol. It is based on PBEsol, a revised
+  Perdew-Burke-Ernzerhof functional, designed to yield accurate equilibrium
+  properties for solids and their surfaces. We present lattice constants, bulk
+  moduli, atomization energies, heats of formation, and band gaps for extended
+  systems, as well as atomization energies for the molecular G2-1 test set.
+  Compared to HSE, significant improvements are found for lattice constants and
+  atomization energies of solids, but atomization energies of molecules are
+  slightly worse than for HSE. Additionally, we present zero-point anharmonic
+  expansion corrections to the lattice constants and bulk moduli, evaluated
+  from ab initio phonon calculations.%
+    }
+    \verb{doi}
+    \verb 10.1063/1.3524336
+    \endverb
+    \field{issn}{1089-7690}
+    \field{number}{2}
+    \field{pages}{024116}
+    \field{shorttitle}{Improved Hybrid Functional for Solids}
+    \field{title}{Improved Hybrid Functional for Solids: The {{HSEsol}}
+  Functional}
+    \field{volume}{134}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/starlord/Downloads/schimka2011.pdf
+    \endverb
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{month}{01}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Dharmawardhana2018}{article}{}
     \name{author}{3}{}{%
       {{hash=DCC}{%
          family={Dharmawardhana},
@@ -3073,20 +3819,40 @@
          giveni={W\bibinithyphendelim Y\bibinitperiod},
       }}%
     }
-    \keyw{C-(A)-S-H(I) models,calculations,Electronic and bonding,Mechanical properties,Total bond order density}
+    \keyw{C-(A)-S-H(I) models,calculations,Electronic and bonding,Mechanical
+  properties,Total bond order density}
     \strng{namehash}{DCCMACWY1}
     \strng{fullhash}{DCCMACWY1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The atomic-level understanding of the correlation of chemical, electronic and bonding behavior to mechanical properties of complex multi-component calcium (alumino)silicate hydrates [C-(A)-S-H] (The Cement Chemist Notation heavily used in this manuscript refers to C=CaO; A=Al2O3; S=SiO2; H=H2O or --OH), which is among the main binding phases of concrete could provide a point of departure for the study of cement behavior. In this paper, models of highly ordered C-(A)-S-H(I) are proposed and investigated. These models have been optimized and constructed in close relation and guidance of relevant experiments. The focus of the work is on illuminating the effect of Al substitution on chemical and mechanical properties of highly ordered synthetic cement phases. Furthermore, we show the importance of hydrogen bonds to mechanical properties in cements. We show, for the first time, that in the absence of vacancies in Dreierketten chains, the Al substitution in bridging sites reduces the mechanical anisotropy of C-(A)-S-H(I) cement. The study also shows the average partial charge of O, H, Si of different structural units are effectively independent of the chemical environment. This finding could have profound implications upon relevant classical molecular dynamics force fields for cements and could lead to further improvements in the modeling capabilities.%
+    The atomic-level understanding of the correlation of chemical, electronic
+  and bonding behavior to mechanical properties of complex multi-component
+  calcium (alumino)silicate hydrates [C-(A)-S-H] (The Cement Chemist Notation
+  heavily used in this manuscript refers to C=CaO; A=Al2O3; S=SiO2; H=H2O or
+  --OH), which is among the main binding phases of concrete could provide a
+  point of departure for the study of cement behavior. In this paper, models of
+  highly ordered C-(A)-S-H(I) are proposed and investigated. These models have
+  been optimized and constructed in close relation and guidance of relevant
+  experiments. The focus of the work is on illuminating the effect of Al
+  substitution on chemical and mechanical properties of highly ordered
+  synthetic cement phases. Furthermore, we show the importance of hydrogen
+  bonds to mechanical properties in cements. We show, for the first time, that
+  in the absence of vacancies in Dreierketten chains, the Al substitution in
+  bridging sites reduces the mechanical anisotropy of C-(A)-S-H(I) cement. The
+  study also shows the average partial charge of O, H, Si of different
+  structural units are effectively independent of the chemical environment.
+  This finding could have profound implications upon relevant classical
+  molecular dynamics force fields for cements and could lead to further
+  improvements in the modeling capabilities.%
     }
     \verb{doi}
     \verb 10.1016/j.conbuildmat.2018.07.004
     \endverb
     \field{issn}{0950-0618}
     \field{pages}{536\bibrangedash 548}
-    \field{title}{Theoretical Investigation of {{C-}}({{A}})-{{S-H}}({{I}}) Cement Hydrates}
+    \field{title}{Theoretical Investigation of {{C-}}({{A}})-{{S-H}}({{I}})
+  Cement Hydrates}
     \field{volume}{184}
     \verb{file}
     \verb /home/starlord/Zotero/storage/9FFHV4Z7/Dharmawardhana et al. - 2018 -
@@ -3100,7 +3866,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{zotero-item-773}{misc}{}{}
+  \entry{zotero-item-773}{misc}{}
     \field{labeltitlesource}{title}
     \field{title}{Category:{{Machine-learned}} Force Fields - {{VASP Wiki}}}
     \verb{url}
@@ -3112,7 +3878,89 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{Xu2007}{article}{}{}
+  \entry{gilman2003electronic}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GJ}{%
+         family={Gilman},
+         familyi={G\bibinitperiod},
+         given={J.J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{GJ1}
+    \strng{fullhash}{GJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-1-139-43518-5}
+    \field{title}{Electronic Basis of the Strength of Materials}
+    \field{year}{2003}
+  \endentry
+
+  \entry{Oh2011}{article}{}
+    \name{author}{3}{}{%
+      {{hash=OJE}{%
+         family={Oh},
+         familyi={O\bibinitperiod},
+         given={Jae\bibnamedelima Eun},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=CSM}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Simon\bibnamedelima M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MPJM}{%
+         family={Monteiro},
+         familyi={M\bibinitperiod},
+         given={Paulo J.\bibnamedelima M.},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \keyw{Alkali-activated cement,Calcium silicate hydrate (C-S-H),Elastic
+  moduli,Mechanical properties,X-ray diffraction}
+    \strng{namehash}{OJECSMMPJM1}
+    \strng{fullhash}{OJECSMMPJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This study examines the influence of Al substitution for Si on the bulk
+  modulus of calcium silicate hydrate I [C--S--H(I)], a structural analogue of
+  C--S--H, by performing high-pressure synchrotron X-ray diffraction
+  experiments in two C--S--H(I) samples: one a hydration product of
+  alkali-activated slag and the other a synthetic C--S--H(I). The test result
+  shows that not only the bulk modulus but also the incompressibility of the
+  lattice parameters a, b, and c of two C--S--H(I) samples are very similar to
+  each other, regardless of the Al substitution. This result may be due to the
+  four-coordinated configuration of the substituted Al, which makes the
+  dreierketten silicate chains maintain the same arrangement after the
+  substitution.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.cemconres.2010.09.010
+    \endverb
+    \field{issn}{0008-8846}
+    \field{number}{1}
+    \field{pages}{102\bibrangedash 106}
+    \field{title}{Does the {{Al}} Substitution in {{C}}--{{S}}--{{H}}({{I}})
+  Change Its Mechanical Property?}
+    \field{volume}{41}
+    \verb{file}
+    \verb /home/starlord/Zotero/storage/W9EDN9FP/S0008884610002140.html
+    \endverb
+    \field{journaltitle}{Cement and Concrete Research}
+    \field{month}{01}
+    \field{year}{2011}
+    \field{urlday}{06}
+    \field{urlmonth}{10}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{Xu2007}{article}{}
     \name{author}{5}{}{%
       {{hash=XH}{%
          family={Xu},
@@ -3145,13 +3993,28 @@
          giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
     }
-    \keyw{Crystal chemistry,Hydrogen bonding,Neutron diffraction,Portlandite,Thermal expansion}
+    \keyw{Crystal chemistry,Hydrogen bonding,Neutron
+  diffraction,Portlandite,Thermal expansion}
     \strng{namehash}{XH+1}
     \strng{fullhash}{XHZYVSCDLLHDD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{abstract}{%
-    The structure of deuterated portlandite, Ca(OD)2, was investigated using time-of-flight neutron diffraction in the temperature range 308--643K. Rietveld analysis reveals that with increasing temperature, the c dimension expands at a rate {$\sim$}4.5 times larger than that for a. This anisotropy of thermal expansion is due to rapid increase in the interlayer thickness along c with increasing temperature. Fitting of the measured cell volumes yields a coefficient of thermal expansion, {$\alpha$}={$\alpha$}0+{$\alpha$}1T, where {$\alpha$}0=5.966{\texttimes}10-5K-1 and {$\alpha$}1=3.333{\texttimes}10-8K-2. On heating, hydrogen-mediated interatomic interactions within the interlayer become weakened, as reflected by increases in the interlayer D{$\cdots$}O and D{$\cdots$}D distances with increasing temperature. Correspondingly, the three equivalent sites over which D is disordered become further apart, suggesting a more delocalized configuration of D at high temperatures.%
+    The structure of deuterated portlandite, Ca(OD)2, was investigated using
+  time-of-flight neutron diffraction in the temperature range 308--643K.
+  Rietveld analysis reveals that with increasing temperature, the c dimension
+  expands at a rate {$\sim$}4.5 times larger than that for a. This anisotropy
+  of thermal expansion is due to rapid increase in the interlayer thickness
+  along c with increasing temperature. Fitting of the measured cell volumes
+  yields a coefficient of thermal expansion,
+  {$\alpha$}={$\alpha$}0+{$\alpha$}1T, where
+  {$\alpha$}0=5.966{\texttimes}10-5K-1 and
+  {$\alpha$}1=3.333{\texttimes}10-8K-2. On heating, hydrogen-mediated
+  interatomic interactions within the interlayer become weakened, as reflected
+  by increases in the interlayer D{$\cdots$}O and D{$\cdots$}D distances with
+  increasing temperature. Correspondingly, the three equivalent sites over
+  which D is disordered become further apart, suggesting a more delocalized
+  configuration of D at high temperatures.%
     }
     \verb{doi}
     \verb 10.1016/j.jssc.2007.03.004
@@ -3159,8 +4022,10 @@
     \field{issn}{0022-4596}
     \field{number}{4}
     \field{pages}{1519\bibrangedash 1525}
-    \field{shorttitle}{Anisotropic Thermal Expansion and Hydrogen Bonding Behavior of Portlandite}
-    \field{title}{Anisotropic Thermal Expansion and Hydrogen Bonding Behavior of Portlandite: {{A}} High-Temperature Neutron Diffraction Study}
+    \field{shorttitle}{Anisotropic Thermal Expansion and Hydrogen Bonding
+  Behavior of Portlandite}
+    \field{title}{Anisotropic Thermal Expansion and Hydrogen Bonding Behavior
+  of Portlandite: {{A}} High-Temperature Neutron Diffraction Study}
     \field{volume}{180}
     \verb{file}
     \verb /home/starlord/Zotero/storage/KXZ94KCS/S0022459607001016.html

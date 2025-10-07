@@ -32,7 +32,8 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %-------------------------------------------------------------------------------
 
-\documentclass[11pt, a4paper, oneside, british]{Thesis} % Paper size, default font size
+\documentclass[11pt, a4paper, oneside, british]{Thesis}
+% \includeonly{Appendices/Appendix-A} % Paper size, default font size
                                                % and one-sided paper
 
 \graphicspath{{Figures}} % Specifies the directory where pictures are stored
@@ -100,10 +101,13 @@
 
 \Declaration
 
-\Dedicatory{For her, who is my everything.\\
-For my family, who always supported me.\\} 
-
-\Acknowledgements
+\Dedicatory{
+To the younger self who dared to begin, \\
+and to the present self who refused to stop. \\
+For every sleepless night and every \\
+quiet triumph along the way.
+} 
+%\Acknowledgements
 
 \Resumen
 
@@ -178,11 +182,11 @@ For my family, who always supported me.\\}
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
-\input{Chapters/Chapter-1-edited}
-\input{Chapters/Chapter-2-edited}
-\input{Chapters/Chapter-3-edited}
-\input{Chapters/Chapter-4}
-\input{Chapters/Chapter-5}
+\include{Chapters/Chapter-1-edited}
+\include{Chapters/Chapter-2-edited}
+\include{Chapters/Chapter-3-edited}
+\include{Chapters/Chapter-4}
+\include{Chapters/Chapter-5}
 %\input{Chapters/Chapter6}
 % \input{Chapters/Chapter7}
 
@@ -198,8 +202,8 @@ For my family, who always supported me.\\}
 % folder
 % Uncomment the lines as you write the Appendices
 
-\input{Appendices/Appendix-A}
-%\input{Appendices/AppendixB}
+\include{Appendices/Appendix-A}
+%\input{Appendices/Appendix-B}
 %\input{Appendices/AppendixC}
 
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics

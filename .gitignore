@@ -18,3 +18,7 @@ my-vault/My Life
 my-vault/Artificial Intelligence
 my-vault/Quantum Computing Club
 
+# Files from my other laptop
+.vscode/
+extra_script.py
+presentation/.~lock.thesis-defense.odp#

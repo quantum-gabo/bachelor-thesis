@@ -99,7 +99,7 @@
 	{\normalsize
 		Yo, \textbf{Balarezo Balarezo Juan Gabriel}, con c\'{e}dula de identidad 0106019219, declaro que las ideas, juicios, valoraciones, interpretaciones, consultas bibliogr\'{a}ficas, definiciones y conceptualizaciones expuestas en el presente trabajo; as\'{i} c\'{o}mo, los procedimientos y herramientas utilizadas en la investigaci\'{o}n, son de absoluta responsabilidad de el/la autora (a) del trabajo de integraci\'{o}n curricular. As\'{i} mismo, me acojo a los reglamentos internos de la Universidad de Investigaci\'{o}n de Tecnolog\'{i}a Experimental Yachay. 
 		
-		Urcuqu\'{i}, Septiembre - 2025. \\[2cm]
+		Urcuqu\'{i}, Octubre - 2025. \\[2cm]
 		
 		
 		\begin{center}
@@ -124,7 +124,7 @@
 		
 		Asimismo, autorizo a la Universidad que realice la digitalizaci\'{o}n y publicaci\'{o}n de este trabajo de integraci\'{o}n curricular en el repositorio virtual, de conformidad a lo dispuesto en el Art. 144 de la Ley Org\'{a}nica de Educaci\'{o}n Superior
 		
-		Urcuqu\'{i}, Septiembre - 2025. \\[2cm]
+		Urcuqu\'{i}, Octubre - 2025. \\[2cm]
 		
 		
 		\begin{center}
@@ -172,11 +172,9 @@
 	\vspace*{0.5cm}
 	\begin{center}{\large\bf Acknowledgments\par}\end{center}
 	{\normalsize
-		Me gustar\'{i}a expresar mi m\'{a}s sincero agradecimiento a mis padres, cuyo apoyo incondicional y aliento han sido la fuerza impulsora detr\'{a}s de mi trayectoria acad\'{e}mica, y cuyos sacrificios y confianza en m\'{i} han sido fundamentales para alcanzar este logro. A la Gnosis por enseñarme a mejorar como ser humano. A mis amigos, cuya compañ\'{i}a y amistad han tra\'{i}do alegr\'{i}a y risas en cada paso de este camino, gracias por siempre estar ah\'{i}. Un agradecimiento especial a mi novia, cuyo amor, comprensi\'{o}n y paciencia han sido una fuente constante de fortaleza e inspiraci\'{o}n, siendo mi roca en los diversos desaf\'{i}os. Me siento incre\'{i}blemente afortunado de haber recibido la gu\'{i}a y el apoyo incondicional de mis co-asesores, Mar\'{i}a Camila y el Profesor Andr\'{e}s, cuya experiencia, mentor\'{i}a y dedicaci\'{o}n han sido invaluables para la realizaci\'{o}n de esta tesis. Extiendo mi gratitud al mejor profesor de Yachay Tech, Henry Pinto.
-		
-		Finalmente, dedico esta tesis a mi abuelo, cuya resiliencia y fortaleza frente a la adversidad han sido una fuente de inspiraci\'{o}n. Su amor y sabidur\'{i}a me han guiado a lo largo de los altibajos de la vida, y estoy eternamente agradecido por su presencia en mi vida.
-		% This prints a line to write the date
-	}
+    It was near six years ago when I found myself at a fateful crossroad---whether to dwell in the quiet ease of my beloved Cuenca, embracing the safe pursuit of engineering, or to heed the restless summons of my heart, and journey to Ibarra in devotion to my everlasting passion for physics. Today I stand here, a testament to the courage of that choice, and the unwavering support of those who believed in me.\\
+    Yachay Tech University gave me more than just an education---it bestowed upon me a family, 
+}
 	
 	\vspace{10cm} % Add vertical space to push the name to the bottom
 	\begin{flushright}
@@ -191,13 +189,10 @@
 	\vspace*{0.5cm}
 	\begin{center}{\large\bf Abstract\par}\end{center}
 	{\normalsize
-		Concrete is the second-most-used substance in the world after water, with more than 35 billion tons produced, every year. Yet, understanding the atomic and mechanical properties of the main component of concrete, calcium-silicate-hydrate (C-S-H) cement hydrates--the complex binder phase of concrete---still poses a challenge.
-
-        In this project, we aim to investigate the atomic and mechanical properties of cement hydrates leveraging density-functional theory (DFT) and machine learning (ML) tools. We will first start by using DFT to study the electronic structure, bonding, and mechanical responses of C-S-H  at the atomic level. Afterwards, we will use \emph{ab initio} molecular dynamics (AIMD) with ML to create a force field on the fly of C-S-H, which will allow us to accurately simulate and capture the complex atomic interactions of cement hydrates while reducing the computation time. By integrating both DFT, AIMD and ML, we seek to provide deeper insights into the fundamental properties of C-S-H and to develop a predictive model that could inform the design of more sustainable and durable concrete materials.  
-		% This prints a line to write the date
+		Concrete is the second most used substance in the world after water, with more than 35 billion tonnes produced annually. Yet, understanding the atomic and mechanical properties of its principal component, calcium-silicate-hydrate (C-S-H)---the complex binder phase of concrete---remains a considerable challenge owing to its structural complexity and disordered nature. This works aims to develop and validate a machine learning force field (MLFF) capable of accurately reproducing the structural and mechanical behaviour of C--S--H. To this end, density functional theory (DFT) calculations were employed to study the electronic structure, bonding characteristics, and elastic response of C--S--H at the atomic level. Subsequently, an \emph{on-the-fly} MLFF was trained using \emph{ab initio} molecular dynamics (AIMD) simulations at 400~K. After a thorough refitting and validation process, the resulting MLFFs were assessed through structure relaxation and molecular dynamics simulations, yielding energy, force, and stress tensor predictions comparable to accurate DFT results. The MLFFs were then used to compute key thermodynamic and mechanical properties, including the equation of state (EOS) and bulk modulus, obtaining values bwetween 55--58 GPa, in favourable agreement with available experimental data. Furthermore, the transferability of the MLFF was evaluated and confirmed across a temparature range of 200--400 K, maintaining physical consistency throughout. 
 	}
 	
-	\textbf{Keywords:} Density Functional Theory, Calcium Silicate Hydrates, Machine Learning, Force Fields, Ab Initio Molecular Dynamics, Cement Hydrates.
+	\textbf{Keywords:} Density Functional Theory, Calcium Silicate Hydrates, Machine Learning, Force Fields, Ab Initio Molecular Dynamics, Equation of State, Bulk Modulus.
 	
 	\clearpage % Start a new page
 }
@@ -208,13 +203,11 @@
 	\vspace*{0.5cm}
 	\begin{center}{\large\bf Resumen\par}\end{center}
 	{\normalsize
-		El concreto es la segunda sustancia más utilizada en el mundo después del agua, con más de 35 mil millones de toneladas producidas cada año. Sin embargo, comprender las propiedades atómicas y mecánicas del principal componente del concreto, los hidratos de cemento de silicato de calcio (C-S-H), la fase aglutinante compleja del concreto, sigue siendo un desafío.
-
-        En este proyecto, nuestro objetivo es investigar las propiedades atómicas y mecánicas de los hidratos de cemento utilizando teoría de funcionales de densidad (DFT) y herramientas de aprendizaje automático (ML). Comenzaremos utilizando DFT para estudiar la estructura electrónica, los enlaces y las respuestas mecánicas de C-S-H a nivel atómico. Posteriormente, utilizaremos dinámica molecular \emph{ab initio} (AIMD) junto con ML para crear un campo de fuerza en tiempo real de C-S-H, lo que nos permitirá simular con precisión y capturar las complejas interacciones atómicas de los hidratos de cemento, reduciendo al mismo tiempo el tiempo de cálculo. Al integrar DFT, AIMD y ML, buscamos proporcionar una comprensión más profunda de las propiedades fundamentales de C-S-H y desarrollar un modelo predictivo que pueda orientar el diseño de materiales de concreto más sostenibles y duraderos.   
+		El concreto es el segundo material m\'{a}s  utilizado en el mundo despu\'{e}s del agua, con m\'{a}s de 35 mil millones de toneladas producidas anualmente. Sin embargo, comprender las propiedades at\'{o}micas y mec\'{a}nicas de su componente principal, el silicato cálcico hidratado (C-S-H), la fase aglutinante compleja del concreto, sigue siendo un desaf\'{i}o considerable debido a su complejidad estructural y naturaleza desordenada. Este trabajo tiene como objetivo desarrollar y validar un campo de fuerza basado en aprendizaje autom\'{a}tico (MLFF) capaz de reproducir con precisi\'{o}n el comportamiento estructural y mec\'{a}nico del C--S--H. Para ello, se emplearon c\'{a}lculos de teor\'{i}a del funcional de la densidad (DFT) para estudiar la estructura electr\'{o}nica, las caracter\'{i}sticas de enlace y la respuesta el\'{a}stica del C--S--H a nivel at\'{o}mico. Posteriormente, se entren\'{o} un MLFF \emph{on-the-fly} utilizando simulaciones de din\'{a}mica molecular \emph{ab initio} (AIMD) a 400~K. Despu\'{e}s de un exhaustivo proceso de ajuste y validaci\'{o}n, los MLFF resultantes fueron evaluados mediante relajaci\'{o}n estructural y simulaciones de din\'{a}mica molecular, obteniendo predicciones de energ\'{i}a, fuerza y tensor de esfuerzo comparables a resultados precisos de DFT. Luego, los MLFF se utilizaron para calcular propiedades termodin\'{a}micas y mec\'{a}nicas clave, incluida la ecuaci\'{o}n de estado (EOS) y el m\'{o}dulo volumétrico, obteniendo valores entre 55-58 GPa, en favorable acuerdo con los datos experimentales disponibles. Asimismo, se evalu\'{o} y confirm\'{o} la transferibilidad del MLFF en un rango de temperatura de 200-400 K, manteniendo la coherencia f\'{i}sica a lo largo de dicho intevalo.
 		% Esto imprime una línea para escribir la fecha
 	}
 	
-	\textbf{Palabras clave:} Teor\'{i}a del Funcional de la Densidad, monocapas, Hidratos de Silicato de Calcio, Aprendizaje Autom\'{a}tico, Campos de Fuerza, Din\'{a}mica Molecular \emph{ab initio}, Hidratos de Cemento.
+	\textbf{Palabras clave:} Teor\'{i}a del Funcional de la Densidad, Silicatos C\'{a}lcicos Hidratados, Aprendizaje Autom\'{a}tico, Campos de Fuerza, Din\'{a}mica Molecular \emph{Ab Initio}, Ecuaci\'{o}n de Estado, M\'{o}dulo Volum\'{e}trico.
 	
 	\clearpage % Comenzar una nueva página
 }
@@ -502,7 +495,7 @@ supervision.\\[2.5cm]
         
         \begin{center}
         	\fontsize{14}{26}\selectfont
-        	Urcuqu\'{i}, Septiembre 2025
+        	Urcuqu\'{i}, Octubre 2025
         \end{center}
         \vfill
     \end{center}
@@ -565,10 +558,10 @@ supervision.\\[2.5cm]
 \thispagestyle{plain}
 \null\vfil
 \vskip 60\p@
-\begin{center}{\Large \textit{#1}}\end{center}
+\begin{center}{\textit{#1}}\end{center}
 \vspace{10cm} % Add vertical space to push the name to the bottom
 \begin{flushright}
-{\normalsize ---Balarezo J. Gabriel} % Student's name at the left bottom
+{\normalsize Balarezo J. Gabriel} % Student's name at the left bottom
 \end{flushright}
 \vfil\null
 \cleardoublepage

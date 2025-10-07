@@ -1,7 +1,7 @@
 \chapter{Methodology}
 \label{Chapter3}
 \lhead{Chapter 3. \emph{Methodology}}  
-This chapter outlines the methodology followed in this work to perform the computational simulations of calcium silicate hydrates ( C--S--H). All the calculations were carried out using Density Functional Tight Binding (DFTB+)---primarily in the initial stages---and subsequently with the Vienna Ab-initio Simulation Package (VASP).
+This chapter outlines the methodology followed in this work to perform the computational simulations of calcium silicate hydrates ( C--S--H). All the calculations were carried out using Density Functional Tight Binding (DFTB+)---primarily in the initial stages---and subsequently with the Vienna Ab-initio Simulation Package (VASP). All the computational parameters---\texttt{INCAR} files---used for core DFT calculations are detailed in Appendix \ref{AppendixB}.
 
 We begin by describing the initial  C--S--H structure, followed by the 
 details of the VASP workflow, emphasising the self-consistent field (SCF) cycle. We then present the main input and output files required for the simulations. Next, we discuss the structure relaxation procedure, which includes an initial relaxation using DFTB+ followed by a full structure relaxation with VASP. Finally, we discuss the generation of the machine learning force field (MLFF), covering the training, refinement, and testing phases. 
@@ -37,7 +37,7 @@ Most of our calculations were performed using the Vienna Ab Initio Simulation Pa
     \centering
     \includegraphics[width=0.6\textwidth]{vasp-workflow.pdf}
     \caption{
-        Self-consistent field (SFC) cycle in VASP for DFT calculations adapted from Ref. \cite{sholl2023density}. The entire cycle starts with an initial guess of the electronic density $n_0(\mathbf{r})$, which then is used to calculate the effective potential $v_{\text{eff}}(\mathbf{r})$. Then, the resulting potential is used to solve the Kohn-Sham equations, from which single-electron wavefunctions $\psi_i(\mathbf{r})$ are obtained. Consequently, the new electronic density $n_{i+1}(\mathbf{r})$ is calculated. Should the old and new densities be close enough---up to a predefined threshold---the cycle stops, and the final electronic density is used to calculate the energies, forces, and stress tensor of the system. Otherwise, the cycle repeats itself until convergence is achieved. 
+        Self-consistent field (SFC) cycle in VASP for DFT calculations adapted from Ref. \cite{sholl2023density}. The entire cycle starts with an initial guess of the electronic density $n_0(\mathbf{r})$, which is then used to calculate the effective potential $v_{\text{eff}}(\mathbf{r})$. Then, the resulting potential is used to solve the Kohn-Sham equations, from which single-electron wavefunctions $\psi_i(\mathbf{r})$ are obtained. Consequently, the new electronic density $n_{i+1}(\mathbf{r})$ is calculated. Should the old and new densities be close enough---up to a predefined threshold---the cycle stops, and the final electronic density is used to calculate the energies, forces, and stress tensor of the system. Otherwise, the cycle repeats itself until convergence is achieved. 
     }
     \label{fig:vasp_workflow}
 \end{figure}
@@ -90,7 +90,7 @@ The \texttt{INCAR} file (see Figure \ref{fig:incar}) defines the computational p
 		}  
 	\end{threeparttable}  
 \end{figure}
-These parameters control convergence thresholds, exchange-correlation functionals, long-range corrections, ensemble choices, and other simulation parameters. If not specified by the user, VASP uses default values. Nonetheless, for reliable and reproducible results, main parameters must be tailored to the system and the type of calculation.
+These parameters control convergence thresholds, exchange-correlation functionals, long-range corrections, ensemble choices, and other simulation parameters. If not specified by the user, VASP uses default values. Nonetheless, for reliable and reproducible results, the main parameters must be tailored to the system and the type of calculation.
 
 
 \subsubsection{POSCAR}
@@ -125,7 +125,7 @@ The \texttt{POSCAR} (see Figure \ref{fig:csh_poscar}) file provides the actual s
 \hline
 \end{tabular}
 }
-\caption{Unit cell structure in fractional coordinates for the \ce{ C--S--H} (Calcium-Silicate-Hydrate) system. The lattice vectors, atomic species (99 Ca, 60 Si, 323 O, 208 H), and the first 9 atomic positions are shown. All coordinates are expressed in direct (fractional) form.}
+\caption{Unit cell structure in fractional coordinates for the C--S--H (Calcium Silicate Hydrates) system. The lattice vectors, atomic species (99 Ca, 60 Si, 323 O, 208 H), and the first 9 atomic positions are shown. All coordinates are expressed in direct (fractional) form.}
 \label{fig:csh_poscar}
 \end{figure}
 The first line contains a comment specifying the name of the system or a brief description of it. Lines 2-4 provide the scaling factor and the corresponding lattice vectors. The actual lattice vectors are obtained by multiplying the scaling factor (line 2) by the numbers in lines 3-5. Lines 6-7 specify the atomic species as well as the number of ions of each species. Finally, lines 9-onwards provide the ionic positions in angstroms. 
@@ -148,7 +148,7 @@ Defining the k-point grid is an essential and one of the first steps when perfor
 \end{figure}
 
 \subsubsection{POTCAR}
-The \texttt{POTCAR} file contains the PAW pseudopotentials for each atomic species in the system. As such, it defines how valence electrons interact with the atomic cores. It is constructed by concatenating the individual POTCAR files for each species into a single file. In our work we employed the following PAW pseudopotentials from the PAW\_PBE library:
+The \texttt{POTCAR} file contains the PAW pseudopotentials for each atomic species in the system. As such, it defines how valence electrons interact with the atomic cores. It is constructed by concatenating the individual POTCAR files for each species into a single file. In our work,  we employed the following PAW pseudopotentials from the PAW\_PBE library:
 \begin{itemize}
     \item Ca: Ca\_pv ([Ar] 4s$^2$)
     \item Si: Si ([Ne] 3s$^2$ 3p$^2$)
@@ -188,14 +188,38 @@ After the rough approximation provided by DFTB+, a full structure relaxation is 
 \label{sec:mlff-generation}
 This stage is subdivided into three main phases: training, refinement, and testing. In this section, we describe each one of them in detail.
 \subsection{Training}
-As previously discussed, the MLFF is generated on-the-fly during an AIMD simulation. To begin, we use the \texttt{CONTCAR} file, which contains our relaxed structure, as the input \texttt{POSCAR} file for this step. In the \texttt{INCAR} file some parameters need to be set: \texttt{IBRION=0}, indicates VASP to switch to an AIMD simulation; \texttt{NSW=50000} indicates the number of ionic steps; \texttt{POTIM=2.0} is the MD time step in fs; \texttt{MDALGO=3} tells VASP to use the Langevin thermostat; \texttt{TEBEG=400} sets the temperature (in K) at wich the simulation is performed, and \texttt{ISIF=3} allows for positions, cell shape and volume to be~updated. 
+As previously discussed, the MLFF is generated on-the-fly during an AIMD simulation. To begin, we use the \texttt{CONTCAR} file, which contains our relaxed structure, as the input \texttt{POSCAR} file for this step. In the \texttt{INCAR} file some parameters need to be set: \texttt{IBRION=0}, indicates VASP to switch to an AIMD simulation; \texttt{NSW=50000} indicates the number of ionic steps; \texttt{POTIM=2.0} is the MD time step in fs; \texttt{MDALGO=3} tells VASP to use the Langevin thermostat; \texttt{TEBEG=400} sets the temperature (in K) at which the simulation is performed, and \texttt{ISIF=3} allows for positions, cell shape and volume to be~updated. 
 
 Finally, \texttt{ML\_LMLFF=T} and \texttt{ML\_ISTART=0} tags govern the MLFF training process. The former enables the use of machine learning force fields, and the latter tells VASP to generate a new MLFF from scratch. Although the parameters described herein are the most important, additional tags may need to be set depending on the performance of the training phase.
 
 \subsection{Refinement}
-The refinement phase allows for improvements to be made in the generated MLFF by tuning the hyperparameters in the model. To this end, we first generate a set of 50000 structures using the force field, from which we uniformly sample 50 configurations. Then we compute the total energy, forces and stress tensor for each one of them in two separate runs. The first run utilises first principles, whereas the second run is performed using the MLFF model. The correspoinding data is then postprocesed and the errors between DFT and MLFF results are computed. These results are significant as they provide the means to evaluate the performance of our force field. 
+The refinement phase allows for improvements to be made in the generated MLFF by tuning the hyperparameters in the model. To this end, we first generate a set of 50000 structures using the force field, from which we uniformly sample 50 configurations. Then we compute the total energy, forces and stress tensor for each one of them in two separate runs. The first run utilises first principles, whereas the second run is performed using the MLFF model. The corresponding data is then postprocesed and the errors between DFT and MLFF results are evaluated using configuration-wise Root Mean Square Error (RMSE) defined as follows:
+\begin{subequations}
+    \label{eq:rmse_per_conf}
+    \begin{align}
+        \label{eq:energy_error}
+        E^i_{\text{error}} &= \frac{E_i^{\text{DFT}} - E_i^{\text{MLFF}}}{\text{N}_{a}} \\
+        \label{eq:force_error}
+        F^i_{\text{RMSE}} &= \sqrt{\frac{1}{3\text{N}_{a}}\sum_{j=1}^{\text{N}_{a}}\sum_{k=1}^{3} \left(\mathbf{F}_{ijk}^{\text{DFT}} - \mathbf{F}_{ijk}^{\text{MLFF}}\right)^2} \\
+        \label{eq:stress_error}
+        S^i_{\text{RMSE}} &= \sqrt{\frac{1}{6} \sum_{\alpha=1}^{3}\sum_{\beta=1}^{3} \left(\sigma_{i\alpha\beta}^{\text{DFT}} - \sigma_{i\alpha\beta}^{\text{MLFF}}\right)^2}
+    \end{align}
+\end{subequations}
+where $i$ indicates the configuration index, $\text{N}_a$ is the number of atoms in the system, $j$ is the atom index, $k$ corresponds to the Cartesian components of the forces, and $\alpha$, $\beta$ are the Cartesian indices of the stress tensor. Note that the energy error does not correspond to a RMSE, but rather to a per-atom energy error. Likewise, global RMSE values for the entire set of configurations are computed as follows:
+\begin{subequations}
+    \label{eq:rmse_global}
+    \begin{align}
+        \label{eq:rmse_e}
+        E_{\text{RMSE}} &= \sqrt{\frac{1}{\text{N}_s}\sum_{i=1}^{\text{N}_s} \left(E_i^{\text{DFT}} - E_i^{\text{MLFF}}\right)^2} \\
+        \label{eq:rmse_f}
+        F_{\text{RMSE}} &= \sqrt{\frac{1}{\text{N}_{s}} \sum_{i=1}^{\text{N}_{s}} \left(F^i_{\text{RMSE}} \right)^2} \\
+        \label{eq:rmse_s}
+        S_{\text{RMSE}} &= \sqrt{\frac{1}{\text{N}_s} \sum_{i=1}^{N_s} \left(S^i_{\text{RMSE}} \right)^2}
+    \end{align}
+\end{subequations}
+where $\text{N}_s$ is the total number of sampled configurations. These results are significant as they provide the means to evaluate the performance of our force field.
 
-Afterwards, we conduct a hyperparameter optimisation in order to improve the performance of the force field. It is noteworthy that VASP provides various hyperparameters that we can optimise; nevertheless, in this work, only two hyperparameters were considered---the two and three-body descriptors---as they directly affect the accuracy of the force field. In this regard, we set \texttt{ML\_MODE=refit} and \texttt{ML\_RCUT1=\#} in the \texttt{INCAR} file. This latter parameter corresponds to the radial descriptor (given in \AA), and is to be modified accordingly to a reasonable range. Thereafter, we use the resulting MLFF file to evaluate the performance of the refitted force field for the given \texttt{RCUT1}. We achieve this by setting \texttt{IBRION=-1} and \texttt{ML\_MODE=run} in the \texttt{INCAR} file. This calculation will return the RMSE for energies, forces, and the stress tensor as a function of the descriptor. The same process is then applied to the angular descriptor \texttt{RCUT2}, and the optimal hyperparameters are chosen to minimise the errors. 
+Afterwards, we conduct a hyperparameter optimisation in order to improve the performance of the force field. It is noteworthy that VASP provides various hyperparameters that we can optimise; nevertheless, in this work, only two hyperparameters were considered---the two and three-body descriptors---as they directly affect the accuracy of the force field. In this regard, we set \texttt{ML\_MODE=refit} and \texttt{ML\_RCUT1=\#} in the \texttt{INCAR} file. The latter parameter corresponds to the radial descriptor (given in \AA), and is to be modified accordingly to a reasonable range. Thereafter, we use the resulting MLFF file to evaluate the performance of the refitted force field for the given \texttt{RCUT1}. We achieve this by setting \texttt{IBRION=-1} and \texttt{ML\_MODE=run} in the \texttt{INCAR} file. This calculation will return the RMSE for energies, forces, and the stress tensor as a function of the descriptor. The same process is then applied to the angular descriptor \texttt{RCUT2}, and the optimal hyperparameters are chosen to minimise the errors. 
 
 \subsection{Testing}
 Following the refinement process, we can utilise the MLFF model to conduct various simulations, including AIMD simulations, structure relaxation, and other DFT calculations. In this work, we used the generated force field to compute the equation of state (EOS) of  C--S--H. Additionally, we also performed a simulated annealing process to obtain a more stable structure and computed its corresponding EOS as well. Finally, various MD simulations were conducted at temperatures of 200, 250, 300, 350, and 400 K to study the transferability of the force field as well as the expansion coefficient of  C--S--H.
