@@ -50,12 +50,12 @@ The DOS profile exhibits a clear band gap of approximately 4.81 eV between the v
 
 \section{Machine Learning Force Field (MLFF) Generation}
 \label{sec:mlff-training}
-
 This section is devoted to the core focus of this work: the training, testing and refinement of a machine learning force field (MLFF) for C--S--H. The MLFF was generated on-the-fly within VASP---which employs a Bayesian-learning algorithm to construct a force field on-the-fly during an AIMD simulation \cite{zotero-item-773}. We hereby present the training and testing statistics, as well as the details of the final refined MLFF. 
 \subsection{Training}
 The training phase of the force field consisted of an AIMD simulation performed in VASP using the PBEsol functional, with a time step of 2 fs for a total of 50000 steps (100 ps). Total energy, cell volume and Bayesian error were monitored during the simulation and are reported in Figure \ref{training-stats}. Initial peaks are observed for all three quantities, primarily due to the thermalisation of the system.
 
 After 10 ps, the total energy stabilises around -4830 eV, with regular fluctuations associated with an increased uncertainty in the force field, whereas the cell volume oscillates around 7500 \AA$^3$. On the other hand, the Bayesian error exhibits a general decreasing trend, reflecting the progressive improvement of the force field as more configurations are explored and added to the training set. Regular spikes in the Bayesian error indicate the appearance of configurations that differ substantially from those previously explored. This prompts the algorithm to switch from prediction to training mode, and the newly identified representative configurations are incorporated into the training set. 
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{training-stats.png}
@@ -70,7 +70,8 @@ After 80 ps, we observe no significant fluctuations in the total energy, indicat
 \subsection{Evaluation}
 Following the training phase, we evaluated the performance of the force field in two steps. First, we carried out an MD simulation using the MLFF in prediction mode with a time step of 2 fs for a total simulation time of 100 ps. Second, we randomly selected 50 configurations from the generated trajectory and computed the total energy, forces and stress tensor using both DFT and the MLFF separately. We then computed the errors between the results obtained to quantify the performance of the force field. 
 
-Figure \ref{pred-stats} shows the evolution of the total energy and the cell volume during the MD simulation in prediction mode. No abrupt fluctuations or drifts are observed, with the total energy oscillating around -4833 eV and the cell volume around 7494 \AA$^3$. These results show consistency with the training statistics and reflect the ability of the MLFF to accurately represent the potential energy surface of C--S--H. 
+Figure \ref{pred-stats} shows the evolution of the total energy and the cell volume during the MD simulation in prediction mode. No abrupt fluctuations or drifts are observed, with the total energy oscillating around -4833 eV and the cell volume around 7494 \AA$^3$. These results show consistency with the training statistics and reflect the ability of the MLFF to accurately represent the potential energy surface of C--S--H.
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{pred-stats.png}
@@ -86,7 +87,7 @@ On the other hand, the errors between DFT and MLFF predictions for the total ene
     \centering
     \includegraphics[width=0.8\textwidth]{pred-errors.png}
     \caption{
-    Energy error per atom and root mean square error (RMSE) for forces and stress tensor of C--S--H between DFT and MLFF predictions, evaluated on 50 configurations randomly selected from an independent set of 50000 configurations generated via MD simulation using the MLFF in prediction mode without refitting. 
+    Energy error per atom and root-mean-square error (RMSE) for forces and stress tensor of C--S--H between DFT and MLFF predictions, evaluated on 50 configurations randomly selected from an independent set of 50000 configurations generated via MD simulation using the MLFF in prediction mode without refitting. 
     }
     \label{pred-errors}
 \end{figure}
@@ -98,26 +99,29 @@ The MLFF refinement involved varying hyperparameters of the force field, running
     \centering
     \includegraphics[width=0.8\textwidth]{rcut1.png}
     \caption{
-    Root mean square error (RMSE) for the total energy, forces and stress tensor as a function of the radial descriptor (\texttt{RCUT1}). 
+    Root-mean-square error (RMSE) for the total energy, forces and stress tensor as a function of the radial descriptor (\texttt{RCUT1}). 
     }
     \label{rcut1}
 \end{figure}
+
 We varied the radial descriptor (\texttt{RCUT1}) over the range of 4.0 to 45.0 Å, and the angular descriptor (\texttt{RCUT2}) over the range 2.0 to 10.0 Å. With the energy error and the force RMSE monotonically decreasing, no clear minimum is observed for \texttt{RCUT1} in the considered range; however, a minimum stress RMSE occurs at 17.0 \AA. Conversely, \texttt{RCUT2} exhibits a clear minimum for both the energy error and the force RMSE at 3.0 \AA, and for the stress tensor RMSE at 4.0 \AA.
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{rcut2.png}
     \caption{
-    Root mean square error (RMSE) for the total energy, forces and stress tensor as a function of the angular descriptor (\texttt{RCUT2}).
+    Root-mean-square error (RMSE) for the total energy, forces and stress tensor as a function of the angular descriptor (\texttt{RCUT2}).
     }
     \label{rcut2}
 \end{figure}
+
 Based on these results, two refined MLFFs were generated: \textbf{FF1} with \texttt{RCUT1}=17.0 \AA{} and \texttt{RCUT2}=4.0 \AA, and \textbf{FF2} with \texttt{RCUT1}=36.0 \AA{} and \texttt{RCUT2}=4.0 \AA{}. Additionally, we called \textbf{FF0} the original MLFF generated during the training phase, which used \texttt{RCUT1}=8.0 \AA{} and \texttt{RCUT2}=5.0~\AA. \textbf{FF2} was chosen to explore the effect of a larger radial descriptor, albeit no performance evaluation was carried out due to the computational cost. 
 The performance of \textbf{FF1} was evaluated following the same procedure as before, and the results are presented in Figure~\ref{rf-pred-errors}. A significant improvement is observed, with an RMSE of 1.282 meV/atom for the total energy, 163 meV/\AA{} for the forces, whereas the stress tensor RMSE increased to 1.24 kbar.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{rf-pred-errors.png}
     \caption{
-    Energy error per atom and root mean square error (RMSE) for forces and stress tensor of C--S--H between DFT and MLFF predictions, evaluated on 50 configurations using the refined MLFF \textbf{FF1}.  
+    Energy error per atom and root-mean-square error (RMSE) for forces and stress tensor of C--S--H between DFT and MLFF predictions, evaluated on 50 configurations using the refined MLFF \textbf{FF1}.  
     }
     \label{rf-pred-errors}
 \end{figure}
@@ -127,9 +131,10 @@ The performance of \textbf{FF1} was evaluated following the same procedure as be
     \caption{
     The predicted results for the total system energy, average force magnitude and average stress magnitude of C--S--H per configuration. The gray dashed line represents the results of DFT calculations, while the coloured dots represent the predictions made by \textbf{FF1}. Closer proximity to the gray dashed line indicates more accurate predictions.  
     }
-    \label{rf-pred-errors}
+    \label{rf-pred-comparisons}
 \end{figure}
-Additionally, scatter parity plots comparing the reference DFT results and the predictions made by our refitted force field \textbf{FF1} are presented in Figure \ref{rf-pred-errors}. This visual representation allows us to assess the accuracy of the force field predictions. We observe a good agreement between the \emph{ab initio} data and the MLFF predictions for the total energy, forces and stresses. The energy predictions present a high density of points towards the centre of the diagonal and a moderate spread, indicating a good overall accuracy. On the other hand, the force predictions seem to be lower than the DFT values, as indicated by the spread of points below the diagonal. Finally, the stress predictions are equally distributed around the diagonal, indicating a good overall accuracy despite the increased RMSE after refinement.
+
+Additionally, scatter parity plots comparing the reference DFT results and the predictions made by our refitted force field \textbf{FF1} are presented in Figure \ref{rf-pred-comparisons}. This visual representation allows us to assess the accuracy of the force field predictions. We observe a good agreement between the \emph{ab initio} data and the MLFF predictions for the total energy, forces and stresses. The energy predictions present a high density of points towards the centre of the diagonal and a moderate spread, indicating a good overall accuracy. On the other hand, the force predictions seem to be lower than the DFT values, as indicated by the spread of points below the diagonal. Finally, the stress predictions are equally distributed around the diagonal, indicating a good overall accuracy despite the increased RMSE after refinement.
 
 \section{Thermodynamic Properties of C--S--H}
 \label{sec:thermo-properties}
